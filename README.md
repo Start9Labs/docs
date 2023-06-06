@@ -1,5 +1,5 @@
 # Start9 Documentation
-Welcome to the Start9 Docs!  Here you will find the embassyOS user manual, as well as integration guides, FAQ, support, knowledge base, and developer docs.
+Welcome to the Start9 Docs!  Here you will find the StartOS user manual, as well as integration guides, FAQ, support, knowledge base, and developer docs.
 
 ## Building from source
 1. Install the necessary dependencies
