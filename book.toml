@@ -4,3 +4,23 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Start9 Documentation"
+
+[output.html]
+additional-css = ["./mdbook-admonish.css"]
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.i18n.translations]
+language = "es"
+title = "Start9 Documentación"
+authors = []
+translators = []
+description = "Español"
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "2.0.1" # do not edit: managed by `mdbook-admonish install`

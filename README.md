@@ -3,23 +3,41 @@ Welcome to the Start9 Docs!  Here you will find the embassyOS user manual, as we
 
 ## Building from source
 1. Install the necessary dependencies
-    - [Rust](https://rustup.rs)
-    ```bash
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    ```
 
-    - [mdBook](https://rust-lang.github.io/mdBook/)
-    ```bash
-    cargo install mdbook
-    ```
+    [Rust](https://rustup.rs)
+    
+        ```bash
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+        ```
+
+    [mdBook](https://rust-lang.github.io/mdBook/) - Documentation framework
+    
+        ```bash
+        cargo install mdbook
+        ```
+
+    [mdBook-admonish](https://github.com/tommilligan/mdbook-admonish) - Admonitions plugin
+    
+        ```bash
+        cargo install mdbook-admonish
+        ```
+
+    [mdBook-i18n](https://github.com/tommilligan/mdbook-admonish) - Internationalization plugin
+    
+        ```bash
+        cargo install mdbook-i18n
+        ```
+
 
 1. Clone the repo and change into its directory
+    
     ```bash
     git clone git@github.com:kn0wmad/mdbook-docs
     cd mdbook-docs
     ```
     
 1. Serve and view a live, local version of the docs while editing
+    
     ```bash
     mdbook serve --open
     ```

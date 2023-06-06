@@ -33,6 +33,7 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
@@ -70,10 +71,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -81,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">User Manual</li><li class="chapter-item expanded "><a href="initial-setup.html"><strong aria-hidden="true">1.</strong> Initial Setup</a></li><li class="chapter-item expanded "><a href="connections/index.html"><strong aria-hidden="true">2.</strong> Connections</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="connections/lan/index.html"><strong aria-hidden="true">2.1.</strong> LAN Guides</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="connections/lan/lan-linux.html"><strong aria-hidden="true">2.1.1.</strong> Linux LAN</a></li></ol></li><li class="chapter-item expanded "><a href="connections/tor/index.html"><strong aria-hidden="true">2.2.</strong> Tor Guides</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="connections/tor/tor-linux.html"><strong aria-hidden="true">2.2.1.</strong> Linux Tor</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Knowledge Base</li><li class="chapter-item expanded "><a href="knowledge/index.html"><strong aria-hidden="true">3.</strong> Knowledge Base</a></li><li class="chapter-item expanded "><a href="knowledge/videos.html"><strong aria-hidden="true">4.</strong> Videos</a></li><li class="chapter-item expanded "><a href="knowledge/device-guides.html"><strong aria-hidden="true">5.</strong> Device Guides</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Support</li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Draft Chapter</div></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Developer Docs</li><li class="chapter-item expanded "><a href="os-dev.html"><strong aria-hidden="true">7.</strong> OS Dev</a></li><li class="chapter-item expanded "><a href="packaging.html"><strong aria-hidden="true">8.</strong> Service Packaging</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item affix "><li class="part-title">User Manual</li><li class="chapter-item "><a href="initial-setup.html"><strong aria-hidden="true">1.</strong> Initial Setup</a></li><li class="chapter-item "><a href="diy/index.html"><strong aria-hidden="true">2.</strong> DIY Guides</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="diy/x86_64.html"><strong aria-hidden="true">2.1.</strong> X86_64</a></li><li class="chapter-item "><a href="diy/RasPi.html"><strong aria-hidden="true">2.2.</strong> RasPi</a></li><li class="chapter-item "><a href="diy/ARM.html"><strong aria-hidden="true">2.3.</strong> ARM</a></li></ol></li><li class="chapter-item "><a href="walkthrough/index.html"><strong aria-hidden="true">3.</strong> StartOS Walkthrough</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="walkthrough/mainUI.html"><strong aria-hidden="true">3.1.</strong> Main UI</a></li><li class="chapter-item "><a href="walkthrough/services.html"><strong aria-hidden="true">3.2.</strong> Managing Services</a></li><li class="chapter-item "><a href="walkthrough/customize.html"><strong aria-hidden="true">3.3.</strong> Customization</a></li><li class="chapter-item "><a href="walkthrough/sessions.html"><strong aria-hidden="true">3.4.</strong> Session Management</a></li><li class="chapter-item "><a href="walkthrough/wifi-bt.html"><strong aria-hidden="true">3.5.</strong> WiFi & Bluetooth</a></li><li class="chapter-item "><a href="walkthrough/ssh.html"><strong aria-hidden="true">3.6.</strong> SSH</a></li></ol></li><li class="chapter-item "><a href="device-guides/index.html"><strong aria-hidden="true">4.</strong> Device Guides</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="device-guides/linux/index.html"><strong aria-hidden="true">4.1.</strong> Linux</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="device-guides/linux/linux-lan.html"><strong aria-hidden="true">4.1.1.</strong> LAN</a></li><li class="chapter-item "><a href="device-guides/linux/linux-vpn.html"><strong aria-hidden="true">4.1.2.</strong> VPN</a></li><li class="chapter-item "><a href="device-guides/linux/linux-domains.html"><strong aria-hidden="true">4.1.3.</strong> Domains</a></li><li class="chapter-item "><a href="device-guides/linux/linux-tor.html"><strong aria-hidden="true">4.1.4.</strong> Tor</a></li><li class="chapter-item "><a href="device-guides/linux/linux-browser.html"><strong aria-hidden="true">4.1.5.</strong> Browser config</a></li></ol></li><li class="chapter-item "><a href="device-guides/mac/index.html"><strong aria-hidden="true">4.2.</strong> Mac</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="device-guides/mac/mac-lan.html"><strong aria-hidden="true">4.2.1.</strong> LAN</a></li><li class="chapter-item "><a href="device-guides/mac/mac-vpn.html"><strong aria-hidden="true">4.2.2.</strong> VPN</a></li><li class="chapter-item "><a href="device-guides/mac/mac-domains.html"><strong aria-hidden="true">4.2.3.</strong> Domains</a></li><li class="chapter-item "><a href="device-guides/mac/mac-tor.html"><strong aria-hidden="true">4.2.4.</strong> Tor</a></li><li class="chapter-item "><a href="device-guides/mac/mac-browser.html"><strong aria-hidden="true">4.2.5.</strong> Browser config</a></li></ol></li><li class="chapter-item "><a href="device-guides/windows/index.html"><strong aria-hidden="true">4.3.</strong> Windows</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="device-guides/windows/windows-lan.html"><strong aria-hidden="true">4.3.1.</strong> LAN</a></li><li class="chapter-item "><a href="device-guides/windows/windows-vpn.html"><strong aria-hidden="true">4.3.2.</strong> VPN</a></li><li class="chapter-item "><a href="device-guides/windows/windows-domains.html"><strong aria-hidden="true">4.3.3.</strong> Domains</a></li><li class="chapter-item "><a href="device-guides/windows/windows-tor.html"><strong aria-hidden="true">4.3.4.</strong> Tor</a></li><li class="chapter-item "><a href="device-guides/windows/windows-browser.html"><strong aria-hidden="true">4.3.5.</strong> Browser config</a></li></ol></li><li class="chapter-item "><a href="device-guides/android/index.html"><strong aria-hidden="true">4.4.</strong> Android</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="device-guides/android/android-lan.html"><strong aria-hidden="true">4.4.1.</strong> LAN</a></li><li class="chapter-item "><a href="device-guides/android/android-vpn.html"><strong aria-hidden="true">4.4.2.</strong> VPN</a></li><li class="chapter-item "><a href="device-guides/android/android-domains.html"><strong aria-hidden="true">4.4.3.</strong> Domains</a></li><li class="chapter-item "><a href="device-guides/android/android-tor.html"><strong aria-hidden="true">4.4.4.</strong> Tor</a></li><li class="chapter-item "><a href="device-guides/android/android-browser.html"><strong aria-hidden="true">4.4.5.</strong> Browser config</a></li></ol></li><li class="chapter-item "><a href="device-guides/ios/index.html"><strong aria-hidden="true">4.5.</strong> iOS</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="device-guides/ios/ios-lan.html"><strong aria-hidden="true">4.5.1.</strong> LAN</a></li><li class="chapter-item "><a href="device-guides/ios/ios-vpn.html"><strong aria-hidden="true">4.5.2.</strong> VPN</a></li><li class="chapter-item "><a href="device-guides/ios/ios-domains.html"><strong aria-hidden="true">4.5.3.</strong> Domains</a></li><li class="chapter-item "><a href="device-guides/ios/ios-tor.html"><strong aria-hidden="true">4.5.4.</strong> Tor</a></li><li class="chapter-item "><a href="device-guides/ios/ios-browser.html"><strong aria-hidden="true">4.5.5.</strong> Browser config</a></li></ol></li></ol></li><li class="chapter-item "><a href="updates.html"><strong aria-hidden="true">5.</strong> Updates</a></li><li class="chapter-item "><a href="backups/index.html"><strong aria-hidden="true">6.</strong> Backups</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="backups/backup-cloud.html"><strong aria-hidden="true">6.1.</strong> Cloud</a></li><li class="chapter-item "><a href="backups/backup-remote.html"><strong aria-hidden="true">6.2.</strong> Remote</a></li><li class="chapter-item "><a href="backups/backup-lan.html"><strong aria-hidden="true">6.3.</strong> Local Network</a></li><li class="chapter-item "><a href="backups/backup-physical.html"><strong aria-hidden="true">6.4.</strong> Physical</a></li><li class="chapter-item "><a href="backups/restore/index.html"><strong aria-hidden="true">6.5.</strong> Restore from Backup</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="backups/restore/restore.html"><strong aria-hidden="true">6.5.1.</strong> Restore</a></li><li class="chapter-item "><a href="backups/restore/attach.html"><strong aria-hidden="true">6.5.2.</strong> Attach</a></li><li class="chapter-item "><a href="backups/restore/recover.html"><strong aria-hidden="true">6.5.3.</strong> Recover</a></li><li class="chapter-item "><a href="backups/restore/transfer.html"><strong aria-hidden="true">6.5.4.</strong> Transfer</a></li><li class="chapter-item "><a href="backups/restore/upgrade-hardware.html"><strong aria-hidden="true">6.5.5.</strong> Hardware upgrades</a></li></ol></li></ol></li><li class="chapter-item "><a href="marketplace/index.html"><strong aria-hidden="true">7.</strong> Marketplace</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="marketplace/registries.html"><strong aria-hidden="true">7.1.</strong> Managing registries</a></li></ol></li><li class="chapter-item "><a href="service-guides/index.html"><strong aria-hidden="true">8.</strong> Service guides</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="service-guides/bitcoin.html"><strong aria-hidden="true">8.1.</strong> Bitcoin</a></li><li class="chapter-item "><a href="service-guides/jellyfin.html"><strong aria-hidden="true">8.2.</strong> Jellyfin</a></li><li class="chapter-item "><a href="service-guides/lightning.html"><strong aria-hidden="true">8.3.</strong> Lightning</a></li><li class="chapter-item "><a href="service-guides/matrix.html"><strong aria-hidden="true">8.4.</strong> Matrix</a></li><li class="chapter-item "><a href="service-guides/nextcloud.html"><strong aria-hidden="true">8.5.</strong> Nextcloud</a></li><li class="chapter-item "><a href="service-guides/specter.html"><strong aria-hidden="true">8.6.</strong> Specter</a></li><li class="chapter-item "><a href="service-guides/vaultwarden.html"><strong aria-hidden="true">8.7.</strong> Vaultwarden</a></li><li class="spacer"></li></ol></li><li class="chapter-item "><li class="part-title">Support</li><li class="chapter-item "><a href="s9-support.html"><strong aria-hidden="true">9.</strong> Start9 support channels</a></li><li class="chapter-item "><a href="external-support.html"><strong aria-hidden="true">10.</strong> External support channels</a></li><li class="chapter-item "><a href="troubleshooting/index.html"><strong aria-hidden="true">11.</strong> Troubleshooting</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="troubleshooting/ts-inital-setup.html"><strong aria-hidden="true">11.1.</strong> Initial setup</a></li><li class="chapter-item "><a href="troubleshooting/ts-connectivity.html"><strong aria-hidden="true">11.2.</strong> Device connectivity</a></li><li class="chapter-item "><a href="troubleshooting/ts-backups.html"><strong aria-hidden="true">11.3.</strong> Backups</a></li><li class="chapter-item "><a href="troubleshooting/ts-password-reset.html"><strong aria-hidden="true">11.4.</strong> Reset your password</a></li></ol></li><li class="chapter-item "><a href="knowledgebase/index.html"><strong aria-hidden="true">12.</strong> Knowledgebase</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="knowledgebase/faq.html"><strong aria-hidden="true">12.1.</strong> FAQ</a></li><li class="chapter-item "><a href="knowledgebase/gloassary.html"><strong aria-hidden="true">12.2.</strong> Glossary</a></li><li class="chapter-item "><a href="knowledgebase/concepts.html"><strong aria-hidden="true">12.3.</strong> Concepts</a></li><li class="spacer"></li></ol></li><li class="chapter-item "><li class="part-title">Developer Docs</li><li class="chapter-item "><a href="contributing/index.html"><strong aria-hidden="true">13.</strong> Contributing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="contributing/startos.html"><strong aria-hidden="true">13.1.</strong> StartOS</a></li><li class="chapter-item "><a href="contributing/service-packaging.html"><strong aria-hidden="true">13.2.</strong> Service packaging</a></li><li class="chapter-item "><a href="contributing/docs.html"><strong aria-hidden="true">13.3.</strong> Documentation</a></li></ol></li><li class="chapter-item "><a href="dev-tools.html"><strong aria-hidden="true">14.</strong> StartOS Dev Tools</a></li><li class="chapter-item "><a href="packaging-guide.html"><strong aria-hidden="true">15.</strong> Package A Service</a></li><li class="chapter-item "><a href="packaging-spec.html"><strong aria-hidden="true">16.</strong> Packaging Spec</a></li><li class="chapter-item "><a href="packaging-submissions.html"><strong aria-hidden="true">17.</strong> Submission Process</a></li><li class="spacer"></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -142,19 +145,114 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p><img src="./assets/img/Wideview%20of%20Logo.jpg" alt="" /></p>
+                        <p><img src="./assets/img/modernLogoWide.png" alt="" /></p>
+<h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>Welcome to Sovereign Computing with Start9 Labs!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="initial-setup"><a class="header" href="#initial-setup">Initial Setup</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="connections"><a class="header" href="#connections">Connections</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="lan-guides"><a class="header" href="#lan-guides">LAN Guides</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="linux-lan"><a class="header" href="#linux-lan">Linux LAN</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="tor-guides"><a class="header" href="#tor-guides">Tor Guides</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="linux-tor"><a class="header" href="#linux-tor">Linux Tor</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="knowledge-base"><a class="header" href="#knowledge-base">Knowledge Base</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="videos"><a class="header" href="#videos">Videos</a></h1>
+<h2 id="headless-mode"><a class="header" href="#headless-mode">Headless Mode</a></h2>
+<h2 id="kiosk-mode"><a class="header" href="#kiosk-mode">Kiosk Mode</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="diy"><a class="header" href="#diy">DIY</a></h1>
+<ol>
+<li>
+<p>Reasons to DIY</p>
+</li>
+<li>
+<p>Hardware options w/ Pros/Cons</p>
+</li>
+</ol>
+<ul>
+<li>x86_64</li>
+<li>RasPi</li>
+<li>ARM</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="x86_64-diy-recommendations"><a class="header" href="#x86_64-diy-recommendations">X86_64 DIY Recommendations</a></h1>
+<h2 id="flashing-guide"><a class="header" href="#flashing-guide">Flashing Guide</a></h2>
+<h2 id="vm-install"><a class="header" href="#vm-install">VM Install</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="raspberry-pi-diy-recommendations"><a class="header" href="#raspberry-pi-diy-recommendations">Raspberry Pi DIY Recommendations</a></h1>
+<h2 id="flashing-guide-1"><a class="header" href="#flashing-guide-1">Flashing Guide</a></h2>
+<h2 id="vm-install-1"><a class="header" href="#vm-install-1">VM Install</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="arm-diy-recommendations"><a class="header" href="#arm-diy-recommendations">ARM DIY Recommendations</a></h1>
+<h2 id="flashing-guide-2"><a class="header" href="#flashing-guide-2">Flashing Guide</a></h2>
+<h2 id="vm-install-2"><a class="header" href="#vm-install-2">VM Install</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="startos-walkthrough"><a class="header" href="#startos-walkthrough">StartOS Walkthrough</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="main-ui"><a class="header" href="#main-ui">Main UI</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="managing-services"><a class="header" href="#managing-services">Managing Services</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="customization"><a class="header" href="#customization">Customization</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="session-management"><a class="header" href="#session-management">Session Management</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wifi--bluetooth"><a class="header" href="#wifi--bluetooth">WiFi &amp; Bluetooth</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ssh"><a class="header" href="#ssh">SSH</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="device-guides"><a class="header" href="#device-guides">Device Guides</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="os-dev"><a class="header" href="#os-dev">OS Dev</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="service-packaging"><a class="header" href="#service-packaging">Service Packaging</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="linux"><a class="header" href="#linux">Linux</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lan"><a class="header" href="#lan">LAN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vpn"><a class="header" href="#vpn">VPN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="domains"><a class="header" href="#domains">Domains</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tor"><a class="header" href="#tor">Tor</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="browser-config"><a class="header" href="#browser-config">Browser config</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mac"><a class="header" href="#mac">Mac</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lan-1"><a class="header" href="#lan-1">LAN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vpn-1"><a class="header" href="#vpn-1">VPN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="domains-1"><a class="header" href="#domains-1">Domains</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tor-1"><a class="header" href="#tor-1">Tor</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="browser-config-1"><a class="header" href="#browser-config-1">Browser config</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="windows"><a class="header" href="#windows">Windows</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lan-2"><a class="header" href="#lan-2">LAN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vpn-2"><a class="header" href="#vpn-2">VPN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="domains-2"><a class="header" href="#domains-2">Domains</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tor-2"><a class="header" href="#tor-2">Tor</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="browser-config-2"><a class="header" href="#browser-config-2">Browser config</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="android"><a class="header" href="#android">Android</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lan-3"><a class="header" href="#lan-3">LAN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vpn-3"><a class="header" href="#vpn-3">VPN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="domains-3"><a class="header" href="#domains-3">Domains</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tor-3"><a class="header" href="#tor-3">Tor</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="browser-config-3"><a class="header" href="#browser-config-3">Browser config</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ios"><a class="header" href="#ios">iOS</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lan-4"><a class="header" href="#lan-4">LAN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vpn-4"><a class="header" href="#vpn-4">VPN</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="domains-4"><a class="header" href="#domains-4">Domains</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tor-4"><a class="header" href="#tor-4">Tor</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="browser-config-4"><a class="header" href="#browser-config-4">Browser config</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="updates"><a class="header" href="#updates">Updates</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="backups"><a class="header" href="#backups">Backups</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="cloud"><a class="header" href="#cloud">Cloud</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="remote"><a class="header" href="#remote">Remote</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="local-network"><a class="header" href="#local-network">Local Network</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="physical"><a class="header" href="#physical">Physical</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="restore"><a class="header" href="#restore">Restore</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hardware-upgrades"><a class="header" href="#hardware-upgrades">Hardware upgrades</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="attach"><a class="header" href="#attach">Attach</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="recover"><a class="header" href="#recover">Recover</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transfer"><a class="header" href="#transfer">Transfer</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hardware-upgrades-1"><a class="header" href="#hardware-upgrades-1">Hardware upgrades</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="marketplace"><a class="header" href="#marketplace">Marketplace</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="managing-registries"><a class="header" href="#managing-registries">Managing registries</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="service-guides"><a class="header" href="#service-guides">Service guides</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bitcoin"><a class="header" href="#bitcoin">Bitcoin</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="jellyfin"><a class="header" href="#jellyfin">Jellyfin</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lightning"><a class="header" href="#lightning">Lightning</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="matrix"><a class="header" href="#matrix">Matrix</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nextcloud"><a class="header" href="#nextcloud">Nextcloud</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="specter"><a class="header" href="#specter">Specter</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vaultwarden"><a class="header" href="#vaultwarden">Vaultwarden</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="start9-support-channels"><a class="header" href="#start9-support-channels">Start9 support channels</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="external-support-channels"><a class="header" href="#external-support-channels">External support channels</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="initial-setup-1"><a class="header" href="#initial-setup-1">Initial setup</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="device-connectivity"><a class="header" href="#device-connectivity">Device connectivity</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="backups-1"><a class="header" href="#backups-1">Backups</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="reset-your-password"><a class="header" href="#reset-your-password">Reset your password</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="knowledgebase"><a class="header" href="#knowledgebase">Knowledgebase</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="faq"><a class="header" href="#faq">FAQ</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="glossary"><a class="header" href="#glossary">Glossary</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="concepts"><a class="header" href="#concepts">Concepts</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="contributing"><a class="header" href="#contributing">Contributing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="startos"><a class="header" href="#startos">StartOS</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="service-packaging"><a class="header" href="#service-packaging">Service packaging</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="documentation"><a class="header" href="#documentation">Documentation</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="startos-dev-tools"><a class="header" href="#startos-dev-tools">StartOS dev tools</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="package-a-service"><a class="header" href="#package-a-service">Package a service</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="packaging-spec"><a class="header" href="#packaging-spec">Packaging spec</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="submission-process"><a class="header" href="#submission-process">Submission process</a></h1>
 
                     </main>
 
@@ -213,5 +311,6 @@
         });
         </script>
 
+    </div>
     </body>
 </html>
