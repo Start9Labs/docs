@@ -1,9 +1,10 @@
 # Summary
 [Introduction](README.md)
 
+# User Manual
+
 ---
 
-# User Manual
 - [Initial Setup](initial-setup.md)
 - [DIY](diy/README.md)
     - [X86_64](diy/x86_64.md)
@@ -71,6 +72,9 @@
     - [Vaultwarden](service-guides/vaultwarden.md)
 
 # Support
+
+---
+
 - [Start9 support channels](s9-support.md)
 - [External support channels](external-support.md)
 - [Troubleshooting](troubleshooting/README.md)
@@ -84,6 +88,9 @@
     - [Concepts](knowledgebase/concepts.md)
 
 # Developer Docs
+
+---
+
 - [Contributing](contributing/README.md)
     - [StartOS](contributing/startos.md)
     - [Service packaging](contributing/service-packaging.md)
