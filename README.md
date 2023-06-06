@@ -6,25 +6,25 @@ Welcome to the Start9 Docs!  Here you will find the StartOS user manual, as well
 
     [Rust](https://rustup.rs)
     
-        ```bash
+        ``` bash
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
         ```
 
     [mdBook](https://rust-lang.github.io/mdBook/) - Documentation framework
     
-        ```bash
+        ``` bash
         cargo install mdbook
         ```
 
     [mdBook-admonish](https://github.com/tommilligan/mdbook-admonish) - Admonitions plugin
     
-        ```bash
+        ``` bash
         cargo install mdbook-admonish
         ```
 
     [mdBook-i18n](https://github.com/tommilligan/mdbook-admonish) - Internationalization plugin
     
-        ```bash
+        ``` bash
         cargo install mdbook-i18n
         ```
 
