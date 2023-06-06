@@ -1,4 +1,4 @@
-![](./assets/img/modernLogoWide.png)
+![Image example](./assets/img/modernLogoWide.png)
 
 # Introduction
 Welcome to Sovereign Computing with Start9 Labs!
@@ -6,6 +6,15 @@ Welcome to Sovereign Computing with Start9 Labs!
 ## Third party plugins
 
 [External link to plugins](https://github.com/rust-lang/mdBook/wiki/Third-party-plugins)
+
+## TODO (if moving forward with mdbook)
+
+1. Outline edits & approval
+1. Add content
+1. Theming
+1. Deployment pipeline
+1. Publish
+1. Translations (ongoing)
 
 ### Possible `mdbook` admonitions
 
