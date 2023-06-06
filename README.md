@@ -6,27 +6,21 @@ Welcome to the Start9 Docs!  Here you will find the StartOS user manual, as well
 
     [Rust](https://rustup.rs)
     
-        ```
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-        ```
+    ```
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ```
 
     [mdBook](https://rust-lang.github.io/mdBook/) - Documentation framework
     
-        ```
-        cargo install mdbook
-        ```
+    `cargo install mdbook`
 
     [mdBook-admonish](https://github.com/tommilligan/mdbook-admonish) - Admonitions plugin
     
-        ```
-        cargo install mdbook-admonish
-        ```
+    `cargo install mdbook-admonish`
 
     [mdBook-i18n](https://github.com/tommilligan/mdbook-admonish) - Internationalization plugin
     
-        ```
-        cargo install mdbook-i18n
-        ```
+    `cargo install mdbook-i18n`
 
 
 1. Clone the repo and change into its directory
@@ -38,11 +32,9 @@ Welcome to the Start9 Docs!  Here you will find the StartOS user manual, as well
     
 1. Serve and view a live, local version of the docs while editing
     
-    ```
-    mdbook serve --open
-    ```
-    
-    This will automatically open your default web browser and navigate to http://localhost:3000
+    `mdbook serve --open`
+
+    * This will automatically open your default web browser and navigate to http://localhost:3000
 
 ## Contributing
 We love contributions!  Whether you spot a typo or want to make suggestions, you can fork this project and submit a PR with your changes for consideration.  If you are not comfortable with this process, please create an issue with your suggestions or bug reports.
