@@ -2,8 +2,8 @@
 
 **Contents**
 
-1. [Restoring Individual Services](#restoring-individual-services)
-1. [Restoring an Entire Server](#restoring-an-entire-server)
+- [Restoring Individual Services](#restoring-individual-services)
+- [Restoring an Entire Server](#restoring-an-entire-server)
 
 ## Restoring Individual Services
 
@@ -27,4 +27,4 @@ This option should only be necessary if you accidentally uninstall a service.
 
 ## Restoring an Entire Server
 
-If your StartOS data drive is lost or corrupted and you need to restore your entire server, follow instructions [here](./initial-setup/restore-from-backup.md).
+If your StartOS data drive is lost or corrupted and you need to restore your entire server, follow instructions [here](./recover.md#restore-from-backup-disaster-recovery).

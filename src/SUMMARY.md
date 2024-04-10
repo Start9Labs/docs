@@ -6,11 +6,8 @@
 
 ---
 
-- [Initial Setup](user-manual/initial-setup/README.md)
-  - [Starting Fresh](user-manual/initial-setup/start-fresh.md)
-  - [Using an Existing Drive](user-manual/initial-setup/use-existing.md)
-  - [Transferring Drives](user-manual/initial-setup/transfer.md)
-  - [Restoring from Backup](user-manual/initial-setup/restore-from-backup.md)
+- [Initial Setup - Start Fresh](user-manual/start-fresh.md)
+- [Initial Setup - Recover](user-manual/recover.md)
 - [Trusting Your Root CA](user-manual/trust-ca.md)
 - [Connecting](user-manual/connecting.md)
 - [Installing Services](user-manual/installing-services.md)
@@ -53,9 +50,10 @@
 
 - [Browser Guides](guides/browser-guides/README.md)
 
-  - [Firefox](guides/browser-guides/firefox.md)
+  - [Firefox](guides/browser-guides/firefox/README.md)
+    - [Trusting your Root CA](guides/browser-guides/firefox/ca.md)
+    - [Enabling Tor](guides/browser-guides/firefox/tor.md)
   - [Chrome](guides/browser-guides/chrome.md)
-  - [Tor Browser](guides/browser-guides/tor-browser.md)
 
 - [Service Guides](guides/service-guides/README.md)
 

@@ -2,8 +2,8 @@
 
 **Contents**
 
-1. [Installing from the Marketplace](#installing-from-the-marketplace)
-1. [Side Loading](#side-loading)
+- [Installing from the Marketplace](#installing-from-the-marketplace)
+- [Sideloading](#sideloading)
 
 ## Installing from the Marketplace
 
@@ -21,11 +21,11 @@ To switch between registries or add a custom registry, simply click "Change" und
 
 ![change registry](./assets/registries.png)
 
-## Side Loading
+## SideLoading
 
-Side loading is useful if you are testing a service that does not yet exist on a registry, or if you prefer to eliminate the Marketplace as a point of trust. An s9pk can be obtained from anywhere or even built from source code.
+Sideloading is useful if you are testing a service that does not yet exist on a registry, or if you prefer to eliminate the Marketplace as a point of trust. An s9pk can be obtained from anywhere or even built from source code.
 
-To side load a service, go to `System > Sideload a Service` and upload the appropriate .s9pk file.
+To sideload a service, go to `System > Sideload a Service` and upload the appropriate .s9pk file.
 
 ![system sideload](./assets/system-sideload.png)
 

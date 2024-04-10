@@ -8,11 +8,11 @@ For security reasons, StartOS _disables_ access is not available, so you will ne
 
 **Contents**
 
-1. [Creating an SSH Key](#creating-an-ssh-key)
-1. [Registering Your SSH Key with StartOS](#registering-your-ssh-key-with-startos)
-1. [SSH over LAN](#ssh-over-lan)
-1. [Connecting via PuTTY on Windows](#connecting-via-putty-on-windows)
-1. [SSH over Tor](#ssh-over-tor)
+- [Creating an SSH Key](#creating-an-ssh-key)
+- [Registering Your SSH Key with StartOS](#registering-your-ssh-key-with-startos)
+- [SSH over LAN](#ssh-over-lan)
+- [Connecting via PuTTY on Windows](#connecting-via-putty-on-windows)
+- [SSH over Tor](#ssh-over-tor)
 
 ## Creating an SSH Key
 

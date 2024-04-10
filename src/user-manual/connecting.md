@@ -2,9 +2,9 @@
 
 **Contents**
 
-1. [Connecting Locally](#connecting-locally)
-1. [Using a Router VPN](#connecting-with-a-router-vpn)
-1. [Using Tor](#connecting-with-tor)
+- [Connecting Locally](#connecting-locally)
+- [Connecting with a Router VPN](#connecting-with-a-router-vpn)
+- [Connecting over Tor](#connecting-over-tor)
 
 ## Connecting Locally
 
@@ -12,11 +12,11 @@ When connected to the same Local Area Network (LAN) as your server, visit your u
 
 If you are experiencing issues connecting locally, click [here]().
 
-## Connecting With a Router VPN
+## Connecting with a Router VPN
 
-Most modern routers have VPN functionality built-in. Refer to your router's manual or one of the guides below for instructions.
+Most modern routers have VPN functionality built-in. Refer to your router's manual for instructions.
 
-## Connecting With Tor
+## Connecting over Tor
 
 ```admonish warning
 It is normal for Tor connections to be slow or unreliable at times.

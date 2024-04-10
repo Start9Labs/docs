@@ -1,5 +1,4 @@
 # Browser Guides
 
-- [Firefox](firefox.md)
+- [Firefox](./firefox/)
 - [Chrome](chrome.md)
-- [Tor Browser](tor-browser.md)

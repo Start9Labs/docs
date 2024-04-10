@@ -7,8 +7,8 @@ StartOS does not have automatic updates and will _never_ update without your app
 
 **Contents**
 
-1. [Updating through the UI](#updating-through-the-ui)
-1. [Update by Re-flashing](#update-by-re-flashing)
+- [Updating through the UI](#updating-through-the-ui)
+- [Update by Re-flashing](#update-by-re-flashing)
 
 ## Update through the UI
 

@@ -4,8 +4,8 @@ To establish a secure (HTTPS) connection with your server, it is necessary to do
 
 **Contents**
 
-1. [Download Your Root CA](#download-your-root-ca)
-1. [Trust Your Root CA](#trust)
+- [Download Your Root CA](#download-your-root-ca)
+- [Trust Your Root CA](#trust)
 
 ## Download your Root CA
 
