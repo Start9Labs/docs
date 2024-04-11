@@ -1,1 +1,1 @@
-# Upgrade Your Raspberry Pi
+# Upgrading Your Raspberry Pi

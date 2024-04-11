@@ -1,1 +1,1 @@
-# Migrate LND to StartOS
+# Migrating LND to StartOS

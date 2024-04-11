@@ -1,1 +1,1 @@
-# Connecting Over VPN (iOS)
+# Connecting over VPN (iOS)

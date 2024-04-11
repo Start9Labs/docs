@@ -1,1 +1,1 @@
-# Connecting Over Tor (iOS)
+# Connecting over Tor (iOS)

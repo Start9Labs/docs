@@ -1,10 +1,12 @@
 # Trusting Your Root CA (Mac)
 
-1. Ensure you have [downloaded your Root CA](../../../user-manual/trust-ca.md#download-your-root-ca)
-   .
+<!-- @TODO audit -->
+
+1. Ensure you have [downloaded your Root CA](../../../user-manual/trust-ca.md#download-your-root-ca).
+
 1. Locate your Root CA and double click it. Keychain Access will launch. You will be prompted for your Mac credentials. Select "Modify Keychain".
 
-   ![Setup](./assets/ca-modify-keychain.png.png)
+   ![Setup](./assets/ca-modify-keychain.png)
 
 1. Press Command + Spacebar to launch a program, type in Keychain Access and select the resulting Keychain Access program to open it.
 

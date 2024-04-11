@@ -1,1 +1,1 @@
-# Reset Password (Lost/Forgotten)
+# Resetting Your Password

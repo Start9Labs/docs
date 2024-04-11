@@ -1,1 +1,1 @@
-# Connecting Over Tor (Android/Graphene)
+# Connecting over Tor (Android/Graphene)

@@ -59,6 +59,7 @@
 
   - [Bitcoin](guides/service-guides/bitcoin.md)
   - [CLN](guides/service-guides/cln.md)
+  - [Electrs](guides/service-guides/electrs.md)
   - [Jellyfin](guides/service-guides/jellyfin.md)
   - [LND](guides/service-guides/lnd.md)
   - [Nextcloud](guides/service-guides/nextcloud.md)
@@ -79,8 +80,8 @@
 
 - [Miscellaneous Guides](guides/misc-guides/README.md)
   - [Upgrading From a Raspberry Pi](guides/misc-guides/upgrade-pi.md)
-  - [Migrate LND to StartOS](guides/misc-guides/migrate-lnd.md)
-  - [Reset Password (Lost/Forgotten)](guides/misc-guides/reset-password.md)
+  - [Migrating LND to StartOS](guides/misc-guides/migrate-lnd.md)
+  - [Resetting Your Password](guides/misc-guides/reset-password.md)
   - [Getting SMTP Credentials](guides/misc-guides/smtp-credentials.md)
   - [Using Thunderbird](guides/misc-guides/using-thunderbird.md)
 

@@ -1,1 +1,1 @@
-# Connecting Over VPN (Android/Graphene)
+# Connecting over VPN (Android/Graphene)

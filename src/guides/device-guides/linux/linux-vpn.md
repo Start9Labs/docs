@@ -1,1 +1,1 @@
-# Connecting Over VPN (Linux)
+# Connecting over VPN (Linux)

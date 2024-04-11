@@ -1,1 +1,1 @@
-# Flashing Firmware - Server Pure (all years)
+# Flashing Firmware - Server Pure (All Years)

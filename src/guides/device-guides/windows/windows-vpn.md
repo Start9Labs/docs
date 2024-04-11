@@ -1,1 +1,1 @@
-# Connecting Over VPN (Windows)
+# Connecting over VPN (Windows)

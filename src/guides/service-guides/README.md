@@ -3,6 +3,7 @@
 ## Bitcoin
 
 - [Bitcoin](bitcoin.md)
+- [electrs](electrs.md)
 
 ## Lightning
 

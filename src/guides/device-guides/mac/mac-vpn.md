@@ -1,1 +1,1 @@
-# Connecting Over VPN (Mac)
+# Connecting over VPN (Mac)
