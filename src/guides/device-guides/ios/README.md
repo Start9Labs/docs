@@ -1,5 +1,5 @@
 # iOS Guides
 
 - [Trusting Your Root CA](ios-ca.md)
-- [Connecting Over VPN](ios-vpn.md)
-- [Connecting Over Tor](ios-tor.md)
+- [Connecting over VPN](ios-vpn.md)
+- [Connecting over Tor](ios-tor.md)

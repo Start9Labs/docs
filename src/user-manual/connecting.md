@@ -59,5 +59,5 @@ You can connect to your server from anywhere in the world, privately and anonymo
 
 **Recommended Browsers**
 
-- Linux, Mac, Windows, Android: <a href="https://torproject.org/download" target="_blank">Tor Browser</a>
+- Linux, Mac, Windows, Android/Graphene: <a href="https://torproject.org/download" target="_blank">Tor Browser</a>
 - iOS: <a href="https://onionbrowser.com" target="_blank">Onion Browser</a>
