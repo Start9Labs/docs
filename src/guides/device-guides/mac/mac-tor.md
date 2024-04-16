@@ -10,7 +10,7 @@
 
 ## Install Homebrew
 
-1.  If you do not already have Homebrew installed, follow the installation instructions [here](https://brew.sh/). TLDR: Open the Terminal and paste the following line:
+1.  If you do not already have Homebrew installed, follow the installation instructions <a href="https://brew.sh/" target="_blank">here</a>. TLDR: Open the Terminal and paste the following line:
 
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -24,7 +24,7 @@
 
     ```admonish warning
 
-    Homebrew uses Google Analytics to collect anonymous usage data. You can deselect the option to share usage data by [opting out](https://docs.brew.sh/Analytics#opting-out)
+    Homebrew uses Google Analytics to collect anonymous usage data. You can deselect the option to share usage data by <a href="https://docs.brew.sh/Analytics#opting-out" target="_blank">opting out</a>
     ```
 
 ## Install Tor
@@ -46,7 +46,7 @@
 
         brew services start tor
 
-    This will start Tor and ensure that it is always running, even after a restart. See the [Tor Project docs](https://2019.www.torproject.org/docs/tor-doc-osx.html.en) for more details.
+    This will start Tor and ensure that it is always running, even after a restart. See the <a href="https://2019.www.torproject.org/docs/tor-doc-osx.html.en" target="_blank">Tor Project docs</a> for more details.
 
 ## Enable Tor System-Wide
 

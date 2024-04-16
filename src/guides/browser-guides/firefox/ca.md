@@ -3,11 +3,11 @@
 **Contents**
 
 - [Mac/Windows](#macwindows)
-- [Debian/Ubuntu](#debianubuntu)
+- [Linux](#linux)
 - [Android/Graphene](#androidgraphene)
 
 ## Mac/Windows
 
-## Debian/Ubuntu
+## Linux
 
 ## Android/Graphene

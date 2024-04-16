@@ -4,16 +4,16 @@
 
 **Contents**
 
-1. [Enable Folder Sharing](#enable-folder-sharing)
-1. [Connect Your Server](#connect-your-server)
+1. [Create a Shared Folder](#create-a-shared-folder)
+1. [Create a backup](#create-a-backup)
 
-## Enable Folder Sharing
+## Create a Shared Folder
 
 1. Identify or create a folder to store your server backups.
 
    ```admonish tip
 
-   This folder can be on an external drive that is connected to your Mac.
+    This folder can be located on an external drive connected to your Mac.
    ```
 
 1. Go to `System Settings > General > Sharing` and click the "info" icon:
@@ -32,7 +32,7 @@
 
 1. Select the user who owns the folder.
 
-## Connect your Server
+## Create a Backup
 
 1.  In StartOS, go to `System > Create Backup`.
 
@@ -40,17 +40,21 @@
 
 1.  Complete the form:
 
-    1.  **Hostname**: The name of your Mac. Check the tip in Step 8 of the section above to find it. On some versions of Mac, you may need to open up Terminal and type `hostname`:
+    1.  **Hostname**: The name of your Mac. Check the tip in Step 8 of the section above to find it. On some versions of Mac, you may need to open up Terminal and type `hostname`.
 
     1.  **Path** - The _name_ of your shared folder, _not_ the full directory path.
 
-    1.  **Username** - This is your Mac user owns the shared folder.
+    1.  **Username** - Your Mac user who owns the shared folder.
 
-    1.  **Password** - This is the password to the above user.
+    1.  **Password** - Your password for the above user.
 
 1.  Click "Connect".
 
-```admonish warning title="Known Quirks"
+```admonish warning title="Troubleshooting"
+
+- If you receive `Filesystem I/O Error mount error(13): Permission denied`:
+
+  1. Ensure you have entered all the correct values in the form. The hostname can be particularly tricky.
 
 - **MacOS Catalina (version 10.15.7)** If the backup fails, please see this <a href="https://discussions.apple.com/thread/253970425" target="_blank">Apple support thread</a>. If the provided solution does not work, you will either need to update your Mac or use a physical drive for backups.
 
