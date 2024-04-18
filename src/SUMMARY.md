@@ -71,11 +71,11 @@
 
   - [Firmware](guides/flashing-guides/firmware/README.md)
 
-    - [Server Pure (all years)](guides/flashing-guides/firmware/pure.md)
+    - [Server Pure](guides/flashing-guides/firmware/pure.md)
     - [Server One (2023)](guides/flashing-guides/firmware/one-2023.md)
 
-  - [StartOS](guides/flashing-guides//startos/README.md)
-    - [X86_64](guides/flashing-guides/startos/x86_64.md)
+  - [StartOS](guides/flashing-guides/startos/README.md)
+    - [X86_64/ARM](guides/flashing-guides/startos/x86_64-arm.md)
     - [Raspberry Pi](guides/flashing-guides/startos/pi.md)
 
 - [Miscellaneous Guides](guides/misc-guides/README.md)

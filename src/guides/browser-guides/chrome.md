@@ -1,1 +1,1 @@
-# Chrome Guides
+# Chrome
