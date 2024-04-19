@@ -1,3 +1,0 @@
-# Browser Guides
-
-- [Firefox](firefox)

@@ -1,6 +1,6 @@
 # Windows Guides
 
-- [Trusting Your Root CA](windows-ca.md)
-- [Connecting over VPN](windows-vpn.md)
-- [Connecting over Tor](windows-tor.md)
-- [Creating Backups](windows-backups.md)
+- [Trusting Your Root CA](ca.md)
+- [Connecting over VPN](vpn.md)
+- [Connecting over Tor](tor.md)
+- [Creating Backups](backups.md)

@@ -2,11 +2,11 @@
 
 ## Laptop/Desktop
 
-- [Linux](linux)
-- [Mac](mac)
-- [Windows](windows)
+- [Linux](linux/)
+- [Mac](mac/)
+- [Windows](windows/)
 
 ## Mobile
 
-- [Android/Graphene](android)
-- [iOS](ios)
+- [Android/Graphene](android/)
+- [iOS](ios/)

@@ -37,8 +37,8 @@ There are multiple ways to download your Root CA.
 
 Select your client device OS and follow instructions
 
-- [Linux](../../guides/device-guides/linux/linux-ca.md)
-- [Mac](../../guides/device-guides/mac/mac-ca.md)
-- [Windows](../../guides/device-guides/windows/windows-ca.md)
-- [Android/Graphene](../../guides/device-guides/android/android-ca.md)
-- [iOS](../../guides/device-guides/ios/ios-ca.md)
+- [Linux](../../guides/device-guides/linux/ca.md)
+- [Mac](../../guides/device-guides/mac/ca.md)
+- [Windows](../../guides/device-guides/windows/ca.md)
+- [Android/Graphene](../../guides/device-guides/android/ca.md)
+- [iOS](../../guides/device-guides/ios/ca.md)

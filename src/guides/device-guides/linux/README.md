@@ -1,6 +1,6 @@
 # Linux Guides
 
-- [Trusting Your Root CA](linux-ca.md)
-- [Connecting over VPN](linux-vpn.md)
-- [Connecting over Tor](linux-tor.md)
-- [Creating Backups](linux-backups.md)
+- [Trusting Your Root CA](ca.md)
+- [Connecting over VPN](vpn.md)
+- [Connecting over Tor](tor.md)
+- [Creating Backups](backups.md)

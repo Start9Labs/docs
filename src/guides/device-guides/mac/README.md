@@ -1,6 +1,6 @@
 # Mac Guides
 
-- [Trusting Your Root CA](mac-ca.md)
-- [Connecting over VPN](mac-vpn.md)
-- [Connecting over Tor](mac-tor.md)
-- [Creating Backups](mac-backups.md)
+- [Trusting Your Root CA](ca.md)
+- [Connecting over VPN](vpn.md)
+- [Connecting over Tor](tor.md)
+- [Creating Backups](backups.md)

@@ -12,4 +12,4 @@ This guide applies to Android 13+, GrapheneOS, CalyxOS, and LineageOS
 
    ![Setup](./assets/ca-install.png)
 
-1. Firefox users must use [Firefox Beta](https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta), then complete [this final step](../../browser-guides/firefox/ca.md#androidgraphene).
+1. Firefox users must use <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta" target="_blank">Firefox Beta</a>, then complete [this final step](../../browser-guides/firefox/ca.md#androidgraphene).

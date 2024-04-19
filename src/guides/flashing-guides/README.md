@@ -1,4 +1,4 @@
 # Flashing Guides
 
-- [Firmware](firmware)
-- [StartOS](startos)
+- [Firmware](firmware/)
+- [StartOS](startos/)
