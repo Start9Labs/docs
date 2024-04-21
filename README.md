@@ -37,9 +37,9 @@ Welcome to the Start9 Docs! Here you will find the StartOS user manual, as well 
 
 ## Contributing
 
-We love contributions! Whether you spot a typo or want to make suggestions, you can fork this project and submit a PR with your changes for consideration. If you are not comfortable with this process, please create an issue with your suggestions or bug reports.
+We love contributions! Whether you spot a typo or want to make suggestions, you can fork this project and submit a PR with your changes for consideration. If you are uncomfortable with this process, please [create an issue](https://github.com/Start9Labs/docs/issues).
 
-If you'd like to get started contributing to open source software, it's easier than you think! Visit one of our [Community Channels](src/support/contact.md) and we'll help you get started.
+If you'd like to get started contributing to open source software, it's easier than you think! Visit one of our [Community Channels](https://start9.com/contact) and we'll help you get started.
 
 ## Third party plugins
 
