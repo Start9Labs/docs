@@ -86,9 +86,18 @@
   - [Getting SMTP Credentials](guides/misc-guides/smtp-credentials.md)
   - [Using Thunderbird](guides/misc-guides/using-thunderbird.md)
 
-# Support
+# Service Packaging
 
 ---
 
-- [Common Issues](support/common-issues.md)
-- [Contact](support/contact.md)
+- [Introduction](service-packaging/intro.md)
+- [Environment Setup](service-packaging/environment-setup.md)
+- [Project Structure](service-packaging/project-structure.md)
+- [Quick Start](service-packaging/quick-start.md)
+
+# Help
+
+---
+
+- [Common Issues](help/common-issues.md)
+- [Contact](help/contact.md)
