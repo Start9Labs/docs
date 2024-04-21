@@ -53,17 +53,17 @@
 
 1.  Click "Connect".
 
-```admonish warning title="Troubleshooting"
+    ```admonish warning title="Troubleshooting"
 
-- If you receive `Filesystem I/O Error mount error(13): Permission denied`:
+    - If you receive `Filesystem I/O Error mount error(13): Permission denied`:
 
-  1. Ensure you are entering the correct username and password. You _cannot_ use a pin.
+    1. Ensure you are entering the correct username and password. You _cannot_ use a pin.
 
-  1. Ensure your windows password meets any length and complexity requirements set by your local Windows policy.
+    1. Ensure your windows password meets any length and complexity requirements set by your local Windows policy.
 
-  1. Office365 accounts also may not work at all, try a regular user in this case.
+    1. Office365 accounts also may not work at all, try a regular user in this case.
 
-- If you receive `Filesystem I/O Error mount error(115): Operation now in progress`,
+    - If you receive `Filesystem I/O Error mount error(115): Operation now in progress`,
 
-  1. Navigate to `Start > Settings > Network & Internet > Ethernet (or WiFi)` and select the "Private" profile to treat your LAN as a trusted network that allows file sharing.
-```
+    1. Navigate to `Start > Settings > Network & Internet > Ethernet (or WiFi)` and select the "Private" profile to treat your LAN as a trusted network that allows file sharing.
+    ```

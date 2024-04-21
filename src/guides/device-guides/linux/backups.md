@@ -4,11 +4,15 @@
 
 **Contents**
 
-- [Ubuntu](#ubuntu)
-- [Mint](#mint)
-- [Other Linux](#other-linux)
+- [Create a Shared Folder](#create-a-shared-folder)
+  - [Ubuntu](#ubuntu)
+  - [Mint](#mint)
+  - [Other Linux](#other-linux)
+- [Create a backup](#create-a-backup)
 
-## Ubuntu
+## Create a Shared Folder
+
+### Ubuntu
 
 1.  Install Samba if not already:
 
@@ -37,7 +41,7 @@
 
         sudo ufw allow Samba
 
-## Mint
+### Mint
 
 1.  Install Samba if not already:
 
@@ -65,7 +69,7 @@
 
         sudo ufw allow Samba
 
-## Other Linux
+### Other Linux
 
 1.  Install Samba if it is not already installed.
 
@@ -127,3 +131,26 @@
 1.  If your installation of Linux (Pop-OS users take special note!) is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba. If it generates an error, you can safely ignore it:
 
         sudo ufw allow Samba
+
+## Create a Backup
+
+1.  In StartOS, go to `System > Create Backup`.
+
+1.  Click "Open New".
+
+1.  Complete the form:
+
+    1.  **Hostname**: The name of your Linux machine on the LAN.
+
+    1.  **Path** - The "Share Name" (name of the share in your samba config), _not_ the full directory path. (e.g. "backup-share" in the example).
+
+    1.  **Username** - Your Linux username on the remote machine that you used to create the shared directory.
+
+    1.  **Password** - The password you set above using smbpasswd
+
+1.  Click "Connect".
+
+    ```admonish warning title="Troubleshooting"
+
+    - If you receive `Filesystem I/O Error mount error(13): Permission denied`, ensure you have entered all the correct values in the form. The hostname can be particularly tricky.
+    ```

@@ -50,13 +50,11 @@
 
 1.  Click "Connect".
 
-```admonish warning title="Troubleshooting"
+    ```admonish warning title="Troubleshooting"
 
-- If you receive `Filesystem I/O Error mount error(13): Permission denied`:
+    - If you receive `Filesystem I/O Error mount error(13): Permission denied`, ensure you have entered all the correct values in the form. The hostname can be particularly tricky.
 
-  1. Ensure you have entered all the correct values in the form. The hostname can be particularly tricky.
+    - **MacOS Catalina (version 10.15.7)** If the backup fails, please see this <a href="https://discussions.apple.com/thread/253970425" target="_blank">Apple support thread</a>. If the provided solution does not work, you will either need to update your Mac or use a physical drive for backups.
 
-- **MacOS Catalina (version 10.15.7)** If the backup fails, please see this <a href="https://discussions.apple.com/thread/253970425" target="_blank">Apple support thread</a>. If the provided solution does not work, you will either need to update your Mac or use a physical drive for backups.
-
-- **MacOS Ventura (version 13.2)** If you recently updated to Ventura, and you cannot get the folder to connect, do the following: in `System Settings > General > Sharing`, turn off file sharing, restart your mac, then turn file sharing back on.
-```
+    - **MacOS Ventura (version 13.2)** If you recently updated to Ventura, and you cannot get the folder to connect, do the following: in `System Settings > General > Sharing`, turn off file sharing, restart your mac, then turn file sharing back on.
+    ```

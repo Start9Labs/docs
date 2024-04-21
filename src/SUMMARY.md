@@ -43,10 +43,13 @@
     - [Connecting over VPN](guides/device-guides/android/vpn.md)
     - [Connecting over Tor](guides/device-guides/android/tor.md)
   - [iOS](guides/device-guides/ios/README.md)
-
     - [Trusting Your Root CA](guides/device-guides/ios/ca.md)
     - [Connecting over VPN](guides/device-guides/ios/vpn.md)
     - [Connecting over Tor](guides/device-guides/ios/tor.md)
+  - [Synology](guides/device-guides/synology/README.md)
+    - [Creating Backups](guides/device-guides/synology/backups.md)
+  - [TrueNAS](guides/device-guides/truenas/README.md)
+    - [Creating Backups](guides/device-guides/truenas/backups.md)
 
 - [Firefox Guides](guides/firefox-guides/README.md)
 

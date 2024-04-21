@@ -38,11 +38,11 @@ If you are using a Raspberry Pi, backup drive _must_ be self-powered, or be conn
 
 Choose your target device below for instructions creating a network folder.
 
-- [Linux]()
+- [Mac](../guides/device-guides/mac/backups.md)
 
-- [Mac]()
+- [Linux](../guides/device-guides/linux/backups.md)
 
-- [Windows]()
+- [Windows](../guides/device-guides/windows/backups.md)
 
 - [Synology]()
 

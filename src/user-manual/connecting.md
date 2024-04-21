@@ -10,7 +10,7 @@
 
 To connect locally, you must be connected to the same LAN as your server. Local connections are the fastest possible, as they do not reach out to the Internet.
 
-**Prerequisites**
+**Prerequisite**
 
 - [Trusting Your Root CA](./trust-ca.md)
 
@@ -29,7 +29,7 @@ Your router may unexpectedly change your server's IP address. To prevent this, a
 
 ## Connecting with Your Router VPN
 
-**Prerequisites**
+**Prerequisite**
 
 - [Trusting Your Root CA](./trust-ca.md)
 
