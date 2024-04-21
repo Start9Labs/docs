@@ -1,8 +1,8 @@
 # Trusting your Root CA (Firefox)
 
-**Contents**
-
 These guides apply to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla apps need to be configured to use the certificate store of your device. Please refer to their <a href="https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/" target="_blank">blog post</a> for an explanation (TLDR: for security purposes).
+
+**Contents**
 
 - [Mac/Windows](#mac--windows)
 - [Debian/Ubuntu](#debian--ubuntu)
@@ -13,7 +13,7 @@ These guides apply to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla 
 
 1. Open Firefox and enter `about:config` in the URL bar. Accept any warnings that appear.
 
-1. Search for `security.enterprise_roots.enabled`, set the value to "true".
+1. Search for `security.enterprise_roots.enabled` and set the value to "true".
 
 1. Restart Firefox
 
