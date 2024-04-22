@@ -3,8 +3,8 @@
 **Contents**
 
 - [Connecting Locally](#connecting-locally)
-- [Connecting with Your Router VPN](#connecting-with-your-router-vpn)
-- [Connecting over Tor](#connecting-over-tor)
+- [Connecting Remotely with Router VPN](#connecting-with-your-router-vpn)
+- [Connecting Remotely with Tor](#connecting-with-tor)
 
 ## Connecting Locally
 
@@ -27,7 +27,7 @@ Visit your server's unique IP address from any browser. You can find your server
 Your router may unexpectedly change your server's IP address. To prevent this, assign a static IP address to your server in your router settings. This is supported by all routers. Refer to your router's user manual for instructions
 ```
 
-## Connecting with Your Router VPN
+## Connecting Remotely with Router VPN
 
 **Prerequisite**
 
@@ -48,16 +48,28 @@ Most modern routers have VPN functionality built-in. Refer to your router's user
 
 4. Install OpenVPN on your client device(s) and establish a VPN connection to your LAN using the config file from above.
 
-## Connecting over Tor
+## Connecting Remotely with Tor
 
 ```admonish warning
 
 It is normal for Tor connections to be slow or unreliable at times.
 ```
 
+### Using a Tor Browser
+
 You can connect to your server from anywhere in the world, privately and anonymously, by visiting its unique `http://....onion` URL from any Tor-enabled browser.
 
 **Recommended Browsers**
 
-- Linux, Mac, Windows, Android/Graphene: <a href="https://torproject.org/download" target="_blank">Tor Browser</a>
-- iOS: <a href="https://onionbrowser.com" target="_blank">Onion Browser</a>
+- **Mac, Linux, Windows, Android/Graphene**: <a href="https://torproject.org/download" target="_blank">Tor Browser</a>
+- **iOS**: <a href="https://onionbrowser.com" target="_blank">Onion Browser</a>
+
+### Running Tor on your Phone/Laptop
+
+By running Tor on your phone or laptop, certain apps will be able to connect to your server over Tor, even if the apps themselves do not natively support Tor. Select the guide specific to your phone/laptop:
+
+- [Mac](../guides/device-guides/mac/tor.md)
+- [Linux](../guides/device-guides/linux/tor.md)
+- [Windows](../guides/device-guides/windows/tor.md)
+- [Android/Graphene](../guides/device-guides/android/tor.md)
+- [iOS](../guides/device-guides/ios/tor.md)

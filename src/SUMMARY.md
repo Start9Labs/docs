@@ -58,7 +58,20 @@
 
 - [Service Guides](guides/service-guides/README.md)
 
-  - [Bitcoin](guides/service-guides/bitcoin.md)
+  - [Bitcoin](guides/service-guides/bitcoin/README.md)
+
+    - [Copying Over a Synced Blockchain](guides/service-guides/bitcoin/blockchain-copy.md)
+    - [Wallet Integrations](guides/service-guides/bitcoin/wallet-integrations/README.md)
+      - [BitBoxApp](guides/service-guides/bitcoin/wallet-integrations/bit-box.md)
+      - [Blockstream Green](guides/service-guides/bitcoin/wallet-integrations/blockstream-green.md)
+      - [Blue Wallet](guides/service-guides/bitcoin/wallet-integrations/blue-wallet.md)
+      - [Electrum](guides/service-guides/bitcoin/wallet-integrations/electrum.md)
+      - [Fully Noded](guides/service-guides/bitcoin/wallet-integrations/fully-noded.md)
+      - [Nunchuck](guides/service-guides/bitcoin/wallet-integrations/nunchuck.md)
+      - [Sparrow](guides/service-guides/bitcoin/wallet-integrations/sparrow.md)
+      - [Specter](guides/service-guides/bitcoin/wallet-integrations/specter.md)
+      - [Trezor Suite](guides/service-guides/bitcoin/wallet-integrations/trezor-suite.md)
+
   - [CLN](guides/service-guides/cln.md)
   - [Electrs](guides/service-guides/electrs.md)
   - [Jellyfin](guides/service-guides/jellyfin.md)
