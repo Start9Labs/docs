@@ -39,6 +39,10 @@
 
 ## Linux
 
+<div class="warning">
+ If you cannot connect after following this guide, your Firefox may be installed in a jailed environment, such as an AppImage, Flatpak, or SNAP.  Ubuntu uses a SNAP for Firefox, so you may experience issues on Ubuntu-based systems.  Please install Firefox via an alternate method that does not isolate Firefox from the wider filesystem.
+</div>
+
 1.  Ensure you have completed the steps under [All Platforms](#all-platforms).
 
 1.  You need a `Proxy Auto Config` file to inform Firefox how to resolve `.onion` URLs. You can get Start9's standard file from a terminal, by using the following command:
