@@ -61,31 +61,6 @@
 - [TrueNAS](device-guides/truenas/README.md)
   - [Creating Backups](device-guides/truenas/backups.md)
 
-# Service Guides
-
----
-
-- [Bitcoin](service-guides/bitcoin/README.md)
-  - [Copying over a Synced Blockchain](service-guides/bitcoin/blockchain-copy.md)
-  - [Wallet Integrations](service-guides/bitcoin/wallet-integrations/README.md)
-    - [BitBoxApp](service-guides/bitcoin/wallet-integrations/bit-box.md)
-    - [Blockstream Green](service-guides/bitcoin/wallet-integrations/blockstream-green.md)
-    - [Blue Wallet](service-guides/bitcoin/wallet-integrations/blue-wallet.md)
-    - [Electrum](service-guides/bitcoin/wallet-integrations/electrum.md)
-    - [Fully Noded](service-guides/bitcoin/wallet-integrations/fully-noded.md)
-    - [Nunchuck](service-guides/bitcoin/wallet-integrations/nunchuck.md)
-    - [Sparrow](service-guides/bitcoin/wallet-integrations/sparrow.md)
-    - [Specter](service-guides/bitcoin/wallet-integrations/specter.md)
-    - [Trezor Suite](service-guides/bitcoin/wallet-integrations/trezor-suite.md)
-- [Lightning](service-guides/lightning/README.md)
-  - [Migrating LND to StartOS](service-guides/lightning/migrate-lnd.md)
-- [Electrs](service-guides/electrs.md)
-- [Jellyfin](service-guides/jellyfin.md)
-- [Nextcloud](service-guides/nextcloud.md)
-- [SimpleX](service-guides/simplex.md)
-- [Synapse](service-guides/synapse.md)
-- [Vaultwarden](service-guides/vaultwarden.md)
-
 # Misc Guides
 
 ---

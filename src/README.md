@@ -61,22 +61,6 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 - [TrueNAS](device-guides/truenas/)
   - [Creating Backups](device-guides/truenas/backups.md)
 
-### Service Guides
-
----
-
-- [Bitcoin](service-guides/bitcoin/)
-  - [Copying over a Synced Blockchain](service-guides/bitcoin/blockchain-copy.md)
-  - [Wallet Integrations](service-guides/bitcoin/wallet-integrations/)
-- [Lightning](service-guides/lightning/)
-  - [Migrating LND to StartOS](service-guides/lightning/migrate-lnd.md)
-- [Electrs](service-guides/electrs.md)
-- [Jellyfin](service-guides/jellyfin.md)
-- [Nextcloud](service-guides/nextcloud.md)
-- [SimpleX](service-guides/simplex.md)
-- [Synapse](service-guides/synapse.md)
-- [Vaultwarden](service-guides/vaultwarden.md)
-
 ### Misc Guides
 
 ---
