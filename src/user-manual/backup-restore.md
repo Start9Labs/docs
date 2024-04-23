@@ -1,6 +1,6 @@
 # Restoring Backups
 
-**Contents**
+#### Contents
 
 - [Restoring Individual Services](#restoring-individual-services)
 - [Restoring an Entire Server](#restoring-an-entire-server)
@@ -9,7 +9,7 @@
 
 This option should only be necessary if you accidentally uninstall a service.
 
-1.  Go to System > Restore From Backup.
+1.  Go to System > Restore from Backup.
 
     ![select backup drive](./assets/system-restore.png)
 

@@ -1,6 +1,6 @@
 # Installing Services
 
-**Contents**
+#### Contents
 
 - [Installing from the Marketplace](#installing-from-the-marketplace)
 - [Sideloading](#sideloading)

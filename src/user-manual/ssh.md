@@ -6,7 +6,7 @@ Like other Linux distributions, you can go "under-the-hood" via Secure Shell Pro
 For security reasons, StartOS _disables_ access is not available, so you will need to add an SSH key to your server via the method below.
 ```
 
-**Contents**
+#### Contents
 
 - [Creating an SSH Key](#creating-an-ssh-key)
 - [Registering Your SSH Key with StartOS](#registering-your-ssh-key-with-startos)

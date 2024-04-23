@@ -1,1 +1,0 @@
-# Lightning Network Daemon (LND)

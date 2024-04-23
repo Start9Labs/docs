@@ -1,6 +1,6 @@
 # Common Issues
 
-**Contents**
+#### Contents
 
 - [StartOS boots into Diagnostic Mode](#startos-boots-into-diagnostic-mode)
 - [During initial setup, I am unable to connect to "start.local"](#during-initial-setup-i-am-unable-to-connect-to-startlocal)

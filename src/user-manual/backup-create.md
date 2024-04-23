@@ -4,7 +4,7 @@
 Creating backups is an essential responsibility of self-hosting. If you do not make backups, you will eventually lose your data.
 ```
 
-**Contents**
+#### Contents
 
 - [What You Need to Know](#what-you-need-to-know)
 - [Physical Drive](#physical-drive)
@@ -38,12 +38,8 @@ If you are using a Raspberry Pi, backup drive _must_ be self-powered, or be conn
 
 Choose your target device below for instructions creating a network folder.
 
-- [Mac](../guides/device-guides/mac/backups.md)
-
-- [Linux](../guides/device-guides/linux/backups.md)
-
-- [Windows](../guides/device-guides/windows/backups.md)
-
-- [Synology]()
-
-- [TrueNAS]()
+- [Mac](../device-guides/mac/backups.md)
+- [Linux](../device-guides/linux/backups.md)
+- [Windows](../device-guides/windows/backups.md)
+- [Synology](../device-guides/synology/backups.md)
+- [TrueNAS](../device-guides/truenas/backups.md)

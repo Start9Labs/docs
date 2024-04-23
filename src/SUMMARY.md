@@ -9,7 +9,8 @@
 - [Initial Setup - Start Fresh](user-manual/start-fresh.md)
 - [Initial Setup - Recover](user-manual/recover.md)
 - [Trusting Your Root CA](user-manual/trust-ca.md)
-- [Connecting](user-manual/connecting.md)
+- [Connecting Locally](user-manual/connecting-locally.md)
+- [Connecting Remotely](user-manual/connecting-remotely.md)
 - [Installing Services](user-manual/installing-services.md)
 - [Creating Backups](user-manual/backup-create.md)
 - [Restoring Backups](user-manual/backup-restore.md)
@@ -17,96 +18,94 @@
 - [Using WiFi](user-manual/wifi.md)
 - [Updating StartOS](user-manual/updating-startos.md)
 
-# Guides
+# Flashing Guides
 
 ---
 
-- [Device Guides](guides/device-guides/README.md)
+- [Firmware](flashing-guides/firmware/README.md)
+  - [Server Pure](flashing-guides/firmware/pure.md)
+  - [Server One (2023)](flashing-guides/firmware/one-2023.md)
+- [StartOS](flashing-guides/startos/README.md)
+  - [X86_64/ARM](flashing-guides/startos/x86_64-arm.md)
+  - [Raspberry Pi](flashing-guides/startos/pi.md)
 
-  - [Linux](guides/device-guides/linux/README.md)
-    - [Trusting Your Root CA](guides/device-guides/linux/ca.md)
-    - [Connecting over VPN](guides/device-guides/linux/vpn.md)
-    - [Connecting over Tor](guides/device-guides/linux/tor.md)
-    - [Creating Backups](guides/device-guides/linux/backups.md)
-  - [Mac](guides/device-guides/mac/README.md)
-    - [Trusting Your Root CA](guides/device-guides/mac/ca.md)
-    - [Connecting over VPN](guides/device-guides/mac/vpn.md)
-    - [Connecting over Tor](guides/device-guides/mac/tor.md)
-    - [Creating Backups](guides/device-guides/mac/backups.md)
-  - [Windows](guides/device-guides/windows/README.md)
-    - [Trusting Your Root CA](guides/device-guides/windows/ca.md)
-    - [Connecting over VPN](guides/device-guides/windows/vpn.md)
-    - [Connecting over Tor](guides/device-guides/windows/tor.md)
-    - [Creating Backups](guides/device-guides/windows/backups.md)
-  - [Android/Graphene](guides/device-guides/android/README.md)
-    - [Trusting Your Root CA](guides/device-guides/android/ca.md)
-    - [Connecting over VPN](guides/device-guides/android/vpn.md)
-    - [Connecting over Tor](guides/device-guides/android/tor.md)
-  - [iOS](guides/device-guides/ios/README.md)
-    - [Trusting Your Root CA](guides/device-guides/ios/ca.md)
-    - [Connecting over VPN](guides/device-guides/ios/vpn.md)
-    - [Connecting over Tor](guides/device-guides/ios/tor.md)
-  - [Synology](guides/device-guides/synology/README.md)
-    - [Creating Backups](guides/device-guides/synology/backups.md)
-  - [TrueNAS](guides/device-guides/truenas/README.md)
-    - [Creating Backups](guides/device-guides/truenas/backups.md)
-
-- [Firefox Guides](guides/firefox-guides/README.md)
-
-  - [Trusting your Root CA](guides/firefox-guides/ca.md)
-  - [Enabling Tor](guides/firefox-guides/tor.md)
-
-- [Service Guides](guides/service-guides/README.md)
-
-  - [Bitcoin](guides/service-guides/bitcoin/README.md)
-
-    - [Copying Over a Synced Blockchain](guides/service-guides/bitcoin/blockchain-copy.md)
-    - [Wallet Integrations](guides/service-guides/bitcoin/wallet-integrations/README.md)
-      - [BitBoxApp](guides/service-guides/bitcoin/wallet-integrations/bit-box.md)
-      - [Blockstream Green](guides/service-guides/bitcoin/wallet-integrations/blockstream-green.md)
-      - [Blue Wallet](guides/service-guides/bitcoin/wallet-integrations/blue-wallet.md)
-      - [Electrum](guides/service-guides/bitcoin/wallet-integrations/electrum.md)
-      - [Fully Noded](guides/service-guides/bitcoin/wallet-integrations/fully-noded.md)
-      - [Nunchuck](guides/service-guides/bitcoin/wallet-integrations/nunchuck.md)
-      - [Sparrow](guides/service-guides/bitcoin/wallet-integrations/sparrow.md)
-      - [Specter](guides/service-guides/bitcoin/wallet-integrations/specter.md)
-      - [Trezor Suite](guides/service-guides/bitcoin/wallet-integrations/trezor-suite.md)
-
-  - [CLN](guides/service-guides/cln.md)
-  - [Electrs](guides/service-guides/electrs.md)
-  - [Jellyfin](guides/service-guides/jellyfin.md)
-  - [LND](guides/service-guides/lnd.md)
-  - [Nextcloud](guides/service-guides/nextcloud.md)
-  - [SimpleX](guides/service-guides/simplex.md)
-  - [Synapse](guides/service-guides/synapse.md)
-  - [Vaultwarden](guides/service-guides/vaultwarden.md)
-
-- [Flashing Guides](guides/flashing-guides/README.md)
-
-  - [Firmware](guides/flashing-guides/firmware/README.md)
-
-    - [Server Pure](guides/flashing-guides/firmware/pure.md)
-    - [Server One (2023)](guides/flashing-guides/firmware/one-2023.md)
-
-  - [StartOS](guides/flashing-guides/startos/README.md)
-    - [X86_64/ARM](guides/flashing-guides/startos/x86_64-arm.md)
-    - [Raspberry Pi](guides/flashing-guides/startos/pi.md)
-
-- [Miscellaneous Guides](guides/misc-guides/README.md)
-  - [Upgrading From a Raspberry Pi](guides/misc-guides/upgrade-pi.md)
-  - [Migrating LND to StartOS](guides/misc-guides/migrate-lnd.md)
-  - [Resetting Your Password](guides/misc-guides/reset-password.md)
-  - [Getting SMTP Credentials](guides/misc-guides/smtp-credentials.md)
-  - [Using Thunderbird](guides/misc-guides/using-thunderbird.md)
-
-# Service Packaging
+# Device Guides
 
 ---
 
-- [Introduction](service-packaging/intro.md)
-- [Environment Setup](service-packaging/environment-setup.md)
-- [Project Structure](service-packaging/project-structure.md)
-- [Quick Start](service-packaging/quick-start.md)
+- [Linux](device-guides/linux/README.md)
+  - [Trusting Your Root CA](device-guides/linux/ca.md)
+  - [Using a VPN](device-guides/linux/vpn.md)
+  - [Running Tor](device-guides/linux/tor.md)
+  - [Creating Backups](device-guides/linux/backups.md)
+- [Mac](device-guides/mac/README.md)
+  - [Trusting Your Root CA](device-guides/mac/ca.md)
+  - [Using a VPN](device-guides/mac/vpn.md)
+  - [Running Tor](device-guides/mac/tor.md)
+  - [Creating Backups](device-guides/mac/backups.md)
+- [Windows](device-guides/windows/README.md)
+  - [Trusting Your Root CA](device-guides/windows/ca.md)
+  - [Using a VPN](device-guides/windows/vpn.md)
+  - [Running Tor](device-guides/windows/tor.md)
+  - [Creating Backups](device-guides/windows/backups.md)
+- [Android/Graphene](device-guides/android/README.md)
+  - [Trusting Your Root CA](device-guides/android/ca.md)
+  - [Using a VPN](device-guides/android/vpn.md)
+  - [Running Tor](device-guides/android/tor.md)
+- [iOS](device-guides/ios/README.md)
+  - [Trusting Your Root CA](device-guides/ios/ca.md)
+  - [Using a VPN](device-guides/ios/vpn.md)
+  - [Running Tor](device-guides/ios/tor.md)
+- [Synology](device-guides/synology/README.md)
+  - [Creating Backups](device-guides/synology/backups.md)
+- [TrueNAS](device-guides/truenas/README.md)
+  - [Creating Backups](device-guides/truenas/backups.md)
+
+# Service Guides
+
+---
+
+- [Bitcoin](service-guides/bitcoin/README.md)
+  - [Copying over a Synced Blockchain](service-guides/bitcoin/blockchain-copy.md)
+  - [Wallet Integrations](service-guides/bitcoin/wallet-integrations/README.md)
+    - [BitBoxApp](service-guides/bitcoin/wallet-integrations/bit-box.md)
+    - [Blockstream Green](service-guides/bitcoin/wallet-integrations/blockstream-green.md)
+    - [Blue Wallet](service-guides/bitcoin/wallet-integrations/blue-wallet.md)
+    - [Electrum](service-guides/bitcoin/wallet-integrations/electrum.md)
+    - [Fully Noded](service-guides/bitcoin/wallet-integrations/fully-noded.md)
+    - [Nunchuck](service-guides/bitcoin/wallet-integrations/nunchuck.md)
+    - [Sparrow](service-guides/bitcoin/wallet-integrations/sparrow.md)
+    - [Specter](service-guides/bitcoin/wallet-integrations/specter.md)
+    - [Trezor Suite](service-guides/bitcoin/wallet-integrations/trezor-suite.md)
+- [Lightning](service-guides/lightning/README.md)
+  - [Migrating LND to StartOS](service-guides/lightning/migrate-lnd.md)
+- [Electrs](service-guides/electrs.md)
+- [Jellyfin](service-guides/jellyfin.md)
+- [Nextcloud](service-guides/nextcloud.md)
+- [SimpleX](service-guides/simplex.md)
+- [Synapse](service-guides/synapse.md)
+- [Vaultwarden](service-guides/vaultwarden.md)
+
+# Misc Guides
+
+---
+
+- [Firefox Guides](misc-guides/firefox-guides/README.md)
+  - [Trusting Your Root CA](misc-guides/firefox-guides/ca.md)
+  - [Enabling Tor](misc-guides/firefox-guides/tor.md)
+- [Thunderbird Guides](misc-guides/thunderbird-guides.md)
+- [Getting SMTP Credentials](misc-guides/smtp-credentials.md)
+- [Resetting Your Password](misc-guides/reset-password.md)
+- [Upgrading from a Raspberry Pi](misc-guides/upgrade-pi.md)
+
+# Packaging Guide
+
+---
+
+- [Introduction](packaging-guide/intro.md)
+- [Environment Setup](packaging-guide/environment-setup.md)
+- [Project Structure](packaging-guide/project-structure.md)
+- [Quick Start](packaging-guide/quick-start.md)
 
 # Help
 

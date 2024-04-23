@@ -5,7 +5,7 @@
 StartOS does not have automatic updates and will _never_ update without your approval. That said, we highly recommended keeping StartOS up to date for the latest security and performance patches, as well as to take advantage of new features.
 ```
 
-**Contents**
+#### Contents
 
 - [Updating through the UI](#updating-through-the-ui)
 - [Update by Re-flashing](#update-by-re-flashing)
