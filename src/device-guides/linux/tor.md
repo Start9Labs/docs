@@ -8,45 +8,19 @@
 
 ## Debian Systems
 
-This should work for most Debian-based systems, such as Debian, Ubuntu, Mint, PopOS etc.
+This should work for most Debian-like systems, such as Debian, Ubuntu, Mint, PopOS etc.
 
-The following install is for the LTS (Long Term Support) version of Tor from Debian. If you would like the latest stable release, the Tor Project maintains their own Debian repository. The instructions to connect to this can be found <a href="https://support.torproject.org/apt/tor-deb-repo/" target="_blank">here</a>.
+The following instructions will install the LTS (Long Term Support) version of Tor from your distro's default repositories. If you would always like the latest stable release, the Tor Project maintains their own Debian repository. The instructions for connecting to this official Tor Project repository can be found <a href="https://support.torproject.org/apt/tor-deb-repo/" target="_blank">here</a>.
 
 1.  Open a terminal and install Tor:
 
         sudo apt update && sudo apt install tor
-
-<!-- @TODO do we need to start Tor? -->
-
-    ```admonish tip
-
-    Confirm that Tor is running:
-
-        systemctl status tor
-
-    In the rare event that Tor is having connectivity issues, reset the connection:
-
-        sudo systemctl restart tor
-    ```
 
 ## Arch / Garuda / Manjaro
 
 1.  Open a terminal and install Tor:
 
         sudo pacman -S tor
-
-<!-- @TODO do we need to start Tor? -->
-
-    ```admonish tip
-
-    Confirm that Tor is running:
-
-        systemctl status tor
-
-    In the rare event that Tor is having connectivity issues, reset the connection:
-
-        sudo systemctl restart tor
-    ```
 
 ## CentOS / Fedora / RHEL
 
@@ -70,4 +44,14 @@ The following install is for the LTS (Long Term Support) version of Tor from Deb
 
         sudo systemctl enable --now tor
 
-<!-- @TODO do we need to start Tor? -->
+```admonish tip
+
+For any of these distros, you can confirm that Tor is running by running:
+
+    systemctl status tor
+
+In the rare event that Tor is having connectivity issues, reset the connection:
+
+    sudo systemctl restart tor
+
+```
