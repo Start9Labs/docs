@@ -2,51 +2,38 @@
 
 #### Contents
 
-- [Debian Systems](#debian-systems)
+- [Debian / Ubuntu](#debian--ubuntu)
 - [Arch / Garuda / Manjaro](#arch--garuda--manjaro)
 - [CentOS / Fedora / RHEL](#centos--fedora--rhel)
 
-## Debian Systems
+```admonish tip
 
-This should work for most Debian-based systems, such as Debian, Ubuntu, Mint, PopOS etc.
+After completing the guide below for your system, you can confirm Tor is running with:
 
-The following install is for the LTS (Long Term Support) version of Tor from Debian. If you would like the latest stable release, the Tor Project maintains their own Debian repository. The instructions to connect to this can be found <a href="https://support.torproject.org/apt/tor-deb-repo/" target="_blank">here</a>.
+    systemctl status tor
 
-1.  Open a terminal and install Tor:
+In the rare event that Tor is having connectivity issues, reset the connection:
+
+    sudo systemctl restart tor
+```
+
+## Debian/Ubuntu
+
+This should work for most Debian-like systems, such as Debian, Ubuntu, Mint, PopOS etc.
+
+<!-- @TODO should this paragraph be under "Debain Systems"? -->
+
+The following instructions will install the LTS (Long Term Support) version of Tor from your distro's default repository. If you would always like the latest stable release, the Tor Project maintains their own Debian/Ubuntu repository. The instructions for connecting to this official Tor Project repository can be found <a href="https://support.torproject.org/apt/tor-deb-repo" target="_blank">here</a>.
+
+1.  Open a terminal and install/start Tor:
 
         sudo apt update && sudo apt install tor
 
-<!-- @TODO do we need to start Tor? -->
-
-    ```admonish tip
-
-    Confirm that Tor is running:
-
-        systemctl status tor
-
-    In the rare event that Tor is having connectivity issues, reset the connection:
-
-        sudo systemctl restart tor
-    ```
-
 ## Arch / Garuda / Manjaro
 
-1.  Open a terminal and install Tor:
+1.  Open a terminal and install/start Tor:
 
         sudo pacman -S tor
-
-<!-- @TODO do we need to start Tor? -->
-
-    ```admonish tip
-
-    Confirm that Tor is running:
-
-        systemctl status tor
-
-    In the rare event that Tor is having connectivity issues, reset the connection:
-
-        sudo systemctl restart tor
-    ```
 
 ## CentOS / Fedora / RHEL
 
@@ -69,5 +56,3 @@ The following install is for the LTS (Long Term Support) version of Tor from Deb
 1.  Enable tor service:
 
         sudo systemctl enable --now tor
-
-<!-- @TODO do we need to start Tor? -->
