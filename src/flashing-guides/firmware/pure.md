@@ -13,13 +13,11 @@ The firmware source code can be viewed <a href="https://source.puri.sm/firmware/
 
 ## Instructions
 
-1. You will need a monitor and keyboard, as well as a USB stick, formatted FAT32
-
 1. Power down your server if not already.
 
 1. Connect a monitor and keyboard to your server using two of the USB3 (blue) ports.
 
-1. Download the latest [firmware](https://source.puri.sm/firmware/releases/-/blob/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip).
+1. Download the latest <a href="https://source.puri.sm/firmware/releases/-/blob/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip" target="_blank">firmware</a>.
 
 1. Copy or move the zip file to the USB stick.
 
