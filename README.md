@@ -26,7 +26,7 @@ Welcome to the Start9 Docs! Here you will find the StartOS user manual, as well 
 
    ```
    git clone https://github.com/Start9Labs/docs.git
-   cd mdbook-docs
+   cd docs
    ```
 
 3. Serve and view a live, local version of the docs while editing
