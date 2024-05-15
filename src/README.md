@@ -23,6 +23,7 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 ---
 
 - [Firmware](flashing-guides/firmware/)
+  - [Server Pure (2023 or before)](flashing-guides/firmware/pure.md)
   - [Server Pure (2024)](flashing-guides/firmware/pure-2024.md)
   - [Server One (2023)](flashing-guides/firmware/one-2023.md)
 - [StartOS](flashing-guides/startos/)
