@@ -48,13 +48,6 @@
 
 ## Enable Tor System-Wide
 
-**Content**
-
-1. [Sonoma](#sonoma-macos-14)
-1. [Pre-Sonoma](#pre-sonoma)
-
-### Sonoma (MacOS 14)
-
 1.  Enable the proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
         sudo curl https://start9.com/assets/proxy.pac --output /Library/WebServer/Documents/proxy.pac
@@ -63,6 +56,13 @@
 
         sudo launchctl enable system/org.apache.httpd
         sudo launchctl kickstart system/org.apache.httpd
+
+    ```admonish note
+
+    If these commands fail, your version of macOS may still use the older launchctl syntax:
+
+        sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+    ```
 
 1.  Go to `System Settings > Network` and select the interface to edit. We recommend editing both Ethernet and WiFi. First do one, then the other:
 
@@ -75,29 +75,5 @@
     <!-- @TODO -->
 
     ![Sonoma proxy config](./assets/tor-sonoma-interface-config.png)
-
-1.  Repeat the previous two steps for Wifi/Ethernet, depending on which interface you haven't done yet.
-
-## Pre-Sonoma (MacOS 13 and Older)
-
-1.  Enable the proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
-
-        sudo curl https://start9.com/assets/proxy.pac --output /Library/WebServer/Documents/proxy.pac
-
-1.  Enable Apache:
-
-        sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
-
-1.  Go to `System Preferences > Network` and select the interface to edit. We recommend editing both Ethernet and WiFi. First do one, then the other:
-
-    <!-- @TODO -->
-
-    ![Pre-Sonoma Network](./assets/tor-pre-sonoma-network.png)
-
-1.  Click `Advanced > Proxies` and paste the following URL into "Automatic Proxy Configuration": `http://localhost/proxy.pac`
-
-    <!-- @TODO -->
-
-    ![Pre-Sonoma proxy config](./assets/tor-pre-sonoma-interface-config.png)
 
 1.  Repeat the previous two steps for Wifi/Ethernet, depending on which interface you haven't done yet.
