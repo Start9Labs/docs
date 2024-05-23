@@ -64,6 +64,13 @@
         sudo launchctl enable system/org.apache.httpd
         sudo launchctl kickstart system/org.apache.httpd
 
+    ```admonish note
+
+    If these commands fail, your version of macOS may still use the older launchctl syntax:
+
+        sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
+    ```
+
 1.  Go to `System Settings > Network` and select the interface to edit. We recommend editing both Ethernet and WiFi. First do one, then the other:
 
     <!-- @TODO -->
