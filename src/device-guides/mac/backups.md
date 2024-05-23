@@ -16,19 +16,26 @@
 
 1. Go to `System Settings > General > Sharing` and click the "info" icon:
 
-    <!-- @TODO -->
-
-   ![Sharing](./assets/backups-sharing.png)
+    ![Sharing](./assets/backups-sharing.png)
+    ![Sharing info](./assets/backups-sharing-info.png)
 
 1. Click the toggle to enable file sharing, then click the "plus" icon and select your backups folder.
 
-    <!-- @TODO -->
+   ![Sharing info](./assets/backups-sharing-info-plus.png)
 
-   ![Sharing info](./assets/backups-sharing-info.png)
 
 1. Click "Options".
 
 1. Select the user who owns the folder.
+
+1. You can now move in to Create a Backup
+
+
+   ```admonish tip
+
+    You can find the hostname at the top of sharing window. The hostname will be an address beginning with smb://. To use as hostname disregard the smb:// and simply enter the ip address that follows it. You will need this in the next step. Alternatively you can use the computer hostname. (See directions below) Either method will work.
+   ```
+
 
 ## Create a Backup
 
@@ -38,7 +45,7 @@
 
 1.  Complete the form:
 
-    1.  **Hostname**: The name of your Mac. Check the tip in Step 8 of the section above to find it. On some versions of Mac, you may need to open up Terminal and type `hostname`.
+    1.  **Hostname**: The name of your Mac. Check the tip in Step 5 of the section above to find it. On some versions of Mac, you may need to open up Terminal and type `hostname`.
 
     1.  **Path** - The _name_ of your shared folder, _not_ the full directory path.
 
