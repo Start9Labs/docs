@@ -6,7 +6,7 @@
 
 1.  Once you have selected a language, you should see a menu like this:
 
-    ![install tor](./assets/tor_windows_install.png)
+    ![install tor](./assets/tor-windows-install.png)
 
     ```admonish warning title="Change default install locaton"   
     
@@ -31,7 +31,7 @@
 
         sc start tor
 
-    ![tor running](./assets/tor_windows_running.png)
+    ![tor running](./assets/tor-windows-running.png)
 
     ```admonish warning title="Troubleshooting"
 
