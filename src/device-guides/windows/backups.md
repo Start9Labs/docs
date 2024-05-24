@@ -16,22 +16,30 @@
 
 1. Right click the folder and click "Properties".
 
+    ![Properties](./assets/backups-windows-0.png)
+
 1. Click "Sharing".
+
+    ![Sharing](./assets/backups-windows-1.png)
 
 1. Click "Share".
 
+    ![Share](./assets/backups-windows-2.png)
+
 1. Select a user you want to use for login and click "Share".
+
+    ![Select a user](./assets/backups-windows-3.png)
 
    ```admonish warning
 
    If you get the following dialog box, you have designated your network "Public". You may wish to change to "Private" if this is your home network. Otherwise you may turn on network sharing for public networks.
 
-      ![public network](./assets/backups-public-network.png)
+      ![public network](./assets/backups-windows-4.png)
    ```
 
 1. Note the Windows directory path in grey text, highlighted in blue, beginning at the first single slash (`\`). We will use that path later.
 
-   ![path](./assets/backups-path.png)
+   ![path](./assets/backups-windows-5.png)
 
 ## Create a Backup
 
