@@ -6,46 +6,32 @@
 
 1. Head to _Settings > General > VPN & Device Management_:
 
-   <!-- @TODO -->
-
-   ![Settings management](./assets/ca-settings-management.png)
+   ![Settings management](./assets/ca-ios-settings-management.png)
 
 1. Under "DOWNLOADED PROFILE", click your Root CA:
 
-   <!-- @TODO -->
-
-   ![Settings select profile](./assets/ca-settings-select-profile.png)
+   ![Settings select profile](./assets/ca-ios-settings-select-profile.png)
 
 1. Click "Install":
 
-   <!-- @TODO -->
-
-   ![Settings profile install](./assets/ca-settings-profile-install.png)
+   ![Settings profile install](./assets/ca-ios-settings-select-profile-2.png)
 
 1. Click "Install" again:
 
-   <!-- @TODO -->
-
-   ![Settings profile install 2](./assets/ca-settings-profile-install-2.png)
+   ![Settings profile install again](./assets/ca-ios-settings-select-profile-3.png)
 
 1. Click "Install" for a 3rd time:
 
-   <!-- @TODO -->
-
-   ![Settings profile install 3](./assets/ca-settings-profile-install-3.png)
+   ![Settings profile install yet again](./assets/ca-ios-settings-select-profile-4.png)
 
 1. You should see green text with a check-mark saying "Verified" under the Profile Installed dialog:
 
-   <!-- @TODO -->
-
-   ![Settings profile verified](./assets/ca-settings-profile-verified.png)
+   ![Settings profile verified](./assets/ca-ios-settings-profile-verified.png)
 
 1. Tap "Done".
 
 1. Go to `General > About > Certificate Trust Settings` and enable your Root Ca:
 
-   <!-- @TODO -->
-
-   ![Settings trust](./assets/ca-settings-trust.png)
+   ![Settings trust](./assets/ca-ios-settings-trust.png)
 
 1. Click "Continue".
