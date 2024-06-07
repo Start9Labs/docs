@@ -73,15 +73,11 @@
 
 1.  Go to `System Settings > Network` and select the interface to edit. We recommend editing both Ethernet and WiFi. First do one, then the other:
 
-    <!-- @TODO -->
-
     ![Sonoma Network](./assets/tor-sonoma-network.png)
 
 1.  Click `Details > Proxies` and paste the following URL into "Automatic Proxy Configuration": `http://localhost/proxy.pac`. Click "OK".
 
-    <!-- @TODO -->
-
-    ![Sonoma proxy config](./assets/tor-sonoma-interface-config.png)
+    ![Sonoma proxy config](./assets/tor-sonoma-proxy-config.png)
 
 1.  Repeat the previous two steps for Wifi/Ethernet, depending on which interface you haven't done yet.
 
@@ -97,14 +93,10 @@
 
 1.  Go to `System Preferences > Network` and select the interface to edit. We recommend editing both Ethernet and WiFi. First do one, then the other:
 
-    <!-- @TODO -->
-
     ![Pre-Sonoma Network](./assets/tor-pre-sonoma-network.png)
 
 1.  Click `Advanced > Proxies` and paste the following URL into "Automatic Proxy Configuration": `http://localhost/proxy.pac`
 
-    <!-- @TODO -->
-
-    ![Pre-Sonoma proxy config](./assets/tor-pre-sonoma-interface-config.png)
+    ![Pre-Sonoma proxy config](./assets/tor-pre-sonoma-proxy-config.png)
 
 1.  Repeat the previous two steps for Wifi/Ethernet, depending on which interface you haven't done yet.

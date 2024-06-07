@@ -8,14 +8,8 @@
     1. "Disable GeoIP lookup for nodes" -> On
     1. "Always clear cache before start" -> On
 
-    <!-- @TODO -->
-
-    ![Orbot settings](./assets/tor-orbot-settings.png)
-
-    ![Orbot settings 2](./assets/tor-orbot-settings-2.png)
+    ![Orbot settings](./assets/tor-ios-orbot-settings.png)
 
 1.  Go back to the main screen and click "Start":
 
-    <!-- @TODO -->
-
-    ![Orbot start](./assets/tor-orbot-start.png)
+    ![Orbot start](./assets/tor-ios-orbot-connecting-full.png)

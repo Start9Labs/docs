@@ -6,11 +6,13 @@
 
 1.  Once you have selected a language, you should see a menu like this:
 
-     <!-- @TODO -->
+    ![install tor](./assets/tor-windows-install.png)
 
-    ![install tor](./assets/tor-install.png)
-
-    We will install it to `C:\Program Files\Tor Browser`. If you choose a different folder, it needs to _not_ be anywhere under `C:\Users\`. Note the path you use here for the step after next.
+    ```admonish warning title="Change default install locaton"   
+    
+    We will install it to `C:\Program Files\Tor Browser`. 
+    If you choose a different folder, it needs to _not_ be anywhere under `C:\Users\`. Note the path you use here for the step after next.
+    ```
 
 1.  Open your Command Prompt as an administrator. In Windows 10, you can simply type `cmd` in the Windows search bar. Right click on the first result, and select "Run as Administrator".
 
@@ -29,9 +31,7 @@
 
         sc start tor
 
-    <!-- @TODO -->
-
-    ![tor running](./assets/tor-running.png)
+    ![tor running](./assets/tor-windows-running.png)
 
     ```admonish warning title="Troubleshooting"
 
@@ -45,3 +45,5 @@
 
     1. Begin this guide again from the beginning.
     ```
+
+1. If using Firefox or Tor Browser, complete this [final step](../../misc-guides/firefox-guides/ca.md#mac--windows)
