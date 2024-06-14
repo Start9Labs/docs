@@ -62,6 +62,23 @@
 - [TrueNAS](device-guides/truenas/README.md)
   - [Creating Backups](device-guides/truenas/backups.md)
 
+# Service Guides
+
+---
+
+- [Bitcoin / Electrs](service-guides/bitcoin-core/README.md)
+  - [Wallet Integrations](service-guides/bitcoin-core/wallet-integrations.md)
+    - [BitBoxApp](service-guides/bitcoin-core/wallet-integrations/bitboxapp.md)
+    - [Blockstream Green](service-guides/bitcoin-core/wallet-integrations/blockstream-green.md)
+    - [Blue Wallet](service-guides/bitcoin-core/wallet-integrations/blue-wallet.md)
+    - [Electrum](service-guides/bitcoin-core/wallet-integrations/electrum.md)
+    - [Fully Noded](service-guides/bitcoin-core/wallet-integrations/fully-noded.md)
+    - [Nunchuck](service-guides/bitcoin-core/wallet-integrations/nunchuck.md)
+    - [Sparrow](service-guides/bitcoin-core/wallet-integrations/sparrow.md)
+    - [Specter](service-guides/bitcoin-core/wallet-integrations/specter.md)
+    - [Trezor Suite](service-guides/bitcoin-core/wallet-integrations/trezor-suite.md)
+  - [Blockchain Migration](service-guides/bitcoin-core/blockchain-migration.md)
+
 # Misc Guides
 
 ---

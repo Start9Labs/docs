@@ -42,7 +42,7 @@ You can connect to your server from anywhere in the world, privately and anonymo
 - **Mac, Linux, Windows, Android/Graphene**: <a href="https://torproject.org/download" target="_blank">Tor Browser</a>
 - **iOS**: <a href="https://onionbrowser.com" target="_blank">Onion Browser</a>
 
-### Running Tor on your Phone/Laptop
+### Running Tor in the _background_ on your Phone/Laptop
 
 By running Tor on your phone or laptop, certain apps will be able to connect to your server over Tor, even if the apps themselves do not natively support Tor. Select the guide specific to your phone/laptop:
 
