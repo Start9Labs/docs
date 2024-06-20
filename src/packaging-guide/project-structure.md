@@ -2,10 +2,12 @@
 
 ```bash
 /
-├── assets/
+├── assets/ (optional)
 ├── startos/
 ├── .gitignore
-├── Dockerfile
+├── Dockerfile (optional)
+├── icon.svg
+├── instructions.md
 ├── LICENSE
 ├── Makefile
 ├── package-lock.json
@@ -14,21 +16,33 @@
 └── tsconfig.json
 ```
 
-Files in the root directory are largely boilerplate, except for Dockerfile, which will be totally unique to each package, and the LICENSE, which should be updated to match the license of the upstream service. Also be sure to update the README, swapping out references to Hello World/Moon with your own service.
+#### .gitignore, Makefile, package-lock.json, package.json, and tsconfig.json
 
-#### Dockerfile
+These are boilerplate files that need not be edited, except in special circumstances.
 
-This is the software "recipe" for your service. If possible, it is recommended to simply pull an existing Docker container as shown in hello-world-startos. Alternatively, you may choose to get the service binary from another distro, use a git submodule, or even build the code from source.
+#### Dockerfile (optional)
 
-## assets/
+It is recommended to pull an existing Docker image as shown in Hello World. If necessary, you can define a custom image using this Dockerfile.
 
-```bash
-assets/
-├── icon.svg/png/jpg
-└── instructions.md
-```
+#### icon.svg
 
-The `assets/` directory contains your service icon (`.svg` is preferred, but `.png` or `.jpg` are also acceptable) and markdown instructions.
+This is the icon for your package. In most cases, it will be the upstream service icon. Maximum file size is 40 KiB. Supported extensions are .svg, .png, .jpg, and .webp.
+
+#### instructions.md
+
+This is your package instructions.
+
+#### LICENSE
+
+This is the software license for your package. In most cases, it will be the upstream license. If your package contains multiple upstream services with different licenses, you should select the more restrictive license.
+
+#### README.md
+
+This is largely boilerplate. Update as needed for your service, including replacing references to Hello World/Moon.
+
+## assets/ (optional)
+
+Use the `assets/` directory to package arbitrary files into your package. For example, an AI service may want to include a default LLM.
 
 ## startos/
 
@@ -52,9 +66,13 @@ startos/
 
 The `startos/` directory is where you take advantage of the StartOS SDK and APIs.
 
-#### backup.ts
+#### backups.ts
 
-`setupsBackups()` is where you define what volumes to back up as well as what directories or files to _exclude_ from backups.
+`setupBackups()` is where you define what volumes to back up as well as what directories or files to _exclude_ from backups.
+
+#### index.ts
+
+This file is just plumbing, used for exporting package functions to StartOS.
 
 #### init.ts
 
@@ -71,7 +89,7 @@ The `startos/` directory is where you take advantage of the StartOS SDK and APIs
 
 #### manifest.ts
 
-`setupsManifest()` is where you define static metadata about the service, such as ID, name, description, release notes, helpful links, data volumes, binary images, alerts, and dependencies.
+`setupManifest()` is where you define static metadata about the service, such as ID, name, description, release notes, helpful links, volumes, (software) images, hardware requirements, alerts, and dependencies.
 
 #### properties.ts
 
@@ -79,17 +97,18 @@ The `startos/` directory is where you take advantage of the StartOS SDK and APIs
 
 #### sdk.ts
 
-This file imbues the generic Start SDK with package-specific type information defined in `manifest.ts` and `store.ts`. The exported SDK is what should be used through the `startos/` directory. It is a custom SDK just for this package.
+This file is plumbing, used to imbue the generic Start SDK with package-specific type information defined in `manifest.ts` and `store.ts`. The exported SDK is what should be used through the `startos/` directory. It is a custom SDK just for this package.
 
 #### store.ts
 
 The Store is for persisting arbitrary data that are _not_ persisted by the service itself. The three most common use cases of the Store are:
 
-1. Credentials for dependent services
-1. Temporary state to be inspected at runtime, such as startup flags
-1. Credentials for the user (discouraged)
+1. Credentials for end user.
+1. Credentials for dependent services.
+1. Temporary state to be inspected at runtime, such as startup flags.
+1. Metadata that cannot be retrieved or derived from the service itself, to be displayed in Properties.
 
-`setupExposeStore()` is where you determine which values from the Store to expose to other services running on StartOS. Any values not explicitly exposed here will be kept private.
+`setupExposeStore()` is where you determine which values from the Store to expose to other services running on StartOS. _Values not explicitly exposed here will be kept private_.
 
 #### utils.ts
 
@@ -112,7 +131,6 @@ Each action receives its own file and is also passed into `setupActions()` in `a
 
 ```bash
 config/
-├── file-models/
 ├── index.ts
 ├── read.ts.ts
 ├── save.ts
@@ -132,17 +150,6 @@ The `config/` directory is where you define config options to expose, how to sav
 #### spec.ts
 
 `setupConfigSpec()` is where you define the form that will display to the user. Forms may contain text inputs, number inputs, drop-downs, toggles, datetime selectors, and many other helpful UI elements and validations.
-
-#### file-models/
-
-```bash
-file-models/
-├── index.ts
-├── config1.yaml.ts
-└── config2.json.ts
-```
-
-In `file-models/`, create separate .ts files for each config file (.json, .toml, .yaml, .config) used by the upstream service. These .ts files add type safety to the upstream config files and provide a simple means of reading and writing them through this code base.
 
 ### dependencies/
 
@@ -168,6 +175,16 @@ dependencyConfig/
 ```
 
 The `dependencyConfig/` directory is used to create a unique file for each dependency whose config you intend to edit. Each dependency config is then passed into `setupDependencyConfig()` in `index.ts`.
+
+### file-models/
+
+```bash
+file-models/
+├── config1.yaml.ts
+└── config2.json.ts
+```
+
+In `file-models/`, create separate .ts files for each config file (.json, .toml, .yaml, .config) used by the upstream service. These .ts files add type safety to the upstream config files and provide a simple means of reading and writing them throughout the package codebase.
 
 ### migrations/
 

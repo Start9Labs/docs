@@ -1,13 +1,15 @@
 # Quick Start
 
-Before you begin, ensure you have completed the [environment setup](./environment-setup.md).
+## Environment Setup
 
-## Create your Package Repository
+Ensure you have completed every step of [environment setup](./environment-setup.md).
+
+## Generate your Package Repository
 
 1. Select a template:
 
    - Use <a href="https://github.com/Start9Labs/hello-world-startos" target="_blank">Hello World</a> if your service does _not_ depend on another service.
-   - Use <a href="https://github.com/Start9Labs/hello-moon-startos" target="_blank">Hello Moon</a> if your service depends on another service.
+   - Use <a href="https://github.com/Start9Labs/hello-moon-startos" target="_blank">Hello Moon</a> if your service depends on at least one other service.
 
 1. Click `Use this template > Create new repository`. You must be signed into Github to see this button.
 
@@ -15,7 +17,7 @@ Before you begin, ensure you have completed the [environment setup](./environmen
 
 1. Name your repository. The name should be `[service-name]-startos`. For example, NextCloud is `nextcloud-startos` and Lightning Terminal is `lightning-terminal-startos`.
 
-1. For description, enter "StartOS package for [Service Name]".
+1. For the repository description, enter "StartOS package for [Service Name]".
 
 1. Make sure the repository is Public.
 
@@ -43,4 +45,34 @@ npm i
 
 ## Install the s9pk
 
+### From the CLI
+
+`start-cli install -h <host> -s <path-to-s9pk>`
+
+You can eliminate the `-h` argument by hard coding the host in your StartOS [config.yaml] file.
+
+### From the GUI
+
 From the GUI of your StartOS server, go to `System > Sideload`, upload the .s9pk file, and click "Install".
+
+~/.startos
+
+developer.key.pem
+config.yaml
+cookies.json
+
+    #[arg(short = 'c', long = "config")]
+    pub config: Option<PathBuf>,
+    #[arg(short = 'h', long = "host")]
+    pub host: Option<Url>,
+    #[arg(short = 'r', long = "registry")]
+    pub registry: Option<Url>,
+    #[arg(short = 'p', long = "proxy")]
+    pub proxy: Option<Url>,
+    #[arg(long = "cookie-path")]
+    pub cookie_path: Option<PathBuf>,
+    #[arg(long = "developer-key-path")]
+    pub developer_key_path: Option<PathBuf>,
+
+// makes it so you don't need to do -h for every start-cli command
+host 'dev box'
