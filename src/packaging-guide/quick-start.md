@@ -47,32 +47,12 @@ npm i
 
 ### From the CLI
 
-`start-cli install -h <host> -s <path-to-s9pk>`
+```
+start-cli install -h <host> -s <path-to-s9pk>
+```
 
-You can eliminate the `-h` argument by hard coding the host in your StartOS [config.yaml] file.
+You can eliminate the `-h` argument by hard-coding the host in `~/.startos/config.yaml`.
 
 ### From the GUI
 
 From the GUI of your StartOS server, go to `System > Sideload`, upload the .s9pk file, and click "Install".
-
-~/.startos
-
-developer.key.pem
-config.yaml
-cookies.json
-
-    #[arg(short = 'c', long = "config")]
-    pub config: Option<PathBuf>,
-    #[arg(short = 'h', long = "host")]
-    pub host: Option<Url>,
-    #[arg(short = 'r', long = "registry")]
-    pub registry: Option<Url>,
-    #[arg(short = 'p', long = "proxy")]
-    pub proxy: Option<Url>,
-    #[arg(long = "cookie-path")]
-    pub cookie_path: Option<PathBuf>,
-    #[arg(long = "developer-key-path")]
-    pub developer_key_path: Option<PathBuf>,
-
-// makes it so you don't need to do -h for every start-cli command
-host 'dev box'

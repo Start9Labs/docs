@@ -1,8 +1,12 @@
 # Environment Setup
 
+## StartOS server
+
+You will need a StartOS server to test your package. Follow the [flashing guide](../flashing-guides/) to install StartOS on a physical device or VM.
+
 ## start-cli
 
-<a href="[https://](https://github.com/Start9Labs/start-os/)" target="_blank">start-cli</a> is needed to interact with StartOS from the command line.
+<a href="https://github.com/Start9Labs/start-os/" target="_blank">start-cli</a> is needed to interact with StartOS from the command line.
 
 Once installed, run
 
