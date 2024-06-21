@@ -79,7 +79,11 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
     - [Specter](service-guides/bitcoin-core/wallet-integrations/specter.md)
     - [Trezor Suite](service-guides/bitcoin-core/wallet-integrations/trezor-suite.md)
   - [Blockchain Migration](service-guides/bitcoin-core/blockchain-migration.md)
-
+- [Jellyfin](service-guides/jellyfin/)
+  - [Web Application](service-guides/jellyfin/web-application.md)
+  - [Mobile Apps](service-guides/jellyfin/mobile-apps.md)
+  - [Desktop Apps](service-guides/jellyfin/desktop-apps.md)
+  - [Other Apps](service-guides/jellyfin/other-apps.md)
 
 ### Misc Guides
 
