@@ -18,7 +18,7 @@ Welcome to the Start9 Docs! Here you will find the StartOS user manual, as well 
 
    `cargo install mdbook-admonish`
 
-   [mdBook-i18n](https://github.com/tommilligan/mdbook-admonish) - Internationalization plugin
+   [mdBook-i18n](https://github.com/funkill/mdbook-i18n) - Internationalization plugin
 
    `cargo install mdbook-i18n`
 
