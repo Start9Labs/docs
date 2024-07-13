@@ -84,6 +84,12 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
   - [Mobile Apps](service-guides/jellyfin/mobile-apps.md)
   - [Desktop Apps](service-guides/jellyfin/desktop-apps.md)
   - [Other Apps](service-guides/jellyfin/other-apps.md)
+- [Lightning](service-guides/lightning/)
+  - [Opening Channels](service-guides/lightning/opening-channels.md)
+  - [Getting Inbound Liquidity](service-guides/lightning/getting-inbound-liquidity.md)
+  - [Connecting to Core Lightning](service-guides/lightning/cln/)
+  - [Connecting to LND](service-guides/lightning/lnd/)
+  - [Using LNbits](service-guides/lightning/lnbits.md)
 
 ### Misc Guides
 
