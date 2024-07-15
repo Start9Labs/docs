@@ -4,9 +4,9 @@
 
 ## Getting Started
 
-- [Opening Your First Channel](./opening-channels.md) - We use Ride The Lightning (RTL) as the graphical interface to fund our CLN or LND wallet and open a private channel to Start9
+- [Opening Your First Channel](./opening-channels.md) - We use Ride The Lightning (RTL) as the tool to interact with and to fund our CLN or LND wallet, then open a private channel to Start9.
 
-- [Getting Inbound Liquidity](./getting-inbound-liquidity.md) - We look at the common ways to receive payments having only just opened a channel with all the liquidity on your side
+- [Getting Inbound Liquidity](./getting-inbound-liquidity.md) - We look at the common ways to receive payments having only just opened a channel with all the liquidity on your side.
 
 
 ## Connecting to CLN
@@ -19,7 +19,7 @@
 
 ## Connecting to LND
 
-- [Connect Directly to LND](./lnd/) - Core Lightning is the second of the two lightning implementations found on StartOS. It was created and is maintained by [Lightning Labs](https://lightning.engineering/).
+- [Connect Directly to LND](./lnd/) - LND is the second of the two lightning implementations found on StartOS. It was created and is maintained by [Lightning Labs](https://lightning.engineering/).
     - [Alby](service-guides/lightning/lnd/alby.md)
     - [BitBanana](service-guides/lightning/lnd/bitbanana.md)
     - [Fully Noded](service-guides/lightning/lnd/fully-noded.md)
@@ -29,7 +29,7 @@
 
 ## Using LNbits
 
-  - [Connect to LNbits wallets](service-guides/lightning/lnbits.md) – Create and connected to a walled-off wallet in a layer above your lightning network implementation of CLN or LND.
+  - [Connect to LNbits wallets](service-guides/lightning/lnbits.md) – Create and connect to a walled-off wallet in a layer above your lightning network implementation of CLN or LND.
     - [The Concept](service-guides/lightning/lnbits.md#the-concept)
     - [What lightning node should I use?](service-guides/lightning/lnbits.md#what-lightning-node-should-i-use)
     - [Setting up LNbits](service-guides/lightning/lnbits.md#setting-up-ln-bits)

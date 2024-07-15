@@ -12,7 +12,7 @@ This guide assumes you have already setup LNbits as per :ref:`this guide <connec
 
 ```
 
-1. Bluewallet requires that we use the LnbHub extension in order to connect to LNbits.
+1. BlueWallet requires that we use the LnbHub extension in order to connect to LNbits.
 
 1. To do this, click **Manage Extensions**:
 
