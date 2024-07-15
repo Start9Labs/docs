@@ -62,6 +62,51 @@
 - [TrueNAS](device-guides/truenas/README.md)
   - [Creating Backups](device-guides/truenas/backups.md)
 
+# Service Guides
+
+---
+
+- [Bitcoin / Electrs](service-guides/bitcoin/README.md)
+  - [Wallet Integrations](service-guides/bitcoin/wallet-integrations.md)
+    - [BitBoxApp](service-guides/bitcoin/wallet-integrations/bitboxapp.md)
+    - [Blockstream Green](service-guides/bitcoin/wallet-integrations/blockstream-green.md)
+    - [Blue Wallet](service-guides/bitcoin/wallet-integrations/blue-wallet.md)
+    - [Electrum](service-guides/bitcoin/wallet-integrations/electrum.md)
+    - [Fully Noded](service-guides/bitcoin/wallet-integrations/fully-noded.md)
+    - [Nunchuck](service-guides/bitcoin/wallet-integrations/nunchuck.md)
+    - [Sparrow](service-guides/bitcoin/wallet-integrations/sparrow.md)
+    - [Specter](service-guides/bitcoin/wallet-integrations/specter.md)
+    - [Trezor Suite](service-guides/bitcoin/wallet-integrations/trezor-suite.md)
+  - [Blockchain Migration](service-guides/bitcoin/blockchain-migration.md)
+- [Jellyfin](service-guides/jellyfin/README.md)
+  - [Web Application](service-guides/jellyfin/web-application.md)
+  - [Mobile Apps](service-guides/jellyfin/mobile-apps.md)
+  - [Desktop Apps](service-guides/jellyfin/desktop-apps.md)
+  - [Other Apps](service-guides/jellyfin/other-apps.md)
+- [Lightning](service-guides/lightning/README.md)
+  - [Opening Channels](service-guides/lightning/opening-channels.md)
+  - [Getting Inbound Liquidity](service-guides/lightning/getting-inbound-liquidity.md)
+  - [Connecting to Core Lightning](service-guides/lightning/cln/README.md)
+    - [Alby](service-guides/lightning/cln/alby.md)
+    - [RTL](service-guides/lightning/cln/rtl.md)
+    - [Zeus](service-guides/lightning/cln/zeus.md)
+  - [Connecting to LND](service-guides/lightning/lnd/README.md)
+    - [Alby](service-guides/lightning/lnd/alby.md)
+    - [BitBanana](service-guides/lightning/lnd/bitbanana.md)
+    - [Fully Noded](service-guides/lightning/lnd/fully-noded.md)
+    - [RTL](service-guides/lightning/lnd/rtl.md)
+    - [Zeus](service-guides/lightning/lnd/zeus.md)
+  - [Connecting to LND via Lightning Node Connect (LNC)](service-guides/lightning/lnc.md)
+      - [Alby](service-guides/lightning/lnd/alby-lnc.md)
+      - [Zeus](service-guides/lightning/lnd/zeus-lnc.md)
+  - [Using LNbits](service-guides/lightning/lnbits.md)
+    - [The Concept](service-guides/lightning/lnbits.md)
+    - [What lightning node should I use?](service-guides/lightning/lnbits.md)
+    - [Setting up LNbits](service-guides/lightning/lnbits.md)
+        - [Alby](service-guides/lightning/lnbits/alby.md)
+        - [BlueWallet](service-guides/lightning/lnbits/bluewallet.md)
+        - [Zeus](service-guides/lightning/lnbits/zeus.md)
+
 # Misc Guides
 
 ---

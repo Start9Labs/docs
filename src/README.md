@@ -62,6 +62,35 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 - [TrueNAS](device-guides/truenas/)
   - [Creating Backups](device-guides/truenas/backups.md)
 
+
+### Service Guides
+
+---
+
+- [Bitcoin / Electrs](service-guides/bitcoin/)
+  - [Wallet Integrations](service-guides/bitcoin/wallet-integrations.md)
+    - [BitBoxApp](service-guides/bitcoin/wallet-integrations/bitboxapp.md)
+    - [Blockstream Green](service-guides/bitcoin/wallet-integrations/blockstream-green.md)
+    - [Blue Wallet](service-guides/bitcoin/wallet-integrations/blue-wallet.md)
+    - [Electrum](service-guides/bitcoin/wallet-integrations/electrum.md)
+    - [Fully Noded](service-guides/bitcoin/wallet-integrations/fully-noded.md)
+    - [Nunchuck](service-guides/bitcoin/wallet-integrations/nunchuck.md)
+    - [Sparrow](service-guides/bitcoin/wallet-integrations/sparrow.md)
+    - [Specter](service-guides/bitcoin/wallet-integrations/specter.md)
+    - [Trezor Suite](service-guides/bitcoin/wallet-integrations/trezor-suite.md)
+  - [Blockchain Migration](service-guides/bitcoin/blockchain-migration.md)
+- [Jellyfin](service-guides/jellyfin/)
+  - [Web Application](service-guides/jellyfin/web-application.md)
+  - [Mobile Apps](service-guides/jellyfin/mobile-apps.md)
+  - [Desktop Apps](service-guides/jellyfin/desktop-apps.md)
+  - [Other Apps](service-guides/jellyfin/other-apps.md)
+- [Lightning](service-guides/lightning/)
+  - [Opening Channels](service-guides/lightning/opening-channels.md)
+  - [Getting Inbound Liquidity](service-guides/lightning/getting-inbound-liquidity.md)
+  - [Connecting to Core Lightning](service-guides/lightning/cln/)
+  - [Connecting to LND](service-guides/lightning/lnd/)
+  - [Using LNbits](service-guides/lightning/lnbits.md)
+
 ### Misc Guides
 
 ---
