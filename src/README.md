@@ -90,6 +90,7 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
   - [Connecting to Core Lightning](service-guides/lightning/cln/)
   - [Connecting to LND](service-guides/lightning/lnd/)
   - [Using LNbits](service-guides/lightning/lnbits.md)
+- [Matrix](service-guides/matrix/)
 
 ### Misc Guides
 

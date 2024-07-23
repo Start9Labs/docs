@@ -106,6 +106,7 @@
         - [Alby](service-guides/lightning/lnbits/alby.md)
         - [BlueWallet](service-guides/lightning/lnbits/bluewallet.md)
         - [Zeus](service-guides/lightning/lnbits/zeus.md)
+- [Matrix](service-guides/matrix/README.md)
 
 # Misc Guides
 
