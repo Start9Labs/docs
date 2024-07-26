@@ -91,6 +91,28 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
   - [Connecting to LND](service-guides/lightning/lnd/)
   - [Using LNbits](service-guides/lightning/lnbits.md)
 - [Matrix](service-guides/matrix/)
+- [Nextcloud](service-guides/nextcloud/)
+  - [Device Setup](service-guides/nextcloud/nextcloud-setup/)
+    - [Linux](service-guides/nextcloud/nextcloud-setup/nextcloud-linux.md)
+    - [MacOS](service-guides/nextcloud/nextcloud-setup/nextcloud-macos.md)
+    - [Windows](service-guides/nextcloud/nextcloud-setup/nextcloud-windows.md)
+    - [Android](service-guides/nextcloud/nextcloud-setup/nextcloud-android.md)
+    - [iOS](service-guides/nextcloud/nextcloud-setup/nextcloud-ios.md)
+  - [Apps & Integrations](service-guides/nextcloud/nextcloud-apps/)
+    - [Nextcloud Bookmarks](service-guides/nextcloud/nextcloud-apps/nextcloud-bookmarks.md)
+    - [Nextcloud Calendar](service-guides/nextcloud/nextcloud-apps/nextcloud-calendar.md)
+    - [Nextcloud Contacts](service-guides/nextcloud/nextcloud-apps/nextcloud-contacts.md)
+    - [Nextcloud Cookbook](service-guides/nextcloud/nextcloud-apps/nextcloud-cookbook.md)
+    - [Nextcloud Files](service-guides/nextcloud/nextcloud-apps/nextcloud-files.md)
+    - [Nextcloud Maps](service-guides/nextcloud/nextcloud-apps/nextcloud-maps.md)
+    - [Nextcloud Memories](service-guides/nextcloud/nextcloud-apps/nextcloud-memories.md)
+    - [Nextcloud Music](service-guides/nextcloud/nextcloud-apps/nextcloud-music.md)
+    - [Nextcloud News](service-guides/nextcloud/nextcloud-apps/nextcloud-news.md)
+    - [Nextcloud Notes](service-guides/nextcloud/nextcloud-apps/nextcloud-notes.md)
+    - [Nextcloud Photos](service-guides/nextcloud/nextcloud-apps/nextcloud-photos.md)
+    - [Joplin](service-guides/nextcloud/nextcloud-apps/nextcloud-photos.md)
+    - [Thunderbird](service-guides/nextcloud/nextcloud-apps/nextcloud-photos.md)
+
 
 ### Misc Guides
 
