@@ -110,8 +110,8 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
     - [Nextcloud News](service-guides/nextcloud/nextcloud-apps/nextcloud-news.md)
     - [Nextcloud Notes](service-guides/nextcloud/nextcloud-apps/nextcloud-notes.md)
     - [Nextcloud Photos](service-guides/nextcloud/nextcloud-apps/nextcloud-photos.md)
-    - [Joplin](service-guides/nextcloud/nextcloud-apps/nextcloud-photos.md)
-    - [Thunderbird](service-guides/nextcloud/nextcloud-apps/nextcloud-photos.md)
+    - [Joplin](service-guides/nextcloud/nextcloud-apps/joplin.md)
+    - [Thunderbird](service-guides/nextcloud/nextcloud-apps/thunderbird.md)
 
 
 ### Misc Guides
