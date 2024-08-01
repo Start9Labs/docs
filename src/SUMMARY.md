@@ -128,6 +128,10 @@
     - [Nextcloud Photos](service-guides/nextcloud/nextcloud-apps/nextcloud-photos.md)
     - [Joplin](service-guides/nextcloud/nextcloud-apps/joplin.md)
     - [Thunderbird](service-guides/nextcloud/nextcloud-apps/thunderbird.md)
+- [Nostr](service-guides/nostr/README.md)
+  - [Nostr RS Relay](service-guides/nostr/nostr-rs-relay.md)
+  - [noStrudel](service-guides/nostr/nostrudel.md)
+- [Vaultwarden](service-guides/vaultwarden/README.md)
 
 # Misc Guides
 
