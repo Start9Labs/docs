@@ -20,19 +20,19 @@
 ## Connecting to LND
 
 - [Connect Directly to LND](./lnd/) - LND is the second of the two lightning implementations found on StartOS. It was created and is maintained by [Lightning Labs](https://lightning.engineering/).
-    - [Alby](service-guides/lightning/lnd/alby.md)
-    - [BitBanana](service-guides/lightning/lnd/bitbanana.md)
-    - [Fully Noded](service-guides/lightning/lnd/fully-noded.md)
-    - [RTL](service-guides/lightning/lnd/rtl.md)
-    - [Zeus](service-guides/lightning/lnd/zeus.md)
-- [Connecting to LND via Lightning Node Connect (LNC)](service-guides/lightning/lnc.md) - Lightning Node Connect (LNC) provides a very simple way to connect to an LND node that does not require the Tor network.
+    - [Alby](./lnd/alby.md)
+    - [BitBanana](./lnd/bitbanana.md)
+    - [Fully Noded](./lnd/fully-noded.md)
+    - [RTL](./lnd/rtl.md)
+    - [Zeus](./lnd/zeus.md)
+- [Connecting to LND via Lightning Node Connect (LNC)](./lnc.md) - Lightning Node Connect (LNC) provides a very simple way to connect to an LND node that does not require the Tor network.
 
 ## Using LNbits
 
-  - [Connect to LNbits wallets](service-guides/lightning/lnbits.md) – Create and connect to a walled-off wallet in a layer above your lightning network implementation of CLN or LND.
-    - [The Concept](service-guides/lightning/lnbits.md#the-concept)
-    - [What lightning node should I use?](service-guides/lightning/lnbits.md#what-lightning-node-should-i-use)
-    - [Setting up LNbits](service-guides/lightning/lnbits.md#setting-up-ln-bits)
-        - [Alby](service-guides/lightning/lnbits/alby.md)
-        - [BlueWallet](service-guides/lightning/lnbits/bluewallet.md)
-        - [Zeus](service-guides/lightning/lnbits/zeus.md)
+  - [Connect to LNbits wallets](./lnbits.md) – Create and connect to a walled-off wallet in a layer above your lightning network implementation of CLN or LND.
+    - [The Concept](./lnbits.md#the-concept)
+    - [What lightning node should I use?](./lnbits.md#what-lightning-node-should-i-use)
+    - [Setting up LNbits](./lnbits.md#setting-up-ln-bits)
+        - [Alby](./lnbits/alby.md)
+        - [BlueWallet](./lnbits/bluewallet.md)
+        - [Zeus](./lnbits/zeus.md)
