@@ -2,11 +2,11 @@
 
 LND is the second of the two lightning implementations found on StartOS. It was created and is maintained by [Lightning Labs](https://lightning.engineering/).
 
-- [Alby](service-guides/lightning/lnd/alby.md)
-- [BitBanana](service-guides/lightning/lnd/bitbanana.md)
-- [Fully Noded](service-guides/lightning/lnd/fully-noded.md)
-- [RTL](service-guides/lightning/lnd/rtl.md)
-- [Zeus](service-guides/lightning/lnd/zeus.md)
+- [Alby](./alby.md)
+- [BitBanana](./bitbanana.md)
+- [Fully Noded](./fully-noded.md)
+- [RTL](./rtl.md)
+- [Zeus](./zeus.md)
 
 ### Lightning Node Connect (LNC)
 
