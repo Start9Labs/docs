@@ -116,7 +116,9 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
   - [Nostr RS Relay](service-guides/nostr/nostr-rs-relay.md)
   - [noStrudel](service-guides/nostr/nostrudel.md)
 - [Vaultwarden](service-guides/vaultwarden/)
-
+  - [Initial Setup](service-guides/vaultwarden/vaultwarden-setup.md)
+  - [Client Setup](service-guides/vaultwarden/bitwarden-setup.md)
+  - [Organizations](service-guides/vaultwarden/vaultwarden-org.md)
 
 ### Misc Guides
 

@@ -132,6 +132,9 @@
   - [Nostr RS Relay](service-guides/nostr/nostr-rs-relay.md)
   - [noStrudel](service-guides/nostr/nostrudel.md)
 - [Vaultwarden](service-guides/vaultwarden/README.md)
+  - [Initial Setup](service-guides/vaultwarden/vaultwarden-setup.md)
+  - [Client Setup](service-guides/vaultwarden/bitwarden-setup.md)
+  - [Organizations](service-guides/vaultwarden/vaultwarden-org.md)
 
 # Misc Guides
 
