@@ -58,7 +58,7 @@ This is Nextcloud's official client application for file syncing and account man
 
 ### LAN Setup
 
-Make sure you have first set up [LAN access](/device-guides/mac/ca.md).  Then do the following:
+Make sure you have first set up [LAN access](/user-manual/connecting-locally.md).  Then do the following:
 
 1. Open the client and click "Log In".
     ![LAN step1](../assets/nextcloud-mac-step1.png)
