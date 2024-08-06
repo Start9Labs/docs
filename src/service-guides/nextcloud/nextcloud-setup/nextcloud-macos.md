@@ -2,11 +2,11 @@
 
 ## Initial Config
 
-It is advised to setup your Nextcloud devices on LAN (if available) for the best experience.  Once set up, [Remote Connection](/user-manual/connecting-remotely.md) can be used for syncing. Remember that large files will likely fail or take a very long time over Tor, so it is best to use remote sync only for low-bandwidth activity, such as Calendar, Contacts, Tasks, and Notes.
+It is advised to setup your Nextcloud devices on [LAN connection](/user-manual/connecting-locally.md). for the best experience.  Once set up, [Remote Connection](/user-manual/connecting-remotely.md) can be used for syncing. Remember that large files will likely fail or take a very long time over Tor, so it is best to use remote sync only for low-bandwidth activity, such as Calendar, Contacts, Tasks, and Notes.
 
 ## Native Desktop Integration
 
-The smoothest experience will be using direct account integration with your Mac. First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps if you don't have them already (these are installed by default on the latest Nextcloud for StartOS).The steps below are adapted from the [Official Nextcloud guide](https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_osx.html).Make sure you have first set up [LAN access](/device-guides/mac/ca.md).
+The smoothest experience will be using direct account integration with your Mac. First head into the top-righthand menu of your Nextcloud's WebUI and click "Apps," then search for and install the Calendar and/or Contacts Apps if you don't have them already (these are installed by default on the latest Nextcloud for StartOS).The steps below are adapted from the [Official Nextcloud guide](https://docs.nextcloud.com/server/24/user_manual/en/groupware/sync_osx.html).
 
 1. Open the "System Settings" and select "Internet Accounts," click "Add Account." and then select "Add Other Account".
 
