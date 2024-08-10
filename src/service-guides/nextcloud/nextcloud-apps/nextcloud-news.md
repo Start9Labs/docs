@@ -2,13 +2,12 @@
 
 [Nextcloud News](https://apps.nextcloud.com/apps/news) is software for managing and viewing RSS feeds.  First set up your [client devices](/service-guides/nextcloud/nextcloud-setup/), so that Nextcloud will automatically keep your feeds synced.
 
-##Clients available for:
-
+Available for:
+- Web Interface
 - Mobile
     - Android
     - iOS
     - SailfishOS
-
 - Desktop:
     - Linux
     - Mac

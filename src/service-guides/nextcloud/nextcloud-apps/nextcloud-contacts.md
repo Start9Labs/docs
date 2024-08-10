@@ -2,12 +2,12 @@
 
 [Nextcloud Contacts](https://apps.nextcloud.com/apps/contacts) is software for managing and syncing your contacts between your devices.  First set up your [client devices](/service-guides/nextcloud/nextcloud-setup/), so that Nextcloud will automatically keep your contacts synced.
 
-Integrations available for:
+Available for:
 
+- Web Interface
 - Mobile
     - Android
     - iOS
-
 - Desktop
     - Linux
     - Mac

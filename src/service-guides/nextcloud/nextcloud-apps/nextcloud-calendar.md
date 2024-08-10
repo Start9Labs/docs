@@ -2,12 +2,12 @@
 
 [Nextcloud Calendar](https://apps.nextcloud.com/apps/calendar) is software for managing and syncing calendars, events, and tasks between your devices.  First set up your [client devices](/service-guides/nextcloud/nextcloud-setup/), so that Nextcloud will automatically keep your calendars synced.
 
-Integrations available for:
+Available for:
 
+- Web Interface
 - Mobile
     - Android
     - iOS
-
 - Desktop
     - Linux
     - Mac

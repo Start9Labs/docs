@@ -2,8 +2,9 @@
 
 [Nextcloud Cookbook](https://apps.nextcloud.com/apps/cookbook) is software for viewing, syncing, and organizing recipes.  First set up your [client devices](/service-guides/nextcloud/nextcloud-setup/), so that Nextcloud will automatically keep your recipes synced.
 
-Clients available for:
+Available for:
 
+- Web Interface
 - Mobile
     - Android
     - iOS
