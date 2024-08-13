@@ -21,7 +21,7 @@ It is highly recommended that you run a private relay, not a public one. Private
     ![nostr whitelist pubkey](./assets/nostr-2.png)
 
 
-1. Now you will have a Nostr relay websocket URL available in Nostr Properties.
+1. Now you will have a Nostr relay websocket URL available in Nostr RS Relay -> Properties.
 
 
 ## Running a private relay
