@@ -51,7 +51,8 @@ startos/
 ├── actions/
 ├── config/
 ├── dependencies/
-├── migrations/
+├── file-models/
+├── versions/
 ├── backup.ts
 ├── index.ts
 ├── init.ts
@@ -176,7 +177,7 @@ dependencyConfig/
 
 The `dependencyConfig/` directory is used to create a unique file for each dependency whose config you intend to edit. Each dependency config is then passed into `setupDependencyConfig()` in `index.ts`.
 
-### file-models/
+### file-models/ (optional)
 
 ```bash
 file-models/
@@ -186,13 +187,13 @@ file-models/
 
 In `file-models/`, create separate .ts files for each config file (.json, .toml, .yaml, .config) used by the upstream service. These .ts files add type safety to the upstream config files and provide a simple means of reading and writing them throughout the package codebase.
 
-### migrations/
+### versions/
 
 ```bash
-migrations/
+versions/
 ├── index.ts
 ├── v1_0_3_2.ts
 └── v1_0_2_0.ts
 ```
 
-In the `migrations/` directory, you will create a new file for each package version that requires _package_ data to be migrated. _Note_: service data if often be migrated by the service itself; migrations are for migrating data that is _not_ migrated by the upstream service. Each migration is then passed into `setupMigrations()` in `migrations/index.ts`.
+In the `versions/` directory, you will create a new file for each new package version. Here you will provide the version number, release notes, and define any migrations that should run. _Note_: migrations are only for migrating data that is _not_ migrated by the upstream service itself. All versions must then be provided as arguments to `VersionGraph.of()` in `index.ts` with the MOST RECENT VERSION LISTED FIRST.
