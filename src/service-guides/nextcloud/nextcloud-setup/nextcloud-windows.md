@@ -30,7 +30,7 @@ You should now be able to sync your native Windows Contacts and/or Calendar apps
 
 ## Standalone Clients
 
-### File Syncing - Nextcloud Desktop
+### File Syncing - Nextcloud Desktop
 
 This is Nextcloud's official client application for file syncing and account management.  The latest version of the official Nextcloud client is available on their [download page](https://nextcloud.com/install/#install-clients).
 
@@ -49,7 +49,8 @@ Make sure you have first set up [LAN access](/device-guides/windows/ca.md).  The
 1. Files will begin to sync immediately and you will see a green check when this is complete.
 1. That's it! From this desktop client you will recieve notifications, control accounts and syncing, and quickly access your Apps' WebUI pages
 
-### Tor Setup
+
+### Tor Setup
 
 You will first need to have the [Tor daemon running](/device-guides/windows/tor.md).
 
