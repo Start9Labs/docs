@@ -53,7 +53,7 @@
 
     ```admonish warning
 
-    It is important to realize that this is the 'Master password' for all your other passwords. Make it very strong, memorize it, write it down, and back it up to a safe place. If you lose it, you may lose access to all your passwords and your entire digital life.
+    It is important to realize that this is the **Master password** for all your other passwords. Make it very strong, memorize it, write it down, and back it up to a safe place. If you lose it, you may lose access to all your passwords and your entire digital life.
 
     ```
 
@@ -72,7 +72,7 @@
     ![vaultwarden-fresh-vault](./assets/vaultwarden-fresh-vault.png)
     
 
-1. At the top you can visit **Tools** for reports and to use the password generator. You can also import data from another program, such as Lastpass, Onepass, or KeePass!
+1. On the left, you can access **Tools** for reports and the password generator. You can also import data from other programs, such as LastPass, 1Password, or KeePass!
 
     ![vaultwarden-tools](./assets/vaultwarden-tools.png)
 
@@ -97,7 +97,7 @@
     ![vaultwarden-add-folder](./assets/vaultwarden-add-folder.png)
 
 
-1. Click **Add item**:
+1. Click **New item**:
 
     ![vaultwarden-add-item](./assets/vaultwarden-add-item.png)
 
@@ -117,39 +117,24 @@
 Congratulations! You have setup your own self-hosted password manager and have added a set of login credentials to it!
 
 
-
-
-
 ## Accessing the Admin Console
 
 
-1. You will find the Admin console by heading to "Interfaces" on the Vaultwarden Service page.  
+1. You will find the Admin URL by heading to "Properties" on the Vaultwarden Service page.  
 
-    ![vaultwarden-interfaces](./assets/vaultwarden-interfaces.png)
+    ![vaultwarden-interfaces](./assets/vaultwarden-properties.png)
  
 
-1. Copy either of the addresses here and append **/admin**:
+1. Copy either of the addresses here and paste in the browser.
 
     ![vaultwarden-interfaces-both](./assets/vaultwarden-interfaces-both.png)
 
 
-    ```admonish tip 
+1. You will be prompted for your "Admin Token," which can be found on the same page.
 
-    A typical address would look like https://abcdefghijklmnopqrstuvwxz.local/admin or http://abcdefghijklmnopqrstuvwxz.onion/admin 
+    ![vaultwarden-admin-properties](./assets/vaultwarden-token.png)
 
-    ```
-
-1. You will be prompted for your "Admin Token," which can be found on your Vaultwarden Service page under "Properties."
-
-    ![vaultwarden-admin-properties](./assets/vaultwarden-properties.png)
-
-
-1. Copy the token here:
-
-    ![vaultwarden-admin-properties-admin](./assets/vaultwarden-properties-admin.png)
-
-
-1. And paste it here:
+1. Paste it on Admin page:
 
     ![vaultwarden-admin-console-auth](./assets/vaultwarden-admin-console-auth.png)
 
@@ -159,9 +144,9 @@ Congratulations! You have setup your own self-hosted password manager and have a
     ![vaultwarden-admin-console](./assets/vaultwarden-admin-console.png)
 
 
-    ```admonish note
+    ```admonish warning
     
-    This cannot be used to reset passwords for accounts created on your Vaultwarden server.
+    This **cannot** be used to reset passwords for accounts created on your Vaultwarden server.
 
     ```
 
