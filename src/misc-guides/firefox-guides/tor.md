@@ -48,7 +48,7 @@ If you cannot connect after following this guide, your Firefox may be installed 
 
 1.  You need a `Proxy Auto Config` file to inform Firefox how to resolve `.onion` URLs. You can get Start9's standard file from a terminal, by using the following command:
 
-        sudo wget -P ~/ https://start9.com/assets/proxy.pac
+        wget -P ~/ https://start9.com/assets/proxy.pac
 
 1.  Determine the full path of `proxy.pac`, which we will use later, by executing the following command in the terminal, and copying its output to your clipboard:
 
