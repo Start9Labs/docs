@@ -2,7 +2,15 @@
 
 ## Initial Config
 
-It is advised to setup your Nextcloud devices on LAN (if available) for the best experience.  Once set up, Tor can be used for remote syncing, but remember that large files will likely fail or take a very long time, so it is best to use remote sync only for low-bandwidth activity, such as Calendar, Contacts, Tasks, and Notes.  Streaming your music is also possible.  Later in 2023, new connection options will unlock Nextcloud's full feature-set.
+For the best experience, it is recommended to set up your Nextcloud devices on [LAN](/user-manual/connecting-locally.md) with a designated IP address and port. This setup allows you to sync files, calendars, and contacts while away from home using a [Router VPN](/user-manual/connecting-remotely.md).
+
+Once configured, you can also use Tor for remote syncing. However, keep in mind that transferring large files may fail or take a considerable amount of time. Therefore, it is advisable to use remote syncing primarily for low-bandwidth activities, such as syncing calendars, contacts, tasks, and notes. Streaming music is also possible.
+
+```admonish warning
+
+When using remote connections, be mindful of any data caps on your cellular plan. You may need to limit bandwidth usage by disconnecting from your Router VPN server or Tor when using cellular data.
+
+```
 
 ## Native Desktop Integration
 
@@ -34,13 +42,13 @@ You should now be able to sync your native Windows Contacts and/or Calendar apps
 
 This is Nextcloud's official client application for file syncing and account management.  The latest version of the official Nextcloud client is available on their [download page](https://nextcloud.com/install/#install-clients).
 
-### LAN Setup
+### LAN/Router VPN Setup
 
 Make sure you have first set up [LAN access](/device-guides/windows/ca.md).  Then do the following:
 
 1. Download the appropriate desktop client from https://nextcloud.com/install/#install-clients
 1. Open the client and click "Log In"
-1. From your server's Nextcloud Service page, go to "Interfaces" and copy the LAN address
+1. From your server's Nextcloud Service page, go to "Interfaces" and copy the IP address and port, or .local and port.
 1. Enter your LAN address under "Server Address" and click "Next"
 1. You will be asked to Trust your server's certificate, which is safe to do as you generate and sign this during LAN Setup
 1. Tick the box for "Trust this certificate anyway" and click "Next"

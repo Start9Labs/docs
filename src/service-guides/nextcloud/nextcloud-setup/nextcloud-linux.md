@@ -3,7 +3,15 @@
 
 ## Initial Config
 
-It is advised to setup your Nextcloud devices on LAN (if available) for the best experience.  Once set up, Tor can be used for remote syncing, but remember that large files will likely fail or take a very long time, so it is best to use remote sync only for low-bandwidth activity, such as Calendar, Contacts, Tasks, and Notes.  Streaming your music is also possible.  Later in 2023, new connection options will unlock Nextcloud's full feature-set.
+For the best experience, it is recommended to set up your Nextcloud devices on [LAN](/user-manual/connecting-locally.md) with a designated IP address and port. This setup allows you to sync files, calendars, and contacts while away from home using a [Router VPN](/user-manual/connecting-remotely.md).
+
+Once configured, you can also use Tor for remote syncing. However, keep in mind that transferring large files may fail or take a considerable amount of time. Therefore, it is advisable to use remote syncing primarily for low-bandwidth activities, such as syncing calendars, contacts, tasks, and notes. Streaming music is also possible.
+
+```admonish warning
+
+When using remote connections, be mindful of any data caps on your cellular plan. You may need to limit bandwidth usage by disconnecting from your Router VPN server or Tor when using cellular data.
+
+```
 
 ## Desktop Integrations
 
@@ -62,7 +70,7 @@ The desktop version of NextCloud doesn't have much of a user interface.  Once in
 This is Nextcloud's official client application for file syncing and account management.  It is available in your favorite package manager (usually as `nextcloud`).  You can also see this [full list of available packages](https://help.nextcloud.com/t/linux-packages-status/).   or you can get the latest version as an AppImage from the [Download for Desktop](https://nextcloud.com/install/#install-clients) section of Nextcloud's website.
 
 
-## LAN Setup
+## LAN/Router VPN Setup
 
 Make sure you have first set up your [trusted Root CA](/device-guides/linux/ca.md).
 
@@ -71,12 +79,12 @@ Make sure you have first set up your [trusted Root CA](/device-guides/linux/ca.m
     ![nextcloud login](../assets/nextcloud-linux-desktop-1.png)
 
 
-1. From your server's Nextcloud Service page, go to **Interfaces** and copy the LAN address.
+1. From your server's Nextcloud service page, go to **Interfaces** and copy the IP address and port, or .local and port.
 
-    ![nextcloud interfaces](../assets/nextcloud-mac-step3-lan.png)
+    ![nextcloud interfaces](../assets/nextcloud-linux-desktop-3.png)
  
 
-1. Enter your LAN address under **Server Address** and click **Next**.
+1. Enter your IP address and port, or .local and port under **Server Address** and click **Next**.
 
     ![nextcloud server path](../assets/nextcloud-linux-desktop-2.png)
 

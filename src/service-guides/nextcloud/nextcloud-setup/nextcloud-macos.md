@@ -2,7 +2,15 @@
 
 ## Initial Config
 
-It is advised to setup your Nextcloud devices on [LAN connection](/user-manual/connecting-locally.md). for the best experience.  Once set up, [Remote Connection](/user-manual/connecting-remotely.md) can be used for syncing. Remember that large files will likely fail or take a very long time over Tor, so it is best to use remote sync only for low-bandwidth activity, such as Calendar, Contacts, Tasks, and Notes.
+For the best experience, it is recommended to set up your Nextcloud devices on [LAN](/user-manual/connecting-locally.md) with a designated IP address and port. This setup allows you to sync files, calendars, and contacts while away from home using a [Router VPN](/user-manual/connecting-remotely.md).
+
+Once configured, you can also use Tor for remote syncing. However, keep in mind that transferring large files may fail or take a considerable amount of time. Therefore, it is advisable to use remote syncing primarily for low-bandwidth activities, such as syncing calendars, contacts, tasks, and notes. Streaming music is also possible.
+
+```admonish warning
+
+When using remote connections, be mindful of any data caps on your cellular plan. You may need to limit bandwidth usage by disconnecting from your Router VPN server or Tor when using cellular data.
+
+```
 
 ## Native Desktop Integration
 
@@ -56,7 +64,7 @@ The desktop version of NextCloud doesn't have much of a user interface.  Once in
 
 This is Nextcloud's official client application for file syncing and account management.  The latest version of the official Nextcloud client is available on their [download page](https://nextcloud.com/install/#install-clients).
 
-### LAN Setup
+### LAN/Router VPN Setup
 
 Make sure you have first set up [LAN access](/user-manual/connecting-locally.md).  Then do the following:
 
