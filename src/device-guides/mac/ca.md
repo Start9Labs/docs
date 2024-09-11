@@ -18,4 +18,4 @@ Click the red (x) button at the top left of the Local Root CA dialog window.
 
 1. You will see your server's CA certificate as trusted now, signified by a blue (+) sign and the CA cert information will now say "This certificate is marked as trusted for all users" in Keychain Access:
 
-1. If using Firefox or Tor Browser, complete this [final step](../../firefox-guides/ca.md#mac--windows)
+1. If using Firefox or Tor Browser, complete this [final step](../../misc-guides/firefox-guides/ca.md#mac--windows)

@@ -31,7 +31,7 @@ This should work for most Debian-based systems, such as Debian, Ubuntu, Mint, Po
 
     If successful, you will receive `1 added`.
 
-1.  If using Firefox or Tor Browser, complete this [final step](../../firefox-guides/ca.md#debian--ubuntu).
+1.  If using Firefox or Tor Browser, complete this [final step](../../misc-guides/firefox-guides/ca.md#debian--ubuntu).
 
 1.  If using a Chromium browser, such as Chrome or Brave, complete this [final step](#additional-steps-for-chromium-browsers).
 
