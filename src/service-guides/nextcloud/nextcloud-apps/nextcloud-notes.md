@@ -2,12 +2,11 @@
 
 [Nextcloud Notes](https://apps.nextcloud.com/apps/notes) is software for managing and syncing your notes across devices. First set up your [client devices](/service-guides/nextcloud/nextcloud-setup/), so that Nextcloud will automatically keep your notes synced.
 
-Clients available for:
-
+Available for:
+- Web Interface
 - Mobile
     - Android
     - iOS
-
 - Desktop:
     - Unix Terminal
 

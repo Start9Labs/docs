@@ -27,8 +27,7 @@ noStrudel is a web app for exploring the nostr protocol.
 
     ```admonish note
 
-    If you plan to connect to your own private relay, you must use [Tor browser](https://www.torproject.org/) or [run Tor](/user-manual/connecting-remotely.md) on your system.  We recommend using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md).  
-    It is recommended to use your Relay's Tor websocket URL (ws://address.onion), since the LAN websocket URL (wss://address.local) will only work when you are home.
+    If you plan to connect to your own private relay, you must use either be running your own [LAN/Router VPN](/user-manual/connecting-remotely.md) or you must use [Tor browser](https://www.torproject.org/) on your system.  We recommend using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md).
 
     ```
 

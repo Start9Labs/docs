@@ -52,7 +52,7 @@ We recommend using Firefox as it is the most compatible browser with Start9 Serv
 
 1. Head to the **Interfaces** tab in the Vaultwarden service on your Start9 Server:
 
-    ![vaultwarden-interfaces](./assets/vaulwarden-interface.png)
+    ![vaultwarden-interfaces](./assets/vaultwarden-interface.png)
 
     ```admonish tip
 

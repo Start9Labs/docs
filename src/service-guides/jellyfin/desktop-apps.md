@@ -14,7 +14,7 @@ You can access Jellyfin and play your media through a [web browser](./web-applic
 **Instructions**
 
 ## MacOS or Windows
-Before proceeding, make sure your device has been setup to [connect over LAN](/user-manual/connecting-locally.md). If you are connecting remotely, you will need to connect over a [router VPN](/user-manual/connecting-remotely.md) or [setup Tor](/src/user-manual/connecting-remotely.md).
+Before proceeding, make sure your device has been setup to [connect over LAN](/user-manual/connecting-locally.md). If you are connecting remotely, you will need to connect over a [router VPN](/user-manual/connecting-remotely.md) or [setup Tor](/user-manual/connecting-remotely.md).
 
 1. Download the .dmg file (MacOS) or the .exe file (Windows) for [Jellyfin Media Player](https://github.com/jellyfin/jellyfin-media-player/releases).
 

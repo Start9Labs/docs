@@ -2,12 +2,12 @@
 
 Nextcloud Files is software for managing and syncing your data between your devices.  In practice it functions similarly to the file explorer on your computer.  Files also serves as the base storage on your server for all the other apps that may need to access your data, such as documents, multimedia, and syncing apps.  This even includes data storage for other Start9 services on your server, such as Jellyfin and Start9 Pages.  
 
-Integrations available for:
+Available for:
 
+- Web Interface
 - Mobile
     - Android
     - iOS
-
 - Desktop
     - Linux
     - Mac

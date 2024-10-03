@@ -2,7 +2,9 @@
 
 [Nextcloud Maps](https://apps.nextcloud.com/apps/maps) is software for viewing and managing your places.  First set up your [client devices](/service-guides/nextcloud/nextcloud-setup/), so that Nextcloud will automatically keep your maps synced.
 
-No clients available at this time.
+Available for:
+
+- Web Interface
 
 ## NC App Setup
 

@@ -2,11 +2,11 @@
 
 [Nextcloud Bookmarks](https://apps.nextcloud.com/apps/bookmarks) is software for sorting, tagging, searching, sharing, and (most importantly) syncing your browser's bookmarks via your server.  First set up your [client devices](/service-guides/nextcloud/nextcloud-setup/), so that Nextcloud will automatically keep your bookmarks synced.
 
-Clients available for:
+Available for:
 
+- Web Interface
 - Mobile
     - Android
-
 - Desktop Browsers
     - Chrome
     - Edge

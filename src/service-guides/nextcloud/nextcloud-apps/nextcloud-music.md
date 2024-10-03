@@ -2,7 +2,9 @@
 
 [Nextcloud Music](https://apps.nextcloud.com/apps/music) is software for organizing and playing your music as well as managing and streaming podcasts and internet radio.  First set up your [client devices](/service-guides/nextcloud/nextcloud-setup/), so that Nextcloud will automatically keep your music synced.
 
-Clients available for:
+Available for:
+
+- Web Interface
 
 - Mobile
     - Android

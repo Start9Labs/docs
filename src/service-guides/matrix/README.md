@@ -10,7 +10,7 @@ Synapse
 
     ```admonish note
 
-    This is the URL currently showing in your browser URL bar, excluding the path. e.g. https://exampleaddress.local or http://exampleaddress.onion.
+    This is the URL currently showing in your browser URL bar, excluding the path. e.g. `https://adjective-noun.local:port` or `http://exampleaddress.onion`
 
     ```
 

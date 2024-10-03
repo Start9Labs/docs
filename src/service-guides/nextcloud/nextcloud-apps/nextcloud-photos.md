@@ -2,8 +2,8 @@
 
 Nextcloud Photos is a basic gallery for viewing and managing your photos.  First set up your [client devices](/service-guides/nextcloud/nextcloud-setup/), so that Nextcloud will automatically keep your photos synced.
 
-Clients available for:
-
+Available for:
+- Web Interface
 - Mobile
     - Android
 
@@ -22,7 +22,24 @@ Clients available for:
 
 1. At the welcome screen, you will be reminded not to delete a special folder that will be created in your Nextcloud file directory and asked to enter your server URL. 
 
-1. Select your prefered interface (``.local`` or ``.onion`` from StartOS's UI) and paste it into the field without ``http`` or ``https``.
+1. Select your prefered interface for Nextcloud (``.local:PORT``, ``IP:PORT`` or ``.onion`` from StartOS's UI) and paste it into the field without ``http`` or ``https``.
+
+1. Proceed to connect and authenticate automatically.
+
+    - That's it! Photos will take some time to initially sync.
+
+### Memories (Android)
+
+[Memories](https://github.com/pulsejet/memories/releases?q=android) the Android app is based on the Nextcloud Memories app and is a modern free and open source replacement for Google Photos.
+
+
+1. First, install ``Memories`` from the Google Play Store, [F-Droid](https://f-droid.org/packages/gallery.memories/) or from [the GitHub repository](https://github.com/pulsejet/memories/releases?q=android). 
+
+1. At the welcome screen, you will be reminded not to delete a special folder that will be created in your Nextcloud file directory and asked to enter your server URL. 
+
+1. Copy the interface for Nextcloud (``.local:PORT``, ``IP:PORT`` from StartOS's UI) and paste it into the field. Tor is not supported.
+
+1. Check disable certificate verification which did not work on testing.
 
 1. Proceed to connect and authenticate automatically.
 
