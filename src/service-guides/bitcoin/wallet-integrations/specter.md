@@ -2,22 +2,15 @@
 
 **Available For**
 
-- StartOS
 - Mac
 - Linux
 - Windows
 
 **Contents**
-- [Specter on StartOS](#specter-on-startos)
 - [Specter Desktop](#specter-desktop)
 
 **Instructions**
 
-## Specter on StartOS
-
-1. Ensure Specter is installed and running if not already.
-
-1. Click "Launch UI".
 
 ## Specter Desktop
 
