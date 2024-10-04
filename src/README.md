@@ -130,6 +130,7 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 - [Getting SMTP Credentials](misc-guides/smtp-credentials.md)
 - [Resetting Your Password](misc-guides/reset-password.md)
 - [Upgrading from a Raspberry Pi](misc-guides/upgrade-pi.md)
+- [Migrating LND to StartOS](misc-guides/lnd-migration.md)
 
 ### Packaging Guide
 
