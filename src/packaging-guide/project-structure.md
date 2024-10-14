@@ -49,17 +49,15 @@ Use the `assets/` directory to package arbitrary files into your package. For ex
 ```bash
 startos/
 ├── actions/
-├── config/
-├── dependencies/
 ├── file-models/
 ├── versions/
 ├── backup.ts
+├── dependencies.ts
 ├── index.ts
 ├── init.ts
 ├── interfaces.ts
 ├── main.ts
 ├── manifest.ts
-├── properties.ts
 ├── sdk.ts
 ├── store.ts
 └── utils.ts
@@ -70,6 +68,10 @@ The `startos/` directory is where you take advantage of the StartOS SDK and APIs
 #### backups.ts
 
 `setupBackups()` is where you define what volumes to back up as well as what directories or files to _exclude_ from backups.
+
+#### dependencies.ts
+
+`setupDependencies()` is where you define any dependencies of this package, including their versions, whether or not they need to be running or simply installed, and which health checks, if any, need to be passing for this package to be satisfied.
 
 #### index.ts
 
@@ -92,10 +94,6 @@ This file is just plumbing, used for exporting package functions to StartOS.
 
 `setupManifest()` is where you define static metadata about the service, such as ID, name, description, release notes, helpful links, volumes, (software) images, hardware requirements, alerts, and dependencies.
 
-#### properties.ts
-
-`setupProperties()` is where you determine which values from the Store and underlying service to expose in the UI in Properties. Properties can imbued with metadata, such as whether or not to mask the value, or to display buttons for copying to clipboard or showing a QR code.
-
 #### sdk.ts
 
 This file is plumbing, used to imbue the generic Start SDK with package-specific type information defined in `manifest.ts` and `store.ts`. The exported SDK is what should be used through the `startos/` directory. It is a custom SDK just for this package.
@@ -107,7 +105,7 @@ The Store is for persisting arbitrary data that are _not_ persisted by the servi
 1. Credentials for end user.
 1. Credentials for dependent services.
 1. Temporary state to be inspected at runtime, such as startup flags.
-1. Metadata that cannot be retrieved or derived from the service itself, to be displayed in Properties.
+1. Data that cannot be retrieved or derived from the service itself.
 
 `setupExposeStore()` is where you determine which values from the Store to expose to other services running on StartOS. _Values not explicitly exposed here will be kept private_.
 
@@ -124,58 +122,9 @@ actions/
 └── action2.ts
 ```
 
-Actions are predefined scripts or commands that present as buttons with optional inputs to end users. For example, a `resetPassword` action might use a service's command line interface to make changes to the file system, generate a new password, and save it to the package vault. The user experiences this as a button, perhaps with an input to optionally accept a user-provided password.
+Actions are predefined scripts that display as buttons to the user. They accept arbitrary input and return structured data that can be optionally displayed masked or as QR codes. For example, a `config.ts` action might present a validated form that represents an underlying config file of the service, allowing them to configure the service without needing SSH or the command line. A `resetPassword` action could generate a new password, save it to the appropriate place in the file system or package store, and display it to the user.
 
-Each action receives its own file and is also passed into `setupActions()` in `actions/index.ts`
-
-### config/
-
-```bash
-config/
-├── index.ts
-├── read.ts.ts
-├── save.ts
-└── spec.ts
-```
-
-The `config/` directory is where you define config options to expose, how to save and retrieve config values from the filesystem, and any side effects of configuration. Config presents in the UI as a simple, validated form.
-
-#### read.ts
-
-`setupConfigRead()` is where you describe how config values are retrieved from the file system. For example, you will read and parse one or more config files used by the service in order to present these options to the user.
-
-#### save.ts
-
-`setupConfigSave()` is where you describe how config values are saved to the file system and any associated side effects. For example, you will save form values to one or more underlying config files used by the service, or to the Store.
-
-#### spec.ts
-
-`setupConfigSpec()` is where you define the form that will display to the user. Forms may contain text inputs, number inputs, drop-downs, toggles, datetime selectors, and many other helpful UI elements and validations.
-
-### dependencies/
-
-```bash
-dependencies/
-├── dependencyConfig/
-└── dependencies.ts
-```
-
-The `dependencies/` directory is used if your service depends on another StartOS service. If your service has no dependencies, you can ignore this directory.
-
-#### dependencies.ts
-
-`setupDependencies()` is where you define the services that your service requires, if any, and which states and versions they must be. This function will execute on service install, update, and config save. It takes the user's config input as an argument, which will be `null` for install and update.
-
-#### dependencyConfig/
-
-```bash
-dependencyConfig/
-├── index.ts
-├── dependency1.ts
-└── dependency2.ts
-```
-
-The `dependencyConfig/` directory is used to create a unique file for each dependency whose config you intend to edit. Each dependency config is then passed into `setupDependencyConfig()` in `index.ts`.
+Each action receives its own file and is also passed into `Actions.of()` in `actions/index.ts`
 
 ### file-models/ (optional)
 
