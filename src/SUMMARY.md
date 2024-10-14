@@ -90,6 +90,7 @@
     - [Alby Browser Extension](service-guides/lightning/cln/alby-extension.md)
     - [RTL](service-guides/lightning/cln/rtl.md)
     - [Zeus](service-guides/lightning/cln/zeus.md)
+  - [Connecting to LND with Alby Hub](service-guides/lightning/lnd/alby-hub.md)
   - [Connecting to LND](service-guides/lightning/lnd/README.md)
     - [Alby Browser Extension](service-guides/lightning/lnd/alby-extension.md)
     - [BitBanana](service-guides/lightning/lnd/bitbanana.md)

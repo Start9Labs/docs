@@ -16,6 +16,8 @@
     - [Ride the Lightning](./cln/rtl.md)
     - [Zeus](./cln/zeus.md)
 
+## Connecting to LND with Alby Hub
+- [Alby Hub](./lnd/alby-hub.md)
 
 ## Connecting to LND
 
