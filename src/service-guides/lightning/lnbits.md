@@ -28,11 +28,11 @@ If you are looking to connect the [Alby](https://github.com/getAlby/lightning-br
 
 ```
 
-1. Head to LNbits on your server, click on **Properties** and copy the address under **(Tor) Superuser Account**:
+1. Navigate to Services -> LNbits, click `Launch UI`, and authenticate with your 'Superuser Username' and 'Superuser Default Password' found in LNbits -> Properties:
 
    ![LNbits superuser](./assets/connect-lnbits-superuser.png)
 
-1. Paste this address into your browser and you'll see the following screen - click **I understand**:
+1. After logging into your LNbits account you'll see the following screen - click **I understand**:
 
    ![LNbits superuser](./assets/connect-lnbits-first-open.png)
 
