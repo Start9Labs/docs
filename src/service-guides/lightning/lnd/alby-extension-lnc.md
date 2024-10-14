@@ -1,4 +1,4 @@
-# LND via Lightning Node Connect (LNC) - Alby
+# LND via Lightning Node Connect (LNC) - Alby Browser Extension
 
 Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over connecting **Alby and LND** using **LNC**. 
 

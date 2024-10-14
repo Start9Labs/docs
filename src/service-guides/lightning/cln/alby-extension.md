@@ -1,6 +1,6 @@
-# LND - Alby
+# Core Lightning - Alby Browser Extension
 
-Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and your **LND** node. 
+Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and your **Core Lightning** node. 
 
 If you'd like to connect via [LNbits](https://marketplace.start9.com/marketplace/lnbits) which allows allocation of funds, please see [this guide](../lnbits.md).
 
@@ -26,27 +26,25 @@ We are going to connect using Tor so that Alby will be able to connect from anyw
 
     ![Connect Alby](../assets/connect-alby-connect-start9-2.png)
 
-1. ... and only then **LND**.
+1. ... and only then **Core Lightning**.
 
     ![Connect Alby](../assets/connect-alby-connect-start9-3.png)
 
 
-1. Copy the LND Connect REST URL from your LND service page’s Properties section and paste it into Alby:
+1. You will see the following fields to fill out:
 
-    ![Connect Alby](../assets/connect-alby-lnd-startos-rest1.png)
+    ![Connect Alby](../assets/connect-alby-cln-empty.png)
 
-    ![Connect Alby](../assets/connect-alby-lnd-startos-rest2.png)
+1. For "Host" this is your Peer Interface - find this under **Interfaces -> Machine Interfaces** within the CLN service on your Start9 server. Copy the address shown here but **remove the http://** at the start and paste it into **Host** within Alby:
 
-1. Alby will pick up that you are connecting over Tor and suggest using their Companion App (only needed if your browser isn’t setup to use Tor) or using Tor natively which you will be able to do. Select **TOR (native)** and click **Continue**:
+1. For **Public key** enter your **Node Id** found at the top of **Properties** within the CLN service on your server.
 
-```admonish note
+1. To generate a rune on StartOS you will need to navigate to Core Lightning > Actions > Generate Rune. Then copy the value and paste it into Alby.
 
-If this does not work, please ensure that Tor is running on your system and that Firefox is configured to use it. If you can’t get this to work it’s OK to use the Companion App - but you will have a better experience with your Start9 server elsewhere if you take the time to get Tor running on your devices.
+1. Leave the **Port** as 9735. 
 
-```
-
-1. Once connection is completed you will see a success page that displays the balance of your LND node in Sats.. 
+1. Click **Continue**. Once the connection is completed you will see a success page that displays the balance of your CLN node in Sats. 
 
     ![Connect Alby](../assets/connect-alby-cln-success.png)
 
-Alby is now connected to your LND node over Tor!
+Alby is now connected to your CLN node over Tor!

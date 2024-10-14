@@ -2,7 +2,7 @@
 
 LND is the second of the two lightning implementations found on StartOS. It was created and is maintained by [Lightning Labs](https://lightning.engineering/).
 
-- [Alby](./alby.md)
+- [Alby Browser Extension](./alby-extension.md)
 - [BitBanana](./bitbanana.md)
 - [Fully Noded](./fully-noded.md)
 - [RTL](./rtl.md)
