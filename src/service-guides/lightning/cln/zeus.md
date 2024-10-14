@@ -16,17 +16,26 @@ This guide will go over how to connect Zeus to **CLN**. If you'd like to connect
 
 1. Download [Zeus](https://zeusln.app/) for your device.
 
-1. Log into StartOS and select Services -> CLN -> Properties. Then expand REST Properties.
+1. Log into StartOS and expand Services -> Core Lightning -> Config -> Advanced -> Plugins, then confirm the CLNRest is toggled on.
 
-1. Tap the QR code icon for **REST Quick Connect** to display the QR code.
+1. Now open Services -> Core Lightning -> Properties.
 
-1. In Zeus, tap "Scan node config". Allow camera access, scan the QR code, and then tap 'Save node config'. Zeus will fill in your node details based on the information in the QR code.
+    ![LND Actions](../assets/connect-zeus-cln-qr.png)
+
+1. Tap the QR code icon for **CLNRest Quick Connect** to display the QR code.
+
+    ![LND Actions](../assets/connect-zeus-cln-connect.png)
+
+1. In Zeus, tap "ADVANCED SET-UP", followed by "Connect a node", and finally click the 'scan' icon in the top right to scan the qr code from the previous step.
+
 
 1. Click **SAVE NODE CONFIG**
 
 ```admonish tip
 
-If you already have other nodes configured in Zeus, go to Settings.-> Connect a node -> + . Then scan the QR code, and tap "Save node config".
+If you already have other nodes configured in Zeus, Click the 'Node' icon in the top right -> 'plus' icon -> 'scan' icon . Then scan the QR code, and tap "SAVE NODE CONFIG".
+
+![LND Actions](../assets/connect-zeus-cln-addnode.png)
 
 ```
 

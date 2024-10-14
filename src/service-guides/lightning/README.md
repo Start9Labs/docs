@@ -12,15 +12,17 @@
 ## Connecting to CLN
 
 - [Connect Directly to Core Lightning](./cln/) - Core Lightning is one of the two lightning implementations found on StartOS. It was created and is maintained by [Blockstream](https://blockstream.com/).
-    - [Alby](./cln/alby.md)
+    - [Alby Browser Extension](./cln/alby-extension.md)
     - [Ride the Lightning](./cln/rtl.md)
     - [Zeus](./cln/zeus.md)
 
+## Connecting to LND with Alby Hub
+- [Alby Hub](./lnd/alby-hub.md)
 
 ## Connecting to LND
 
 - [Connect Directly to LND](./lnd/) - LND is the second of the two lightning implementations found on StartOS. It was created and is maintained by [Lightning Labs](https://lightning.engineering/).
-    - [Alby](./lnd/alby.md)
+    - [Alby Browser Extension](./lnd/alby-extension.md)
     - [BitBanana](./lnd/bitbanana.md)
     - [Fully Noded](./lnd/fully-noded.md)
     - [RTL](./lnd/rtl.md)
@@ -33,6 +35,6 @@
     - [The Concept](./lnbits.md#the-concept)
     - [What lightning node should I use?](./lnbits.md#what-lightning-node-should-i-use)
     - [Setting up LNbits](./lnbits.md#setting-up-ln-bits)
-        - [Alby](./lnbits/alby.md)
+        - [Alby Browser Extension](./lnbits/alby-extension.md)
         - [BlueWallet](./lnbits/bluewallet.md)
         - [Zeus](./lnbits/zeus.md)

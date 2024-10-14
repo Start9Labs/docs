@@ -1,4 +1,4 @@
-# Alby with LNbits
+# Alby Browser Extension with LNbits
 
 Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over connecting Alby to your **LNbits wallet** which allows allocation of funds. 
 

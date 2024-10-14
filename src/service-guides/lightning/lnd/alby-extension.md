@@ -1,4 +1,11 @@
-# LND - Alby
+# LND - Alby Browser Extension
+
+```admonish warning
+
+This is NOT the guide for setting up **Alby Hub** this is for a direct connection to LND. If you'd like to connect via Alby Hub instead (recommended), click [here](./alby-hub.md).
+
+```
+
 
 Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and your **LND** node. 
 

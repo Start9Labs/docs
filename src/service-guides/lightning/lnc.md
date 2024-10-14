@@ -13,5 +13,5 @@ This requires installing the [Lightning Terminal](https://marketplace.start9.com
 
 The following two guides go over how to connect wallets to LND via LNC.
 
-- [Alby](./lnd/alby-lnc.md)
+- [Alby Browser Extension](./lnd/alby-extension-lnc.md)
 - [Zeus](./lnd/zeus-lnc.md)
