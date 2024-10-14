@@ -48,7 +48,7 @@ If you are looking to connect the [Alby](https://github.com/getAlby/lightning-br
 
 Now you can proceed to connect one of the following wallets to LNbits using the guides below:
 
-- [Alby](./lnbits/alby-extension.md)
+- [Alby Browser Extension](./lnbits/alby-extension.md)
 - [BlueWallet](./lnbits/bluewallet.md)
 - [Zeus](./lnbits/zeus.md)
 
