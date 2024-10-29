@@ -1,5 +1,9 @@
 # Using a VPN (Android/Graphene)
 
+#### Contents
+- [OpenVPN](#openvpn)
+- [WireGuard](#wireguard)
+
 ## Prerequisites
 Most modern routers have VPN functionality built-in. You'll need to configure your router to assign a static IP to your Start9 server and to setup a OpenVPN or Wireguard server on your router, depending on which it supports.
 
