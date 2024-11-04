@@ -24,6 +24,10 @@ You will need a StartOS server to test your package. Follow the [flashing guide]
 
         https://github.com/Start9Labs/start-os.git
 
+1.  Initialize the git submodules
+
+        git submodule update --init --recursive
+
 1.  Build start-cli
 
         make cli
