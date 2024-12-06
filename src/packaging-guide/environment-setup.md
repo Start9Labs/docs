@@ -1,22 +1,24 @@
 # Environment Setup
 
-## StartOS server
+## StartOS machine
 
-You will need a StartOS server to test your package. Follow the [flashing guide](../flashing-guides/) to install StartOS on a physical device or VM.
+You will need a computer running StartOS to test your package. Follow the [flashing guide](../flashing-guides/) to install StartOS on a physical device or VM.
 
 ## Docker
 
-<a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a> is needed to convert the docker image to a StartOS image.
+<a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a> is needed to convert docker images to StartOS images.
 
 ## Make
 
-<a href="https://www.gnu.org/software/make/" target="_blank">Make</a> is used streamline builds and produce an s9pk.
+<a href="https://www.gnu.org/software/make/" target="_blank">Make</a> is needed to streamline builds and produce s9pk binaries.
 
 ## NodeJS
 
 <a href="https://nodejs.org/en/" target="_blank">NodeJS</a> is needed to compile the Typescript in your StartOS package.
 
 ## SquashFS
+
+SquashFS is needed to pack the compiled Javascript into a SquashFS file
 
 ##### linux
 
