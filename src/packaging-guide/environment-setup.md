@@ -16,6 +16,18 @@ You will need a StartOS server to test your package. Follow the [flashing guide]
 
 <a href="https://nodejs.org/en/" target="_blank">NodeJS</a> is needed to compile the Typescript in your StartOS package.
 
+## Squashfs
+
+#### Mac
+
+    brew install squashfs
+
+#### linux
+
+    sudo apt install squashfs-tools squashfs-tools-ng
+
+<a href="https://nodejs.org/en/" target="_blank">NodeJS</a> is needed to compile the Typescript in your StartOS package.
+
 ## start-cli
 
 <a href="https://github.com/Start9Labs/start-os/" target="_blank">start-cli</a> is needed to interact with StartOS from the command line.
