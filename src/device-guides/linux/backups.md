@@ -126,9 +126,10 @@
 
     This creates a password for the Local Network Share. Keep it somewhere safe, such as Vaultwarden.
 
-1.  If your installation of Linux (Pop-OS users take special note!) is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba. If it generates an error, you can safely ignore it:
+1.  If your installation of Linux is running a firewall by default or due to your own custom configuration, enter this command to allow connections to Samba. If it generates an error, you can safely ignore it:
 
-        sudo ufw allow Samba
+        sudo firewall-cmd --permanent --add-service=samba
+        sudo firewall-cmd --reload      
 
 ## Create a Backup
 
