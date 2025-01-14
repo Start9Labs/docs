@@ -28,6 +28,13 @@
 
    ![Settings profile verified](./assets/ca-ios-settings-profile-verified.png)
 
+   ```admonish note
+
+   On recent versions of iOS this check-mark does not appear. It may return in the next version of iOS if removing it was a mistake.
+    
+   ```
+
+
 1. Tap "Done".
 
 1. Go to `General > About > Certificate Trust Settings` and enable your Root Ca:
