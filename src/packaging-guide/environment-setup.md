@@ -20,7 +20,7 @@ You will need a computer running StartOS to test your package. Follow the [flash
 
 SquashFS is needed to pack the compiled Javascript into a SquashFS file
 
-##### linux
+##### Linux (Debian-based)
 
     sudo apt install squashfs-tools squashfs-tools-ng
 
