@@ -51,7 +51,11 @@ npm i
 start-cli install -h <host> -s <path-to-s9pk>
 ```
 
-You can eliminate the `-h` argument by hard-coding the host in `~/.startos/config.yaml`.
+You can eliminate the `-h` argument by hard-coding the host in `~/.startos/config.yaml`. For example:
+
+```
+host: https://server-name.local
+```
 
 ### From the GUI
 
