@@ -36,6 +36,10 @@ SquashFS is needed to pack the compiled Javascript into a SquashFS file
 
         https://github.com/Start9Labs/start-os.git
 
+1.  Initialize the git submodules
+
+        git submodule update --init --recursive
+
 1.  Build Start CLI
 
         make cli
