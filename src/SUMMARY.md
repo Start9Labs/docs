@@ -2,10 +2,8 @@
 
 [Introduction](README.md)
 
-# 📘 User Manual
-
 ---
-
+# 📘 User Manual
 - [Initial Setup - Start Fresh](user-manual/start-fresh.md)
 - [Initial Setup - Recover](user-manual/recover.md)
 - [Trusting Your Root CA](user-manual/trust-ca.md)
@@ -18,10 +16,8 @@
 - [Using WiFi](user-manual/wifi.md)
 - [Updating StartOS](user-manual/updating-startos.md)
 
-# 💾 Flashing Guides
-
 ---
-
+# 💾 Flashing Guides
 - [Firmware](flashing-guides/firmware/README.md)
   - [Server Pure (2023 or before)](flashing-guides/firmware/pure.md)
   - [Server Pure (2024)](flashing-guides/firmware/pure-2024.md)
@@ -30,10 +26,8 @@
   - [X86_64 / ARM](flashing-guides/startos/x86_64-arm.md)
   - [Raspberry Pi](flashing-guides/startos/pi.md)
 
-# 📱 Device Guides
-
 ---
-
+# 📱 Device Guides
 - [Linux](device-guides/linux/README.md)
   - [Trusting Your Root CA](device-guides/linux/ca.md)
   - [Using a VPN](device-guides/linux/vpn.md)
@@ -62,10 +56,8 @@
 - [TrueNAS](device-guides/truenas/README.md)
   - [Creating Backups](device-guides/truenas/backups.md)
 
-# 🔧 Service Guides
-
 ---
-
+# 🔧 Service Guides
 - [Bitcoin / Electrs](service-guides/bitcoin/README.md)
   - [Wallet Integrations](service-guides/bitcoin/wallet-integrations.md)
     - [BitBoxApp](service-guides/bitcoin/wallet-integrations/bitboxapp.md)
@@ -137,10 +129,8 @@
   - [Client Setup](service-guides/vaultwarden/bitwarden-setup.md)
   - [Organizations](service-guides/vaultwarden/vaultwarden-org.md)
 
-# 📚 Misc Guides
-
 ---
-
+# 📚 Misc Guides
 - [Firefox Guides](misc-guides/firefox-guides/README.md)
   - [Trusting Your Root CA](misc-guides/firefox-guides/ca.md)
   - [Enabling Tor](misc-guides/firefox-guides/tor.md)
@@ -150,19 +140,15 @@
 - [Upgrading from a Raspberry Pi](misc-guides/upgrade-pi.md)
 - [Migrating LND to StartOS](misc-guides/lnd-migration.md)
 
-# 📦 Packaging Guide
-
 ---
-
+# 📦 Packaging Guide
 - [Introduction](packaging-guide/intro.md)
 - [Environment Setup](packaging-guide/environment-setup.md)
 - [Project Structure](packaging-guide/project-structure.md)
 - [Quick Start](packaging-guide/quick-start.md)
 
-# ❓ Help
-
 ---
-
+# ❓ Help
 - [Common Issues](help/common-issues.md)
 - [Contact](help/contact.md)
 - [MD formatting](formatting.md)
