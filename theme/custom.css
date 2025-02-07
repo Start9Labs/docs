@@ -1,0 +1,129 @@
+/* Custom Start9 Color Theme */
+html.ayu {
+    --bg: rgb(35, 36, 40);
+    --fg: rgb(203, 213, 224);
+    --primary: rgb(148, 163, 184);
+    --secondary: rgb(74, 85, 104);
+    --table-header-bg: rgb(67, 79, 96);
+
+    /* Sidebar */
+    --sidebar-bg: rgb(24, 24, 24);
+    --sidebar-fg: rgb(203, 213, 224);
+    --sidebar-item-hover-bg: rgb(67, 79, 96);
+    --sidebar-item-active-bg: rgb(67, 79, 96);
+    --sidebar-border-color: rgb(67, 79, 96);
+}
+
+/* Override logo path for Dark theme */
+html.ayu .menu-title::before {
+    --logo-path: url('../theme/images/logo.png');
+}
+
+/* Override logo path for Light theme */
+html.light .menu-title::before {
+    --logo-path: url('../theme/images/logo-light.png');
+}
+
+/* Style the menu title area */
+.menu-title {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: var(--menu-bar-height) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 10px;
+}
+
+/* Style the logo */
+.menu-title::before {
+    content: '';
+    display: inline-block;
+    width: 150px;  /* Adjust as needed */
+    height: 50px;   /* Adjust as needed */
+    background-image: var(--logo-path);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Hide unwanted theme options */
+#theme-list button:not([id="light"]):not([id="ayu"]) {
+    display: none !important;
+}
+
+/* Rename theme options */
+#theme-list button#light {
+    font-size: 0;
+}
+
+#theme-list button#light::after {
+    content: "Light";
+    font-size: 14px;
+}
+
+#theme-list button#ayu {
+    font-size: 0;
+}
+
+#theme-list button#ayu::after {
+    content: "Dark";
+    font-size: 14px;
+}
+
+
+/* New CSS for the theme toggle */
+#theme-toggle {
+    /* Style the original button */
+    display: none !important; /* Hide the original theme toggle button */
+}
+
+#custom-theme-toggle {
+    /* Style the custom theme toggle button */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.2em; /* Adjust size as needed */
+    color: var(--fg); /* Use foreground color from theme */
+}
+
+/* General button style */
+#custom-theme-toggle {
+    /* Inherit styles from other buttons */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1em;  /* Adjust as needed */
+    color: var(--fg); /* Use foreground color from theme */
+    opacity: 0.8;    /* Adjust as needed */
+    transition: opacity 0.2s;
+}
+
+#custom-theme-toggle:hover {
+    opacity: 1;
+}
+
+#custom-theme-toggle i {
+    /* Style the icon */
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+/* Style for light mode icon */
+#custom-theme-toggle .light-mode {
+    display: none; /* Initially hide the light mode icon */
+}
+
+html.light #custom-theme-toggle .light-mode {
+    display: inline; /* Show the light mode icon in light mode */
+}
+
+/* Style for dark mode icon */
+#custom-theme-toggle .dark-mode {
+    display: inline; /* Initially show the dark mode icon */
+}
+
+html.light #custom-theme-toggle .dark-mode {
+    display: none; /* Hide the dark mode icon in light mode */
+}

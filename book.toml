@@ -3,27 +3,27 @@ authors = ["Start9"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Start9 Docs"
+title = "Documentation"
 
-[output.html]
-additional-css = ["./mdbook-admonish.css", "./custom.css"]
-git-repository-url = "https://github.com/start9labs/docs"
-git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/start9labs/docs/edit/master/guide/{path}"
-
-[output.html.fold]
-enable = true
-level = 0
-
-[output.i18n.translations]
-language = "es"
-title = "Start9 Documentación"
-authors = []
-translators = []
-description = "Español"
+[build]
+build-dir = "docs"
 
 [preprocessor]
 
 [preprocessor.admonish]
 command = "mdbook-admonish"
-assets_version = "3.0.2"    # do not edit: managed by `mdbook-admonish install`
+assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
+
+[output]
+
+[output.html]
+default-theme = "ayu"
+preferred-dark-theme = "ayu"
+additional-css = [
+    "./theme/mdbook-admonish.css",
+    "./theme/custom.css"
+]
+additional-js = ["./theme/theme-toggle.js"]
+git-repository-url = "https://github.com/start9labs/docs"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/start9labs/docs/edit/master/guide/{path}"
