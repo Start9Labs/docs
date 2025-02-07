@@ -26,4 +26,4 @@ additional-css = [
 additional-js = ["./theme/theme-toggle.js"]
 git-repository-url = "https://github.com/start9labs/docs"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/start9labs/docs/edit/master/guide/{path}"
+edit-url-template = "https://github.com/start9labs/docs/edit/master/src/{path}"
