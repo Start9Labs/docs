@@ -2,7 +2,7 @@
 
 [Introduction](README.md)
 
-# User Manual
+# 📘 User Manual
 
 ---
 
@@ -18,7 +18,7 @@
 - [Using WiFi](user-manual/wifi.md)
 - [Updating StartOS](user-manual/updating-startos.md)
 
-# Flashing Guides
+# 💾 Flashing Guides
 
 ---
 
@@ -30,7 +30,7 @@
   - [X86_64 / ARM](flashing-guides/startos/x86_64-arm.md)
   - [Raspberry Pi](flashing-guides/startos/pi.md)
 
-# Device Guides
+# 📱 Device Guides
 
 ---
 
@@ -62,7 +62,7 @@
 - [TrueNAS](device-guides/truenas/README.md)
   - [Creating Backups](device-guides/truenas/backups.md)
 
-# Service Guides
+# 🔧 Service Guides
 
 ---
 
@@ -137,7 +137,7 @@
   - [Client Setup](service-guides/vaultwarden/bitwarden-setup.md)
   - [Organizations](service-guides/vaultwarden/vaultwarden-org.md)
 
-# Misc Guides
+# 📚 Misc Guides
 
 ---
 
@@ -150,7 +150,7 @@
 - [Upgrading from a Raspberry Pi](misc-guides/upgrade-pi.md)
 - [Migrating LND to StartOS](misc-guides/lnd-migration.md)
 
-# Packaging Guide
+# 📦 Packaging Guide
 
 ---
 
@@ -159,9 +159,10 @@
 - [Project Structure](packaging-guide/project-structure.md)
 - [Quick Start](packaging-guide/quick-start.md)
 
-# Help
+# ❓ Help
 
 ---
 
 - [Common Issues](help/common-issues.md)
 - [Contact](help/contact.md)
+- [MD formatting](formatting.md)

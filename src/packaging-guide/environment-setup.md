@@ -1,26 +1,38 @@
 # Environment Setup
 
-## StartOS server
+## StartOS machine
 
-You will need a StartOS server to test your package. Follow the [flashing guide](../flashing-guides/) to install StartOS on a physical device or VM.
+You will need a computer running StartOS to test your package. Follow the [flashing guide](../flashing-guides/) to install StartOS on a physical device or VM.
 
 ## Docker
 
-<a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a> is needed to convert the docker image to a StartOS image.
+<a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a> is needed to convert docker images to StartOS images.
 
 ## Make
 
-<a href="https://www.gnu.org/software/make/" target="_blank">Make</a> is used streamline builds and produce an s9pk.
+<a href="https://www.gnu.org/software/make/" target="_blank">Make</a> is needed to streamline builds and produce s9pk binaries.
 
 ## NodeJS
 
 <a href="https://nodejs.org/en/" target="_blank">NodeJS</a> is needed to compile the Typescript in your StartOS package.
 
-## start-cli
+## SquashFS
+
+SquashFS is needed to pack the compiled Javascript into a SquashFS file
+
+##### Linux (Debian-based)
+
+    sudo apt install squashfs-tools squashfs-tools-ng
+
+##### Mac
+
+    brew install squashfs
+
+## Start CLI
 
 <a href="https://github.com/Start9Labs/start-os/" target="_blank">start-cli</a> is needed to interact with StartOS from the command line.
 
-1.  Clone the start-os repo
+1.  Clone the StartOS repo
 
         https://github.com/Start9Labs/start-os.git
 
@@ -28,11 +40,11 @@ You will need a StartOS server to test your package. Follow the [flashing guide]
 
         git submodule update --init --recursive
 
-1.  Build start-cli
+1.  Build Start CLI
 
         make cli
 
-1.  Initialize start-cli
+1.  Initialize Start CLI
 
         start-cli init
 
