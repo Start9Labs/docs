@@ -1,4 +1,4 @@
-# Using a VPN (Windows)
+# Connecting over Router VPN (Windows)
 
 #### Contents
 - [OpenVPN](#openvpn)

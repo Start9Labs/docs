@@ -1,4 +1,4 @@
-# Using a VPN (Mac)
+# Connecting over Router VPN (Mac)
 
 #### Contents
 - [OpenVPN](#openvpn)

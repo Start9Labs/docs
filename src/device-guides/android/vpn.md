@@ -1,4 +1,4 @@
-# Using a VPN (Android/Graphene)
+# Connecting over Router VPN (Android/Graphene)
 
 #### Contents
 - [OpenVPN](#openvpn)

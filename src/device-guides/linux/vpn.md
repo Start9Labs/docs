@@ -1,4 +1,4 @@
-# Using a VPN (Linux)
+# Connecting over Router VPN (Linux)
 
 #### Contents
 - [OpenVPN](#openvpn)

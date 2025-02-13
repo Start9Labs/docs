@@ -1,4 +1,4 @@
-# Using a VPN (iOS)
+# Connecting over Router VPN (iOS)
 
 #### Contents
 - [OpenVPN](#openvpn)
