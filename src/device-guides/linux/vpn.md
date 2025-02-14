@@ -11,6 +11,62 @@ Most modern routers have VPN functionality built-in. You'll need to configure yo
 
 Slightly slower, but with more authentication options, including creation of individual users with passwords.
 
+1. Install `openvpn`.
+
+    - Debian / Ubuntu
+
+        ```
+        sudo apt update && sudo apt install openvpn
+        ```
+    
+    - Fedora / RHEL
+
+        ```
+        sudo dnf update && sudo dnf install openvpn
+        ```
+    - Arch / Manjaro
+
+        ```
+        sudo pacman -Syu && sudo pacman -S openvpn
+        ```
+
+1.  Move into the directory where you downloaded your Root CA (usually `~/Downloads`), for example:
+
+        cd ~/Downloads
+
+1. Copy the contents of your OpenVPN configuration file into `/etc/openvpn/client.conf` (or enter them from your notes)
+
+    ```
+    sudo mv myconf.ovpn /etc/openvpn/client.conf
+    ```
+    Be certain to replace `myconf.ovpn` with the name of the file you downloaded.
+
+1. Set the permissions on the configuration file correctly:
+
+    ```
+    sudo chmod 600 /etc/openvpn/client.conf
+    ```
+
+1. Start OpenVPN and load the config file, entering your username and password when requested.
+
+    ```
+    sudo systemctl start openvpn@client
+    ```
+
+1. Verifiy that a this worked by examining the output of:
+    ```
+    sudo systemctl status openvpn@client
+    ```
+
+1. Enable OpenVPN on Boot (optional) - this would connect you each time you boot
+    ```
+    sudo systemctl enable openvpn@client
+    ```
+
+```admonish tip
+Each time you want to close the VPN connection:
+    `sudo systemctl stop openvpn@client`
+```
 
 
 ## WireGuard
@@ -43,7 +99,7 @@ Simpler and faster, its limitation is that it authenticates with keys rather tha
 1.  Move into the directory where you downloaded your Root CA (usually `~/Downloads`), for example:
 
         cd ~/Downloads
-        
+
 1. Copy the contents of your WireGuard configuration file into `/etc/wireguard/wg0.conf` (or enter them from your notes)
 
     ```
@@ -71,3 +127,8 @@ Simpler and faster, its limitation is that it authenticates with keys rather tha
     ```
     sudo systemctl enable wg-quick@wg0
     ```
+
+ ```admonish tip
+Each time you want to close the VPN connection:
+    `sudo wg-quick down wg0`
+```
