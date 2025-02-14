@@ -1,4 +1,4 @@
-# Running Tor (Windows)
+# Connecting over Tor (Windows)
 
 1.  Unfortunately, <a href="https://torproject.org" target="_blank">Tor Project</a> no longer publishes a standalone Tor binary for Windows, so the recommended way to get it is with the Tor Browser Bundle. You can download it <a href="https://www.torproject.org/download/" target="_blank">here</a>.
 

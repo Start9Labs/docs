@@ -1,4 +1,4 @@
-# Running Tor (Mac)
+# Connecting over Tor (Mac)
 
 #### Contents
 
