@@ -54,47 +54,53 @@ By running Tor on your phone or laptop, certain apps will be able to connect to 
 - [iOS](../device-guides/ios/tor.md)
 
 ## Connecting using WireGuard Script and a VPS
-Connecting over your router VPN will expose your home LAN IP address.  If you don't want to do that you can rent a small Virtual Private Server with a static IP address.  Then create a wireguard VPN connection between the VPS and your StartOS server.  This will expose the VPS IP address instead of your home LAN IP address.  It also allows you to access your StartOS server by browsing to the VPS IP address.  To make that easy, StartOS includes a wireguard vps setup script that can help automate this... 
+Connecting over your router VPN will expose your home LAN IP address.  If you don't want to do that you can rent a small Virtual Private Server (VPS) with a static IP address.  Then create a wireguard VPN connection between the VPS and your StartOS server.  This will expose the VPS IP address instead of your home LAN IP address.  It also allows you to access your StartOS server by browsing to the VPS IP address.  StartOS includes a wireguard VPS setup script to automate this... 
 
 **Prerequisites**
 - You will need the IP address (IPV4) of your VPS server and the root password
-- SSH access to your StartOS server - [Using SSH](https://staging.docs.start9.com/user-manual/ssh.html)
+- SSH access to your StartOS server - [Using SSH](../user-manual/ssh.html)
 
-### First SSH to your StartOS server.  
-Once connected, run the command:
-wg-vps-setup -i IPV4 address of your VPS
-It will prompt for the Linux server password (not your StartOS password)
-After entering the password it will print a welcome message and then prompt for port and name.  If you aren't sure of what to do, accept the defaults – just hit enter and continue.
+### 1. SSH to your StartOS server.  
+Once connected, run the command below replacing ###.###.###.### with the IPV4 address of your VPS:
+
+```wg-vps-setup -i ###.###.###.###```
+
+It will prompt for the VPS root password (not your StartOS password)
+After entering the password it will print a welcome message and then prompt for port and name.  If you don't need to customize just accept the defaults – hit enter and continue.
 The script will execute - installing packages, configuring wireguard and unless there is an issue it will conclude with WireGuard server setup complete!
 
 To verify it is correct use the following command:
-nmcli c show
+
+```nmcli c show```
+
 You will see an entry with your StartOS server name (first 15 characters) of type wireguard.
 
-### Second Configure ACME (Automantic Certificate Management Environment).  
+### 2. Configure ACME (Automantic Certificate Management Environment).  
 This will allow you to generate SSL (https) certificates for Clearnet hosting.
 
-In StartOS go to System -> Manage -> ACME.  
-If you don't have your own provider, select Let's Encrypt and provide an email address.  
-Once added you will need to assign it an email address.  The email address may be stored in the certificate.  It may be used by LetsEncrypt to email you notifications.  You can enter any email address you like here.
-When done it should look like this:
+In StartOS go to System -> Manage -> ACME.  If you don't have your own provider, select Let's Encrypt and provide an email address.  You can enter any email address you like here.  When done it will look like this:
 
-### Third Configure StartOS and Services to be accessible via public IP address
+![Completed ACME Picture](./assets/completed-acme.png "Completed ACME picture")
+
+### 3. Configure StartOS and Services to be accessible via public IP address
 
 #### For the overall Server UI
-Go to System -> Insights -> About
-Under Web Addresses you will see the ways you can access your StartOS server.  Click the Make Public button and it will add a new entry showing your VPS IP address
-You can test this by clicking the open in a new window button on the right hand side of that row.  You can also copy the link or display a QR code for it.  
+Go to System -> Insights -> About -> Web Addresses.  You will see the various ways you can access your StartOS server.  Click the Make Public button to allow access via your VPS IP address
+![StartOS Make Public](./assets/startos-make-public-add-domain.png)
+
+You can test this by clicking the open in a new window button on the right hand side of that row.  You can also display the QR code for the link or copy the link to the clipboard.
 
 #### For each service
-Select the service you want to reach via clearnet.
-Click on Interfaces and again click the Make Public button to allow access via your wireguard IP address and port number 
-You can test this by clicking the open in a new window button on the right hand side of that row.  You can also copy the link or display a QR code for it.  
+Select the service you want to reach via clearnet.  Click on Interfaces, then click the Make Public button to allow access via your VPS IP address and port number 
 
-### Fourth Point your domain to your VPS and let StartOS map subdomains to services
+![Interfaces Make Public](./assets/interfaces-make-public-add-domain.png)
+
+You can test this by clicking the open in a new window button on the right hand side of that row.  You can also display the QR code for the link or copy the link to the clipboard.   
+
+### 4. Point your domain to your VPS and let StartOS map subdomains to services
 
 #### Update your domain to point to your VPS
-Add a new A record with *.yourdomain.com and the IP address of your VPS running wireguard.  If your VPS IP address is 172.67.191.233 and your domain name is johnsmith.com the A record would have name of "*.johnsmith.com", Type of "A", record of "172.67.191.233" and TTL of 14400 (usually the default)
+Add a new A record with \*.yourdomain.com and the IP address of your VPS running wireguard.  If your VPS IP address is 172.67.191.233 and your domain name is johnsmith.com the A record would have name of "*.johnsmith.com", Type of "A", record of "172.67.191.233" and TTL of 14400 (usually the default)
 
 After adding the A record it may take some time to propogate.  You can check propagation using a website like dnschecker.org
 
