@@ -2,9 +2,8 @@
 
 This page is for the Server Pure _only_. It will not work on other devices.
 
-It is generally unnecessary to flash your device in this manner. Please only use this method if directed by a Start9 team member.
+Generally, you do not need to manually flash your device using this guide, as the firmware is now automatically updated on supported devices. Please only use this method if directed by a Start9 Support Technician. **If you were told to "_flash your device_", you are looking for the StartOS flashing guides instead.**
 
-The firmware source code can be viewed <a href="https://source.puri.sm/firmware/releases/-/tree/master/librem_mini_v2/custom" target="_blank">here</a>.
 
 ## Prerequisites
 
@@ -17,7 +16,14 @@ The firmware source code can be viewed <a href="https://source.puri.sm/firmware/
 
 1. Connect a monitor and keyboard to your server using two of the USB3 (blue) ports.
 
-1. Download the latest firmware: <a href="https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip" target="_blank">standard release</a> or <a href="https://source.puri.sm/firmware/releases/-/raw/master/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip" target="_blank">jailed WiFi</a>.
+1. Download the right firmware: 
+
+   - Models without WiFi - <a href="https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip" target="_blank">Download Standard</a>
+   - Models with WiFi - <a href="https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip" target="_blank">Download Standard</a> | <a href="https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip" target="_blank">Download Jailed WiFi</a>
+
+   ```admonish note
+   The Jailed WiFi variation deactivates WiFi at the firmware level so it can never be turned on
+   ```
 
 1. Copy or move the zip file to the USB stick.
 
