@@ -2,33 +2,35 @@
 
 #### Contents
 
-- [Connecting over Router VPN](#connecting-over-router-vpn)
+- [Connecting via Router VPN](#connecting-over-router-vpn)
 - [Connecting over Tor](#connecting-over-tor)
 
-## Connecting over Router VPN
+## Connecting via router VPN
 
 **Prerequisite**
 
 - [Trusting Your Root CA](./trust-ca.md)
 
-Most modern routers have VPN functionality built-in. Refer to your router's user manual for instructions to complete the following steps.
+### Configuring Your Router
 
-1. Assign a static IP address to your server.
+Most modern routers have VPN server functionality built-in. Refer to your router's user manual for instructions to complete the following steps.
+
+1. Assign a static IP address for your server on the LAN.
 
 2. Enable your router's VPN. In some cases you will be asked to choose between OpenVPN or Wireguard protocols.
 
    ```admonish tip title="Enable Dynamic DNS (Optional)"
 
-   Rarely, your ISP may unexpectedly change your home IP address. If this happens, it will break your VPN connection until you re-complete the steps below. To prevent this, you can enable Dynamic DNS in your router, which is usually a paid service. To learn more about Dynamic DNS, click [here]().
+   Rarely, your ISP may unexpectedly change the IP address of your home. If this happens, it will break your VPN connections until you re-complete the steps below. To prevent this, you can enable [dynamic DNS](). Many routers offer this as a free or paid service. If not, there are third party services available.
    ```
 
-3. Download your VPN config file from your router.
+3. Download your VPN config file from your router. Keep in mind, this file will be different depending on whether or not you use dynamic DNS.
 
-4. Install OpenVPN or Wireguard on your client device(s) and establish a VPN connection to your LAN using the config file from above.
+4. Follow the instructions below to install and configure OpenVPN or Wireguard on your phone/laptop.
 
-### Connecting to your Router VPN on your Phone/Laptop
+### Configuring Your Phone/Laptop
 
-By running a VPN client on your phone or laptop that connects directly to your VPN server on your router, you will be able to connect to your server as if you were on your LAN. Select the guide specific to your phone/laptop:
+By running a VPN client on your phone or laptop that connects directly to your VPN server on your router, you will be able to connect to your Start9 server as if you were on your LAN. Select the guide specific to your phone/laptop:
 
 - [Mac](../device-guides/mac/vpn.md)
 - [Linux](../device-guides/linux/vpn.md)
