@@ -1,4 +1,4 @@
-# Running Tor (iOS)
+# Connecting over Tor (iOS)
 
 1.  Install [Orbot](https://apps.apple.com/app/orbot/id1609461599).
 

@@ -17,7 +17,7 @@ To connect locally, you must be connected to the same LAN as your server. Local 
 
 ```admonish danger title="Important - Set a Static IP"
 
-Your router may unexpectedly change your server's IP address. To prevent this, assign a static IP address to your server in your router settings. This is supported by all routers. Refer to your router's user manual for instructions.
+Your router will automatically change your server's IP address on the LAN from time to time. To prevent this, assign a static IP address for your server. All routers support this functionality. Refer to your router's user manual for instructions.
 ```
 
 1. Ensure you have [trusted your Root CA](./trust-ca.md).

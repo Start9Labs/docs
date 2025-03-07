@@ -1,4 +1,4 @@
-# Running Tor (Linux)
+# Connecting over Tor (Linux)
 
 #### Contents
 
