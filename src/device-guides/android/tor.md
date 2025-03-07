@@ -1,4 +1,4 @@
-# Running Tor (Android/Graphene)
+# Connecting over Tor (Android/Graphene)
 
 Some apps have Tor built-in; they do not require additional software or configurations. Most apps, however, do not have Tor built-in. They require an app called Orbot.
 
