@@ -43,3 +43,11 @@ Choose your target device below for instructions creating a network folder.
 - [Windows](../device-guides/windows/backups.md)
 - [Synology](../device-guides/synology/backups.md)
 - [TrueNAS](../device-guides/truenas/backups.md)
+
+## Best Practices
+
+Even with proper backups the risk of data corruption is always non-zero. Therefore it is recommended to take additional care when backing up highly valuable or irreplaceable data like a lightning node:
+
+  * High quality SSDs should be favored over HDDs as a backup target.
+  * Backup to multiple targets.
+  * If backing up to multiple targets make sure all backups are up to date.
