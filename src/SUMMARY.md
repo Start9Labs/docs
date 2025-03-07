@@ -19,8 +19,7 @@
 ---
 # 💾 Flashing Guides
 - [Firmware](flashing-guides/firmware/README.md)
-  - [Server Pure (2023 or before)](flashing-guides/firmware/pure.md)
-  - [Server Pure (2024)](flashing-guides/firmware/pure-2024.md)
+  - [Server Pure](flashing-guides/firmware/pure.md)
   - [Server One (2023)](flashing-guides/firmware/one-2023.md)
 - [StartOS](flashing-guides/startos/README.md)
   - [X86_64 / ARM](flashing-guides/startos/x86_64-arm.md)
