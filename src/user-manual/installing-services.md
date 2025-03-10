@@ -21,7 +21,7 @@ To switch between registries or add a custom registry, simply click "Change" und
 
 ![change registry](./assets/registries.png)
 
-## SideLoading
+## Sideloading
 
 Sideloading is useful if you are testing a service that does not yet exist on a registry, or if you prefer to eliminate the Marketplace as a point of trust. An s9pk can be obtained from anywhere or even built from source code.
 

@@ -8,6 +8,7 @@
 - Windows
 
 **Contents**
+
 - [Using Sparrow on StartOS](#sparrow-on-startos)
 - [Using Sparrow Desktop App](#sparrow-desktop)
 
@@ -32,16 +33,16 @@ To choose between a connection to Bitcoin Core or to Electrs, instead of using t
 To connect to Bitcoin Core over your LAN you do not need to be running Tor, but connecting to your .local will mean you can't use Sparrow away from home.
 
 To connect to Electrs (or Bitcoin Core over Tor), you must be running Tor. You can do this in two ways…
-   
-   1. You could be running a proxy on your computer by [running Tor in the background](../../../user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop). In this case you would toggle-on `Use Proxy`. 
-   
+
+   1. You could be running a proxy on your computer by [running Tor in the background](../../../user-manual/connecting-remotely/tor.md#running-tor-in-the-background-on-your-phonelaptop). In this case you would toggle-on `Use Proxy`.
+
    1. You can use the Tor daemon built into Sparrow itself, which will start automatically when you enter a .onion. You can even do this if you are already running Tor locally.
 
 ```
 
 ```admonish warning
 
-You can use Sparrow's built-in Tor even if you are already running [Tor in background](../../../user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop)… except on Windows, where you **must** use the proxy **if** you have already set it up and have it running.
+You can use Sparrow's built-in Tor even if you are already running [Tor in background](../../../user-manual/connecting-remotely/tor.md#running-tor-in-the-background-on-your-phonelaptop)… except on Windows, where you **must** use the proxy **if** you have already set it up and have it running.
 
 ```
 
@@ -55,40 +56,40 @@ You can use Sparrow's built-in Tor even if you are already running [Tor in backg
 
         - If connecting over Tor, copy the `Tor Address`. _Remove_ the `http://` prefix and enter 8332 for the port.
 
-         ![Sparrow Bitcoin Core](./assets/sparrow-desktop-bitcoin1.png)
+        ![Sparrow Bitcoin Core](./assets/sparrow-desktop-bitcoin1.png)
 
      1. In the `User / Pass` field, enter you Bitcoin Core RPC Username and Password (found in `Services > Bitcoin Core > Properties`)
 
-     1. If you are connecting over Tor set up as a [local Proxy](../../../user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop) …
+     1. If you are connecting over Tor set up as a [local Proxy](../../../user-manual/connecting-remotely/tor.md#running-tor-in-the-background-on-your-phonelaptop) …
 
-         - Enable `Use Proxy`.
+        - Enable `Use Proxy`.
 
-         - For `URL`, enter "localhost".
+        - For `URL`, enter "localhost".
 
-         - For `Port`, enter "9050".
+        - For `Port`, enter "9050".
 
-         Otherwise, if you are using your .local or will use Sparrow's own Tor daemon, keep `Use Proxy` diabled.
+        Otherwise, if you are using your .local or will use Sparrow's own Tor daemon, keep `Use Proxy` diabled.
 
-      1. Test your connection
+     1. Test your connection
 
-         ![Sparrow test connection](./assets/sparrow-desktop-bitcoin2.png)
+        ![Sparrow test connection](./assets/sparrow-desktop-bitcoin2.png)
 
    - **Connecting to electrs**:
 
      1. In the `URL` field, enter your electrs Tor hostname and port (found in `Services > electrs > Properties`). Currently, electrs can only be used over Tor.
 
-         ![Sparrow Electrs](./assets/sparrow-desktop-electrs1.png)
+        ![Sparrow Electrs](./assets/sparrow-desktop-electrs1.png)
 
-      1. If you are connecting over Tor set up as a [local Proxy](../../../user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop) …
+     1. If you are connecting over Tor set up as a [local Proxy](../../../user-manual/connecting-remotely/tor.md#running-tor-in-the-background-on-your-phonelaptop) …
 
-         - Enable `Use Proxy`.
+        - Enable `Use Proxy`.
 
-         - For `URL`, enter "localhost".
+        - For `URL`, enter "localhost".
 
-         - For `Port`, enter "9050".
+        - For `Port`, enter "9050".
 
-         Otherwise, if you are using Sparrow's own Tor daemon, keep `Use Proxy` diabled.
+        Otherwise, if you are using Sparrow's own Tor daemon, keep `Use Proxy` diabled.
 
-      1. Test your connection
+     1. Test your connection
 
-         ![Sparrow test connection](./assets/sparrow-desktop-electrs2.png)
+        ![Sparrow test connection](./assets/sparrow-desktop-electrs2.png)

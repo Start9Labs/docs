@@ -7,30 +7,30 @@
 - Windows
 
 **Contents**
+
 - [Specter Desktop](#specter-desktop)
 
 **Instructions**
-
 
 ## Specter Desktop
 
 1. If this is your first time using Specter, you will be shown a screen to pick a connection method. But we'll skip this for now and set up Tor.
 
-    ![Specter first open](./assets/specter-start.png)
+   ![Specter first open](./assets/specter-start.png)
 
 1. Click `Settings` and select the `Tor` tab.
 
-    - If you have Tor running as [local Proxy](../../../user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop) scroll down and select `Custom`
+   - If you have Tor running as [local Proxy](../../../user-manual/connecting-remotely/tor.md#running-tor-in-the-background-on-your-phonelaptop) scroll down and select `Custom`
 
-        - Enter or leave the URL as `socks5h://localhost:9050`
+     - Enter or leave the URL as `socks5h://localhost:9050`
 
-        - Click `Test connection` - if it fails, please review your Tor proxy
+     - Click `Test connection` - if it fails, please review your Tor proxy
 
-    - If you don't have Tor running in the background of your system, select `Built-in`
+   - If you don't have Tor running in the background of your system, select `Built-in`
 
-        - Click `Set Up`, then `Setup Tor`
+     - Click `Set Up`, then `Setup Tor`
 
-    - then click the `Save` button
+   - then click the `Save` button
 
 ### Connecting to Bitcoin Core (Recommended)
 
@@ -38,7 +38,7 @@
 
 1. In the `Username` and `Password` fields, enter your Bitcoin Core RPC credentials (found in `Services > Bitcoin Core > Properties`)
 
-    ![Specter Bitcoin RPC](./assets/specter-new.png)
+   ![Specter Bitcoin RPC](./assets/specter-new.png)
 
 1. In `Host`, enter your Bitcoin Core RPC Interface Tor Address (found in `Services > Bitcoin Core > Interfaces`).
 
@@ -56,11 +56,11 @@ If you already have a Bitcoin Core connection set up, Specter will make you dele
 
 1. Click `Add plugin` then click `Spectrum`
 
-    ![Specter add plugin](./assets/specter-spectrum.png)
+   ![Specter add plugin](./assets/specter-spectrum.png)
 
 1. Select `Enter my own`
 
-    ![Specter Electrs](./assets/specter-electrs.png)
+   ![Specter Electrs](./assets/specter-electrs.png)
 
 1. In the `Host` field, enter your electrs Tor hostname (found in `Services > electrs > Properties`) and enter your port as `50001`.
 

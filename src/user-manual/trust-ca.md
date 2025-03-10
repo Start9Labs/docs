@@ -2,12 +2,7 @@
 
 To establish a secure (HTTPS) connection with your server, it is necessary to download and trust your server's Root Certificate Authority (Root CA).
 
-#### Contents
-
-- [Download Your Root CA](#download-your-root-ca)
-- [Trust Your Root CA](#trust)
-
-## Download your Root CA
+## 1. Download your Root CA
 
 There are multiple ways to download your Root CA.
 
@@ -33,7 +28,7 @@ There are multiple ways to download your Root CA.
 
    Once you have downloaded your Root CA on one device, you can simply send the file to yourself using email, messaging app, or other file sharing technique.
 
-## Trust your Root CA
+## 2. Trust your Root CA
 
 Select your client device OS and follow instructions
 

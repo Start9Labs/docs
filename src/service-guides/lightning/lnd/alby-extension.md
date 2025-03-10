@@ -6,8 +6,7 @@ This is NOT the guide for setting up **Alby Hub** this is for a direct connectio
 
 ```
 
-
-Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and your **LND** node. 
+Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and your **LND** node.
 
 If you'd like to connect via [LNbits](https://marketplace.start9.com/marketplace/lnbits) which allows allocation of funds, please see [this guide](../lnbits.md).
 
@@ -17,7 +16,7 @@ We are going to connect using Tor so that Alby will be able to connect from anyw
 
 ```
 
-1. Make sure you are already [running Tor](/user-manual/connecting-remotely.md) on your system and we suggest using Firefox which must be [configured to use Tor](/user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop)
+1. Make sure you are already [running Tor](/user-manual/connecting-remotely/tor.md) on your system and we suggest using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md)
 
 1. Download the Alby extension by visiting the [Alby Github](https://github.com/getAlby/lightning-browser-extension#installation), selecting your browser, and installing.
 
@@ -27,22 +26,21 @@ We are going to connect using Tor so that Alby will be able to connect from anyw
 
 1. On the next screen, select **Bring Your Own Wallet** and click **Connect**.
 
-    ![Connect Alby](../assets/connect-alby-connect-start9-1.png)
+   ![Connect Alby](../assets/connect-alby-connect-start9-1.png)
 
 1. Click **Start9** first...
 
-    ![Connect Alby](../assets/connect-alby-connect-start9-2.png)
+   ![Connect Alby](../assets/connect-alby-connect-start9-2.png)
 
 1. ... and only then **LND**.
 
-    ![Connect Alby](../assets/connect-alby-connect-start9-3.png)
-
+   ![Connect Alby](../assets/connect-alby-connect-start9-3.png)
 
 1. Copy the LND Connect REST URL from your LND service page’s Properties section and paste it into Alby:
 
-    ![Connect Alby](../assets/connect-alby-lnd-startos-rest1.png)
+   ![Connect Alby](../assets/connect-alby-lnd-startos-rest1.png)
 
-    ![Connect Alby](../assets/connect-alby-lnd-startos-rest2.png)
+   ![Connect Alby](../assets/connect-alby-lnd-startos-rest2.png)
 
 1. Alby will pick up that you are connecting over Tor and suggest using their Companion App (only needed if your browser isn’t setup to use Tor) or using Tor natively which you will be able to do. Select **TOR (native)** and click **Continue**:
 
@@ -52,8 +50,8 @@ If this does not work, please ensure that Tor is running on your system and that
 
 ```
 
-1. Once connection is completed you will see a success page that displays the balance of your LND node in Sats.. 
+1. Once connection is completed you will see a success page that displays the balance of your LND node in Sats..
 
-    ![Connect Alby](../assets/connect-alby-cln-success.png)
+   ![Connect Alby](../assets/connect-alby-cln-success.png)
 
 Alby is now connected to your LND node over Tor!

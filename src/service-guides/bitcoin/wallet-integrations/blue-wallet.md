@@ -11,7 +11,7 @@ Blue Wallet on Mac cannot use Tor and is therefore not supported by StartOS.
 
 ```admonish note
 
-You will need to be [running Tor in the background](../../../user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop) on your device.
+You will need to be [running Tor in the background](../../../user-manual/connecting-remotely/tor.md#running-tor-in-the-background-on-your-phonelaptop) on your device.
 
 ```
 

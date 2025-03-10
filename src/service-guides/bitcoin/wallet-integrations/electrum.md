@@ -17,7 +17,7 @@ Completing this guide will _add_ your StartOS Electrum Server (electrs) to the l
 
 ```admonish note
 
-You will need to be [running Tor in the background](../../../user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop) on your device.
+You will need to be [running Tor in the background](../../../user-manual/connecting-remotely/tor.md#running-tor-in-the-background-on-your-phonelaptop) on your device.
 
 ```
 
