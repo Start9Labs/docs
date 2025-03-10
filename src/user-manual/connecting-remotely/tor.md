@@ -44,8 +44,8 @@ You can connect to your server and installed services from anywhere in the world
 
 By running Tor in the background on your phone or laptop, certain apps can connect over Tor, even if the apps themselves do not natively support connecting over Tor. Select the guide specific to your phone/laptop:
 
-- [Mac](../device-guides/mac/tor.md)
-- [Linux](../device-guides/linux/tor.md)
-- [Windows](../device-guides/windows/tor.md)
-- [Android/Graphene](../device-guides/android/tor.md)
-- [iOS](../device-guides/ios/tor.md)
+- [Mac](../../device-guides/mac/tor.md)
+- [Linux](../../device-guides/linux/tor.md)
+- [Windows](../../device-guides/windows/tor.md)
+- [Android/Graphene](../../device-guides/android/tor.md)
+- [iOS](../../device-guides/ios/tor.md)

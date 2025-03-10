@@ -22,8 +22,8 @@ Most modern routers include a VPN server. If your router does not include a VPN 
 
 ## Configuring Your Phone/Laptop
 
-- [Mac](../device-guides/mac/vpn.md)
-- [Linux](../device-guides/linux/vpn.md)
-- [Windows](../device-guides/windows/vpn.md)
-- [Android/Graphene](../device-guides/android/vpn.md)
-- [iOS](../device-guides/ios/vpn.md)
+- [Mac](../../device-guides/mac/vpn.md)
+- [Linux](../../device-guides/linux/vpn.md)
+- [Windows](../../device-guides/windows/vpn.md)
+- [Android/Graphene](../../device-guides/android/vpn.md)
+- [iOS](../../device-guides/ios/vpn.md)
