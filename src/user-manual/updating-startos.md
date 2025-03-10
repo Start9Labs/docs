@@ -34,4 +34,4 @@ StartOS does not have automatic updates and will _never_ update without your app
 
 ## Update by Re-flashing
 
-If you updating to an unreleased version of StartOS, or something went wrong with a UI update (very rare), it may be necessary to update StartOS by re-flashing. Follow the guide for [Flashing StartOS]().
+If you are updating to an unreleased version of StartOS, or something went wrong with a UI update (very rare), it may be necessary to update StartOS by re-flashing. Follow the guide for [Flashing StartOS](../flashing-guides/startos/).

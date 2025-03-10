@@ -13,7 +13,7 @@ This guide is adapted from <a href="https://shiftcrypto.support/help/en-us/14-pr
 
 ```admonish note
 
-You will need to be [running Tor in the background](../../../user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop) on your device.
+You will need to be [running Tor in the background](../../../user-manual/connecting-remotely/tor.md#running-tor-in-the-background-on-your-phonelaptop) on your device.
 
 ```
 

@@ -9,9 +9,9 @@
 - Windows
 
 **Contents**
+
 - [Desktop](#desktop-wallet)
 - [Mobile](#mobile-wallet)
-
 
 **Instructions**
 
@@ -22,7 +22,7 @@
    ![Blockstream Green App Settings](./assets/blockstream-green-desktop1.png)
 
 1. Click the `Network` button
-1. Toggle the `Connect with Tor` to On (Note: you don't need to connect through a proxy, but optionally can connect to your own if you have [set one up](/user-manual/connecting-remotely.md#running-tor-in-the-background-on-your-phonelaptop).)
+1. Toggle the `Connect with Tor` to On (Note: you don't need to connect through a proxy, but optionally can connect to your own if you have [set one up](/user-manual/connecting-remotely/tor.md#running-tor-in-the-background-on-your-phonelaptop).)
 
    ![Blockstream Green Network](./assets/blockstream-green-desktop2.png)
 
@@ -35,14 +35,11 @@
 
 1. Click `< Back`, then click `X` to close.
 
-
-
 ```admonish note
 
 The current version of Blockstream Green no longer displays the status of your in-app Tor connection, unlike previous versions. This leaves you uncertain about whether you've completed the steps correctly or if any Tor connectivity issues are due to your server or the in-app Tor connection. In some situations, it may be worth connecting to your local proxy from Step 3, as you can verify that with commands.
 
 ```
-
 
 ## Mobile Wallet
 
