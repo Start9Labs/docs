@@ -4,7 +4,7 @@
 
 This connection method permits hosting service interfaces on the public Internet as standard (`.com`, `.net`, etc) domains.
 
-By default, service interfaces are not publicly addressable. The StartOS firewall only permits access via private channels, such as `localhost`, local IP addresses (e.g. `192.186.x.x`), local (`.local`) domains, and Tor (`.onion`) domains.
+By default, service interfaces are not publicly addressable. The StartOS only permits access via private hosts, such as `localhost`, local IP addresses (e.g. `192.186.x.x`), local (`.local`) domains, and Tor (`.onion`) domains.
 
 ```admonish warning title="Exposing StartOS UI"
 You can also expose your StartOS UI to the Internet, but this is not recommended, at least until 2FA support is added to StartOS. To do this, go to `System > StartOS UI` and complete steps 2-4 (above).
@@ -107,7 +107,7 @@ Instead of forwarding ports on your router and exposing your server's IP address
 
 ## Publicizing an Interface
 
-Publicizing creates an exception in the StartOS firewall, allowing the interface to be accessed via public channels, such as public IP addresses, VPS reverse proxies, and clearnet (`.com`, `.net`, etc) domains.
+Publicizing an interface allows it to be accessed via the public hosts, such as public IP addresses, VPS reverse proxies, and clearnet (`.com`, `.net`, etc) domains, assuming they were successfully created (above).
 
 1. Select an interface to make public.
 
