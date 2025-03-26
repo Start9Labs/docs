@@ -1,34 +1,38 @@
 # Trusting Your Root CA
 
-To establish a secure (HTTPS) connection with your server, it is necessary to download and trust your server's Root Certificate Authority (Root CA).
+In order to establish a secure (HTTPS) connection with your server, it is necessary to download and trust your server's Root Certificate Authority (Root CA).
 
-## 1. Download your Root CA
+```admonish note
+Repeat this guide for devices that will connect to your server locally or using a VPN. This guide is _not_ necessary for devices that will connect using Tor or clearnet.
+```
 
-There are multiple ways to download your Root CA.
+## Obtaining your Server's Root CA
 
-1. From the HTTP login screen.
+There are multiple ways to obtain your server's Root CA.
 
-   Visit your server's `http://<adjective-noun>.local` URL.
+- ### Option 1: Download from your HTTP (_not_ HTTPS) landing page
 
-   ![Trust Root CA Login](./assets/ca-download-login.png)
+  Visit your server's `http://<adjective-noun>.local` URL and click "Download".
 
-1. From your StartOS-info.html file.
+  ![Trust Root CA Login](./assets/ca-download-login.png)
 
-   Following initial setup, you were required to download a StartOS-info.html file. Your Root CA can be downloaded from this file.
+- ### Option 2: Download it from your StartOS-info.html file
 
-   ![Address Info](./assets/ca-download-address-info.png)
+  Following initial setup, you were required to download a StartOS-info.html file. Your Root CA can be downloaded from this file.
 
-1. Over Tor.
+  ![Address Info](./assets/ca-download-address-info.png)
 
-   You can securely access your server using its `http://....oinion` URL from any Tor-enabled browser. From there, you can download your Root CA by going to `System -> Root CA`.
+- ### Option 3: Download over Tor
 
-   ![CA Download](./assets/ca-download-system.png)
+  You can securely access your server over HTTP using its `http://....oinion` URL from any Tor-enabled browser. Log in and navigate to `System -> General -> Root Certificate Authority (Root CA)` and click "Download".
 
-1. Sending to yourself.
+  ![CA Download](./assets/ca-download-system.png)
 
-   Once you have downloaded your Root CA on one device, you can simply send the file to yourself using email, messaging app, or other file sharing technique.
+- ### Option 4: Send it to yourself
 
-## 2. Trust your Root CA
+  Once you have downloaded your Root CA on any device, you can send it to yourself using email, messaging app, or other file sharing app.
+
+## 2. Trust your Server's Root CA
 
 Select your client device OS and follow instructions
 

@@ -1,74 +1,57 @@
 # Connecting Remotely - Clearnet
 
-This connection method allows for exposing specific resources to the Internet as standard (`.com`, `.net`, etc) websites and APIs. Any resource not explicitly made public will remain private. For example, you can expose your Bitcoin peer-to-peer interface to the Internet, while leaving your Bitcoin RPC interface private.
+## Use Case
 
-#### Contents
+This connection method permits hosting service interfaces on the public Internet as standard (`.com`, `.net`, etc) domains.
 
-- [Add ACME](#1-add-acme)
-- [Add Domains](#2-add-domains)
-- [Expose to Internet](#3-expose-to-the-internet)
-
-## 1. Add ACME
-
-<a href="https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment" target="_blank">Automatic Certificate Management Environment (ACME)</a> protocol is used for obtaining SSL/TLS certificates for your exposed services, allowing visitors to access your website or API over secure HTTPS.
-
-1. In StartOS go to `System > ACME > Add Provider`.
-
-1. Select a provider to add. StartOS has built-in support for Let's Encrypt and Let's Encrypt Staging. Advanced users may add a custom ACME provider.
-
-1. Provide a contact email address. This is required for the ACME provider to generate a certificate.
-
-## 2. Add Domains
-
-1. For a particular service, select an interface you want to make public.
-
-1. In the "Clearnet" section header, click "Make Public".
-
-1. Click "Add Domain".
-
-1. Select an ACME provider to use and enter your subdomain/domain. For example, if you own `mydomain.com`, you can enter `mydomain.com` or `example.mydomain.com`. For ACME provider, you can also select `None (use system Root CA)` to generate certificates using your own Root CA, but anyone who accesses that website or API will need to first trust your Root CA on their phone/laptop.
+By default, service interfaces are not publicly addressable. The StartOS firewall only permits access via private channels, such as `localhost`, local IP addresses (e.g. `192.186.x.x`), local (`.local`) domains, and Tor (`.onion`) domains.
 
 ```admonish warning title="Exposing StartOS UI"
-
 You can also expose your StartOS UI to the Internet, but this is not recommended, at least until 2FA support is added to StartOS. To do this, go to `System > StartOS UI` and complete steps 2-4 (above).
 ```
 
-## 3. Expose to the Internet
+#### Contents
 
-There are two ways of exposing your public interfaces to the Internet.
+- [Opening your Server to the Internet](#opening-your-server-to-the-internet)
+- [Adding ACME](#adding-acme)
+- [Assigning a Domain](#assigning-a-domain)
+- [Publicizing an Interface](#publicizing-an-interface)
 
-- [Router Port Forwarding](#option-1-router-port-forwarding). Free, but exposes your server's IP address.
+## Opening your Server to the Internet
 
-- [VPS Reverse Tunneling](#option-2-vps-reverse-tunneling). Hides your server's IP address, but requires renting a VPS.
+There are two ways of opening your server to the Internet. Note, this just is a pre-requisite step. No service interfaces will be exposed to the Internet until you publicize them later on.
+
+- [Router Port Forwarding](#option-1-router-port-forwarding). Free, but exposes your server's IP address to visitors.
+
+- [VPS Reverse Tunneling](#option-2-vps-reverse-tunneling). Hides your server's IP address from visitors, but requires renting a VPS.
 
 ### Option 1: Router Port Forwarding
 
-1. In your router settings, assign a static IP address for your server on the LAN. Refer to your router's user manual for detailed instructions.
+1. If you have not already, assign a static IP address for your server on the LAN. This is easy to do and supported by all routers. Refer to your router's user manual for detailed instructions.
 
 1. (optional but recommended) Enable dynamic DNS for your home IP address. Your Internet Service Provider (ISP) may unexpectedly change the IP address of your home. If this happens, it will break your clearnet connections until you redo the final step below. To prevent this, you can enable <a href="https://en.wikipedia.org/wiki/Dynamic_DNS" target="_blank">dynamic DNS</a>. Many routers offer this as a free or paid service. If not, there are third party services available.
 
 1. Access the DNS settings for your domain (usually your domain registrar where you originally leased the domain) and create an "A" record. The "Host" should be `*.mydomain.com` and the "Value" should be your dynamic DNS address (recommended) or your home IP address.
 
    ```admonish warning
-
    It might take a few minutes for your "A" record to take effect. You can test it using <a href="https://dnschecker.org" target="_blank">https://dnschecker.org</a>.
    ```
 
-1. Determine which ports need to be forwarded. For any public interface with a domain, identify the port at the end of the URL. If there is no port, the port is `5443`. For example, if the URL is `https://mydomain.com`, the port is `5443`. If the URL is `https://mydomain.com:8332` the port is `8332`.
+1. Open and forward ports. Most websites and APIs on the Internet are hosted on port `443`. Port `443` is so common, in fact, that browsers _infer_ its presence. The _absence_ of a port _means_ the port is `443`. For maximum compatibility, services on StartOS also use port `443` whenever possible, except it is expressed as `5443` for port forwarding purposes _only_. Therefore, it is highly likely you will want to open port `443` in your router and forward it to port `5443` on your server.
 
-1. For each port (above), create a port forwarding rule in your router, such that the port to be opened (the "external" port) matches the port you want to expose on your server (the "internal" port), except for port `5443`. To expose port `5443` on your server, you must open port `443` on your router. The rule itself must forward traffic to your server's IP address. All routers support port forwarding. Refer to your router's user manual for detailed instructions.
+   Certain service interfaces, such as `Bitcoin RPC` and `Bitcoin P2P`, _do not_ use port `443`. In such cases, you will identify the correct port by viewing the details of the service interface, open that port in your router, and forward it to the same port on your server.
 
    ```admonish example title="Examples"
 
-   In the examples below, your server's IP address on the LAN is `192.168.1.10`. You should replace this IP address with your server's actual IP address.
+   In the examples below, replace `###.###.###.###` with your server's IP address from step 1 (above).
 
    #### Example 1
 
-   You want to expose port `5443` on your server. In your router, open port `443` and map it to `192.168.1.10:5443`
+   You want to expose port `443` on your server. In your router, open port `443` and map it to `###.###.###.###:5443`
 
    #### Example 2
 
-   You want to expose port `8332` on your server. In your router, open port `8332` and map it to `192.168.1.10:8332`
+   You want to expose port `8332` on your server. In your router, open port `8332` and map it to `###.###.###.###:8332`
    ```
 
 ### Option 2: VPS Reverse Tunneling
@@ -101,3 +84,31 @@ Instead of forwarding ports on your router and exposing your server's IP address
         nmcli c show
 
     You should see an entry with your StartOS server name (first 15 characters) of type `wireguard`.
+
+## Adding ACME
+
+<a href="https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment" target="_blank">Automatic Certificate Management Environment (ACME)</a> protocol is used for obtaining SSL/TLS certificates, allowing visitors to access your websites and APIs over secure HTTPS.
+
+1. In StartOS go to `System > ACME > Add Provider`.
+
+1. Select a provider to add. StartOS has built-in support for Let's Encrypt and Let's Encrypt Staging. Advanced users may add a custom ACME provider. Let's Encrypt Staging is for testing purposes only.
+
+1. Provide a contact email address. This is required for the ACME provider to generate a certificate.
+
+## Assigning a Domain
+
+1. Select an interface to assign a domain.
+
+1. In the "Clearnet" header, click "Add Domain".
+
+1. Select the ACME provider and enter your subdomain/domain. For example, if you own `mydomain.com`, you can enter `mydomain.com` or `example.mydomain.com`. NOTE: the domain must be one you configured in [Opening your Server to the Internet](#opening-your-server-to-the-internet) (above).
+
+   For ACME provider, you can also select `None (use system Root CA)` to generate certificates using your own Root CA. NOTE: anyone who accesses that website or API will need to first trust your Root CA on their phone/laptop.
+
+## Publicizing an Interface
+
+Publicizing creates an exception in the StartOS firewall, allowing the interface to be accessed via public channels, such as public IP addresses, VPS reverse proxies, and clearnet (`.com`, `.net`, etc) domains.
+
+1. Select an interface to make public.
+
+1. In the "Clearnet" header, click "Make Public".

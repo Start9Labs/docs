@@ -1,24 +1,25 @@
 # Connecting Remotely - Tor
 
-```admonish warning
-It is normal for Tor connections to be slow or unreliable at times.
-```
+## Use Case
 
-#### Contents
+This connection method permits hosting services on the _private_ Internet (aka the "Darknet") as anonymous (`.onion`) domains.
 
-1. [Use Cases](#use-cases)
-1. [Creating and Removing Addresses](#creating-and-removing-addresses)
-1. [Connecting over Tor](#connecting-over-tor)
-
-## Use Cases
-
-StartOS supports adding and removing Tor (`.onion`) addresses from any service interface. Tor addresses can be used for three purposes:
+There are three reasons you might want this:
 
 1. Unless you share/leak a Tor address, it is totally private _and_ anonymous. Nobody knows it exists, and nobody knows it belongs to you. It is your secure, secret tunnel to the underlying website/API.
 
 1. If you share/leak a Tor address _without_ associating it to your identity (not easy to do), it is anonymous but not private. People know it exists, but nobody knows it belongs to you. By this method, you can anonymously host a censorship-resistant website/API on the private web.
 
 1. If you share/leak a Tor address and _also_ associate it with your identity, it is neither private nor anonymous. People know it exists, and they know it belongs to you. This is useful for hosting an identified yet still censorship-resistant website/API on the private web, or for sharing access to the websites/API with select friends and family.
+
+```admonish warning
+It is normal for Tor connections to be slow or unreliable at times.
+```
+
+#### Contents
+
+1. [Creating and Removing Addresses](#creating-and-removing-addresses)
+1. [Connecting over Tor](#connecting-over-tor)
 
 ## Creating and Removing Addresses
 

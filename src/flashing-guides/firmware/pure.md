@@ -4,8 +4,7 @@ This page is for the Server Pure _only_. It will not work on other devices.
 
 Generally, you do not need to manually flash your device using this guide, as the firmware is now automatically updated on supported devices. Please only use this method if directed by a Start9 Support Technician. **If you were told to "_flash your device_", you are looking for the StartOS flashing guides instead.**
 
-
-## Prerequisites
+## You Will Need
 
 - A monitor and keyboard.
 - A USB stick, formatted FAT32.
@@ -16,7 +15,7 @@ Generally, you do not need to manually flash your device using this guide, as th
 
 1. Connect a monitor and keyboard to your server using two of the USB3 (blue) ports.
 
-1. Download the right firmware: 
+1. Download the right firmware:
 
    - Models without WiFi - <a href="https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip" target="_blank">Download Standard</a>
    - Models with WiFi - <a href="https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip" target="_blank">Download Standard</a> | <a href="https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip" target="_blank">Download Jailed WiFi</a>

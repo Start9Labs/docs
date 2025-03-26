@@ -1,14 +1,17 @@
 # Connecting Remotely - Router VPN
 
-This connection method is ideal for fast, private access from anywhere in the world. Nothing is exposed to the public Internet.
+## Use Case
+
+This connection method is ideal for fast, private, _personal_ access from anywhere in the world. Only devices permitted by your VPN have access.
 
 ```admonish warning title="Router Feature Needed"
-Most modern routers include a VPN server. If your router does not include a VPN server, you cannot use this connection method.
+Most modern routers include a VPN server. If your router does not include a VPN server, you cannot use this connection method. Check your router manual to confirm.
 ```
 
-**Prerequisites**
+#### Contents
 
-- [Trusting Your Root CA](./trust-ca.md)
+1. [Configuring Your Router](#configuring-your-router)
+1. [Configuring Your Phone/Laptop](#configuring-your-phonelaptop)
 
 ## Configuring Your Router
 

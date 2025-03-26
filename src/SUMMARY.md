@@ -6,8 +6,7 @@
 
 # 📘 User Manual
 
-- [Initial Setup - Start Fresh](user-manual/start-fresh.md)
-- [Initial Setup - Recover](user-manual/recover.md)
+- [Initial Setup](user-manual/initial-setup.md)
 - [Trusting Your Root CA](user-manual/trust-ca.md)
 - [Connecting Locally](user-manual/connecting-locally.md)
 - [Connecting Remotely](user-manual/connecting-remotely/README.md)
