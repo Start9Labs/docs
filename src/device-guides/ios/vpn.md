@@ -1,21 +1,41 @@
-# Connecting via router VPN (iOS)
+# Connecting via Router VPN (iOS)
+
+Follow this guide to connect your iOS device to your Router VPN in order to access your StartOS server and installed services.
+
+#### Prerequisites
+
+- [Connecting Remotely - Router VPN](../../user-manual/connecting-remotely/router-vpn.md)
 
 #### Contents
 
-- [OpenVPN](#openvpn)
 - [WireGuard](#wireguard)
+- [OpenVPN](#openvpn)
 
-## Prerequisites
+## WireGuard
 
-Most modern routers have VPN functionality built-in. You'll need to configure your router to assign a static IP to your Start9 server and to setup a OpenVPN or WireGuard server on your router, depending on which it supports.
+1. In your router's WireGuard server, create a new profile/configuration for your iOS device.
 
-The VPN client you set up will allow you to import your VPN configuration from your Router VPN server. You'll also use the client to easily connect and disconnect from your Router VPN server just like you would a comercial VPN app to a third-party VPN server.
+   ![Get Wireguard setting from Router](./assets/vpn-wireguard-config.png)
+
+1. Install WireGuard from the [App Store](https://itunes.apple.com/us/app/wireguard/id1441195209?ls=1&mt=8).
+
+   ![Download Wireguard Client](./assets/vpn-ios-wireguard-appstore.png)
+
+1. Click `Add a tunnel`.
+
+1. Import the configuration file created above to your iOS device. If the configuration file can be displayed as a QR code, that is usually easiest. If not, you can download the file and transfer it to your iOS device.
+
+   ![Import tunnel](./assets/vpn-ios-wireguard-start1.png)
+
+   ![Import tunnel](./assets/vpn-ios-wireguard-start2.png)
+
+1. Your VPN tunnel will have been created and visible in the WireGuard app where you can click to activate it.
+
+   ![Import tunnel](./assets/vpn-ios-wireguard-added2.png)
 
 ## OpenVPN
 
-Slightly slower, but with more authentication options, including creation of individual users with passwords.
-
-1. On your iPhone or iPad, install the OpenVPN Connect client from the [App Store](https://itunes.apple.com/us/app/openvpn-connect/id590379981?mt=8).
+1. Install OpenVPN Connect from the [App Store](https://itunes.apple.com/us/app/openvpn-connect/id590379981?mt=8).
 
    ![Download OpenVPN Client](./assets/vpn-ios-openvpn-appstore.png)
 
@@ -23,7 +43,7 @@ Slightly slower, but with more authentication options, including creation of ind
 
    ![Allow OpenVPN client](./assets/vpn-ios-openvpn-terms.png)
 
-1. Download the configuration file from your router's VPN server to your device
+1. Download the configuration file from your router's OpenVPN server to your IOS device. If accessing your router UI via a laptop/desktop, you will need to download the file to that device, then send it to yourself via email, message, or other file sharing tool.
 
    ![Get OpenVPN setting from Router](./assets/vpn-openvpn-config.png)
 
@@ -38,25 +58,3 @@ Slightly slower, but with more authentication options, including creation of ind
 1. Once set up, click on the name of the profile allows you to connect and disconnect. You can edit the profile from the icon to its right.
 
    ![Connected](./assets/vpn-openvpn-connected.png)
-
-## WireGuard
-
-Simpler and faster, its limitation is that it authenticates with keys rather than usernames and passwords (which might be easier to distribute to family/friends or others you share access to). You would create a WireGuard profile on your router's WireGuard Server for each device you want to connect to the VPN and follow the guide below on each device, importing the profile you created for that device.
-
-1. On your iPhone or iPad, install the WireGuard client from the [App Store](https://itunes.apple.com/us/app/wireguard/id1441195209?ls=1&mt=8).
-
-   ![Download Wireguard Client](./assets/vpn-ios-wireguard-appstore.png)
-
-1. Download the configuration file from your router's VPN server to your device (or if supported, generate a QR code and open it on another device).
-
-   ![Get Wireguard setting from Router](./assets/vpn-wireguard-config.png)
-
-1. Open WireGuard and create a new tunnel by importing the file downloaded to your device or scanning the QR by clicking 'Add a tunnel'
-
-   ![Import tunnel](./assets/vpn-ios-wireguard-start1.png)
-
-   ![Import tunnel](./assets/vpn-ios-wireguard-start2.png)
-
-1. Your VPN tunnel will have been created and visible in the WireGuard app where you can click to activate it.
-
-   ![Import tunnel](./assets/vpn-ios-wireguard-added2.png)
