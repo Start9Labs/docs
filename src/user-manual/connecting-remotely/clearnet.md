@@ -74,7 +74,7 @@ Instead of forwarding ports on your router and exposing your server's IP address
         wg-vps-setup -i ###.###.###.###
 
     - When prompted, provide your VPS's root password.
-    - When prompted, decide if you want the script to add your SSH public key to the VPS. This is recommended and can make debugging easier if a problem arises.
+    - When prompted, decide if you want the script to add your StartOS SSH public key to the VPS. This is recommended and can make debugging easier if a problem arises.
     - When prompted, choose a port for WireGuard to listen on and a name for the client. If you don't need to customize this, hit enter to accept the defaults.
 
     The script will automatically configure your VPS. Unless there is an issue, it will conclude with WireGuard server setup complete!

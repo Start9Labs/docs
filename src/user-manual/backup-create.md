@@ -1,7 +1,7 @@
 # Creating Backups
 
 ```admonish tip title="Important"
-Creating backups is an essential responsibility of self-hosting. If you do not make backups, you will eventually lose your data.
+Creating backups is an essential responsibility of self-hosting. If you do not make backups, you _will_ eventually lose your data.
 ```
 
 #### Contents
@@ -48,6 +48,6 @@ Choose your target device below for instructions creating a network folder.
 
 Even with proper backups the risk of data corruption is always non-zero. Therefore it is recommended to take additional care when backing up highly valuable or irreplaceable data like a lightning node:
 
-  * High quality SSDs should be favored over HDDs as a backup target.
-  * Backup to multiple targets.
-  * If backing up to multiple targets make sure all backups are up to date.
+- High quality SSDs should be favored over HDDs as a backup target.
+- Backup to multiple targets.
+- If backing up to multiple targets make sure all backups are up to date.

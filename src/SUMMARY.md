@@ -16,9 +16,8 @@
 - [Installing Services](user-manual/installing-services.md)
 - [Creating Backups](user-manual/backup-create.md)
 - [Restoring Backups](user-manual/backup-restore.md)
-- [Using SSH](user-manual/ssh.md)
-- [Using WiFi](user-manual/wifi.md)
 - [Updating StartOS](user-manual/updating-startos.md)
+- [Using SSH](user-manual/ssh.md)
 
 ---
 

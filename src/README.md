@@ -16,9 +16,8 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 - [Installing Services](user-manual/installing-services.md)
 - [Creating Backups](user-manual/backup-create.md)
 - [Restoring Backups](user-manual/backup-restore.md)
-- [Using SSH](user-manual/ssh.md)
-- [Using WiFi](user-manual/wifi.md)
 - [Updating StartOS](user-manual/updating-startos.md)
+- [Using SSH](user-manual/ssh.md)
 
 ### Flashing Guides
 

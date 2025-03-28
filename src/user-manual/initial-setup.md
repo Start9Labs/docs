@@ -1,21 +1,14 @@
 # Initial Setup
 
-#### Contents
-
-- [Start Fresh](#start-fresh)
-- [Recover](#recover)
-
-## Start Fresh
-
-1. Connect your server to power and Ethernet.
+1. Connect your server to power and Ethernet. If you do not have access to Ethernet, click [here](../help/common-issues.md#i-do-not-have-access-to-ethernet).
 
 1. From a computer connected to the same Local Area Network (LAN) as your server, open a browser and visit <a href="http://start.local" target="_blank">http://start.local</a>.
 
    ![Setup](./assets/setup.png)
 
-1. Select "Start Fresh" and follow the on-screen instructions. If you are setting up StartOS and need to recover existing data, see [Initial Setup - Recover](./recover.md).
+1. Select "Start Fresh" and follow the on-screen instructions. If you need to recover existing data, see below.
 
-## Recover
+## Recover Options
 
 There are three options for setting up StartOS while also keeping existing data.
 
