@@ -36,7 +36,7 @@ This means, for example, that the results of `setupDependencies()` are not avail
 
 Many services have configuration files, such as a config.toml. With start-sdk, these files can and should be represented as a File Model in the file-models directory. Here you create a Typescript definition of the file, providing type protection throughout the codebase. File Models can also enforce types _at runtime_. For example, if a json file expects a "name" key to be a string and the user uses SSH to enter a number instead, you can coerce the value back to a string and protect the user from themselves. File Models provide automatic parsing/serialization for `.json`, `.yaml`, `.toml`, `.ini`, and `.env`. For custom file types (e.g. `.conf`) you can provide your own parser/serializer.
 
-### Reading File Models and Store values
+## Reading File Models and Store values
 
 When you access a File Model or Store value, you must choose between:
 
