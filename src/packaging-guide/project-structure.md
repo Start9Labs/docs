@@ -2,7 +2,7 @@
 
 ```bash
 /
-├── assets/ (optional)
+├── assets/
 ├── startos/
 ├── .gitignore
 ├── Dockerfile (optional)
@@ -40,9 +40,9 @@ This is the software license for your package. In most cases, it will be the ups
 
 This is largely boilerplate. Update as needed for your service, including replacing references to Hello World/Moon.
 
-## assets/ (optional)
+## assets/
 
-Use the `assets/` directory to package arbitrary files into your package. For example, an AI service may want to include a default LLM.
+Use the `/assets` directory to include additional files or scripts needed by your service. For example, a Python script that generates a default config file for the service. It should rarely be necessary to use this directory.
 
 ## startos/
 
@@ -79,7 +79,8 @@ This file is just plumbing, used for exporting package functions to StartOS.
 
 #### init.ts
 
-- `setupInstall()`: arbitrary code to run when the package is freshly installed. In this function, it is common to assign directory permissions or enter default values to the Store.
+- `setupPreInstall()`: arbitrary code to run immediately when the package is freshly installed, _before_ other setup scripts. In this function, it is common to assign directory permissions or generate default config files.
+- `setupPostInstall()`: arbitrary code to run when the package is freshly installed, _after_ other setup scripts. In this function, it is common to make final changes to the Store or create tasks for the user.
 - `setupUninstall()`: arbitrary code to run on package uninstall. It is most commonly used to _undo_ changes made to dependency configs.
 
 #### interfaces.ts
@@ -88,7 +89,7 @@ This file is just plumbing, used for exporting package functions to StartOS.
 
 #### main.ts
 
-`setupMain()` is where you define the daemons that define your service's runtime. Each daemon comes with a built-in health check that can optionally be displayed to the user. You can also use `setupMain()` to define arbitrary health checks in addition to those accompanying a daemon. A common use case for additional health checks is tracking and displaying a sync percentage.
+`setupMain()` is where you define the daemons that define your service's runtime, it runs each time the service is started. Daemon comes with built-in health checks that can optionally be displayed to the user. You can also use `setupMain()` to define additional health checks, such as tracking and displaying a sync percentage.
 
 #### manifest.ts
 
@@ -100,12 +101,14 @@ This file is plumbing, used to imbue the generic Start SDK with package-specific
 
 #### store.ts
 
-The Store is for persisting arbitrary data that are _not_ persisted by the service itself. The three most common use cases of the Store are:
+The Store is for persisting arbitrary data that are _not_ persisted by the service itself. It is rare to You must define your store as a `Store` type and also initialize it with an `initStore` const that satisfies the type. On fresh install, StartOS initializes the Store with values provided in initStore _before_ anything else, even before [setupPreInstall](#initts). This guarantees the Store is available to all other setup scripts.
 
-1. Credentials for end user.
-1. Credentials for dependent services.
-1. Temporary state to be inspected at runtime, such as startup flags.
-1. Data that cannot be retrieved or derived from the service itself.
+The three most common use cases of the Store are:
+
+1. Tracking ephemeral state, such as startup flags.
+1. Storing SMTP preferences and credentials.
+1. Storing data that cannot be retrieved or derived from the service itself.
+1. Storing user credentials (not recommended).
 
 `setupExposeStore()` is where you determine which values from the Store to expose to other services running on StartOS. _Values not explicitly exposed here will be kept private_.
 
@@ -145,4 +148,4 @@ versions/
 └── v1_0_2_0.ts
 ```
 
-In the `versions/` directory, you will create a new file for each new package version. Here you will provide the version number, release notes, and define any migrations that should run. _Note_: migrations are only for migrating data that is _not_ migrated by the upstream service itself. All versions must then be provided as arguments to `VersionGraph.of()` in `index.ts` with the MOST RECENT VERSION LISTED FIRST.
+In the `versions/` directory, you will create a new file for each new package version. In each version file, use `VersionInfo.of()` to provide the version number, release notes, and any migrations that should run. _Note_: migrations are only for migrating data that is _not_ migrated by the upstream service itself. All versions must then be provided as arguments to `VersionGraph.of()` in `index.ts` with the MOST RECENT VERSION LISTED FIRST.

@@ -137,9 +137,10 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 ---
 
 - [Introduction](packaging-guide/intro.md)
-- [Quick Start](packaging-guide/quick-start.md)
 - [Environment Setup](packaging-guide/environment-setup.md)
+- [Quick Start](packaging-guide/quick-start.md)
 - [Project Structure](packaging-guide/project-structure.md)
+- [Important Info](packaging-guide/important-info.md)
 
 ### Help
 
