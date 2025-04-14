@@ -12,12 +12,12 @@ When working with start-sdk in a package codebase, hover states reveal descripti
 
 ## Container initialization
 
-### Service containers are build/created when:
+### Service containers are built/created:
 
-- The service is freshly installed.
-- The service is updated or downgraded.
-- StartOS boots.
-- The user manually triggers a rebuild
+- When the service is freshly installed.
+- When the service is updated or downgraded.
+- On StartOS boot.
+- If the user manually triggers a rebuild.
 
 ### Service container initialization sequence. Each of the below are functions in start-sdk:
 
@@ -29,7 +29,7 @@ This means, for example, that the results of `setupDependencies()` are not avail
 1. `Any actions passed to Actions.of()`
 1. `setupExposeStore()`
 1. `setupDependencies()`
-1. `setupPostInstall()`
+1. `setupPostInstall()` (runs once ever, only on fresh install)
 1. `The [up or down] migration of the first version provided to VersionGraph.of()` (update only)
 
 ## File Models
