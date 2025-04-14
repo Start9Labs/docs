@@ -41,6 +41,6 @@ Many services have configuration files, such as a config.toml. With start-sdk, t
 When you access a File Model or Store value, you must choose between:
 
 - `.once()`: returns the parsed file or Store value and nothing else.
-- `.const()`: returns the parsed file or Store value, and registers an OS tak to re-run the context function if the file or value changes. For example, a `.const()` used to get a "name" value from the Store in `setupInterfaces()` would result in `setupInterfaces()` re-running if the "name" value changes.
+- `.const()`: returns the parsed file or Store value, and registers an OS task to re-run the context function if the file or value changes. For example, a `.const()` used to get a "name" value from the Store in `setupInterfaces()` would result in `setupInterfaces()` re-running if the "name" value changes.
 - `.onChange()`: registers an OS tak to run a callback function that accepts the new file or value. For example, `.onChange((newFileOrValue) => { // do stuff })`
-- `watch()`: returns an async iterator of the new file or value. For example, `.watch()`
+- `watch()`: returns an async iterator of the new file or value. @TODO provide an example
