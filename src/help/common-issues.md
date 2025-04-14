@@ -2,6 +2,7 @@
 
 #### Contents
 
+- [I do not have access to Ethernet](#i-do-not-have-access-to-ethernet)
 - [StartOS boots into Diagnostic Mode](#startos-boots-into-diagnostic-mode)
 - [During initial setup, I am unable to connect to "start.local"](#during-initial-setup-i-am-unable-to-connect-to-startlocal)
 - [I am unable to connect to my server's "custom-address.local" URL](#i-am-unable-to-connect-to-my-servers-custom-addresslocal-url)
