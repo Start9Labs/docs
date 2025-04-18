@@ -42,3 +42,35 @@ Accessing your server via SSH is considered advanced. Please use caution, you ca
 For Windows, following the command above will work. But if you prefer a GUI tool, <a href="https://brewsbitcoin.com" target="_blank">BrewsBitcoin</a> has created a guide for <a href="https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a" target="_blank">connecting via SSH using PuTTY on Windows</a>
 
 ### Adding SSH Keys
+
+1. Follow the guide above to first access your server via SSH using your StartOS master password.
+
+1. Add your key with the following command:
+
+    ```
+    start-cli ssh add <key>
+    ```
+
+    Replaceing `<key>` with quotation marks `""` surrounding your copied key.
+
+    For example:
+
+    ```
+    start-cli ssh add "ssh-ed25519 5T4RT95T4RT95T4RT95T4RT95T4RT9 user@clienthost"
+    ```
+
+1. Confirm the key was added correctly with:
+
+    ```
+    start-cli ssh list
+    ```
+
+    ```admonish tip
+
+    This will show the added keys' fingerprints. You'll need the fingerprint if you want to remove an SSH key with:
+
+    `start-cli ssh remove 00:11:22:33:44:55:66:77:88:99:aa:bb:cc:dd:ee:ff`
+
+    ```
+
+1. Type `exit` and hit enter to leave the current session. Next time you connect via SSH, your key will be used instead of providng your master password.
