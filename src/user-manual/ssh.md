@@ -43,11 +43,7 @@ For Windows, following the command above will work. But if you prefer a GUI tool
 
 ### Adding SSH Keys
 
-You can also access your server via SSH using your own SSH keys if you have them.
-
 1. Follow the guide above to first access your server via SSH using your StartOS master password.
-
-1. Find and locate your SSH public key file on your client operating system and copy the contents to clipboard.
 
 1. Add your key with the following command:
 
@@ -77,4 +73,4 @@ You can also access your server via SSH using your own SSH keys if you have them
 
     ```
 
-1. Type `exit` and hit enter to leave the current session. You'll now be using your own SSH key when you try to log in again.
+1. Type `exit` and hit enter to leave the current session. Next time you connect via SSH, your key will be used instead of providng your master password.
