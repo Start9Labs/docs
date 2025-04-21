@@ -31,6 +31,7 @@ This means, for example, that the results of `setupDependencies()` are not avail
 1. `setupDependencies()`
 1. `setupPostInstall()` (runs once ever, only on fresh install)
 1. `The [up or down] migration of the first version provided to VersionGraph.of()` (update only)
+1. `setupMain()`
 
 ## File Models
 
