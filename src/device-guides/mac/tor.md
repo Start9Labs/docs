@@ -50,8 +50,34 @@
 
 **Content**
 
+1. [Sequoia](#sequoia-macos-15)
 1. [Sonoma](#sonoma-macos-14)
 1. [Pre-Sonoma](#pre-sonoma)
+
+### Sequoia (MacOS 15)
+
+1.  Install Homebrew Apache (this will install a webserver independent of the to be deprecated Mac OS webserver)
+
+        brew install httpd
+
+1.  Start Apache with:
+
+        brew services start httpd
+
+1.  Enable the proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
+
+        sudo curl https://start9.com/assets/proxy.pac --output /opt/homebrew/var/www/proxy.pac
+
+1.  Go to `System Settings > Network` and select the interface to edit. We recommend editing both Ethernet and WiFi. First do one, then the other:
+
+    ![Sonoma Network](./assets/tor-sonoma-network.png)
+
+1.  Click `Details > Proxies` and paste the following URL into "Automatic Proxy Configuration": `http://localhost/proxy.pac`. Click "OK".
+
+    ![Sonoma proxy config](./assets/tor-sonoma-proxy-config.png)
+
+1.  Repeat the previous two steps for Wifi/Ethernet, depending on which interface you haven't done yet.
+
 
 ### Sonoma (MacOS 14)
 
