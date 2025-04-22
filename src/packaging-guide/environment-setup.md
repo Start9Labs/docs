@@ -12,7 +12,7 @@ You will need a computer running StartOS to test your package. Follow the [flash
 
 <a href="https://www.gnu.org/software/make/" target="_blank">Make</a> is needed to streamline builds and produce s9pk binaries.
 
-## NodeJS
+## NodeJS v22 (latest LTS)
 
 <a href="https://nodejs.org/en/" target="_blank">NodeJS</a> is needed to compile the Typescript in your StartOS package.
 
