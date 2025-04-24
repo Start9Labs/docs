@@ -1,8 +1,8 @@
-# Introduction
+# Table of Contents
 
 Welcome to the Start9 Docs! Here you will find everything you need to set up and use your Start9 server. For additional help, <a href="https://start9.com/contact" target="_blank">contact support</a>.
 
-### User Manual
+### [📘 User Manual](user-manual/)
 
 ---
 
@@ -19,7 +19,7 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 - [Updating StartOS](user-manual/updating-startos.md)
 - [Using SSH](user-manual/ssh.md)
 
-### Flashing Guides
+### [💾 Flashing Guides](flashing-guides/)
 
 ---
 
@@ -30,7 +30,7 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
   - [X86_64 / ARM](flashing-guides/startos/x86_64-arm.md)
   - [Raspberry Pi](flashing-guides/startos/pi.md)
 
-### Device Guides
+### [💻 Device Guides](device-guiides/)
 
 ---
 
@@ -62,7 +62,7 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 - [TrueNAS](device-guides/truenas/)
   - [Creating Backups](device-guides/truenas/backups.md)
 
-### Service Guides
+### [📱 Service Guides](service-guides/)
 
 ---
 
@@ -92,7 +92,7 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
   - [Client Setup](service-guides/vaultwarden/bitwarden-setup.md)
   - [Organizations](service-guides/vaultwarden/vaultwarden-org.md)
 
-### Misc Guides
+### [📚 Misc Guides](misc-guides/)
 
 ---
 
@@ -105,7 +105,7 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 - [Upgrading from a Raspberry Pi](misc-guides/upgrade-pi.md)
 - [Migrating LND to StartOS](misc-guides/lnd-migration.md)
 
-### Packaging Guide
+### [📦 Packaging Guide](packaging-guide/)
 
 ---
 
@@ -115,7 +115,7 @@ Welcome to the Start9 Docs! Here you will find everything you need to set up and
 - [Project Structure](packaging-guide/project-structure.md)
 - [Important Info](packaging-guide/important-info.md)
 
-### Help
+### [❓ Help](help/)
 
 ---
 
