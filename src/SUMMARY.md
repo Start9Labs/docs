@@ -17,6 +17,7 @@
   - [Creating Backups](user-manual/backup-create.md)
   - [Restoring Backups](user-manual/backup-restore.md)
   - [Updating StartOS](user-manual/updating-startos.md)
+  - [Sending emails](user-manual/smtp.md)
   - [Using SSH](user-manual/ssh.md)
 
 - [💾 Flashing Guides](flashing-guides/README.md)
