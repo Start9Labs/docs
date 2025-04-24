@@ -14,11 +14,11 @@
 
 ## I do not have access to Ethernet.
 
-Ethernet is necessary to set up a StartOS server. If you do not have access to an Ethernet connection, such as in a school or office setting, you can use a WiFi extender to connect to the local WiFi network, then connect your server to the extender using Ethernet. The WiFi extenders below have been tested to work with StartOS, but other extenders should also work.
+Ethernet is necessary to set up a StartOS server. If you do not have access to an Ethernet connection, such as in a school or office setting, you can use a WiFi extender to connect to the local WiFi network, then connect your server to the extender using Ethernet. The WiFi extender below has been tested to work with StartOS, but other extenders should also work.
 
 - <a href="https://www.amazon.com/TP-Link-AC750-WiFi-Range-Extender/dp/B07N1WW638" target="_blank">https://www.amazon.com/TP-Link-AC750-WiFi-Range-Extender/dp/B07N1WW638</a>
 
-- <a href="https://www.amazon.com/Wifi-Extender-Booster-Wireless-Repeater" target="_blank">https://www.amazon.com/Wifi-Extender-Booster-Wireless-Repeater</a>
+- <a href="https://www.amazon.com/s?k=Wifi-Extender-Booster-Wireless-Repeater" target="_blank">Amazon Search: 'Wifi Extender Booster Wireless Repeater'</a>
 
 ## StartOS boots into "Diagnostic Mode"
 
