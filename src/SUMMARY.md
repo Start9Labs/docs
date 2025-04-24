@@ -29,7 +29,7 @@
     - [X86_64 / ARM](flashing-guides/startos/x86_64-arm.md)
     - [Raspberry Pi](flashing-guides/startos/pi.md)
 
-- [💻 Device Guides](device-guiides/README.md)
+- [💻 Device Guides](device-guides/README.md)
 
   - [Linux](device-guides/linux/README.md)
     - [Trusting Your Root CA](device-guides/linux/ca.md)
