@@ -1,6 +1,6 @@
-# Table of Contents
+# Introduction
 
-Welcome to the Start9 Docs! Here you will find everything you need to set up and use your Start9 server. For additional help, <a href="https://start9.com/contact" target="_blank">contact support</a>.
+Here you will find everything you need to set up and use your Start9 server. For additional help, <a href="https://start9.com/contact" target="_blank">contact support</a>.
 
 ### [📘 User Manual](user-manual/)
 
