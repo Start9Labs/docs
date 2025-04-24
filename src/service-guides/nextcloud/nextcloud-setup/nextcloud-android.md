@@ -90,7 +90,7 @@ In this case, make sure you have [added your server's CA certificate to the Andr
 
 ## Tor Setup
 
-You will first need to have [Orbot running](/src/device-guides/android/tor.md).
+You will first need to have [Orbot running](/device-guides/android/tor.md).
 
 1. First, add Nextcloud to your Orbot apps list.
 2. Tap the account in the top-right, then "Add Account."
