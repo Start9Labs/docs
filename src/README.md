@@ -31,7 +31,7 @@ Here you will find everything you need to set up and use your Start9 server. For
   - [X86_64 / ARM](flashing-guides/startos/x86_64-arm.md)
   - [Raspberry Pi](flashing-guides/startos/pi.md)
 
-### [💻 Device Guides](device-guiides/)
+### [💻 Device Guides](device-guides/)
 
 ---
 

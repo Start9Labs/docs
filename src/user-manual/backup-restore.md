@@ -27,4 +27,4 @@ This option should only be necessary if you accidentally uninstall a service.
 
 ## Restoring an Entire Server
 
-If your StartOS data drive is lost or corrupted and you need to restore your entire server, follow instructions [here](./recover.md#restore-from-backup-disaster-recovery).
+If your StartOS data drive is lost or corrupted and you need to restore your entire server, follow instructions [here](./initial-setup.md#recover-options).
