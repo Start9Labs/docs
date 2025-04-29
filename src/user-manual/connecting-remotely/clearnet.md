@@ -58,6 +58,8 @@ There are two ways of opening your server to the Internet. Note, this just is a 
 
 Instead of forwarding ports on your router and exposing your server's IP address to the Internet, you can rent a small, Virtual Private Server (VPS) that proxies traffic in and out, thereby hiding your server's IP address.
 
+The result of this setup will be a brand new _public_ IP address (e.g. `162.159.x.x`) for your server that will display in the "clearnet" section of every service interface. However, only interfaces that are marked `public` will actually be accessible via this IP address or any domain attached thereto.
+
 1.  Rent a low-powered, inexpensive VPS that provides a static IP address. Provision it with the latest stable version of Debian. Copy down its IPv4 address and root password.
 
 1.  Access the DNS settings for your domain (usually your domain registrar where you originally leased the domain) and create an "A" record. The "Host" should be `*.mydomain.com` and the "Value" should be your VPS's IPv4 address.
@@ -84,6 +86,8 @@ Instead of forwarding ports on your router and exposing your server's IP address
         nmcli c show
 
     You should see an entry with your StartOS server name (first 15 characters) of type `wireguard`.
+
+1.  In your service interfaces, you should now see a brand new `clearnet` IP address (e.g. `162.159.x.x`) with a network interface named `wireguard`.
 
 ## Adding ACME
 

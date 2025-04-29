@@ -5,6 +5,7 @@
 - [Connecting Locally](connecting-locally.md)
 - [Connecting Remotely](connecting-remotely/README.md)
   - [Router VPN](connecting-remotely/router-vpn.md)
+  - [Cloud VPN](connecting-remotely/cloud-vpn.md)
   - [Clearnet](connecting-remotely/clearnet.md)
   - [Tor](connecting-remotely/tor.md)
 - [Installing Services](installing-services.md)

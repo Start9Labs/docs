@@ -16,12 +16,12 @@ html.ayu {
 
 /* Override logo path for Dark theme */
 html.ayu .menu-title::before {
-    --logo-path: url('../theme/images/logo.png');
+    --logo-path: url('../assets/logo.png');
 }
 
 /* Override logo path for Light theme */
 html.light .menu-title::before {
-    --logo-path: url('../theme/images/logo-light.png');
+    --logo-path: url('../assets/logo-light.png');
 }
 
 /* Style the menu title area */
