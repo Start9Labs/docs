@@ -37,17 +37,20 @@ The following instructions will install the LTS (Long Term Support) version of T
 
 ## CentOS / Fedora / RHEL
 
-1.  Configure the Tor Package repository. Add the following to `/etc/yum.repos.d/tor.repo`:
+1.  Configure the Tor Project package repository by pasting the following into a shell/Terminal session:
 
+        ```bash
+        os=$(cat /etc/os-release|grep "^ID="|cut -d= -f2|sed "s/\"//g") && \
+        sudo cat << EOF > /etc/yum.repos.d/tor.repo
         [Tor]
-        name=Tor for Enterprise Linux $releasever - $basearch
-        baseurl=https://rpm.torproject.org/centos/$releasever/$basearch
+        name=Tor for $os \$releasever - \$basearch
+        baseurl=https://rpm.torproject.org/$os/\$releasever/\$basearch
         enabled=1
         gpgcheck=1
-        gpgkey=https://rpm.torproject.org/centos/public_gpg.key
+        gpgkey=https://rpm.torproject.org/$os/public_gpg.key
         cost=100
-
-    For Fedora, the "name" line should be `Tor for Fedora $releasever - $basearch`
+        EOF
+        ```
 
 1.  Open a terminal and install Tor:
 
