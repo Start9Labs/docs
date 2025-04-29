@@ -80,7 +80,7 @@ Here you will find everything you need to set up and use your Start9 server. For
   - [Getting Inbound Liquidity](service-guides/lightning/getting-inbound-liquidity.md)
   - [Connecting to Core Lightning](service-guides/lightning/cln/)
   - [Connecting to LND](service-guides/lightning/lnd/)
-  - [Using LNbits](service-guides/lightning/lnbits.md)
+  - [Using LNbits](service-guides/lightning/lnbits/)
 - [Matrix](service-guides/matrix/)
 - [Nextcloud](service-guides/nextcloud/)
   - [Device Setup](service-guides/nextcloud/nextcloud-setup/)
