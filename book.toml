@@ -24,6 +24,7 @@ additional-js = ["./theme/theme-toggle.js"]
 git-repository-url = "https://github.com/start9labs/docs"
 git-repository-icon = "fa-github"
 edit-url-template = "https://github.com/start9labs/docs/edit/master/{path}"
+site-url = "/"
 
 [output.html.fold]
 enable = true
