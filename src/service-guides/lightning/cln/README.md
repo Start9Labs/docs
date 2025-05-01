@@ -1,6 +1,6 @@
-## Connecting to CLN
+## Connecting directly to CLN
 
-Core Lightning is one of the two lightning implementations found on StartOS. It was created and is maintained by [Blockstream](https://blockstream.com/).
+Formerly known as c-lightning, CLN is developed by Blockstream. It focuses on modularity and performance. CLN is designed to be efficient and stable. (More on [Blockstream](https://blockstream.com/)).
 
 - [Alby Browser Extension](./alby-extension.md)
 - [Ride the Lightning](./rtl.md)
