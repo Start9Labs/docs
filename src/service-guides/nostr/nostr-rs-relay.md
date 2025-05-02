@@ -1,7 +1,7 @@
 # Nostr RS Relay
 
 
-Nostr is a simple, open protocol that enables global, decentralized, and censorship-resistant social media. 
+Nostr RS Relay is a self-hosted relay for Nostr – a simple, open protocol that enables global, decentralized, and censorship-resistant social media. 
 
 ```admonish note
 

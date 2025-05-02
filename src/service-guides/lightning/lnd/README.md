@@ -1,6 +1,6 @@
-## Connecting to LND
+## LND (Lightning Network Daemon
 
-LND is the second of the two lightning implementations found on StartOS. It was created and is maintained by [Lightning Labs](https://lightning.engineering/).
+Developed by Lightning Labs, LND is the most widely used implementation for creating and managing Lightning Network nodes. It the implementation that is most widely supported and is required by other services like Alby Hub. (More on [LND](https://github.com/lightningnetwork/lnd))
 
 - [Alby Browser Extension](./alby-extension.md)
 - [BitBanana](./bitbanana.md)
@@ -8,9 +8,10 @@ LND is the second of the two lightning implementations found on StartOS. It was 
 - [RTL](./rtl.md)
 - [Zeus](./zeus.md)
 
-### Alby Hub
+### With Alby Hub
 - [Alby Hub](./alby-hub.md)
 
-### Lightning Node Connect (LNC)
+### With Lightning Node Connect (LNC)
 
-- [Connecting to LND via Lightning Node Connect (LNC)](service-guides/lightning/lnc.md) - Lightning Node Connect (LNC) provides a very simple way to connect to an LND node that does not require the Tor network.
+- [Connecting to LND via Lightning Node Connect (LNC)](service-guides/lightning/lnc.md) - Lightning Node Connect (LNC) acts as a proxy to connect to your LND, useful if you are running LND behind TOR.
+

@@ -6,6 +6,8 @@ If you currently have a **hosted** account with Bitwarden, you can export your d
 
 Follow the guides below to get the most out of your Vaultwarden server:
 
+**Contents**
+
 - [Initial Setup](vaultwarden-setup.md)
 - [Client Setup](bitwarden-setup.md)
 - [Organizations](vaultwarden-org.md)

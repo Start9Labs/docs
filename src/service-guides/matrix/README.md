@@ -3,7 +3,7 @@
 Synapse
 -------
 
-  With registrations disabled, the only way to create an account on your Server is through the Admin Portal.  The Admin Portal is the preferred method for creating an account.
+With registrations disabled, the only way to create an account on your Server is through the Admin Portal.  The Admin Portal is the preferred method for creating an account.
 
 1. In your Start9 UI, under `Services > Synapse`, click "Launch UI"
 1. Log in with your Admin Username and Password (located in Properties). For "Homeserver URL", do `not` enter your Homeserver address. Instead, enter your Admin Portal URL.

@@ -10,7 +10,7 @@ This guide assumes you have already setup LNbits as per [this guide](../lnbits.m
 
 ```
 
-1. Make sure you are already [running Tor](/user-manual/connecting-remotely/tor..md) on your system and we suggest using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md)
+1. Make sure you are already [running Tor](/user-manual/connecting-remotely/tor.md) on your system and we suggest using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md)
 
 1. Download the Alby extension by visiting the [Alby Github](https://github.com/getAlby/lightning-browser-extension#installation), selecting your browser, and installing.
 
