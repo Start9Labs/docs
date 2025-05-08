@@ -17,7 +17,7 @@ To install a service from the marketplace, simply visit the Marketplace, select 
 
 ### Switching Registries
 
-To switch between registries or add a custom registry, simply click "Change" underneath the current Registry title.
+To switch between registries or add a custom registry, simply click arrows underneath the current Registry title.
 
 ![change registry](./assets/registries.png)
 
@@ -25,8 +25,6 @@ To switch between registries or add a custom registry, simply click "Change" und
 
 Sideloading is useful if you are testing a service that does not yet exist on a registry, or if you prefer to eliminate the Marketplace as a point of trust. An s9pk can be obtained from anywhere or even built from source code.
 
-To sideload a service, go to `System > Sideload a Service` and upload the appropriate .s9pk file.
-
-![system sideload](./assets/system-sideload.png)
+To sideload a service, go to `Sideload` and upload the appropriate .s9pk file.
 
 ![system sideload](./assets/sideload.png)

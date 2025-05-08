@@ -21,9 +21,9 @@ You can also expose your StartOS UI to the Internet, but this is not recommended
 
 There are two ways of opening your server to the Internet. Note, this just is a pre-requisite step. No service interfaces will be exposed to the Internet until you publicize them later on.
 
-- [Router Port Forwarding](#option-1-router-port-forwarding). Free, but exposes your server's IP address to visitors.
+- [Router Port Forwarding](#option-1-router-port-forwarding). Free, but exposes your home IP address to visitors.
 
-- [VPS Reverse Tunneling](#option-2-vps-reverse-tunneling). Hides your server's IP address from visitors, but requires renting a VPS.
+- [VPS Reverse Tunneling](#option-2-vps-reverse-tunneling). Hides your home IP address from visitors, but requires renting a VPS.
 
 ### Option 1: Router Port Forwarding
 

@@ -6,6 +6,10 @@ Servers sold by Start9 do _not_ include WiFi cards, and Start9 recommends _again
 Ethernet connections are faster and more reliable.
 ```
 
+```admonish danger title="Deprecated"
+WiFi support will be removed in StartOS v0.4.1 including for servers that may already have a WiFi interface. If you do not have access to Ethernet, you can use a WiFi extender to connect to the local network, then connect your server to the extender via Ethernet. Please contact Start9 support with any questions or concerns. 
+```
+
 ## Use Case
 
 ## WiFi adapter built-in
@@ -14,17 +18,9 @@ Ethernet connections are faster and more reliable.
 
 You should have already set up your server in a location with ethernet and be able to log in from a client machine.
 
-1. Under System > WiFi select your country (this is for limiting to local civilian radio frequencies)
-
-   ![Select Country](./assets/wifi-setup-3.png)
-
+1. Under 'System -> WiFi' select your country (this is for limiting to local civilian radio frequencies)
 1. Choose your WiFi network
-
-   ![Select Network](./assets/wifi-setup-4.png)
-
 1. Enter your WiFi password and click `Save and Connect`
-
-   ![Select Network](./assets/wifi-setup-5.png)
 
 That's it!
 

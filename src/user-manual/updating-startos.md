@@ -14,7 +14,7 @@ StartOS does not have automatic updates and will _never_ update without your app
 
 1. When a new version of StartOS is available, a rocket badge will appear on the "System" tab.
 
-1. Go to `System > Software Update`.
+1. Go to `System -> General -> Software Update`.
 
 1. Read the release notes and click "Begin Update".
 
