@@ -1,8 +1,8 @@
 # Initial Setup
 
-1. Connect your server to power and Ethernet. If you do not have access to Ethernet, click [here](../help/common-issues.md#i-do-not-have-access-to-ethernet).
+1. Connect your server to power and Ethernet. If you do not have access to Ethernet, click [here](../help/common-issues.md#i-do-not-have-access-to-ethernet). You do *not* need to connect a monitor or keyboard to your server.
 
-1. From a computer connected to the same Local Area Network (LAN) as your server, open a browser and visit <a href="http://start.local" target="_blank">http://start.local</a>.
+1. From a client computer connected to the same Local Area Network (LAN) as your server, open a browser and visit <a href="http://start.local" target="_blank">http://start.local</a>. This client computer can be a laptop, desktop or mobile device.
 
    ![Setup](./assets/setup.png)
 
