@@ -24,7 +24,7 @@ There are multiple ways to obtain your server's Root CA.
 
 - ### Option 3: Download over Tor
 
-  You can securely access your server over HTTP using its `http://....oinion` URL from any Tor-enabled browser. Log in and navigate to `System -> General -> Root Certificate Authority (Root CA)` and click "Download".
+  You can securely access your server over HTTP using its `http://....onion` URL from any [Tor-enabled browser](./connecting-remotely/tor.md#connecting-over-tor). Log in and navigate to `System -> General -> Root Certificate Authority` (Root CA) and click "Download".
 
   ![CA Download](./assets/ca-download-system.png)
 

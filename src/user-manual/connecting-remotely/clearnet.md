@@ -21,9 +21,9 @@ You can also expose your StartOS UI to the Internet, but this is not recommended
 
 There are two ways of opening your server to the Internet. Note, this just is a pre-requisite step. No service interfaces will be exposed to the Internet until you publicize them later on.
 
-- [Router Port Forwarding](#option-1-router-port-forwarding). Free, but exposes your server's IP address to visitors.
+- [Router Port Forwarding](#option-1-router-port-forwarding). Free, but exposes your home IP address to visitors.
 
-- [VPS Reverse Tunneling](#option-2-vps-reverse-tunneling). Hides your server's IP address from visitors, but requires renting a VPS.
+- [VPS Reverse Tunneling](#option-2-vps-reverse-tunneling). Hides your home IP address from visitors, but requires renting a VPS.
 
 ### Option 1: Router Port Forwarding
 
@@ -31,10 +31,12 @@ There are two ways of opening your server to the Internet. Note, this just is a 
 
 1. (optional but recommended) Enable dynamic DNS for your home IP address. Your Internet Service Provider (ISP) may unexpectedly change the IP address of your home. If this happens, it will break your clearnet connections until you redo the final step below. To prevent this, you can enable <a href="https://en.wikipedia.org/wiki/Dynamic_DNS" target="_blank">dynamic DNS</a>. Many routers offer this as a free or paid service. If not, there are third party services available.
 
-1. Access the DNS settings for your domain (usually your domain registrar where you originally leased the domain) and create an "A" record. The "Host" should be `*.mydomain.com` and the "Value" should be your dynamic DNS address (recommended) or your home IP address.
+1. Access the DNS settings for your domain (usually your domain registrar where you originally leased the domain) and create an "A" record. 
+
+    Even if using an dynamic DNS address, having at least one A record is usually a requirement. The "Host" should be `@`, while the value should be your home IP address (prehaps labeled as WAN IP in your router interface). If you're using a dynamic DNS address (recommended) that provides a unique static IP address, use that in the A record, otherwise you must add a CNAME with a "`*`" as the "Host" (if your registrar allows this) and `mydomain.com` as the "Value". (If you cannot use "`*`" then you'll need to create and use a subdomain).
 
    ```admonish warning
-   It might take a few minutes for your "A" record to take effect. You can test it using <a href="https://dnschecker.org" target="_blank">https://dnschecker.org</a>.
+   It might take a few minutes for your domain changes to take effect. You can test it using <a href="https://dnschecker.org" target="_blank">https://dnschecker.org</a>.
    ```
 
 1. Open and forward ports. Most websites and APIs on the Internet are hosted on port `443`. Port `443` is so common, in fact, that browsers _infer_ its presence. The _absence_ of a port _means_ the port is `443`. For maximum compatibility, services on StartOS also use port `443` whenever possible, except it is expressed as `5443` for port forwarding purposes _only_. Therefore, it is highly likely you will want to open port `443` in your router and forward it to port `5443` on your server.
