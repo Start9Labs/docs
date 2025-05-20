@@ -69,7 +69,7 @@
       - [Blue Wallet](service-guides/bitcoin/wallet-integrations/blue-wallet.md)
       - [Electrum](service-guides/bitcoin/wallet-integrations/electrum.md)
       - [Fully Noded](service-guides/bitcoin/wallet-integrations/fully-noded.md)
-      - [Nunchuck](service-guides/bitcoin/wallet-integrations/nunchuck.md)
+      - [Nunchuk](service-guides/bitcoin/wallet-integrations/nunchuk.md)
       - [Sparrow](service-guides/bitcoin/wallet-integrations/sparrow.md)
       - [Specter](service-guides/bitcoin/wallet-integrations/specter.md)
       - [Trezor Suite](service-guides/bitcoin/wallet-integrations/trezor-suite.md)
