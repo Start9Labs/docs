@@ -31,9 +31,9 @@ There are two ways of opening your server to the Internet. Note, this just is a 
 
 1. (optional but recommended) Enable dynamic DNS for your home IP address. Your Internet Service Provider (ISP) may unexpectedly change the IP address of your home. If this happens, it will break your clearnet connections until you redo the final step below. To prevent this, you can enable <a href="https://en.wikipedia.org/wiki/Dynamic_DNS" target="_blank">dynamic DNS</a>. Many routers offer this as a free or paid service. If not, there are third party services available.
 
-1. Access the DNS settings for your domain (usually your domain registrar where you originally leased the domain) and create an "A" record. 
+1. Access the DNS settings for your domain (usually your domain registrar where you originally leased the domain) and create an "A" record.
 
-    Even if using an dynamic DNS address, having at least one A record is usually a requirement. The "Host" should be `@`, while the value should be your home IP address (prehaps labeled as WAN IP in your router interface). If you're using a dynamic DNS address (recommended) that provides a unique static IP address, use that in the A record, otherwise you must add a CNAME with a "`*`" as the "Host" (if your registrar allows this) and `mydomain.com` as the "Value". (If you cannot use "`*`" then you'll need to create and use a subdomain).
+   Even if using an dynamic DNS address, having at least one A record is usually a requirement. The "Host" should be `@`, while the value should be your home IP address (prehaps labeled as WAN IP in your router interface). If you're using a dynamic DNS address (recommended) that provides a unique static IP address, use that in the A record, otherwise you must add a CNAME with a "`*`" as the "Host" (if your registrar allows this) and `mydomain.com` as the "Value". (If you cannot use "`*`" then you'll need to create and use a subdomain).
 
    ```admonish warning
    It might take a few minutes for your domain changes to take effect. You can test it using <a href="https://dnschecker.org" target="_blank">https://dnschecker.org</a>.
@@ -73,15 +73,9 @@ The result of this setup will be a brand new _public_ IP address (e.g. `162.159.
 
 1.  SSH into your StartOS server. [Instructions](../../user-manual/ssh.html)
 
-1.  Run the following command, replacing `###.###.###.###` with the IPv4 address of your VPS:
+1.  Run the following command, replacing `###.###.###.###` with the IPv4 address of your VPS, then follow the on-screen prompts to complete setup:
 
-        wg-vps-setup -i ###.###.###.###
-
-    - When prompted, provide your VPS's root password.
-    - When prompted, decide if you want the script to add your StartOS SSH public key to the VPS. This is recommended and can make debugging easier if a problem arises.
-    - When prompted, choose a port for WireGuard to listen on and a name for the client. If you don't need to customize this, hit enter to accept the defaults.
-
-    The script will automatically configure your VPS. Unless there is an issue, it will conclude with WireGuard server setup complete!
+        wireguard-vps-proxy-setup -i ###.###.###.###
 
 1.  Verify everything is working:
 

@@ -11,7 +11,7 @@
   - [Connecting Locally](user-manual/connecting-locally.md)
   - [Connecting Remotely](user-manual/connecting-remotely/README.md)
     - [Router VPN](user-manual/connecting-remotely/router-vpn.md)
-    - [Cloud VPN](user-manual/connecting-remotely/cloud-vpn.md)
+    <!-- - [Cloud VPN](user-manual/connecting-remotely/cloud-vpn.md) -->
     - [Clearnet](user-manual/connecting-remotely/clearnet.md)
     - [Tor](user-manual/connecting-remotely/tor.md)
   - [Installing Services](user-manual/installing-services.md)

@@ -25,7 +25,7 @@ The result of this setup will be a brand new _local_ IP address (e.g. `192.168.x
 
 1.  Run the following command, replacing `###.###.###.###` with the IPv4 address of your VPS:
 
-        wg-vps-setup -i ###.###.###.###
+        wireguard-vps-proxy-setup -i ###.###.###.###
 
     - When prompted, provide your VPS's root password.
     - When prompted, decide if you want the script to add your StartOS SSH public key to the VPS. This is recommended and can make debugging easier if a problem arises.
