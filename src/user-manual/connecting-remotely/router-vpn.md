@@ -2,7 +2,7 @@
 
 ## Use Case
 
-This connection method is ideal for fast, private, _personal_ access from anywhere in the world. Only authorized devices have access to your server and installed services.
+This connection method is ideal for fast, private, _personal_ access from anywhere in the world. Only authorized devices have access to your server and/or installed services.
 
 ```admonish warning title="Router Feature Needed"
 Most modern routers include a VPN server. If your router does not include a VPN server, you cannot use this connection method. Check your router manual to confirm.
