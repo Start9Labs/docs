@@ -8,7 +8,7 @@ First you need to install and trust a StartOS root CA certificate on your Apple 
 
 1. On your Apple TV, go to Settings > General > Profiles.
 
-2. Choose "Add Profile" and enter your URL: `http://[YOUR IP]/static/local-root-ca.crt`
+2. Choose "Add Profile" and enter your URL: `http://[YOUR SERVER IP]/static/local-root-ca.crt`
 
 3. Complete the prompts to install the certificate.
 
