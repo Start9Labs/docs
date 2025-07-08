@@ -49,17 +49,16 @@ Use the `/assets` directory to include additional files or scripts needed by you
 ```bash
 startos/
 ├── actions/
-├── file-models/
-├── versions/
-├── backup.ts
+├── fileModels/
+├── init/
+├── install/
+├── backups.ts
 ├── dependencies.ts
 ├── index.ts
-├── init.ts
 ├── interfaces.ts
 ├── main.ts
 ├── manifest.ts
 ├── sdk.ts
-├── store.ts
 └── utils.ts
 ```
 
@@ -77,12 +76,6 @@ The `startos/` directory is where you take advantage of the StartOS SDK and APIs
 
 This file is just plumbing, used for exporting package functions to StartOS.
 
-#### init.ts
-
-- `setupPreInstall()`: arbitrary code to run immediately when the package is freshly installed, _before_ other setup scripts. In this function, it is common to assign directory permissions or generate default config files.
-- `setupPostInstall()`: arbitrary code to run when the package is freshly installed, _after_ other setup scripts. In this function, it is common to make final changes to the Store or create tasks for the user.
-- `setupUninstall()`: arbitrary code to run on package uninstall. It is most commonly used to _undo_ changes made to dependency configs.
-
 #### interfaces.ts
 
 `setupInterfaces()` is where you define the service interfaces and determine how they are exposed. This function will execute on service install, update, and config save. It takes the user's config input as an argument, which will be `null` for install and update.
@@ -99,19 +92,6 @@ This file is just plumbing, used for exporting package functions to StartOS.
 
 This file is plumbing, used to imbue the generic Start SDK with package-specific type information defined in `manifest.ts` and `store.ts`. The exported SDK is what should be used through the `startos/` directory. It is a custom SDK just for this package.
 
-#### store.ts
-
-The Store is for persisting arbitrary data that are _not_ persisted by the service itself. It is rare to You must define your store as a `Store` type and also initialize it with an `initStore` const that satisfies the type. On fresh install, StartOS initializes the Store with values provided in initStore _before_ anything else, even before [setupPreInstall](#initts). This guarantees the Store is available to all other setup scripts.
-
-The three most common use cases of the Store are:
-
-1. Tracking ephemeral state, such as startup flags.
-1. Storing SMTP preferences and credentials.
-1. Storing data that cannot be retrieved or derived from the service itself.
-1. Storing user credentials (not recommended).
-
-`setupExposeStore()` is where you determine which values from the Store to expose to other services running on StartOS. _Values not explicitly exposed here will be kept private_.
-
 #### utils.ts
 
 This file is for defining constants and functions specific to your package that are used throughout the code base. Many packages will not make use of this file.
@@ -125,21 +105,72 @@ actions/
 └── action2.ts
 ```
 
-Actions are predefined scripts that display as buttons to the user. They accept arbitrary input and return structured data that can be optionally displayed masked or as QR codes. For example, a `config.ts` action might present a validated form that represents an underlying config file of the service, allowing them to configure the service without needing SSH or the command line. A `resetPassword` action could generate a new password, save it to the appropriate place in the file system or package store, and display it to the user.
+In the `actions/` directory, you define custom actions for your package.
+
+Actions are predefined scripts that display as buttons to the user. They accept arbitrary input and return structured data that can be optionally displayed masked or as QR codes. For example, a `config.ts` action might present a validated form that represents an underlying config file of the service, allowing them to configure the service without needing SSH or the command line. A `resetPassword` action could use the upstream service's CLI to generate a new password for the primary admin, then display it to the user.
 
 Each action receives its own file and is also passed into `Actions.of()` in `actions/index.ts`
 
-### file-models/ (optional)
+### fileModels/ (optional)
 
 ```bash
-file-models/
-├── config1.yaml.ts
-└── config2.json.ts
+fileModels/
+├── store.json.ts
+└── config.json.ts
 ```
 
-In `file-models/`, create separate .ts files for each config file (.json, .toml, .yaml, .config) used by the upstream service. These .ts files add type safety to the upstream config files and provide a simple means of reading and writing them throughout the package codebase.
+In the `fileModels/` directory, you can create separate `.ts` files from which you export a file model for each file from the file system you want to represent. Supported file formats are `.yaml`, `.toml`, `.json`, `.env`, `.ini`, `.txt`. For alternative file formats, you can use the `raw` method and provide custom serialization and parser functions.
 
-### versions/
+These `.ts` files afford a convenient and type safe way for your package to read, write and monitor, and react to file on the file system.
+
+It is common for packages to have a `store.json.ts` file model as a convenient place to persist arbitrary data that are needed by the package but _not_ persisted by teh upstream service. For example, you might use `store.json` to persist startup flags or login credentials.
+
+### init/
+
+```bash
+init/
+├── index.ts
+├── customInitFn1.ts
+└── customInitFn2.ts
+```
+
+In the `init/` directory, you define the container initialization sequence for your package as well as optional custom init functions.
+
+Containers initialization takes place under the following circumstances:
+
+1. Package install (including fresh install, update, downgrade, and restore)
+2. _Server_ (not service) restart
+3. "Container Rebuild" (an built-in Action that must be manually triggered by the user)
+
+_Note_: starting or restarting a service _does not_ trigger container initialization. Even if a service is stopped, the container still exists with event listeners still active.
+
+#### index.ts
+
+`setupInit()` is where you define the specific order in which functions will be executed when your container initializes.
+
+- `restoreInit` and `versionGraph` must remain first and second. Do not move them.
+
+- `setInterfaces`, `setDependencies`, `actions` are recommended to remain in this order, but could be rearranged if necessary. For example, if setInterfaces depends on your package dependencies, you should run setDependencies before setInterfaces, though this would be a highly unusual circumstance.
+
+- Any custom init functions can be appended to the list of built-in functions above, or even inserted between them. For example, if you wanted to run a custom init function prior to creating your actions that might affect which actions get created, you would insert that function between `setDependencies` and `actions`. Most custom init functions are simply appended to the list.
+
+Finally, it is possible to limit the execution of custom init functions to specific _kinds_ of initialization. For example, if you only wanted to run a particular init function on fresh install and ignore it for updates and restores, `setupOnInit()` provides a `kind` variable (one of `install`, `update`, `restore`) that you can use for conditional logic. `kind` can also be null, which means the container is being initialized due to a server restart or manual container rebuild, rather than installation.
+
+### install/
+
+```bash
+install/
+├── versions/
+└── versionGraph.ts
+```
+
+In the `install/` directory, you will manage package versions and also define pre-install and migration logic.
+
+#### versionGraph.ts
+
+`VersionGraph.of()` is where you index the current version as well as other versions of your package. Lastly, the function accepts a `preInstall` argument where you can define custom logic to run once, before anything else, _on initial installation only_. A common use case of the preInstall function is to seed files that other init functions expect to exist.
+
+#### versions
 
 ```bash
 versions/
@@ -148,4 +179,10 @@ versions/
 └── v1_0_2_0.ts
 ```
 
-In the `versions/` directory, you will create a new file for each new package version. In each version file, use `VersionInfo.of()` to provide the version number, release notes, and any migrations that should run. _Note_: migrations are only for migrating data that is _not_ migrated by the upstream service itself. All versions must then be provided as arguments to `VersionGraph.of()` in `index.ts` with the MOST RECENT VERSION LISTED FIRST.
+In the `versions/` directory, you will create a new file for each new package version. In each version file, use `VersionInfo.of()` to provide the version number, release notes, and any migrations that should run.
+
+Similar to `preInstall` migration `up` and `down` functions run once, before anything else, _upon updating or downgrading to that version only_.
+
+All versions should then be provided in `index.ts`, either as the current version or list of other versions.
+
+_Important note_: migrations are only for migrating data that is _not_ migrated by the upstream service itself.
