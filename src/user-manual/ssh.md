@@ -1,6 +1,6 @@
 # Using SSH
 
-Like other Linux distributions, StartOS allow you to go "under-the-hood" via Secure Shell Protocol (SSH).
+Like other Linux distributions, StartOS allows you to go "under-the-hood" via Secure Shell Protocol (SSH).
 
 ```admonish warning
 Accessing your server via SSH is considered advanced. Please use caution, you can cause permanent damage to your server, potentially resulting in loss of data.
