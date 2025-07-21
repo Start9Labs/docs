@@ -12,7 +12,6 @@ Accessing your server via SSH is considered advanced. Please use caution, you ca
 - [Using your own SSH Keys](#using-your-own-ssh-keys)
 - [Connecting via PuTTY on Windows](#connecting-via-putty-on-windows)
 
-
 ## Using your StartOS master password
 
 1.  Open a terminal on your client device and enter:
@@ -46,47 +45,29 @@ Accessing your server via SSH is considered advanced. Please use caution, you ca
 
 ### Using your own SSH Keys
 
-#### Via the UI
-
 1. In the StartOS UI, go to `System > SSH`
 
 1. Click `Add Key`, paste in your key and click `Save`
- 
 
+1.  Open a terminal on your client device and enter:
 
-#### Via the CLI
+        ssh start9@SERVER-HOSTNAME
 
-1. Follow the first guide above to first access your server via SSH using your StartOS master password.
+    Replace `SERVER-HOSTNAME` with your server's `adjective-noun.local` address URL.
 
-1. Add your key with the following command:
+1.  Enter your key's passphrase (if any)
 
-    ```
-    start-cli ssh add <key>
-    ```
+1.  The first time you connect, you will see something like this:
 
-    Replaceing `<key>` with quotation marks `""` surrounding your copied key.
+        The authenticity of host 'adjective-noun.local (192.168.1.175)' can't be established.
 
-    For example:
+        ED25519 key fingerprint is SHA256:BgYhzyIDbshm3annI1cfySd8C4/lh6Gfk2Oi3FdIVAa.
 
-    ```
-    start-cli ssh add "ssh-ed25519 5T4RT95T4RT95T4RT95T4RT95T4RT9 user@clienthost"
-    ```
+        This key is not known by any other names.
 
-1. Confirm the key was added correctly with:
+        Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
-    ```
-    start-cli ssh list
-    ```
-
-    ```admonish tip
-
-    This will show the added keys' fingerprints. You'll need the fingerprint if you want to remove an SSH key with:
-
-    `start-cli ssh remove 00:11:22:33:44:55:66:77:88:99:aa:bb:cc:dd:ee:ff`
-
-    ```
-
-1. Type `exit` and hit enter to leave the current session. Next time you connect via SSH, your key will be used instead of providng your master password.
+    Type "yes" and hit Enter to start trusting the server's SSH public key.
 
 
 ## Connecting via PuTTY on Windows
