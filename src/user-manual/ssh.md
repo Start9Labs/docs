@@ -1,4 +1,4 @@
-# Using SSH
+# SSH
 
 Like other Linux distributions, StartOS allows you to go "under-the-hood" via Secure Shell Protocol (SSH).
 
@@ -8,11 +8,11 @@ Accessing your server via SSH is considered advanced. Please use caution, you ca
 
 #### Contents
 
-- [Using your StartOS master password](#using-your-startos-master-password)
-- [Using your own SSH Keys](#using-your-own-ssh-keys)
+- [Using your StartOS Master Password](#using-your-startos-master-password)
+- [Using SSH Keys](#using-ssh-keys)
 - [Connecting via PuTTY on Windows](#connecting-via-putty-on-windows)
 
-## Using your StartOS master password
+## Using your StartOS Master Password
 
 1.  Open a terminal on your client device and enter:
 
@@ -43,11 +43,11 @@ Accessing your server via SSH is considered advanced. Please use caution, you ca
     Fear not! This is most likely happening because you have recently re-flashed your server, which causes a change in the key for your device's hostname. The solution is to delete the existing entry from your `known_hosts` file, which is typically located at `~/.ssh/known_hosts`. This will be specified in the warning, along with a helpful line number (in case your file is lengthy).
     ```
 
-### Using your own SSH Keys
+### Using SSH Keys
 
-1. In the StartOS UI, go to `System > SSH`
+1.  In the StartOS UI, go to `System > SSH`
 
-1. Click `Add Key`, paste in your key and click `Save`
+1.  Click `Add Key`, paste in your key and click `Save`
 
 1.  Open a terminal on your client device and enter:
 
@@ -68,7 +68,6 @@ Accessing your server via SSH is considered advanced. Please use caution, you ca
         Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
     Type "yes" and hit Enter to start trusting the server's SSH public key.
-
 
 ## Connecting via PuTTY on Windows
 

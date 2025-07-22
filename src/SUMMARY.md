@@ -15,11 +15,12 @@
     - [Clearnet](user-manual/connecting-remotely/clearnet.md)
     - [Tor](user-manual/connecting-remotely/tor.md)
   - [Installing Services](user-manual/installing-services.md)
+  - [Inbound Proxies](user-manual/inbound-proxies.md)
   - [Creating Backups](user-manual/backup-create.md)
   - [Restoring Backups](user-manual/backup-restore.md)
   - [Updating StartOS](user-manual/updating-startos.md)
-  - [Sending emails](user-manual/smtp.md)
-  - [Using SSH](user-manual/ssh.md)
+  - [Sending Emails](user-manual/smtp.md)
+  - [SSH](user-manual/ssh.md)
 
 - [💾 Flashing Guides](flashing-guides/README.md)
 

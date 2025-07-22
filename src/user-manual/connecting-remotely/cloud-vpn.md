@@ -1,4 +1,4 @@
-# Connecting Remotely - Cloud VPN
+# Connecting Remotely - VLAN (Cloud VPN)
 
 ## Use Case
 

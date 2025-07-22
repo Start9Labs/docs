@@ -58,7 +58,9 @@ There are two ways of opening your server to the Internet. Note, this just is a 
 
 ### Option 2: VPS Reverse Tunneling
 
-Instead of forwarding ports on your router and exposing your server's IP address to the Internet, you can rent a small, Virtual Private Server (VPS) that proxies traffic in and out, thereby hiding your server's IP address.
+Coming soon.
+
+<!-- Instead of forwarding ports on your router and exposing your server's IP address to the Internet, you can rent a small, Virtual Private Server (VPS) that proxies traffic in and out, thereby hiding your server's IP address.
 
 The result of this setup will be a brand new _public_ IP address (e.g. `162.159.x.x`) for your server that will display in the "clearnet" section of every service interface. However, only interfaces that are marked `public` will actually be accessible via this IP address or any domain attached thereto.
 
@@ -83,7 +85,7 @@ The result of this setup will be a brand new _public_ IP address (e.g. `162.159.
 
     You should see an entry with your StartOS server name (first 15 characters) of type `wireguard`.
 
-1.  In your service interfaces, you should now see a brand new `clearnet` IP address (e.g. `162.159.x.x`) with a network interface named `wireguard`.
+1.  In your service interfaces, you should now see a brand new `clearnet` IP address (e.g. `162.159.x.x`) with a network interface named `wireguard`. -->
 
 ## Adding ACME
 
