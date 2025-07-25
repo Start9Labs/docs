@@ -8,31 +8,11 @@ Here we'll show you how to install a lightning node and how to open a channel wi
 
 1. Install a lightning node. There are two options we offer on the [Start9 marketplace](https://marketplace.start9.com) - LND and Core Lightning. In this guide we're going to use Core Lightning (CLN). Though you can use LND and the process will be almost exactly the same.
 
-   ![LND vs CLN](./assets/ln-channel-options.png)
+1. Read through and then follow either the [LND Guide](https://github.com/Start9Labs/lnd-startos/docs/introduction.md) or the [CLN Guide](https://github.com/Start9Labs/cln-startos/docs/introduction.md) to end up with a lightning node ready to use.
 
-1. Install one of the above lightning implementations - as mentioned in this guide we'll use CLN.
+1. **Start** and wait for CLN to sync up to the network. This may take a couple of minutes or a couple of hours. Once the **Synced** health check turns green (as below) you can proceed to the next step.
 
-   ![Install CLN](./assets/ln-channel-installcln.png)
-
-1. You'll see CLN say **Needs Config**. Click **Configure**:
-
-   ![Config CLN](./assets/ln-channel-configcln1.png)
-
-1. You can leave the settings as their default values and hit **SAVE**.
-
-   ![Config CLN](./assets/ln-channel-configcln2.png)
-
-1. Now hit **Start** and wait for CLN to sync up to the network. This may take a couple of hours.
-
-1. Once the **Synced** health check turns green (as below) you can proceed to the next step.
-
-   ![CLN synced](./assets/ln-channel-clnsynced.png)
-
-1. To interact with your node we will use Ride The Lightning (RTL) - this is a service that provides a graphical user interface for our lightning node.
-
-    This will work with either (or both!) lightning implementations.
-
-    ![CLN synced](./assets/ln-channel-rtlinstall.png)
+1. To interact with your node we will use [Ride The Lightning (RTL)](./#ride-the-lightning-rtl) - this is a service that provides a graphical user interface for our lightning node. This will work with either (or both!) lightning implementations.
 
 1. Install it and click on **Configure** just like with CLN.
 
