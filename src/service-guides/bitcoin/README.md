@@ -1,6 +1,6 @@
-# Bitcoin Core
+# Bitcoin Core / Knots
 
-These guides will help you to setup external tools to connect or interact with Bitcoin, such as a wallet.
+- [Wallet Integrations](https://github.com/Start9Labs/bitcoind-startos/docs/instructions.md#wallet-integration-guides)
+- [Blockchain Migration](https://github.com/Start9Labs/bitcoind-startos/docs/instructions.md#blockchain-migration)
 
-- [Wallet Integrations](./wallet-integrations.md)
-- [Blockchain Migration](./blockchain-migration.md)
+# Electrs

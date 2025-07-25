@@ -69,8 +69,6 @@ Here you will find everything you need to set up and use your Start9 server. For
 ---
 
 - [Bitcoin / Electrs](service-guides/bitcoin/)
-  - [Wallet Integrations](service-guides/bitcoin/wallet-integrations.md)
-  - [Blockchain Migration](service-guides/bitcoin/blockchain-migration.md)
 - [Jellyfin](service-guides/jellyfin/)
   - [Web Application](service-guides/jellyfin/web-application.md)
   - [Mobile Apps](service-guides/jellyfin/mobile-apps.md)

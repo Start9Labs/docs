@@ -1,8 +1,6 @@
 # 📱 Service Guides
 
 - [Bitcoin / Electrs](bitcoin/)
-  - [Wallet Integrations](bitcoin/wallet-integrations.md)
-  - [Blockchain Migration](bitcoin/blockchain-migration.md)
 - [Jellyfin](jellyfin/)
   - [Web Application](jellyfin/web-application.md)
   - [Mobile Apps](jellyfin/mobile-apps.md)
