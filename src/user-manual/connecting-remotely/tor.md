@@ -1,5 +1,11 @@
 # Connecting Remotely - Tor
 
+#### Contents
+
+1. [Use Case](#use-case)
+1. [Creating and Removing Addresses](#creating-and-removing-addresses)
+1. [Connecting over Tor](#connecting-over-tor)
+
 ## Use Case
 
 This connection method permits hosting services on the _private_ Internet (aka the "Darknet") as anonymous (`.onion`) domains.
@@ -15,11 +21,6 @@ There are three reasons you might want this:
 ```admonish warning
 It is normal for Tor connections to be slow or unreliable at times.
 ```
-
-#### Contents
-
-1. [Creating and Removing Addresses](#creating-and-removing-addresses)
-1. [Connecting over Tor](#connecting-over-tor)
 
 ## Creating and Removing Addresses
 

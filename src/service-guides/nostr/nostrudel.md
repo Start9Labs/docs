@@ -1,6 +1,6 @@
 # noStrudel
 
-noStrudel is a nostr web client that is focused on exploring the nostr network. The focus is on power users or any other users who want to learn the inner workings of nostr. 
+noStrudel is a nostr web client that is focused on exploring the nostr network. The focus is on power users or any other users who want to learn the inner workings of nostr.
 
 ## Using noStrudel on StartOS
 
@@ -24,7 +24,7 @@ noStrudel is a nostr web client that is focused on exploring the nostr network. 
 
    ```admonish note
 
-   If you plan to connect to your own private relay, you must use either be running your own [LAN/Router VPN](/user-manual/connecting-remotely/router-vpn.md) or you must use [Tor browser](https://www.torproject.org/) on your system.  We recommend using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md).
+   If you plan to connect to your own private relay, you must use either be running your own [LAN/Router VPN](/user-manual/connecting-remotely/vpn.md) or you must use [Tor browser](https://www.torproject.org/) on your system.  We recommend using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md).
 
    ```
 

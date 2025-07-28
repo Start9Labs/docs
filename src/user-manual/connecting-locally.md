@@ -6,12 +6,9 @@ Local connections are the fastest possible, as they do not reach out to the Inte
 
 ## Instructions
 
-1. Ensure you have already [Trusted your server's Root CA](./trust-ca.md) on this device.
+1. If you haven't already, assign a static IP address to your server on the LAN. Refer to your router's user manual for detailed instructions.
+1. If you haven't already, [Trust your Server's Root CA](./trust-ca.md) on this device.
 1. Visit your server's unique `.local` _or_ `IP` address from any browser.
    - Your `.local` address was provided during initial setup.
    - Your `IP` address can be found in your router dashboard.
    - Both addresses are available in your StartOS dashboard under `System > StartOS UI`.
-
-```admonish tip title="Assign a Static IP"
-Your router will periodically change your server's IP address on the LAN. To prevent this, assign a static IP address for your server on the LAN. This is easy to do and supported by all routers. Refer to your router's user manual for detailed instructions.
-```

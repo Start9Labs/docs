@@ -9,7 +9,7 @@
 
 ## Android
 
-Before proceeding, make sure your Android device has been setup to [connect over LAN](/user-manual/connecting-locally.md). If you are connecting remotely, you will need to connect over a [router VPN](/user-manual/connecting-remotely/router-vpn.md) or [setup Tor](/user-manual/connecting-remotely/tor.md).
+Before proceeding, make sure your Android device has been setup to [connect over LAN](/user-manual/connecting-locally.md). If you are connecting remotely, you will need to connect over a [router VPN](/user-manual/connecting-remotely/vpn.md) or [setup Tor](/user-manual/connecting-remotely/tor.md).
 
 1. Visit the app store of your choice and download the [Jellyfin Android app](https://jellyfin.org/downloads).
 
@@ -25,7 +25,7 @@ If you are getting connection errors, make sure you are connected to the same LA
 
 ## iOS
 
-Before proceeding, make sure your Apple device has been setup to [connect over LAN](/user-manual/connecting-locally.md). If you are connecting remotely, you will need to connect over a [router VPN](/user-manual/connecting-remotely/router-vpn.md) or [setup Tor](/user-manual/connecting-remotely/tor.md).
+Before proceeding, make sure your Apple device has been setup to [connect over LAN](/user-manual/connecting-locally.md). If you are connecting remotely, you will need to connect over a [router VPN](/user-manual/connecting-remotely/vpn.md) or [setup Tor](/user-manual/connecting-remotely/tor.md).
 
 1. Open the Apple App Store and download the [Jellyfin iOS app](https://apps.apple.com/app/jellyfin-mobile/id1480192618).
 

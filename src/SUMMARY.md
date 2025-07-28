@@ -10,12 +10,12 @@
   - [Trusting Your Root CA](user-manual/trust-ca.md)
   - [Connecting Locally](user-manual/connecting-locally.md)
   - [Connecting Remotely](user-manual/connecting-remotely/README.md)
-    - [Router VPN](user-manual/connecting-remotely/router-vpn.md)
-      <!-- - [Cloud VPN](user-manual/connecting-remotely/cloud-vpn.md) -->
+    - [VPN](user-manual/connecting-remotely/vpn.md)
     - [Clearnet](user-manual/connecting-remotely/clearnet.md)
     - [Tor](user-manual/connecting-remotely/tor.md)
   - [Installing Services](user-manual/installing-services.md)
-  - [Inbound Proxies](user-manual/inbound-proxies.md)
+  - [Gateways](user-manual/gateways.md)
+  - [Domains](user-manual/domains.md)
   - [Creating Backups](user-manual/backup-create.md)
   - [Restoring Backups](user-manual/backup-restore.md)
   - [Updating StartOS](user-manual/updating-startos.md)
@@ -133,14 +133,16 @@
 
 - [📚 Misc Guides](misc-guides/README.md)
 
-  - [Firefox Guides](misc-guides/firefox-guides/README.md)
-    - [Trusting Your Root CA](misc-guides/firefox-guides/ca.md)
-    - [Enabling Tor](misc-guides/firefox-guides/tor.md)
-  - [Thunderbird Guides](misc-guides/thunderbird-guides.md)
+  - [Setting up Dynamic DNS](misc-guides/dynamic-dns.md)
+  - [Installing StartTunnel on a VPS](misc-guides/start-tunnel.md)
   - [Getting SMTP Credentials](misc-guides/smtp-credentials.md)
   - [Resetting Your Password](misc-guides/reset-password.md)
   - [Upgrading from a Raspberry Pi](misc-guides/upgrade-pi.md)
   - [Migrating LND to StartOS](misc-guides/lnd-migration.md)
+  - [Firefox Guides](misc-guides/firefox-guides/README.md)
+    - [Trusting Your Root CA](misc-guides/firefox-guides/ca.md)
+    - [Enabling Tor](misc-guides/firefox-guides/tor.md)
+  - [Thunderbird Guides](misc-guides/thunderbird-guides.md)
 
 - [📦 Packaging Guide](packaging-guide/README.md)
 
