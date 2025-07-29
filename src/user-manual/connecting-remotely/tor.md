@@ -3,7 +3,8 @@
 #### Contents
 
 1. [Use Case](#use-case)
-1. [Creating and Removing Addresses](#creating-and-removing-addresses)
+1. [Important Background](#important-background)
+1. [Adding and Removing Domains](#adding-and-removing-Domains)
 1. [Connecting over Tor](#connecting-over-tor)
 
 ## Use Case
@@ -22,14 +23,23 @@ There are three reasons you might want this:
 It is normal for Tor connections to be slow or unreliable at times.
 ```
 
-## Creating and Removing Addresses
+## Important Background
 
-By default, newly installed services receive unique and randomly-generated Tor addresses for each interface. To add or remove a Tor address, simply navigate to the interface and look under the "Tor" section. If you delete all your Tor addresses, that service interface will no longer be accessible over Tor.
+By default, each service interface on StartOS receives a unique and randomly-generated Tor domain. Each domain produces two addresses: `HTTP` and `HTTPS`. Because Tor is a secure protocol, it is perfectly safe to use the `HTTP` address. It is also preferable to use the `HTTP` address, because it does not require you or anyone else to trust you server's Root CA to access it.
+
+```admonish warning
+Some applications that are unfamiliar with or unfriendly towards Tor require `HTTPS`. ACME providers will not sign certificates for Tor addresses. Therefore, your `HTTPS` Tor address is signed by your server's Root CA. This means only devices that have downloaded and trusted your server's Root CA will be able to access the address.
+```
+
+## Adding and Removing Domains
+
+To add a Tor domain to a service interface, find the "Tor Domains" section and click "Add".
 
 ```admonish tip title="Vanity Addresses"
-When adding a Tor address to a service interface, can upload a private key to create a vanity address.
-<!-- @TODO recommend vanity address generator and provide instructions -->
+When adding a Tor address to a service interface, can upload a private key to create a vanity address. For instructions generating a vanity address, see <a href="https://community.torproject.org/onion-services/advanced/vanity-addresses/" target="_blank">here</a>.
 ```
+
+To delete a Tor domain, simply click the trashcan beside the Domain. If you delete all your Tor domains, the service interface will not be accessible over Tor.
 
 ## Connecting over Tor
 

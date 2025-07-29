@@ -15,21 +15,23 @@ Adding a domain to StartOS means you can use it and its subdomains to host servi
 
 StartOS uses the <a href="https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment" target="_blank">Automatic Certificate Management Environment (ACME) protocol</a> to automatically obtain SSL/TLS certificates for domains, allowing visitors to access them over secure, HTTPS connections trusted by their apps and browsers.
 
-1. Navigate to `System > Domains > ACME Providers -> Add`.
+1. Navigate to `System > Domains > ACME Providers` and click "Add".
 
 1. Select a provider to add. StartOS has built-in support for Let's Encrypt and Let's Encrypt Staging. Advanced users may add a custom ACME provider. Let's Encrypt Staging is recommended for testing purposes and for testing purposes only.
 
 1. Provide a contact email address. This is required for the ACME provider to generate a certificate.
 
-## Allocating a Domain
+## Adding a Domain
 
-1. Navigate to `System > Domains > Domains -> Allocate`.
+1. Navigate to `System > Domains > Domains` and click "Add".
 
-1. Select a default ACME provider. This can be overridden later on a case-by-case basis.
+1. Enter a domain/subdomain. For example, if you control `domain.com`, you could enter `domain.com` or `subdomain.domain.com`. In either case, all possible subdomains of the added domain will be available for assignment to service interfaces.
 
-1. Select a gateway. For help selecting a gateway, see [Gateways](./gateways.md)
+1. Select a default ACME provider for this domain (usually Let's Encrypt). It can be overridden later on a case-by-case basis.
 
-1. Enter the domain/subdomain you want to allocate to the selected gateway. For example, if you control `domain.com`, you could allocate `domain.com` or `subdomain.domain.com`. In either case, every subdomain of the domain you provide will be available for assignment to service interfaces.
+   Select `None (use system Root CA)` to generate certificates using your server's Root CA. NOTE: if you use your Root CA, only devices that have downloaded and trusted your server's Root CA will be able to access the domain without encountering a scary message.
+
+1. Select a public gateway for this domain. For help selecting a gateway, see [Gateways](./gateways.md)
 
 ## Updating DNS Records
 
