@@ -15,11 +15,11 @@ You can also expose your StartOS UI to the Internet, but this is not recommended
 - [Opening your Server to the Internet](#opening-your-server-to-the-internet)
 - [Adding ACME](#adding-acme)
 - [Assigning a Domain](#assigning-a-domain)
-- [Publicizing an Interface](#publicizing-an-interface)
+- [Publishing an Interface](#publishing-an-interface)
 
 ## Opening your Server to the Internet
 
-There are two ways of opening your server to the Internet. Note, this just is a pre-requisite step. No service interfaces will be exposed to the Internet until you publicize them later on.
+There are two ways of opening your server to the Internet. Note, this just is a pre-requisite step. No service interfaces will be exposed to the Internet until you publish them later on.
 
 - [Router Port Forwarding](#option-1-router-port-forwarding). Free, but exposes your home IP address to visitors.
 
@@ -105,9 +105,9 @@ The result of this setup will be a brand new _public_ IP address (e.g. `162.159.
 
    For ACME provider, you can also select `None (use system Root CA)` to generate certificates using your own Root CA. NOTE: anyone who accesses that website or API will need to first trust your Root CA on their phone/laptop.
 
-## Publicizing an Interface
+## Publishing an Interface
 
-Publicizing an interface allows it to be accessed via the public hosts, such as public IP addresses, VPS reverse proxies, and clearnet (`.com`, `.net`, etc) domains, assuming they were successfully created (above).
+Publishing an interface allows it to be accessed via the public hosts, such as public IP addresses, VPS reverse proxies, and clearnet (`.com`, `.net`, etc) domains, assuming they were successfully created (above).
 
 1. Select an interface to make public.
 
