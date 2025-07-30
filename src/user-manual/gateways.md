@@ -7,7 +7,7 @@
 
 ## Understanding Gateways
 
-Your server is accessed by one or more _gateways_. Your router is a gateway. StartTunnel is also a gateway. Both your router and StartTunnel create secure local networks that, by default, _cannot_ be accessed by devices outside the network. By default, your router (Ethernet or WiFi) is your only gateway.
+Gateways connect your server to the Internet. They process outbound traffic, and under certain conditions, they also permit inbound traffic. Your router is a gateway. StartTunnel is also a gateway. Both your router and StartTunnel create secure local networks that, by default, _cannot_ be accessed by devices outside the network. By default, your router (Ethernet or WiFi) is your only gateway.
 
 ```admonish note
 If you are running StartOS on a VPS with a public IP address, there is no local network. Your gateway is inherently public and open to the Internet.
