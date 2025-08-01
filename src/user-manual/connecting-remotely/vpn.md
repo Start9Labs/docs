@@ -25,17 +25,17 @@ Most modern routers include a VPN server feature. If so, it is usually the prefe
 
 You can think of StartTunnel as a "virtual router in the cloud". There are two reasons to select this option: (1) your router does not offer a VPN server or (2) you intend to use StartTunnel as a [clearnet](./clearnet.md) gateway and need to set it up anyway.
 
-1. Follow instructions to [install StartTunnel on a VPS](../../misc-guides/start-tunnel.md)
+1. Follow instructions to [install StartTunnel on a VPS](../../misc-guides/start-tunnel.md).
 
-1. Navigate to `System -> Tunnels`. Here you will use the configuration file produced by StartTunnel to create an _inbound_ tunnel to StartOS. Because you are creating an _inbound_ tunnel, it will result in a new gateway in StartOS, no different from your router.
+1. Navigate to `System -> Gateways`.
 
-1. Click "Create"
+1. Click "Add".
 
-1. Give your tunnel a name. Note the name you provide will be the name of the resulting gateway.
+1. Give your StartTunnel gateway a name. For example "StartTunnel".
 
-1. Paste or upload your StartTunnel Wireguard config file
+1. Paste or upload your StartTunnel Wireguard config file.
 
-1. Click "save"
+1. Click "save".
 
 ## Connecting Clients
 

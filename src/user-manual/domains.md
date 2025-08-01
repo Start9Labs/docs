@@ -15,6 +15,10 @@ Adding a domain to StartOS means you can use it and its subdomains to host servi
 
 StartOS uses the <a href="https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment" target="_blank">Automatic Certificate Management Environment (ACME) protocol</a> to automatically obtain SSL/TLS certificates for domains, allowing visitors to access them over secure, HTTPS connections trusted by their apps and browsers.
 
+```admonish note
+It is not _necessary_ to add an ACME provider. You can sign certificates using your server's Root CA. If you do this, however, only devices that have downloaded and trusted your server's Root CA will be able to access the domain without issue.
+```
+
 1. Navigate to `System > Domains > ACME Providers` and click "Add".
 
 1. Select a provider to add. StartOS has built-in support for Let's Encrypt and Let's Encrypt Staging. Advanced users may add a custom ACME provider. Let's Encrypt Staging is recommended for testing purposes and for testing purposes only.
@@ -37,9 +41,11 @@ StartOS uses the <a href="https://en.wikipedia.org/wiki/Automatic_Certificate_Ma
 
 1. Access the DNS settings for the domain you want to use, usually in the registrar where you originally leased the domain.
 
-1. Create the appropriate records as instructed by StartOS.
+1. In StartOS, find your domain and click "View DNS" in its menu.
 
-1. Click "Test" to ensure the records are successfully detected.
+1. Create the DNS records displayed.
+
+1. Click "Test DNS" to ensure the records were successfully detected.
 
    ```admonish warning
    It might take a few minutes for your domain changes to take effect. You can test it using <a href="https://dnschecker.org" target="_blank">https://dnschecker.org</a>.

@@ -37,7 +37,7 @@ Port forwarding is only necessary on private gateways, such as your router or St
 To expose your `PUBLIC_IP:port` or `domain` address to the Internet, you must create a port forwarding rule in its corresponding gateway. The rule that needs to be created is conveniently displayed in the tooltip for each address.
 
 ```admonish warning title="Caution"
-1. ACME providers will not sign certificates for IP addresses. Therefore, the `PUBLIC_IP:port` address is signed by your server's Root CA. This means only devices that have downloaded and trusted your server's Root CA will be able to access the address.
+1. ACME providers will not sign certificates for IP addresses. Therefore, the `PUBLIC_IP:port` address is signed by your server's Root CA. This means only devices that have downloaded and trusted your server's Root CA will be able to access the address without issue.
 1. Because of the need to trust your Root CA, and also because it is accepted practice to host websites and APIs on domains (`.com`, `.net`, etc) and not IP addresses, most people will _NOT_ use this `PUBLIC_IP:port` address and therefore _DO NOT_ need to create a port forwarding rule for it.
 ```
 

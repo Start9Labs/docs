@@ -28,7 +28,7 @@ It is normal for Tor connections to be slow or unreliable at times.
 By default, each service interface on StartOS receives a unique and randomly-generated Tor domain. Each domain produces two addresses: `HTTP` and `HTTPS`. Because Tor is a secure protocol, it is perfectly safe to use the `HTTP` address. It is also preferable to use the `HTTP` address, because it does not require you or anyone else to trust you server's Root CA to access it.
 
 ```admonish warning
-Some applications that are unfamiliar with or unfriendly towards Tor require `HTTPS`. ACME providers will not sign certificates for Tor addresses. Therefore, your `HTTPS` Tor address is signed by your server's Root CA. This means only devices that have downloaded and trusted your server's Root CA will be able to access the address.
+Some applications that are unfamiliar with or unfriendly towards Tor may require `HTTPS`. ACME providers will not sign certificates for Tor addresses. Therefore, your `HTTPS` Tor address is signed by your server's Root CA. This means only devices that have downloaded and trusted your server's Root CA will be able to access the HTTPS address without issue.
 ```
 
 ## Adding and Removing Domains
