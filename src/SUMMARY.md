@@ -15,6 +15,7 @@
     - [Tor](user-manual/connecting-remotely/tor.md)
   - [Installing Services](user-manual/installing-services.md)
   - [Gateways](user-manual/gateways.md)
+  - [Certificate Authorities](user-manual/authorities.md)
   - [Domains](user-manual/domains.md)
   - [Creating Backups](user-manual/backup-create.md)
   - [Restoring Backups](user-manual/backup-restore.md)
