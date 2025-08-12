@@ -27,11 +27,15 @@ If you want to let a specific person through a particular door, you give them a 
 
 So if you want to expose a particular service interface to the public Internet (i.e. "remove a lock from a door"), you _must_ reveal the approximate location of your chosen gateway. If your gateway is your home router, you are necessarily revealing the approximate location of your home to all visitors. If your gateway is a VPS running StartTunnel, you are revealing the approximate location of the VPS, not your home.
 
+```admonish warning title="CGNAT"
+If your Internet Service Provider (ISP) uses <a href="https://en.wikipedia.org/wiki/Carrier-grade_NAT" target="_blank" noreferrer>Carrier-grade NAT (CGNAT)</a>, such as Starlink, it means you share an IP address with other customers. Therefore, it is not possible to use it for remote access.
+```
+
 _In summary_, you have two options when selecting a gateway for clearnet access to your service interfaces. Which you select will depend on your threat model and budget:
 
 - **Option 1**: if you have no issue revealing your city, state, country, and possibly neighborhood to the Internet, you should use your router as your clearnet gateway, since this option is free. NOTE: since home IP addresses can change without warning, we highly recommend [Setting up Dynamic DNS](../../misc-guides/dynamic-dns.md).
 
-- **Option 2**: if you want to obfuscate your home IP address, you should create a new gateway using StartTunnel (or similar). Refer to the [Installing StartTunnel on a VPS](../../misc-guides/start-tunnel.md) guide.
+- **Option 2**: if you want to obfuscate your home IP address, or your ISP uses CGNAT, you must create a new gateway with StartTunnel (or similar). Refer to the [Installing StartTunnel on a VPS](../../misc-guides/start-tunnel.md) guide.
 
 ## Adding a Gateway to StartOS
 
@@ -43,7 +47,7 @@ Here you are describing an _existing_ gateway, not creating a new one. To create
 
 1. Give the gateway a name. For example "StartTunnel".
 
-1. For type, select "Private". Only select "Public" if you used a custom tool to generate a _public_ Wireguard gateway. StartTunnel gateways are always private.
+1. For type, select "Private". Only select "Public" if you used a custom tool to generate a _public_ Wireguard gateway. StartTunnel gateways are private.
 
 1. Paste the Wireguard config provided by StartTunnel (or similar).
 

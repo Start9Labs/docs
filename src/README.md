@@ -16,7 +16,7 @@ Here you will find everything you need to set up and use your Start9 server. For
 - [Installing Services](user-manual/installing-services.md)
 - [Gateways](user-manual/gateways.md)
 - [Certificate Authorities](user-manual/authorities.md)
-- [Domains](user-manual/domains.md)
+- [Private Domains](user-manual/private-domains.md)
 - [Creating Backups](user-manual/backup-create.md)
 - [Restoring Backups](user-manual/backup-restore.md)
 - [Updating StartOS](user-manual/updating-startos.md)

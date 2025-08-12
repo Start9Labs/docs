@@ -3,24 +3,33 @@
 #### Contents
 
 - [Use Case](#use-case)
-- [Forwarding Ports](#forwarding-ports)
-- [Adding a Domain](#adding-a-domain)
+- [Adding a Public Domain](#adding-a-public-domain)
+- [DNS](#dns)
+- [Port Forwarding](#port-forwarding)
 
 ## Use Case
 
 This connection method permits hosting a service interface on the public Internet.
 
-## Adding a Domain
+## Adding a Public Domain
 
 With few exceptions, you should add a domain to your service interface so that you and others can access it seamlessly, just like any other website or API.
 
-1. On the service interface page in the "Domains" section, click "Add".
+1. On the service interface page in the "Public Domains" section, click "Add".
 
-1. Select a base domain to use. If you have not yet added a base domain, [see the instructions](../domains.md).
+1. Enter the fully qualified domain name. For example, if you control `domain.com`, you could enter `domain.com` or `public.domain.com` or `nextcloud.public.domain.com`, etc.
 
-1. Optionally add a subdomain. For example, if your base domain is `domain.com`, you could enter `nextcloud` as the subdomain, resulting in `nextcloud.domain.com`. If your base domain is `server.domain.com`, you could enter `nextcloud` as the subdomain, resulting in `nextcloud.server.domain.com` NOTE: domain/subdomain combinations are unique. If you use `nextcloud.domain.com` here, you cannot also use it somewhere else.
+1. Select a gateway to use for this domain. For help selecting a gateway, see [Gateways](./gateways.md)
 
-1. Optionally override the default ACME provider.
+   ```admonish warning title="Starlink and CGNAT"
+   CGNAT gateways, such as Starlink, cannot be used for clearnet hosting. You must create a new gateway with StartTunnel (or similar). Refer to [Installing StartTunnel on a VPS](../../misc-guides/start-tunnel.md).
+   ```
+
+1. Select a Certificate Authority to use for this domain.
+
+   ```admonish warning
+   If you select your server's Root CA, only devices that have downloaded and trusted your server's Root CA will be able to access the domain without issue.
+   ```
 
 1. Click "Save".
 
@@ -28,16 +37,30 @@ With few exceptions, you should add a domain to your service interface so that y
 
 1. Continue below.
 
-## Forwarding Ports
+## DNS
+
+1. Access the DNS settings for the domain you want to use, usually in the registrar where you originally leased the domain.
+
+1. In StartOS, find your domain and click "Manage DNS" in its menu.
+
+1. Create the DNS records displayed.
+
+1. Click "Test" to ensure the records were successfully detected.
+
+   ```admonish warning
+   It might take a few minutes for your domain changes to take effect. You can test it using <a href="https://dnschecker.org" target="_blank">https://dnschecker.org</a>.
+   ```
+
+## Port Forwarding
 
 ```admonish note
-Port forwarding is only necessary on private gateways, such as your router or StartTunnel. If you are running StartOS on a VPS or using a public Wireguard tunnel as a gateway, no port forwarding is needed.
+Port forwarding is only necessary for private gateways, such as your router or StartTunnel. If you are running StartOS on a VPS, no port forwarding is needed.
 ```
 
 To expose your `PUBLIC_IP:port` or `domain` address to the Internet, you must create a port forwarding rule in its corresponding gateway. The rule that needs to be created is conveniently displayed in the tooltip for each address.
 
 ```admonish warning title="Caution"
-1. ACME providers will not sign certificates for IP addresses. Therefore, the `PUBLIC_IP:port` address is signed by your server's Root CA. This means only devices that have downloaded and trusted your server's Root CA will be able to access the address without issue.
+1. ACME providers will not sign certificates for IP addresses. Therefore, the `PUBLIC_IP:port` address is signed by your server's Root CA. This means only devices that have downloaded and trusted your server's Root CA will be able to access the IP address without issue.
 1. Because of the need to trust your Root CA, and also because it is accepted practice to host websites and APIs on domains (`.com`, `.net`, etc) and not IP addresses, most people will _NOT_ use this `PUBLIC_IP:port` address and therefore _DO NOT_ need to create a port forwarding rule for it.
 ```
 

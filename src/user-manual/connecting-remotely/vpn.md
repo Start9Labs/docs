@@ -1,9 +1,9 @@
-# Connecting Remotely - Private VPN Tunnel
+# Connecting Remotely - VPN
 
 #### Contents
 
 1. [Use Case](#use-case)
-1. [Option 1: Router VPN Server](#option-1-router-vpn-server)
+1. [Option 1: Router](#option-1-router)
 1. [Option 2: StartTunnel](#option-2-starttunnel)
 1. [Connecting Clients](#connecting-clients)
 
@@ -11,7 +11,7 @@
 
 This connection method is ideal for fast, private, _personal_ access from anywhere in the world using a VPN server running on your router or VPS. Only authorized devices have access to your server and installed services.
 
-## Option 1: Router VPN Server
+## Option 1: Router
 
 Most modern routers include a VPN server feature. If so, it is usually the preferred method for private, remote access to your server.
 
