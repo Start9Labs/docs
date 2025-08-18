@@ -4,7 +4,7 @@
 
 - [Use Case](#use-case)
 - [Adding a Public Domain](#adding-a-public-domain)
-- [DNS](#dns)
+- [Configuring DNS](#configuring-dns)
 - [Port Forwarding](#port-forwarding)
 
 ## Use Case
@@ -33,19 +33,17 @@ With few exceptions, you should add a domain to your service interface so that y
 
 1. Click "Save".
 
-1. A new `https://<your-domain>` address will appear in the "Addresses" table.
+1. If StartOS does not detect a satisfactory DNS record, you will be asked to create one. Continue to the section below.
 
-1. Continue below.
+1. A new `https://<your-public-domain>` address will appear in the "Addresses" table.
 
-## DNS
+## Configuring DNS
 
-1. Access the DNS settings for the domain you want to use, usually in the registrar where you originally leased the domain.
+1. Access your domain's DNS settings, usually in the registrar where you originally leased the domain.
 
-1. In StartOS, find your domain and click "Manage DNS" in its menu.
+1. In StartOS, find your domain, click "View DNS" from the menu, and create _one_ of the displayed records. Depending on the number of subdomains in your domain, you may see multiple options. For example, if your domain is `nextcloud.public.domain.com`, you will see options for `nextcloud.public.domain.com`, `*.public.domain.com`, and `*.domain.com`. In most cases, we recommend choosing the record with the least number of segments. In this case, `*.domain.com`. Then, next time you use _any_ subdomain of `domain.com`, you will _not_ need to create another DNS record.
 
-1. Create the DNS records displayed.
-
-1. Click "Test" to ensure the records were successfully detected.
+1. Click "Test" to ensure the record was successfully detected by StartOS.
 
    ```admonish warning
    It might take a few minutes for your domain changes to take effect. You can test it using <a href="https://dnschecker.org" target="_blank">https://dnschecker.org</a>.
@@ -71,6 +69,7 @@ Most websites and APIs on the Internet are hosted on port `443`. Port `443` is s
 How you create a port forwarding rule depends on your gateway.
 
 - **Routers**: port forwarding is supported by all routers and easy to do. Refer to your router's manual for instructions.
-- **StartTunnel**: Access your VPS using SSH and run the following command, replacing variables accordingly.
 
-      start-tunnel port-forward add <external_port> <internal_ip_port>
+- **StartTunnel**: SSH into your StartTunnel VPS and run the following command, replacing variables accordingly.
+
+      start-tunnel port-forward add <external_port> <internal_port>
