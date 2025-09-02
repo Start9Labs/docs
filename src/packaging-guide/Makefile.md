@@ -19,6 +19,8 @@ make aarch64   # Build for ARM64 (Raspberry Pi, etc.)
 make x86_64    # Build for x86_64 architecture
 ```
 
+> **Note:** For convenience, legacy targets `make arm` and `make x86` are also supported as aliases for `aarch64` and `x86_64` respectively. Using the full architecture name is recommended for clarity.
+
 ### Installation
 
 ```
@@ -61,7 +63,7 @@ $ make aarch64
 📦 Alby Hub   v1.19.3:1-alpha.0
 ───────────────────────────────
  Filename:   albyhub_aarch64.s9pk
- Size:       15M
+ Size:       7M
  Arch:       aarch64
  SDK:        0.4.0-beta.36
  Git:        78c30ec776f6a9d55be3701e9b82093c866a382c
