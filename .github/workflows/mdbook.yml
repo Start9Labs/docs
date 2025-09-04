@@ -36,6 +36,12 @@ jobs:
           curl -sSL https://github.com/tommilligan/mdbook-admonish/releases/download/${ADMONISH_VERSION}/mdbook-admonish-${ADMONISH_VERSION}-x86_64-unknown-linux-gnu.tar.gz | tar -xz
           sudo mv mdbook-admonish /usr/local/bin/mdbook-admonish
 
+      - name: Install mdBook External Links
+        run: |
+          EXTERNAL_LINKS_VERSION=$(curl -s https://api.github.com/repos/jonahgoldwastaken/mdbook-external-links/releases/latest | jq -r '.tag_name')
+          curl -sSL https://github.com/jonahgoldwastaken/mdbook-external-links/releases/download/${EXTERNAL_LINKS_VERSION}/mdbook-external-links-${EXTERNAL_LINKS_VERSION}-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+          sudo mv mdbook-external-links /usr/local/bin/mdbook-external-links
+
       - name: Configure mdBook Admonish
         run: mdbook-admonish install .
 

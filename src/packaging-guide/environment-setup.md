@@ -6,46 +6,57 @@ You will need a computer running StartOS to test your package. Follow the [flash
 
 ## Docker
 
-<a href="https://docs.docker.com/get-docker/" target="_blank">Docker</a> is needed to convert docker images to StartOS images.
+[Docker](https://docs.docker.com/get-docker/) is essential for building and managing container images that will be used for final `.s9pk` build. It handles:
+
+- Pulling base images for your service containers
+- Building custom container images from Dockerfiles
 
 ## Make
 
-<a href="https://www.gnu.org/software/make/" target="_blank">Make</a> is needed to streamline builds and produce s9pk binaries.
+[Make](https://www.gnu.org/software/make/) is a build automation tool that streamlines the package creation process and it is used to:
 
-## NodeJS v22 (latest LTS)
+- Execute build scripts defined in Makefiles
+- Coordinate the packaging workflow
+- Build and install s9pk binaries to StartOS
+- Automate repetitive development tasks
 
-<a href="https://nodejs.org/en/" target="_blank">NodeJS</a> is needed to compile the Typescript in your StartOS package.
+## Node.js v22 (Latest LTS)
+
+[Node.js](https://nodejs.org/en/) is required for compiling TypeScript code used in StartOS package configurations.
 
 ## SquashFS
 
-SquashFS is needed to pack the compiled Javascript into a SquashFS file
+**SquashFS** is used to create compressed filesystem images that package your compiled service code.
 
-##### Linux (Debian-based)
+### Installation:
 
-    sudo apt install squashfs-tools squashfs-tools-ng
+#### Linux (Debian-based)
 
-##### Mac
+```sh
+sudo apt install squashfs-tools squashfs-tools-ng
+```
 
-    brew install squashfs
+#### macOS
+
+Make sure you have [Homebrew](https://brew.sh/) installed, then:
+
+```sh
+brew install squashfs
+```
 
 ## Start CLI
 
-<a href="https://github.com/Start9Labs/start-os/" target="_blank">start-cli</a> is needed to interact with StartOS from the command line.
+[start-cli](https://github.com/Start9Labs/start-cli/) is the core development toolkit for building StartOS packages and provides:
 
-1.  Clone the StartOS repo
+- Package validation and verification
+- s9pk file creation and assembly
+- Development workflow management
+- Integration with StartOS systems
 
-        https://github.com/Start9Labs/start-os.git
+### Installation:
 
-1.  Initialize the git submodules
+The easiest way to install start-cli is using our automated installer script:
 
-        git submodule update --init --recursive
-
-1.  Build Start CLI
-
-        make cli
-
-1.  Initialize Start CLI
-
-        start-cli init
-
-    This will generate a `.startos` directory inside your home directory. This directory will contain a newly-generated `developer.key.pem`, used to sign packages, as well as a default `config.yaml`, which can be edited to customize and streamline your developer experience.
+```
+curl -fsSL https://start9labs.github.io/start-cli | sh
+```
