@@ -3,6 +3,7 @@
 ```bash
 /
 ├── assets/
+├── docs/ (optional)
 ├── startos/
 ├── .gitignore
 ├── Dockerfile (optional)
@@ -43,6 +44,10 @@ This is largely boilerplate. Update as needed for your service, including replac
 ## assets/
 
 Use the `/assets` directory to include additional files or scripts needed by your service. For example, a Python script that generates a default config file for the service. It should rarely be necessary to use this directory.
+
+## docs/
+
+Optionally use the `/docs` directory to store an `instructions.md` file or an entire set of documentation, structured however you want. When creating your service manifest, set `docsUrl` to the URL where this directory will eventually be published. For example, if using GitHub, the URL would likely be `https://github.com/<GITHUB_USERNAME>/<REPO>/blob/master/docs`, assuming you publish to branch `master`.
 
 ## startos/
 

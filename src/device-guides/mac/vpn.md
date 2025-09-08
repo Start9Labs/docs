@@ -4,7 +4,7 @@ Follow this guide to connect your Mac device to your Router VPN in order to acce
 
 #### Prerequisites
 
-- [Connecting Remotely - Router VPN](../../user-manual/connecting-remotely/router-vpn.md)
+- [Connecting Remotely - Router VPN](../../user-manual/connecting-remotely/vpn.md)
 
 #### Contents
 

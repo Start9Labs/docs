@@ -4,7 +4,7 @@ Follow this guide to connect your Linux device to your Router VPN in order to ac
 
 #### Prerequisites
 
-- [Connecting Remotely - Router VPN](../../user-manual/connecting-remotely/router-vpn.md)
+- [Connecting Remotely - Router VPN](../../user-manual/connecting-remotely/vpn.md)
 
 #### Contents
 
