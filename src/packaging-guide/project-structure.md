@@ -17,7 +17,7 @@
 └── tsconfig.json
 ```
 
-#### .gitignore, Makefile, package-lock.json, package.json, and tsconfig.json
+#### .gitignore, [Makefile](./Makefile.md), package-lock.json, package.json, and tsconfig.json
 
 These are boilerplate files that need not be edited, except in special circumstances.
 
