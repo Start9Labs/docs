@@ -8,7 +8,7 @@
 
 ## Use Case
 
-A private domain is like to your server's [local domain](./connecting-locally.md#local-domain), except it also works for VPN connectivity, and it can be _anything_. It can be a real domain you control, a made up domain, or even a domain controlled by someone else.
+A private domain is similar to your server's [local domain](./connecting-locally.md#local-domain), except it also works for VPN connectivity, and it can be _anything_. It can be a real domain you control, a made up domain, or even a domain controlled by someone else.
 
 Similar to your local domain, private domains can only be accessed when connected to the same LAN as your server, either physically or via VPN, and they require trusting your server's Root CA.
 

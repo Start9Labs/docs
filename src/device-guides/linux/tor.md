@@ -21,7 +21,7 @@ In the rare event that Tor is having connectivity issues, reset the connection:
 
 This should work for most Debian-like systems, such as Debian, Ubuntu, Mint, PopOS etc.
 
-<!-- @TODO should this paragraph be under "Debain Systems"? -->
+<!-- @TODO should this paragraph be under "Debian Systems"? -->
 
 The following instructions will install the LTS (Long Term Support) version of Tor from your distro's default repository. If you would always like the latest stable release, the Tor Project maintains their own Debian/Ubuntu repository. The instructions for connecting to this official Tor Project repository can be found <a href="https://support.torproject.org/apt/tor-deb-repo" target="_blank">here</a>.
 
