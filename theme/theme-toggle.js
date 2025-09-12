@@ -1,44 +1,54 @@
-(function() {
-    // Function to switch the theme
+(function () {
+    // --- THEME LOGIC ---
+    const LIGHT = 'light';
+    const DARK = 'ayu';
+    const STORAGE_KEY = 'mdbook-theme';
+
+    function getStoredTheme() {
+        return (
+            localStorage.getItem(STORAGE_KEY) ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? DARK : LIGHT)
+        );
+    }
+
+    function applyTheme(theme) {
+        document.documentElement.classList.remove(LIGHT, DARK);
+        document.documentElement.classList.add(theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+    }
+
     function switchTheme() {
-        const html = document.documentElement;
-        const currentTheme = localStorage.getItem('mdbook-theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "light");
-        const newTheme = currentTheme === 'light' ? 'ayu' : 'light';
-
-        html.classList.remove(currentTheme);
-        html.classList.add(newTheme);
-        localStorage.setItem('mdbook-theme', newTheme);
+        const next = getStoredTheme() === LIGHT ? DARK : LIGHT;
+        applyTheme(next);
     }
 
-    // Create the toggle button
-    const toggleButton = document.createElement('button');
-    toggleButton.id = 'custom-theme-toggle';
-    toggleButton.innerHTML = '<i class="fa fa-sun-o light-mode" aria-hidden="true"></i><i class="fa fa-moon-o dark-mode" aria-hidden="true"></i>'; // Font Awesome icons
+    function insertToggleButton() {
+        const menuBar = document.getElementById('menu-bar');
+        if (!menuBar) return;
+        const toggleButton = document.createElement('button');
+        toggleButton.id = 'custom-theme-toggle';
+        toggleButton.type = 'button';
+        toggleButton.innerHTML = '<i class="fa fa-sun-o light-mode" aria-hidden="true"></i><i class="fa fa-moon-o dark-mode" aria-hidden="true"></i>';
+        toggleButton.addEventListener('click', switchTheme);
 
-    // Add event listener to the button
-    toggleButton.addEventListener('click', switchTheme);
-
-    // Find the parent element to insert the toggle button
-    const menuBar = document.getElementById('menu-bar');
-
-    // Insert the toggle button into the menu bar (adjust insertion point as needed)
-    if (menuBar) {
-        // Append to right-buttons div
         const rightButtons = menuBar.querySelector('.right-buttons');
-        if(rightButtons){
-            rightButtons.insertBefore(toggleButton, rightButtons.firstChild);
-        } else {
-            console.error('Right buttons not found')
-            menuBar.appendChild(toggleButton);
-        }
-
-    } else {
-        console.error('Menu bar not found!');
+        (rightButtons || menuBar).prepend(toggleButton);
     }
 
-    // Set the initial theme
-    const initialTheme = localStorage.getItem('mdbook-theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "light");
-    document.documentElement.classList.remove('light', 'ayu');
-    document.documentElement.classList.add(initialTheme);
+    // --- EXTERNAL LINK LOGIC ---
+    function patchExternalLinks() {
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            if (!link.href.startsWith(window.location.origin)) {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
+    }
 
+    // --- INIT ---
+    document.addEventListener('DOMContentLoaded', function () {
+        applyTheme(getStoredTheme());
+        insertToggleButton();
+        patchExternalLinks();
+    });
 })();
