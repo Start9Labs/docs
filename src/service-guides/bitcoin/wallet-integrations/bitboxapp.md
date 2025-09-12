@@ -1,6 +1,6 @@
 # BitBoxApp
 
-This guide is adapted from <a href="https://shiftcrypto.support/help/en-us/14-privacy/29-how-to-connect-the-bitboxapp-to-my-own-full-node" target="_blank">Shiftcrypto</a>.
+This guide is adapted from [Shiftcrypto](https://shiftcrypto.support/help/en-us/14-privacy/29-how-to-connect-the-bitboxapp-to-my-own-full-node).
 
 **Available For**
 

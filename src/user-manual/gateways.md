@@ -28,7 +28,7 @@ If you want to let a specific person through a particular door, you give them a 
 So if you want to expose a particular service interface to the public Internet (i.e. "remove a lock from a door"), you _must_ reveal the approximate location of your chosen gateway. If your gateway is your home router, you are necessarily revealing the approximate location of your home to all visitors. If your gateway is a VPS running StartTunnel, you are revealing the approximate location of the VPS, not your home.
 
 ```admonish warning title="CGNAT"
-If your Internet Service Provider (ISP) uses <a href="https://en.wikipedia.org/wiki/Carrier-grade_NAT" target="_blank" noreferrer>Carrier-grade NAT (CGNAT)</a>, such as Starlink, it means you share an IP address with other customers. Therefore, it is not possible to use it for remote access.
+If your Internet Service Provider (ISP) uses [Carrier-grade NAT (CGNAT)](https://en.wikipedia.org/wiki/Carrier-grade_NAT), such as Starlink, it means you share an IP address with other customers. Therefore, it is not possible to use it for remote access.
 ```
 
 _In summary_, you have two options when selecting a gateway for clearnet access to your service interfaces. Which you select will depend on your threat model and budget:

@@ -36,7 +36,7 @@ Some applications that are unfamiliar with or unfriendly towards Tor may require
 To add a Tor domain to a service interface, find the "Tor Domains" section and click "Add".
 
 ```admonish tip title="Vanity Addresses"
-When adding a Tor address to a service interface, can upload a private key to create a vanity address. For instructions generating a vanity address, see <a href="https://community.torproject.org/onion-services/advanced/vanity-addresses/" target="_blank">here</a>.
+When adding a Tor address to a service interface, can upload a private key to create a vanity address. For instructions generating a vanity address, see [here](https://community.torproject.org/onion-services/advanced/vanity-addresses/).
 ```
 
 To delete a Tor domain, simply click the trashcan beside the Domain. If you delete all your Tor domains, the service interface will not be accessible over Tor.
@@ -48,8 +48,8 @@ To delete a Tor domain, simply click the trashcan beside the Domain. If you dele
 You can connect to your server and installed services from anywhere in the world, privately and anonymously, by visiting its unique `http://....onion` URL from any Tor-enabled browser.
 
 ```admonish info title="Recommended Browsers"
-- Mac, Linux, Windows, Android/Graphene: <a href="https://torproject.org/download" target="_blank">Tor Browser</a>
-- iOS: <a href="https://onionbrowser.com" target="_blank">Onion Browser</a>
+- Mac, Linux, Windows, Android/Graphene: [Tor Browser](https://torproject.org/download)
+- iOS: [Onion Browser](https://onionbrowser.com)
 ```
 
 ### Running Tor in the _Background_ on your Phone/Laptop

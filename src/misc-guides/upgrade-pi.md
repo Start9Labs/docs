@@ -44,7 +44,7 @@ Use this section if your current StartOS Raspberry Pi uses an external drive ove
 
 ![Naspi](./assets/naspi.png)
 
-1. Get a high quality <a href="https://www.amazon.com/UGREEN-Transfer-Enclosures-Printers-Cameras/dp/B00P0E3954/?th=1" target="_blank">USB-A to USB-A cable</a>.
+1. Get a high quality [USB-A to USB-A cable](https://www.amazon.com/UGREEN-Transfer-Enclosures-Printers-Cameras/dp/B00P0E3954/?th=1).
 
 1. Power down the old server, then pull out the micro SD card.
 

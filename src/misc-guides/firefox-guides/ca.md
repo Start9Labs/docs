@@ -1,6 +1,6 @@
 # Trusting your Root CA (Firefox)
 
-These guides apply to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla apps need to be configured to use the certificate store of your device. Please refer to their <a href="https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/" target="_blank">blog post</a> for an explanation (TLDR: for security purposes).
+These guides apply to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla apps need to be configured to use the certificate store of your device. Please refer to their [blog post](https://blog.mozilla.org/security/2019/02/14/why-does-mozilla-maintain-our-own-root-certificate-store/) for an explanation (TLDR: for security purposes).
 
 #### Contents
 
@@ -46,7 +46,7 @@ These guides apply to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla 
 
 ```admonish warning
 
-The regular Firefox app will not work. You must use `Firefox Beta <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta" target="_blank">Firefox Beta</a>.
+The regular Firefox app will not work. You must use `Firefox Beta [Firefox Beta](https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta).
 ```
 
 1. Go to `Menu > Settings > About Firefox` and tap the Firefox icon 5 times to enable "developer mode".

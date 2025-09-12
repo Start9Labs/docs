@@ -1,3 +1,3 @@
 # Contact
 
-Please visit <a href="https://start9.com/contact" target="_blank">https://start9.com/contact</a> for contact information.
+Please visit [https://start9.com/contact](https://start9.com/contact) for contact information.

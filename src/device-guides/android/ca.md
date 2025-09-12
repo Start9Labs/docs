@@ -8,4 +8,4 @@ This guide applies to Android 13+, GrapheneOS, CalyxOS, and LineageOS
 
    ![Setup](./assets/ca-android-certificate.png)
 
-1. If using Firefox, you must use <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta" target="_blank">Firefox Beta</a>, then complete [this final step](../../misc-guides/firefox-guides/ca.md#android--graphene).
+1. If using Firefox, you must use [Firefox Beta](https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta), then complete [this final step](../../misc-guides/firefox-guides/ca.md#android--graphene).

@@ -17,7 +17,7 @@ Follow this guide to connect your Android/Graphene device to your Router VPN in 
 
    ![Get Wireguard setting from Router](./assets/vpn-wireguard-config.png)
 
-1. Install Wireguard from the <a href="https://play.google.com/store/apps/details?id=com.wireguard.android" target="_blank">Play Store</a> [WireGuard website](https://www.wireguard.com/install/)
+1. Install Wireguard from the [Play Store](https://play.google.com/store/apps/details?id=com.wireguard.android) [WireGuard website](https://www.wireguard.com/install/)
 
    ![Download Wireguard Client](./assets/vpn-android-wireguard-download.png)
 

@@ -3,7 +3,7 @@
 ```admonish warning
 The guide below applies to Linux and MacOS.
 
-For Windows, it is only possible with PuTTY as seen <a href="https://tor.stackexchange.com/a/143" target="_blank">here</a>. Note: those instructions use port 9150, but we've configured Tor in Windows on the traditional port 9050.
+For Windows, it is only possible with PuTTY as seen [here](https://tor.stackexchange.com/a/143). Note: those instructions use port 9150, but we've configured Tor in Windows on the traditional port 9050.
 ```
 
 1.  Install `torsocks`

@@ -10,7 +10,7 @@ This guide is for flashing StartOS to a microSD card for use on a Raspberry Pi.
 
 ## Download
 
-1.  Visit the <a href="https://github.com/Start9Labs/start-os/releases/latest" target="_blank">Github release page</a> to find the latest version of StartOS.
+1.  Visit the [Github release page](https://github.com/Start9Labs/start-os/releases/latest) to find the latest version of StartOS.
 
 1.  At the bottom of the page, under "Assets", download the `startos-..._raspberrypi.img.gz` file.
 
@@ -31,7 +31,7 @@ This guide is for flashing StartOS to a microSD card for use on a Raspberry Pi.
 
 ## Flash
 
-1. Download and install <a href="https://www.balena.io/etcher" target="_blank">balenaEtcher</a> onto your Linux, Mac, or Windows computer.
+1. Download and install [balenaEtcher](https://www.balena.io/etcher) onto your Linux, Mac, or Windows computer.
 
 1. Insert your microSD card into your computer, either directly or using an adapter.
 

@@ -48,7 +48,7 @@
 
 1.  Ensure you have already [configured Windows for Tor](../device-guides/windows/tor.md).
 
-1.  You need a `Proxy Auto Config` file to inform Firefox how to resolve `.onion` URLs. Click <a href="https://start9.com/assets/proxy.pac" download>here</a> to get the one offered by Start9. Save it somewhere you will not delete it, and remember where you save it. For example:
+1.  You need a `Proxy Auto Config` file to inform Firefox how to resolve `.onion` URLs. Click [here](https://start9.com/assets/proxy.pac) to get the one offered by Start9. Save it somewhere you will not delete it, and remember where you save it. For example:
 
         C:\Program Files\Tor Browser\proxy.pac
 

@@ -9,7 +9,7 @@ Some apps have Tor built-in; they do not require additional software or configur
 
 ## Running Orbot
 
-1. Install Orbot from the <a href="https://play.google.com/store/apps/details?id=org.torproject.android" target="_blank">Play Store</a> or F-Droid.
+1. Install Orbot from the [Play Store](https://play.google.com/store/apps/details?id=org.torproject.android) or F-Droid.
 
 ```admonish tip
 For F-Droid, enable the Guardian Project repository by going to `F-Droid > Settings > Repositories > Guardian Project Official Releases`

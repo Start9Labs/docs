@@ -8,8 +8,8 @@ Ensure you have completed every step of [environment setup](./environment-setup.
 
 1. Select a template:
 
-   - Use <a href="https://github.com/Start9Labs/hello-world-startos" target="_blank">Hello World</a> if your service does _not_ depend on another service.
-   - Use <a href="https://github.com/Start9Labs/hello-moon-startos" target="_blank">Hello Moon</a> if your service depends on at least one other service.
+   - Use [Hello World](https://github.com/Start9Labs/hello-world-startos) if your service does _not_ depend on another service.
+   - Use [Hello Moon](https://github.com/Start9Labs/hello-moon-startos) if your service depends on at least one other service.
 
 1. Click `Use this template > Create new repository`. You must be signed into Github to see this button.
 

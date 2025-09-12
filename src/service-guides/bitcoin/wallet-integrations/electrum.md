@@ -2,7 +2,7 @@
 
 ```admonish warning
 
-Completing this guide will _add_ your StartOS Electrum Server (electrs) to the list of servers used by Electrum. If, instead, you _only_ want to connect to your own server, ignoring all others, you will need to run Electrum in <a href="https://electrum.readthedocs.io/en/latest/tor.html" target="_blank">Single Server Mode</a> from the CLI.
+Completing this guide will _add_ your StartOS Electrum Server (electrs) to the list of servers used by Electrum. If, instead, you _only_ want to connect to your own server, ignoring all others, you will need to run Electrum in [Single Server Mode](https://electrum.readthedocs.io/en/latest/tor.html) from the CLI.
 
 ```
 

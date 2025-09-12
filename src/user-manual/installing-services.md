@@ -11,7 +11,7 @@ The Marketplace is made up of multiple "registries". A registry is a curated lis
 
 StartOS comes preloaded with two default registries: (1) The Start9 Registry and (2) the Community Registry.
 
-Services in the Start9 Registry are vouched for, recommended, supported, and maintained by Start9. Services in the Community Registry are not. For a more detailed explanation of the Registry framework, check out this short <a href="https://blog.start9.com/start9-marketplace-strategy" target="_blank">blog post</a>.
+Services in the Start9 Registry are vouched for, recommended, supported, and maintained by Start9. Services in the Community Registry are not. For a more detailed explanation of the Registry framework, check out this short [blog post](https://blog.start9.com/start9-marketplace-strategy).
 
 To install a service from the marketplace, simply visit the Marketplace, select a service, and click "Install".
 

@@ -20,7 +20,7 @@ If you want to host service interfaces on the public Internet without requiring 
 
 ## Adding a Certificate Authority
 
-StartOS uses the <a href="https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment" target="_blank">Automatic Certificate Management Environment (ACME) protocol</a> to obtain SSL/TLS certificates from 3rd-party Certificate Authorities, allowing visitors to access your domains over encrypted, HTTPS connections.
+StartOS uses the [Automatic Certificate Management Environment (ACME) protocol](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment) to obtain SSL/TLS certificates from 3rd-party Certificate Authorities, allowing visitors to access your domains over encrypted, HTTPS connections.
 
 1. Navigate to `System > Certificate Authorities` and click "Add".
 

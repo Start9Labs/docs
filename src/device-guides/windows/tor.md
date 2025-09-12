@@ -1,6 +1,6 @@
 # Connecting over Tor (Windows)
 
-1.  Unfortunately, <a href="https://torproject.org" target="_blank">Tor Project</a> no longer publishes a standalone Tor binary for Windows, so the recommended way to get it is with the Tor Browser Bundle. You can download it <a href="https://www.torproject.org/download/" target="_blank">here</a>.
+1.  Unfortunately, [Tor Project](https://torproject.org) no longer publishes a standalone Tor binary for Windows, so the recommended way to get it is with the Tor Browser Bundle. You can download it [here](https://www.torproject.org/download/).
 
 1.  Once it is downloaded, run the installer by right clicking on it and selecting "Run as Administrator".
 
@@ -41,7 +41,7 @@
 
             sc delete tor
 
-    1. Uninstall the Tor Browser, following <a href="https://tb-manual.torproject.org/uninstalling/" target="_blank">these steps</a>.
+    1. Uninstall the Tor Browser, following [these steps](https://tb-manual.torproject.org/uninstalling/).
 
     1. Begin this guide again from the beginning.
     ```

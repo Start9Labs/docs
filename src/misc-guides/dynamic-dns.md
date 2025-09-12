@@ -6,4 +6,4 @@ Your ISP may unexpectedly change the IP address of your home.
 
 - If you are using your router as a gateway for clearnet, domains use it will be unreachable until you update their DNS settings.
 
-To prevent service interruption, you can enable <a href="https://en.wikipedia.org/wiki/Dynamic_DNS" target="_blank">dynamic DNS</a>. Many routers offer this as a free or paid service. If not, there are third party services available.
+To prevent service interruption, you can enable [dynamic DNS](https://en.wikipedia.org/wiki/Dynamic_DNS). Many routers offer this as a free or paid service. If not, there are third party services available.

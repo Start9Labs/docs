@@ -2,7 +2,7 @@
 
 ## Create a Shared Folder
 
-1.  Ensure you have already created a ZFS disk pool in `Storage > Pool` as a place to store your backups. If you need help with this step, see the <a href="https://www.truenas.com/docs/scale/scaletutorials/storage/pools/createpoolscale/#creating-a-pool" target="_blank">TrueNAS documentation</a>.
+1.  Ensure you have already created a ZFS disk pool in `Storage > Pool` as a place to store your backups. If you need help with this step, see the [TrueNAS documentation](https://www.truenas.com/docs/scale/scaletutorials/storage/pools/createpoolscale/#creating-a-pool).
 
 1.  In the TrueNAS UI, create a user for writing backups. Go to `Accounts > Users > ADD`.
 

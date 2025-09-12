@@ -46,7 +46,7 @@ With few exceptions, you should add a domain to your service interface so that y
 1. Click "Test" to ensure the record was successfully detected by StartOS.
 
    ```admonish warning
-   It might take a few minutes for your domain changes to take effect. You can test it using <a href="https://dnschecker.org" target="_blank">https://dnschecker.org</a>.
+   It might take a few minutes for your domain changes to take effect. You can test it using [https://dnschecker.org](https://dnschecker.org).
    ```
 
 ## Port Forwarding

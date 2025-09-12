@@ -6,7 +6,7 @@ Here you can view and make changes to the DNS servers used by StartOS.
 
 ## Using DHCP
 
-Similar to other computers, StartOS uses the DNS servers provided by its gateway via <a href="https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol" target="_blank">DHCP</a>.
+Similar to other computers, StartOS uses the DNS servers provided by its gateway via [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol).
 
 Navigate to `System -> DNS` to see the IP addresses of the default DNS servers.
 

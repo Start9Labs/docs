@@ -71,4 +71,4 @@ Accessing your server via SSH is considered advanced. Please use caution, you ca
 
 ## Connecting via PuTTY on Windows
 
-For Windows, following the command above will work. But if you prefer a GUI tool, <a href="https://brewsbitcoin.com" target="_blank">BrewsBitcoin</a> has created a guide for <a href="https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a" target="_blank">connecting via SSH using PuTTY on Windows</a>
+For Windows, following the command above will work. But if you prefer a GUI tool, [BrewsBitcoin](https://brewsbitcoin.com) has created a guide for [connecting via SSH using PuTTY on Windows](https://medium.com/@brewsbitcoin/ssh-to-start9-embassy-from-windows-4a4e17891b5a)
