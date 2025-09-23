@@ -22,7 +22,7 @@ With few exceptions, you should add a domain to your service interface so that y
 1. Select a gateway to use for this domain. For help selecting a gateway, see [Gateways](./gateways.md)
 
    ```admonish warning title="Starlink and CGNAT"
-   CGNAT gateways, such as Starlink, cannot be used for clearnet hosting. You must create a new gateway with StartTunnel (or similar). Refer to [Installing StartTunnel on a VPS](../../misc-guides/start-tunnel.md).
+   CGNAT gateways, such as Starlink, cannot be used for clearnet hosting. You must create a new gateway with StartTunnel. Refer to [Creating a StartTunnel Private Gateway](../../misc-guides/start-tunnel.md).
    ```
 
 1. Select a Certificate Authority to use for this domain.

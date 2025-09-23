@@ -1,17 +1,29 @@
-# Installing StartTunnel on a VPS
+# Creating a StartTunnel Private Gateway
 
 ## Use Case
 
-You can think of StartTunnel as a "virtual router in the cloud", resulting in a new gateway your server can use to expose service interfaces to the public Internet.
+You can think of StartTunnel as a "virtual router in the cloud". You can use it for private, remote access, or to expose service interfaces to the public Internet without revealing your home IP address.
 
 ## Instructions
 
-1. Rent a VPS from a provider of your choosing. Make sure it has at least 500MB of Memory (RAM). For transfer (bandwidth), a good rule of thumb is to match your home Internet's maximum _upload_ speed, since that will generally be the bottleneck anyway. Any amount of storage is fine. The cheapest, lowest-powered option is usually enough.
+1.  Rent a VPS from a provider of your choosing. StartTunnel does not require significant resources, so the minimum processor (CPU), memory (RAM), and storage (disk) should be enough. For transfer (bandwidth), a good rule of thumb is to match your home Internet's maximum _upload_ speed. For most use cases, the cheapest option offered by the VPS provider is good enough.
 
-1. Provision the VPS with the latest version of Debian.
+1.  Provision the VPS with the latest version of Debian.
 
-1. Access the VPS via SSH.
+1.  Access the VPS via SSH.
 
-1. Install start-tunnel: `curl -fsSL https://start9.com/... | bash`.
+1.  Install StartTunnel:
 
-1. Upon completion, your Wireguard config will display in the terminal. Copy the contents to your clipboard and follow instructions to [add your new gateway to StartOS](../user-manual/gateways.md#adding-a-gateway)
+        @TODO
+
+1.  Using the StartTunnel UI or CLI, add your server as a device.
+
+1.  Download or copy the resulting `start-tunnel.conf`.
+
+1.  In StartOS, navigate to `System -> Gateways` and click "Add".
+
+1.  Give the gateway a name. For example, "StartTunnel 1".
+
+1.  Upload or paste `start-tunnel.conf`.
+
+1.  Click "Save".

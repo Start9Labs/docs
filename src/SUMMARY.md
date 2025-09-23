@@ -136,7 +136,7 @@
 - [📚 Misc Guides](misc-guides/README.md)
 
   - [Setting up Dynamic DNS](misc-guides/dynamic-dns.md)
-  - [Installing StartTunnel on a VPS](misc-guides/start-tunnel.md)
+  - [Creating a StartTunnel Private Gateway](misc-guides/start-tunnel.md)
   - [Getting SMTP Credentials](misc-guides/smtp-credentials.md)
   - [Resetting Your Password](misc-guides/reset-password.md)
   - [Upgrading from a Raspberry Pi](misc-guides/upgrade-pi.md)
