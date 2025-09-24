@@ -8,7 +8,6 @@
 ├── .gitignore
 ├── Dockerfile (optional)
 ├── icon.svg
-├── instructions.md
 ├── LICENSE
 ├── Makefile
 ├── package-lock.json
@@ -28,10 +27,6 @@ It is recommended to pull an existing Docker image as shown in Hello World. If n
 #### icon.svg
 
 This is the icon for your package. In most cases, it will be the upstream service icon. Maximum file size is 40 KiB. Supported extensions are .svg, .png, .jpg, and .webp.
-
-#### instructions.md
-
-This is your package instructions.
 
 #### LICENSE
 
