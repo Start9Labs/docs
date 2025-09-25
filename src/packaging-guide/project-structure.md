@@ -34,7 +34,7 @@ This is the software license for your package. In most cases, it will be the ups
 
 #### README.md
 
-This is largely boilerplate. Update as needed for your service, including replacing references to Hello World/Moon.
+This is largely boilerplate. Update as needed for your service, including replacing references to Hello World.
 
 ## assets/
 

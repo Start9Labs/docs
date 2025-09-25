@@ -6,10 +6,7 @@ Ensure you have completed every step of [environment setup](./environment-setup.
 
 ## Generate your Package Repository
 
-1. Select a template:
-
-   - Use [Hello World](https://github.com/Start9Labs/hello-world-startos) if your service does _not_ depend on another service.
-   - Use [Hello Moon](https://github.com/Start9Labs/hello-moon-startos) if your service depends on at least one other service.
+1. Access the [Hello World Template](https://github.com/Start9Labs/hello-world-startos)
 
 1. Click `Use this template > Create new repository`. You must be signed into Github to see this button.
 
