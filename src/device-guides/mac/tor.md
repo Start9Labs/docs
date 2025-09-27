@@ -66,13 +66,13 @@
 
 1.  Enable the proxy autoconfig file (This will download the Start9 standard proxy config file. You can use your own if you prefer):
 
-        sudo curl https://start9.com/assets/proxy.pac --output /opt/homebrew/var/www/proxy.pac
+        curl https://start9.com/assets/proxy.pac --output /opt/homebrew/var/www/proxy.pac
 
 1.  Go to `System Settings > Network` and select the interface to edit. We recommend editing both Ethernet and WiFi. First do one, then the other:
 
     ![Sonoma Network](./assets/tor-sonoma-network.png)
 
-1.  Click `Details > Proxies` and paste the following URL into "Automatic Proxy Configuration": `http://localhost/proxy.pac`. Click "OK".
+1.  Click `Details > Proxies` and paste the following URL into "Automatic Proxy Configuration": `http://localhost:8080/proxy.pac`. Click "OK".
 
     ![Sonoma proxy config](./assets/tor-sonoma-proxy-config.png)
 
