@@ -36,24 +36,12 @@ cd [repository-name]
 npm i
 ```
 
-## Build the s9pk
-
-    make
-
-## Install the s9pk
-
-### From the CLI
+## Build and Install your Package
 
 ```
-start-cli install -h <host> -s <path-to-s9pk>
+make
 ```
 
-You can eliminate the `-h` argument by hard-coding the host in `~/.startos/config.yaml`. For example:
+This produces a `[service-id].s9pk` at the root of your project that can be sideloaded through the StartOS UI.
 
-```
-host: https://server-name.local
-```
-
-### From the GUI
-
-From the GUI of your StartOS server, go to `System > Sideload`, upload the .s9pk file, and click "Install".
+See [Building and Installing](./building.md) for more options and to streamline your development workflow.

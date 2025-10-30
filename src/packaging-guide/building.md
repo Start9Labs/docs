@@ -1,10 +1,6 @@
-# Makefile
+# Building and Installing
 
-Makefile automates building, packaging, and installing StartOS services (.s9pk files) with support for multiple architectures and automatic JS/TS build steps.
-
-## Basic Usage
-
-### Default Build (Universal)
+## Default Build (Universal)
 
 ```
 make
@@ -12,7 +8,7 @@ make
 
 Builds a universal package supporting all platforms. Same as running `make all`.
 
-### Platform-Specific Builds
+## Platform-Specific Builds
 
 ```
 make aarch64   # Build for ARM64 (Raspberry Pi, etc.)
@@ -21,7 +17,7 @@ make x86_64    # Build for x86_64 architecture
 
 > **Note:** For convenience, legacy targets `make arm` and `make x86` are also supported as aliases for `aarch64` and `x86_64` respectively. Using the full architecture name is recommended for clarity.
 
-### Installation
+## Installing
 
 ```
 make install
@@ -30,7 +26,7 @@ make install
 Builds the package and installs it directly to your configured StartOS device.  
 Requires a valid `~/.startos/config.yaml` with a `host: http://<device>.local` entry.
 
-## Available Targets
+## Summary of Commands
 
 | Target               | Description                                                |
 | -------------------- | ---------------------------------------------------------- |
@@ -42,15 +38,15 @@ Requires a valid `~/.startos/config.yaml` with a `host: http://<device>.local` e
 
 ## Tandem Operations
 
-You can chain multiple targets:
+You can chain multiple commands:
 
 ```
-make clean aarch64          # Clean then build ARM64 package
+make clean aarch64          # Clean, then build ARM64 package
 make clean x86_64 install   # Clean, build x86_64 package, then install
 make clean install          # Clean, build universal, then install
 ```
 
-## Example Output
+## Example Outputs
 
 **Building aarch64 package:**
 
@@ -89,12 +85,3 @@ Sideloading 100% █████████████████████
 $ make clean
 Cleaning up build artifacts...
 ```
-
-## Prerequisites
-
-- [**start-cli**](https://github.com/start9labs/start-cli): StartOS development toolkit
-- **npm**: Node.js package manager
-- **`~/.startos/config.yaml`**: must contain your StartOS device host config
-- **Developer key**: If missing, `make` will auto-run `start-cli init`
-
-The Makefile automatically builds JavaScript from TypeScript (`npm run build`) and installs dependencies from `package.json` as needed.

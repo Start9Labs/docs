@@ -121,6 +121,7 @@ Here you will find everything you need to set up and use your Start9 server. For
 - [Environment Setup](packaging-guide/environment-setup.md)
 - [Quick Start](packaging-guide/quick-start.md)
 - [Project Structure](packaging-guide/project-structure.md)
+- [Building and Installing](packaging-guide/building.md)
 - [Important Info](packaging-guide/important-info.md)
 
 ### [❓ Help](help/)
