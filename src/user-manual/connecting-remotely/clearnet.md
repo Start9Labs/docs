@@ -66,10 +66,8 @@ To expose your `PUBLIC_IP:port` or `domain` address to the Internet, you must cr
 Most websites and APIs on the Internet are hosted on port `443`. Port `443` is so common, in fact, that apps and browsers _infer_ its presence. The _absence_ of a port _means_ the port is `443`. With rare exceptions, domains on StartOS also use port `443`, and that is why your domains usually do not display a port. The port forwarding rule needed for these standard domains is always the same, which means you only have to do it once!
 ```
 
-How you create a port forwarding rule depends on your gateway.
+How you create a port forwarding rule depends on the type of gateway.
 
 - **Routers**: port forwarding is supported by all routers and easy to do. Refer to your router's manual for instructions.
 
-- **StartTunnel**: SSH into your StartTunnel VPS and run the following command, replacing variables accordingly.
-
-      start-tunnel port-forward add <external_port> <internal_port>
+- **StartTunnel**: refer to the [StartTunnel instructions for port forwarding](../../misc-guides/start-tunnel.md#using-starttunnel-for-clearnet-hosting)

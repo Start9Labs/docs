@@ -23,19 +23,9 @@ Most modern routers include a VPN server feature. If so, it is usually the prefe
 
 ## Option 2: StartTunnel
 
-You can think of StartTunnel as a "virtual router in the cloud". There are two reasons to select this option: (1) your router does not offer a VPN server or (2) you intend to use StartTunnel as a [clearnet](./clearnet.md) gateway and need to set it up anyway.
+There are two reasons to select this option: (1) your router does not offer a VPN server or (2) you are already using StartTunnel for [clearnet](./clearnet.md) hosting, so most of the work is already done.
 
-1. Follow instructions to [install StartTunnel on a VPS](../../misc-guides/start-tunnel.md).
-
-1. Navigate to `System -> Gateways`.
-
-1. Click "Add".
-
-1. Give your StartTunnel gateway a name. For example "StartTunnel".
-
-1. Paste or upload your StartTunnel Wireguard config file.
-
-1. Click "save".
+See [Creating a StartTunnel Private Gateway](../../misc-guides/start-tunnel.md).
 
 ## Connecting Clients
 
