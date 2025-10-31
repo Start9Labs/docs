@@ -26,21 +26,17 @@ jobs:
 
       - name: Install mdBook
         run: |
-          MDBOOK_VERSION=$(curl -s https://api.github.com/repos/rust-lang/mdBook/releases/latest | jq -r '.tag_name')
+          # MDBOOK_VERSION=$(curl -s https://api.github.com/repos/rust-lang/mdBook/releases/latest | jq -r '.tag_name')
+          MDBOOK_VERSION='v0.4.52'
           curl -sSL https://github.com/rust-lang/mdBook/releases/download/${MDBOOK_VERSION}/mdbook-${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz | tar -xz
           sudo mv mdbook /usr/local/bin/mdbook
 
       - name: Install mdBook Admonish
         run: |
-          ADMONISH_VERSION=$(curl -s https://api.github.com/repos/tommilligan/mdbook-admonish/releases/latest | jq -r '.tag_name')
+          # ADMONISH_VERSION=$(curl -s https://api.github.com/repos/tommilligan/mdbook-admonish/releases/latest | jq -r '.tag_name')
+          ADMONISH_VERSION='v1.20.0'
           curl -sSL https://github.com/tommilligan/mdbook-admonish/releases/download/${ADMONISH_VERSION}/mdbook-admonish-${ADMONISH_VERSION}-x86_64-unknown-linux-gnu.tar.gz | tar -xz
           sudo mv mdbook-admonish /usr/local/bin/mdbook-admonish
-
-      - name: Install mdBook External Links
-        run: |
-          EXTERNAL_LINKS_VERSION=$(curl -s https://api.github.com/repos/jonahgoldwastaken/mdbook-external-links/releases/latest | jq -r '.tag_name')
-          curl -sSL https://github.com/jonahgoldwastaken/mdbook-external-links/releases/download/${EXTERNAL_LINKS_VERSION}/mdbook-external-links-${EXTERNAL_LINKS_VERSION}-x86_64-unknown-linux-gnu.tar.gz | tar -xz
-          sudo mv mdbook-external-links /usr/local/bin/mdbook-external-links
 
       - name: Configure mdBook Admonish
         run: mdbook-admonish install .
