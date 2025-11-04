@@ -1,42 +1,10 @@
 # Creating a StartTunnel Private Gateway
 
-## Understanding StartTunnel
-
-You can think of StartTunnel as a "virtual router in the cloud". You can use it for private, remote access, or to expose service interfaces to the public Internet without revealing your home IP address.
-
-There are three important concepts in StartTunnel:
-
-- **Subnet**: a private network, similar to a local area network (LAN) created by your home router. by default, only authorized devices can join the network. Each subnet has a predefined, limited set of IP addresses that can be assigned to devices.
-
-- **Device**: any phone, laptop, or server connected to a subnet. Each device receives one of the IP addresses available for that subnet.
-
-- **Port Forward**:
-
 ## Installation
 
-1.  Rent a VPS from a provider of your choosing. StartTunnel does not require significant resources, so the minimum processor (CPU), memory (RAM), and storage (disk) should be enough. For transfer (bandwidth), a good rule of thumb is to match your home Internet's maximum _upload_ speed. For most use cases, the cheapest option offered by the VPS provider will be good enough.
+Follow the [official instructions](https://github.com/Start9Labs/start-os/blob/master/START-TUNNEL.md) to install StartTunnel on a VPS.
 
-1.  Provision the VPS with the latest version of Debian.
-
-1.  Access the VPS via SSH.
-
-1.  Install StartTunnel:
-
-        @TODO
-
-## Initializing the web interface
-
-By default, StartTunnel can be used via the start-tunnel CLI. If you choose to enable the web interface (recommended in most cases), StartTunnel can be accessed as a website in the browser, or programmatically via API.
-
-1.  Use start-tunnel CLI to initialize the web interface. Replace <IP> with the public IP address of your VPS (e.g. 69.1.1.42). If your VPS has more than one public IP address, choose one. By default, the web interface will be hosted on port `8443`. If you want a different port, you can provide the `--port` flag, just be sure to choose a port that will not create future conflict with other ports.
-
-                start-tunnel web init <IP>
-
-1.  Select whether to auto generate a self-signed certificate or provide your own. In either case, the certificate should be signed for all intended hosts. For example, the IP address of your VPS and/or any domains.
-
-1.  When prompted for a password, enter one, or leave it blank to automatically generate one.
-
-1.  You will receive a success message that the webserver is running, as well as your SSL certificate and password.
+The instructions below assume you chose to initialize the web interface. If not, you can do everything using the start-tunnel CLI.
 
 ## Adding your StartOS Server
 
