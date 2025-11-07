@@ -2,7 +2,7 @@
 
 ## Installation
 
-Follow the [official instructions](https://github.com/Start9Labs/start-os/blob/master/START-TUNNEL.md) to install StartTunnel on a VPS.
+Follow the [official instructions](https://github.com/Start9Labs/start-os/blob/next/major/START-TUNNEL.md) to install StartTunnel on a VPS.
 
 The instructions below assume you chose to initialize the web interface. If not, you can do everything using the start-tunnel CLI.
 
