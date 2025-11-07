@@ -20,7 +20,7 @@ Similar to your local domain, private domains can only be accessed when connecte
 
 1. Enter a fully qualified domain name. It can be _anything_. For example: `domain.com`, `private.domain.internal`, `nextcloud.private`, `nextcloud.fake-tld`, or `facebook.com`.
 
-1. Click "save".
+1. Click "Save".
 
 1. A new `https://<your-private-domain>` address will appear in the "Addresses" table.
 

@@ -70,4 +70,4 @@ How you create a port forwarding rule depends on the type of gateway.
 
 - **Routers**: port forwarding is supported by all routers and easy to do. Refer to your router's manual for instructions.
 
-- **StartTunnel**: refer to the [StartTunnel instructions for port forwarding](../../misc-guides/start-tunnel.md#using-starttunnel-for-clearnet-hosting)
+- **StartTunnel**: refer to the [StartTunnel instructions for port forwarding](../../misc-guides/start-tunnel.md#forwarding-ports-for-clearnet-hosting)

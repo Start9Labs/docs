@@ -32,7 +32,7 @@ These instructions must be completed for each client device (cell phone, laptop,
 
 1. In StartTunnel, navigate to `Devices` and click "Add".
 
-1. Give the device a name (e.g. "Phone"), select a subnet, choose a LAN IP address, and click "save".
+1. Give the device a name (e.g. "Phone"), select a subnet, choose a LAN IP address, and click "Save".
 
 1. The resulting `start-tunnel.conf` must be imported into the Wireguard app on your client device. If it is a phone or tablet, you can scan the QR code. If it is a laptop, download/upload the file, or copy/paste the contents. Refer to your device's instructions for importing and enabling a wireguard VPN.
 
