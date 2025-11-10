@@ -123,7 +123,7 @@ In the `fileModels/` directory, you can create separate `.ts` files from which y
 
 These `.ts` files afford a convenient and type safe way for your package to read, write and monitor, and react to file on the file system.
 
-It is common for packages to have a `store.json.ts` file model as a convenient place to persist arbitrary data that are needed by the package but _not_ persisted by teh upstream service. For example, you might use `store.json` to persist startup flags or login credentials.
+It is common for packages to have a `store.json.ts` file model as a convenient place to persist arbitrary data that are needed by the package but _not_ persisted by the upstream service. For example, you might use `store.json` to persist startup flags or login credentials.
 
 ### init/
 
