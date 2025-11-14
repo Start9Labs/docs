@@ -10,19 +10,24 @@ The instructions below assume you chose to initialize the web interface. If not,
 
 1.  In StartTunnel, navigate to `Devices` and click "Add".
 
-1.  Give the device a name (e.g. "StartOS Server"), select a subnet, choose a LAN IP address, and click "Save".
+1.  Fill out the form:
 
-1.  Download the resulting `start-tunnel.conf`, or copy the contents to your clipboard.
+    - Give your server a name (e.g. "Start9 Server").
+    - Select a subnet (the default subnet, `10.59.0.1/24`, is fine).
+    - Accept/Choose what IP address your server will have on the a LAN.
+    - Click "Save".
+
+1.  Download the resulting `start-tunnel.conf`, (or copy to your clipboard).
 
 1.  In StartOS, navigate to `System -> Gateways` and click "Add".
 
-1.  Give the gateway a name. For example, "StartTunnel 1".
+1.  Give the gateway a name (e.g. "StartTunnel").
 
-1.  Upload `start-tunnel.conf`, or paste the contents.
+1.  Upload `start-tunnel.conf` (or paste from your clipboard).
 
 1.  Click "Save".
 
-1.  StartOS will now see your StartTunnel VPS as a private gateway, no different from your home router. Each service interface will automatically acquire new LAN addresses that correspond your new StartTunnel gateway.
+1.  StartOS will now see your StartTunnel VPS as a private gateway, no different from your home router. Each service interface will automatically acquire new LAN and public IP addresses that correspond your StartTunnel gateway.
 
 ## Adding a Client Device for Private Access
 
