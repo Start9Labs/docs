@@ -21,15 +21,9 @@ These guides apply to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla 
 
 1.  In the hamburger menu, click "Settings". Search for `security devices` and select "Security Devices..."
 
-    ![trust ca 1](./assets/ca-1.png)
-
 1.  When the Device Manager dialog window opens, click "Load".
 
-    ![trust ca 2](./assets/ca-2.png)
-
 1.  Give the Module Name a title, such as "System CA Trust Module". For the Module filename, paste in `/usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so` and hit "OK".
-
-    ![trust ca 3](./assets/ca-3.png)
 
     ```admonish tip
 
@@ -37,8 +31,6 @@ These guides apply to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla 
     ```
 
 1.  Verify that the new module shows up on the left hand side and click "OK" in the bottom right:
-
-    ![trust ca 4](./assets/ca-4.png)
 
 1.  Restart Firefox
 
