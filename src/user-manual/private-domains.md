@@ -32,7 +32,7 @@ If your private domain is a real domain that you control, you have two options f
 
 - **Option 1**: Access your domain's DNS settings, usually in the registrar where you originally leased the domain, and create a record that resolves the domain to your server's _LAN IP address_. Remember, this domain is only accessible to devices connected to your LAN, either physically or via VPN.
 
-- **Option 2**: Follow instructions for [](#fake-domains-or-domains-you-do-not-control)
+- **Option 2**: Follow instructions for [Fake Domains or Domains you do not Control](#fake-domains-or-domains-you-do-not-control)
 
 ### Fake Domains or Domains you do not Control
 
@@ -41,7 +41,7 @@ When you add a private domain to StartOS, a corresponding DNS record is _automat
 - **Router**: Set StartOS as your router's primary DNS server. All routers support this feature. Refer to your router's user manual for detailed instructions.
 
   ```admonish warning
-  It is possible that StartOS is already using your router for DNS. Therefore you cannot instruct your router to use StartOS for DNS. This is circular. If StartOS detects a potential circular DNS situation, it will warn you. To resolve this issue, override [the DNS servers used by StarOS](./dns#setting-static-dns-servers) to longer use your router.
+  It is possible that StartOS is already using your router for DNS. Therefore you cannot instruct your router to use StartOS for DNS. This is circular. If StartOS detects a potential circular DNS situation, it will warn you. To resolve this issue, override [the DNS servers used by StartOS](./dns#setting-static-dns-servers) to no longer use your router.
   ```
 
 - **StartTunnel**: SSH into your StartTunnel VPS and run the following command
