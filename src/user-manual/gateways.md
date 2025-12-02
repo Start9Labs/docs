@@ -30,4 +30,4 @@ So, when it comes to selecting a gateway for VPN and clearnet access. Which you 
   If your Internet Service Provider (ISP) uses <a href="https://en.wikipedia.org/wiki/Carrier-grade_NAT" target="_blank" noreferrer>Carrier-grade NAT (CGNAT)</a>, such as Starlink, it means you share an IP address with other customers. Therefore, it is not possible to use your router as a clearnet gateway. You must use Option 2 below.
   ```
 
-- **Option 2**: if you want to obfuscate your home IP address from people accessing your server, or your ISP uses CGNAT, you can create a StartTunnel private gateway and use that instead of your router. Refer to the [Creating a StartTunnel Private Gateway](../../misc-guides/start-tunnel.md) guide.
+- **Option 2**: if you want to obfuscate your home IP address from people accessing your server, or your ISP uses CGNAT, you can create a StartTunnel private gateway and use that instead of your router. Refer to the [Using StartTunnel](../../misc-guides/start-tunnel.md) guide.

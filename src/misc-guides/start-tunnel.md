@@ -1,8 +1,8 @@
-# Creating a StartTunnel Private Gateway
+# Using StartTunnel
 
 ## Installation
 
-Follow the [official StartTunnel instructions](https://github.com/Start9Labs/start-os/blob/next/major/START-TUNNEL.md) to install StartTunnel on a VPS.
+Follow the [official StartTunnel installation instructions](https://github.com/Start9Labs/start-os/blob/next/major/START-TUNNEL.md) to install StartTunnel on a VPS.
 
 The instructions below assume you chose to initialize the StartTunnel web interface. If not, you can do everything using the start-tunnel CLI.
 

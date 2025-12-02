@@ -31,7 +31,7 @@ There are three reasons to select this option:
 2. Your router's VPN server is not automatically configured for split tunneling.
 3. You are already using StartTunnel for clearnet hosting, so most of the work is already done.
 
-To use StartTunnel for private, remote VPN access, see [Creating a StartTunnel Private Gateway](../../misc-guides/start-tunnel.md), including the section for [Adding a Client Device for Private Access](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
+To use StartTunnel for private, remote VPN access, see [Using StartTunnel](../../misc-guides/start-tunnel.md), including the section for [Adding a Client Device for Private Access](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
 
 ## Connecting Clients
 
