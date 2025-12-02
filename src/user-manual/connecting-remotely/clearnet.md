@@ -29,6 +29,8 @@ With few exceptions, you should add a domain to your service interface so that y
 
    ```admonish warning
    If you select your server's Root CA, only devices that have downloaded and trusted your server's Root CA will be able to access the domain without issue.
+
+   If you want other devices to reach this domain without issue, you should select Let's Encrypt from the dropdown. To add Let's Encrypt to your list of available Certificate Authorities, follow the [instructions](../authorities.md).
    ```
 
 1. Click "Save".

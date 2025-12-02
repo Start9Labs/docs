@@ -2,9 +2,9 @@
 
 ## Installation
 
-Follow the [official instructions](https://github.com/Start9Labs/start-os/blob/next/major/START-TUNNEL.md) to install StartTunnel on a VPS.
+Follow the [official StartTunnel instructions](https://github.com/Start9Labs/start-os/blob/next/major/START-TUNNEL.md) to install StartTunnel on a VPS.
 
-The instructions below assume you chose to initialize the web interface. If not, you can do everything using the start-tunnel CLI.
+The instructions below assume you chose to initialize the StartTunnel web interface. If not, you can do everything using the start-tunnel CLI.
 
 ## Adding your StartOS Server
 
@@ -14,14 +14,14 @@ The instructions below assume you chose to initialize the web interface. If not,
 
     - Give your server a name (e.g. "Start9 Server").
     - Select a subnet (the default subnet, `10.59.0.1/24`, is fine).
-    - Accept/Choose what IP address your server will have on the a LAN.
+    - Accept/choose what IP address your server will have on the a LAN.
     - Click "Save".
 
 1.  Download the resulting `start-tunnel.conf`, (or copy to your clipboard).
 
 1.  In StartOS, navigate to `System -> Gateways` and click "Add".
 
-1.  Give the gateway a name (e.g. "StartTunnel").
+1.  Give the gateway a name (e.g. "StartTunnel 1").
 
 1.  Upload `start-tunnel.conf` (or paste from your clipboard).
 
@@ -55,7 +55,7 @@ In order to expose a service interface to the public Internet, it is necessary t
 
 1. Under `Addresses`, find the `Public` address you want to expose. A domain is usually best, but it is also possible to expose `IP:port`.
 
-1. Click the "ⓘ" icon.
+1. Click the blue "ⓘ" icon.
 
 1. Find the line that says "Requires port forwarding in gateway..." and take note of the `:externalPort -> IP:internalPort`.
 

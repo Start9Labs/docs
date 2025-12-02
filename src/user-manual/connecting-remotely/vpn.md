@@ -23,9 +23,15 @@ Most modern routers include a VPN server feature. If so, it is usually the prefe
 
 ## Option 2: StartTunnel
 
-There are two reasons to select this option: (1) your router does not offer a VPN server or (2) you are already using StartTunnel for [clearnet](./clearnet.md) hosting, so most of the work is already done.
+By default, StartTunnel exports wireguard config files that are configured for split tunneling, allowing you to use your StartTunnel VPN to access your StartOS server and installed services while also preventing it from being automatically used for all Internet traffic.
 
-See [Creating a StartTunnel Private Gateway](../../misc-guides/start-tunnel.md).
+There are three reasons to select this option:
+
+1. Your router does not offer a VPN server.
+2. Your router's VPN server is not automatically configured for split tunneling.
+3. You are already using StartTunnel for clearnet hosting, so most of the work is already done.
+
+To use StartTunnel for private, remote VPN access, see [Creating a StartTunnel Private Gateway](../../misc-guides/start-tunnel.md), including the section for [Adding a Client Device for Private Access](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
 
 ## Connecting Clients
 
