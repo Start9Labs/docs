@@ -25,17 +25,15 @@ StartOS currently supports two independent Lightning Network implementations ava
 
 Developed by Lightning Labs, LND is the most widely used implementation for creating and managing Lightning Network nodes. It the implementation that is most widely supported and is required by other services like Alby Hub. (More on [LND](https://github.com/lightningnetwork/lnd))
 
-  - [Connect Directly to LND](./lnd/) - These tools connect directly to LND.
-  - [Alby Hub](./lnd/alby-hub.md) – Learn how to set up Alby Hub on StartOS.
-  - [Connecting to LND via Lightning Node Connect (LNC)](./lnc.md) - Lightning Node Connect (LNC) acts as a proxy to connect to your LND, useful if you are running LND behind TOR.
-
+  - [LND guides](https://github.com/Start9Labs/lnd-startos/blob/update/040/docs/instructions.md) - Setting up, using and connecting to LND.
+  - [Alby Hub](https://github.com/Start9Labs/albyhub-startos/blob/update/040/docs/instructions.md) – Learn how to set up Alby Hub on StartOS.
 
 
 ### CLN (Core Lightning)
 
 Formerly known as c-lightning, CLN is developed by Blockstream. It focuses on modularity and performance. CLN is designed to be efficient and stable. (More on [Blockstream](https://blockstream.com/)).
 
-  - [Connect Directly to Core Lightning](./cln/) - These tools connect directly to CLN.
+  - [Core Lightning guides](https://github.com/Start9Labs/cln-startos/blob/update/040/docs/instructions.md) - Setting up, using and connecting to Core Lightning.
 
 
 
@@ -50,4 +48,4 @@ Alby Hub lets you manage your own lightning node, make payments, receive tips, a
 
 LNbits core is a powerful wallet accounts system you can use to create secure sub-wallets on top of LND or CLN, allowing you to be an "Uncle Jim" to friends and family. Extremely extensible, it can also provide a wide range of other features like connecting bolt cards or ATMs. (More on [LNbits](https://lnbits.com/))
 
-- [Connect to LNbits wallets](./lnbits/) – Create and connect to a walled-off wallet in a layer above your lightning network implementation of CLN or LND.
+- [LNbits guides](https://github.com/Start9Labs/lnbits-startos/blob/update/040/docs/instructions.md) – Create and connect to a walled-off wallet in a layer above your lightning network implementation of CLN or LND.
