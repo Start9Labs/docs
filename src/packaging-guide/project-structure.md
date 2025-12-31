@@ -5,6 +5,7 @@
 ├── assets/
 ├── docs/ (optional)
 ├── startos/
+├── .dockerignore
 ├── .gitignore
 ├── Dockerfile (optional)
 ├── icon.svg
@@ -16,7 +17,7 @@
 └── tsconfig.json
 ```
 
-#### .gitignore, Makefile, package-lock.json, package.json, and tsconfig.json
+#### .dockerignore, .gitignore, Makefile, package-lock.json, package.json, and tsconfig.json
 
 These are boilerplate files that generally do not require editing.
 

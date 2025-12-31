@@ -1,10 +1,10 @@
-# Connecting via Router VPN (Mac)
+# Connecting via VPN (Mac)
 
-Follow this guide to connect your Mac device to your Router VPN in order to access your StartOS server and installed services.
+Follow this guide to privately access your server from your Mac device using a VPN.
 
 #### Prerequisites
 
-- [Connecting Remotely - Router VPN](../../user-manual/connecting-remotely/vpn.md)
+- [Connecting Remotely - VPN](../../user-manual/connecting-remotely/vpn.md)
 
 #### Contents
 
@@ -13,25 +13,18 @@ Follow this guide to connect your Mac device to your Router VPN in order to acce
 
 ## WireGuard
 
-1. In your router's WireGuard server, create a new profile/configuration for your Mac. Download the configuration file.
+1. Obtain a WireGuard config file for your device.
 
-   ![Get Wireguard setting from Router](./assets/vpn-wireguard-config.png)
+   - **StartTunnel**: Follow instructions [here](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
+   - **Router**: Follow your router's instructions.
 
 1. Install WireGuard from the [App Store](https://apps.apple.com/us/app/wireguard/id1451685025).
 
-   ![Download Wireguard Client](./assets/vpn-macos-wireguard-appstore.png)
-
-1. Click "Import tunnel(s) from file" and select the file you downloaded above.
-
-   ![Import tunnel](./assets/vpn-macos-wireguard-start.png)
+1. Open the WireGuard app, click "Import tunnel(s) from file", and select the file you downloaded above.
 
 1. MacOS will inform you that WireGuard wants to set up a VPN connection. Click 'Allow'.
 
-   ![Import tunnel](./assets/vpn-macos-wireguard-configure.png)
-
 1. Your VPN tunnel will have been created and visible in both you Mac's system settings and conveniently in the WireGuard app where you can click to activate it.
-
-   ![Import tunnel](./assets/vpn-macos-wireguard-added.png)
 
    ```admonish tip
    You may need to edit your newly created tunnel and enable 'On-demand' for either ethernet, wifi or both.

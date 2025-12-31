@@ -1,10 +1,10 @@
-# Connecting via Router VPN (Linux)
+# Connecting via VPN (Linux)
 
-Follow this guide to connect your Linux device to your Router VPN in order to access your StartOS server and installed services.
+Follow this guide to privately access your server from your Linux device using a VPN.
 
 #### Prerequisites
 
-- [Connecting Remotely - Router VPN](../../user-manual/connecting-remotely/vpn.md)
+- [Connecting Remotely - VPN](../../user-manual/connecting-remotely/vpn.md)
 
 #### Contents
 
@@ -12,6 +12,11 @@ Follow this guide to connect your Linux device to your Router VPN in order to ac
 - [OpenVPN](#openvpn)
 
 ## WireGuard
+
+1.  Obtain a WireGuard config file for your device.
+
+    - **StartTunnel**: Follow instructions [here](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
+    - **Router**: Follow your router's instructions.
 
 1.  Install `wireguard` and `wireguard-tools`.
 
@@ -32,8 +37,6 @@ Follow this guide to connect your Linux device to your Router VPN in order to ac
       ```
       sudo pacman -Syu && sudo pacman -S wireguard-tools && sudo pacman -S wireguard
       ```
-
-1.  Download your WireGuard configuration file from your router (or take note of the profile details).
 
 1.  Move into the directory where you downloaded your Root CA (usually `~/Downloads`), for example:
 

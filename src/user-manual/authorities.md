@@ -1,4 +1,4 @@
-# Certificate Authorities
+<!-- # Certificate Authorities
 
 #### Contents
 
@@ -31,4 +31,4 @@ StartOS uses the [Automatic Certificate Management Environment (ACME) protocol](
 - `Let's Encrypt (Staging)` should only be used for testing.
 ```
 
-1. Provide a contact email address. This is required for the Certificate Authority to generate a certificate.
+1. Provide a contact email address. This is required for the Certificate Authority to generate a certificate. -->
