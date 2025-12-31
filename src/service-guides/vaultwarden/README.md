@@ -8,6 +8,5 @@ Follow the guides below to get the most out of your Vaultwarden server:
 
 **Contents**
 
-- [Initial Setup](vaultwarden-setup.md)
-- [Client Setup](bitwarden-setup.md)
-- [Organizations](vaultwarden-org.md)
+- [Vaultwarden Device Setup](https://github.com/Start9Labs/vaultwarden-startos/blob/update/040/docs/instructions.md)
+- [Apps & Integrations](https://github.com/Start9Labs/vaultwarden-startos/blob/update/service-guides/docs/instructions.md#bitwarden-client-setup)
