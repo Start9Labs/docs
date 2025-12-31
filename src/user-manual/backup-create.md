@@ -14,7 +14,7 @@ Creating backups is an essential responsibility of self-hosting. If you do not m
 
 1. You can create backups to a [physical drive](#physical-drive) plugged directly into your server, or over-the-air to another device on the same LAN (a [network folder](#network-folder)).
 
-1. Backups are encrypted using your master password.
+1. Backups are encrypted using your master password. If you change your password prior backups retain the original password.
 
 1. Services may choose to exclude certain files or folders from the backup. For example, Bitcoin excludes the blockchain, since it can be recovered by re-syncing.
 
@@ -23,6 +23,8 @@ Creating backups is an essential responsibility of self-hosting. If you do not m
 1. A service cannot be used while it is backing up. You may, however, continue to use your server and other services.
 
 1. Upon completion, StartOS issues a backup report, indicating which services were backed up, as well as any errors.
+
+1. Backups taken from a specific system architecture (x86, ARM, RISC-V) are backed up for just that architecture. If restored to another architecture, they will likely need to be reinstalled to run efficiently.
 
 ## Physical Drive
 
