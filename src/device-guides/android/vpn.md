@@ -1,10 +1,10 @@
-# Connecting via Router VPN (Android/Graphene)
+# Connecting via VPN (Android/Graphene)
 
-Follow this guide to connect your Android/Graphene device to your Router VPN in order to access your StartOS server and installed services.
+Follow this guide to privately access your server from your Android/Graphene device using a VPN.
 
 #### Prerequisites
 
-- [Connecting Remotely - Router VPN](../../user-manual/connecting-remotely/vpn.md)
+- [Connecting Remotely - VPN](../../user-manual/connecting-remotely/vpn.md)
 
 #### Contents
 
@@ -13,13 +13,14 @@ Follow this guide to connect your Android/Graphene device to your Router VPN in 
 
 ## WireGuard
 
-1. In your router's WireGuard server, create a new profile/configuration for your Andoid/Graphene device.
+1. Obtain a WireGuard config file for your device.
 
-   ![Get Wireguard setting from Router](./assets/vpn-wireguard-config.png)
+   - **StartTunnel**: Follow instructions [here](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
+   - **Router**: Follow your router's instructions.
 
-1. Install Wireguard from the [Play Store](https://play.google.com/store/apps/details?id=com.wireguard.android) [WireGuard website](https://www.wireguard.com/install/)
+1. Install WireGuard from the [Play Store](https://play.google.com/store/apps/details?id=com.wireguard.android) [WireGuard website](https://www.wireguard.com/install/)
 
-   ![Download Wireguard Client](./assets/vpn-android-wireguard-download.png)
+   ![Download WireGuard Client](./assets/vpn-android-wireguard-download.png)
 
 1. Click the `+` button to add a new profile/connection.
 
@@ -27,9 +28,9 @@ Follow this guide to connect your Android/Graphene device to your Router VPN in 
 
 1. Import the configuration file created above to your Android/Graphene device. If the configuration file can be displayed as a QR code, that is usually easiest. If not, you can download the file and transfer it to your Android/Graphene device. A last resort option would be to manually enter the necessary values.
 
-   ![Get Wireguard setting from Router](./assets/vpn-wireguard-config.png)
+   ![Get WireGuard setting from Router](./assets/vpn-wireguard-config.png)
 
-1. Android will inform you that Wireguard wants to set up a VPN connection. Click "OK".
+1. Android will inform you that WireGuard wants to set up a VPN connection. Click "OK".
 
 ## OpenVPN
 

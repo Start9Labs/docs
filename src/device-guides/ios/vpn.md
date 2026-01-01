@@ -1,10 +1,10 @@
-# Connecting via Router VPN (iOS)
+# Connecting via VPN (iOS)
 
-Follow this guide to connect your iOS device to your Router VPN in order to access your StartOS server and installed services.
+Follow this guide to privately access your server from your iOS device using a VPN.
 
 #### Prerequisites
 
-- [Connecting Remotely - Router VPN](../../user-manual/connecting-remotely/vpn.md)
+- [Connecting Remotely - VPN](../../user-manual/connecting-remotely/vpn.md)
 
 #### Contents
 
@@ -13,13 +13,14 @@ Follow this guide to connect your iOS device to your Router VPN in order to acce
 
 ## WireGuard
 
-1. In your router's WireGuard server, create a new profile/configuration for your iOS device.
+1. Obtain a WireGuard config file for your device.
 
-   ![Get Wireguard setting from Router](./assets/vpn-wireguard-config.png)
+   - **StartTunnel**: Follow instructions [here](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
+   - **Router**: Follow your router's instructions.
 
 1. Install WireGuard from the [App Store](https://itunes.apple.com/us/app/wireguard/id1441195209?ls=1&mt=8).
 
-   ![Download Wireguard Client](./assets/vpn-ios-wireguard-appstore.png)
+   ![Download WireGuard Client](./assets/vpn-ios-wireguard-appstore.png)
 
 1. Click `Add a tunnel`.
 

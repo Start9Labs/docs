@@ -27,11 +27,8 @@ With few exceptions, you should add a domain to your service interface so that y
 
 1. Select a Certificate Authority to use for this domain.
 
-   ```admonish warning
-   If you select your server's Root CA, only devices that have downloaded and trusted your server's Root CA will be able to access the domain without issue.
-
-   If you want other devices to reach this domain without issue, you should select Let's Encrypt from the dropdown. To add Let's Encrypt to your list of available Certificate Authorities, follow the [instructions](../authorities.md).
-   ```
+   - **Local Root Ca**: Good for personal access. Only devices that have downloaded and trusted your server's Root CA will be able to access the domain without issue.
+   - **Let's Encrypt**: Good for public access. All devices trust Let's Encrypt certificates by default.
 
 1. Click "Save".
 

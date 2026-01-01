@@ -9,7 +9,6 @@
   - [Tor](connecting-remotely/tor.md)
 - [Gateways](gateways.md)
 - [DNS](dns.md)
-- [Certificate Authorities](authorities.md)
 - [Private Domains](private-domains.md)
 - [Creating Backups](backup-create.md)
 - [Restoring Backups](backup-restore.md)

@@ -45,7 +45,7 @@ To delete a Tor domain, simply click the trashcan beside the Domain. If you dele
 
 ### Using a Tor Browser
 
-You can connect to your server and installed services from anywhere in the world, privately and anonymously, by visiting its unique `http://....onion` URL from any Tor-enabled browser.
+You can connect to your server and installed services from anywhere in the world, privately and anonymously, by visiting their unique `http://....onion` URLs from any Tor-enabled browser.
 
 ```admonish info title="Recommended Browsers"
 - Mac, Linux, Windows, Android/Graphene: [Tor Browser](https://torproject.org/download)
@@ -54,10 +54,6 @@ You can connect to your server and installed services from anywhere in the world
 
 ### Running Tor in the _Background_ on your Phone/Laptop
 
-By running Tor in the background on your phone or laptop, certain apps can connect over Tor, even if the apps themselves do not natively support connecting over Tor. Select the guide specific to your phone/laptop:
+By running Tor in the background on your phone or laptop, certain apps can connect over Tor, even if the apps themselves do not natively support Tor.
 
-- [Mac](../../device-guides/mac/tor.md)
-- [Linux](../../device-guides/linux/tor.md)
-- [Windows](../../device-guides/windows/tor.md)
-- [Android/Graphene](../../device-guides/android/tor.md)
-- [iOS](../../device-guides/ios/tor.md)
+For instructions specific to your device's operating system, use a search engine or AI. This capability is well documented.
