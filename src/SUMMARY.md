@@ -91,7 +91,14 @@
   - [Building and Installing](packaging-guide/building.md)
   - [Important Info](packaging-guide/important-info.md)
 
+- [🎥 Community Content Program](community-content/README.md)
+
+  - [Video Guidelines](community-content/video-guidelines.md)
+  - [Video Wishlist](community-content/wishlist.md)
+  - [Submission & Bounties](community-content/submissions.md)
+
 - [❓ Help](help/README.md)
 
   - [Common Issues](help/common-issues.md)
   - [Contact](help/contact.md)
+
