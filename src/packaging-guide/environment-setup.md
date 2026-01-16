@@ -58,5 +58,5 @@ brew install squashfs
 The easiest way to install start-cli is using our automated installer script:
 
 ```
-curl -fsSL https://start9labs.github.io/start-cli | sh
+curl -fsSL https://start9labs.github.io/start-cli/install.sh | sh
 ```
