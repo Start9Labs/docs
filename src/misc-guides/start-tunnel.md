@@ -2,7 +2,7 @@
 
 ## Installation
 
-Follow the official [StartTunnel installation instructions](https://github.com/Start9Labs/start-os/blob/next/major/START-TUNNEL.md) to install StartTunnel on a VPS.
+Follow the official [StartTunnel installation instructions](https://github.com/Start9Labs/start-tunnel/blob/master/README.md#install) to install StartTunnel on a VPS.
 
 The instructions below assume you chose to initialize the StartTunnel web interface during installation. If not, you can do everything using the start-tunnel CLI.
 
@@ -13,7 +13,6 @@ In this section, you will add your server to a specific subnet of your StartTunn
 1.  In StartTunnel, navigate to `Devices` and click "Add".
 
 1.  Fill out the form:
-
     - Give your server a name (e.g. "Start9 Server").
     - Select a subnet for the server to join (the default is fine).
     - Accept/choose what IP address your server will have on the a subnet. (the default is fine).
