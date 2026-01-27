@@ -1,4 +1,4 @@
-name: Deploy mdBook site to Pages
+name: Build, index, and deploy docs
 
 on:
   push:
@@ -44,6 +44,21 @@ jobs:
       - name: Build with mdBook
         run: mdbook build
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs
+
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
       - name: Index documentation for RAG
         env:
           VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
@@ -53,11 +68,6 @@ jobs:
           cd scripts
           npm ci
           npm run index
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./docs
 
   deploy:
     environment:
