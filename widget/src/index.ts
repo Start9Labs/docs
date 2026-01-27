@@ -270,7 +270,7 @@ class DocsAgentWidget {
     return `
       <div class="da-panel">
         <div class="da-header">
-          <span class="da-title">StartOS Support</span>
+          <span class="da-title">AIDEN</span>
           <div class="da-header-actions">
             ${
               this.session
@@ -304,32 +304,39 @@ class DocsAgentWidget {
 
   private renderAccessCodeForm(): string {
     return `
-      <div class="da-access-code-form">
-        <div class="da-access-code-info">
-          <h3>Enter Access Code</h3>
-          <p>Please enter your support access code to start chatting with StartOS support.</p>
-        </div>
-        <form class="da-code-form">
-          <input 
-            type="text" 
-            class="da-code-input" 
-            placeholder="Access code"
-            autocomplete="off"
-            autocapitalize="off"
-          />
-          <button type="submit" class="da-code-submit">
-            Continue
-          </button>
-        </form>
+    <div class="da-access-code-form">
+      <div class="da-access-code-info">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+          <path d="M5 3v4"/>
+          <path d="M3 5h4"/>
+          <path d="M19 17v4"/>
+          <path d="M17 19h4"/>
+        </svg>
+        <h3>Meet AIDEN</h3>
+        <p>Your AI assistant for all things StartOS. Enter your support access code to start chatting.</p>
       </div>
-    `;
+      <form class="da-code-form">
+        <input 
+          type="text" 
+          class="da-code-input" 
+          placeholder="Access code"
+          autocomplete="off"
+          autocapitalize="off"
+        />
+        <button type="submit" class="da-code-submit">
+          Continue
+        </button>
+      </form>
+    </div>
+  `;
   }
 
   private renderChat(): string {
     const messagesHtml =
       this.messages.length === 0
         ? `<div class="da-welcome">
-        <p>Ask anything about StartOS</p>
+        <p>Hi, I'm AIDEN. Ask me anything about StartOS.</p>
       </div>`
         : this.messages.map((m) => this.renderMessage(m)).join("");
 
