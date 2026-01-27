@@ -9,4 +9,3 @@
 - [Sparrow](wallet-integrations/sparrow.md)
 - [Specter](wallet-integrations/specter.md)
 - [Trezor Suite](wallet-integrations/trezor-suite.md)
-

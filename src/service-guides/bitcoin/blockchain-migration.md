@@ -2,9 +2,8 @@
 
 If you already have a synced Bitcoin blockchain on one StartOS server, and would like to skip IBD on another StartOS server, follow this guide.
 
-```admonish warning
-This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause through SSH access.
-```
+> [!WARNING]
+> This is an advanced feature and should be used with caution. Start9 is not responsible for any damage you might cause through SSH access.
 
 ## Instructions
 
@@ -13,7 +12,6 @@ This is an advanced feature and should be used with caution. Start9 is not respo
 1.  In `unsynced.local` UI, install Bitcoin. _Do not configure or start it_.
 
 1.  In `synced.local` UI:
-
     1.  Ensure you have already have an [SSH key](../../../user-manual/ssh.md).
 
     1.  _Stop Bitcoin_.
@@ -73,7 +71,6 @@ This is an advanced feature and should be used with caution. Start9 is not respo
 1.  In `synced.local` UI, restart Bitcoin.
 
 1.  In `unsynced.local` UI:
-
     - configure and start Bitcoin for the first time. You should see it begin at 99%+ pre-synced!
 
     - Delete the `temp.key` SSH key we added above.

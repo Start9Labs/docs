@@ -2,20 +2,14 @@
 
 Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and your **Core Lightning** node.
 
-```admonish warning
-
-If you are looking for Alby Hub, this is not it. To use [Alby Hub](../lnd/alby-hub.md) you must instead run [LND](../lnd/).
-This is NOT the guide for setting up **Alby Hub** this is for a direct connection to LND. If you'd like to connect via Alby Hub instead (recommended), click [here].
-
-```
+> [!WARNING]
+> If you are looking for Alby Hub, this is not it. To use [Alby Hub](../lnd/alby-hub.md) you must instead run [LND](../lnd/).
+> This is NOT the guide for setting up **Alby Hub** this is for a direct connection to LND. If you'd like to connect via Alby Hub instead (recommended), click [here].
 
 If you'd like to connect via [LNbits](https://marketplace.start9.com/marketplace/lnbits) which allows allocation of funds, please see [this guide](../lnbits.md).
 
-```admonish note
-
-We are going to connect using Tor so that Alby will be able to connect from anywhere.
-
-```
+> [!NOTE]
+> We are going to connect using Tor so that Alby will be able to connect from anywhere.
 
 1. Make sure you are already [running Tor](/user-manual/connecting-remotely/tor.md) on your system and we suggest using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md)
 

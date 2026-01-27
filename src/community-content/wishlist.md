@@ -6,16 +6,17 @@ It’s not meant to be a fixed list. As videos are created, documentation change
 
 If you have an idea for a video that fits the docs or helps explain how StartOS is used in the real world, feel free to submit it.
 
-## Videos Aligned With docs.start9 
+## Videos Aligned With docs.start9
 
 ### User Manual
+
 - Connecting Locally
 - Connecting Remotely (VPN): Mac, Linux, Windows, Android/Graphene, iOS
 - Connecting Remotely (Tor)
 - Installing Services
 - DNS
 - Private Domains
-- Creating Backups - Overview 
+- Creating Backups - Overview
 - Creating a Backup: Mac, Windows, Linux, Synology, TrueNAS
 - Restoring Backups
 - Updating StartOS
@@ -23,46 +24,56 @@ If you have an idea for a video that fits the docs or helps explain how StartOS 
 - SSH
 
 ### Flashing Guides
+
 - Flashing Firmware - Server Pure
 - Flashing Firmware - Server One
 - Flashing StartOS -X86_64 / Arm
 - Flashing StartOS - Raspberry Pi
 
 ### Service Guides
- Bitcoin / Electrs
-  - Wallet Integrations - Many wallets to demonstrate 
-  - Blockchain Migration 
+
+Bitcoin / Electrs
+
+- Wallet Integrations - Many wallets to demonstrate
+- Blockchain Migration
 
 Jellyfin
-  - What is it, how you use it 
-  - Device Apps 
 
- Lightning
-  - Opening Channels
-  - Getting Inbound Liquidity
-  - Core Lightning (CLN)
-  - LND
-  - Using Alby Hub
-  - Using LNbits
+- What is it, how you use it
+- Device Apps
+
+Lightning
+
+- Opening Channels
+- Getting Inbound Liquidity
+- Core Lightning (CLN)
+- LND
+- Using Alby Hub
+- Using LNbits
 
 Matrix
-- What it is, how to use it 
+
+- What it is, how to use it
 
 Nextcloud
-- What it is, how to use it 
+
+- What it is, how to use it
 - Device Setup
-- Apps & Integrations 
+- Apps & Integrations
 
- Nostr
-  - Nostr RS Relay
-  - noStrudel
+Nostr
 
- Vaultwarden
-  - Initial Setup
-  - Client Setup
-  - Organizations
+- Nostr RS Relay
+- noStrudel
 
-### Misc Guides 
+Vaultwarden
+
+- Initial Setup
+- Client Setup
+- Organizations
+
+### Misc Guides
+
 - Setting up Dynamic DNS
 - Getting SMTP Credentials
 - Resetting Your Password
@@ -70,14 +81,10 @@ Nextcloud
 - Migrating LND to StartOS
 - Thunderbird Guides
 
-### Packaging Guides 
-- Helpful walk through on how to package services 
+### Packaging Guides
 
-### Help 
-- Common issues 
+- Helpful walk through on how to package services
 
+### Help
 
-
-
-
-
+- Common issues

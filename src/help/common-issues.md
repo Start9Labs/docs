@@ -30,12 +30,10 @@ If you encounter Diagnostic Mode, your best bet is stop clicking and [contact su
 1. Confirm your phone/computer is _not_ connected to a "Guest" network
 1. Confirm you are _not_ using the Tor Browser.
 1. Confirm your phone/computer is _not_ using a VPN, or that if you are, that it allows LAN connections, such as the examples below:
-
    - Mullvad - Go to `Settings -> VPN Settings -> Local Network Sharing`
    - ProtonVPN - Go to `Preferences -> Connection -> Allow LAN Connections`
 
 1. Very rarely, your firewall settings may block mDNS. In this case:
-
    - From your browser, navigate to your router configuration settings. This is usually an IP address such as 192.168.1.1. A simple web search will usually reveal how to access the router configuration settings for a particular brand.
    - Once in the router config settings, find the section that lists the devices on your network. You should see a device labeled `start`. Take note of the associated IP address and enter it into your browser's URL field to enter the setup.
 
@@ -45,7 +43,6 @@ If you encounter Diagnostic Mode, your best bet is stop clicking and [contact su
 
 1. First, try :ref:`these step <setup-troubleshoot>`. In none resolve the issue, continue below.
 1. Hard refresh the browser:
-
    - Linux/Windows: `ctrl+shift+R`
    - macOS Firefox: `cmd+shift+R`
    - macOS Safari: `cmd+option+E`, then `cmd+R`

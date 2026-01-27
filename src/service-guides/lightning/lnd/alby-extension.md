@@ -1,20 +1,14 @@
 # LND - Alby Browser Extension
 
-```admonish warning
-
-This is NOT the guide for setting up **Alby Hub** this is for a direct connection to LND. If you'd like to connect via Alby Hub instead (recommended), click [here](./alby-hub.md).
-
-```
+> [!WARNING]
+> This is NOT the guide for setting up **Alby Hub** this is for a direct connection to LND. If you'd like to connect via Alby Hub instead (recommended), click [here](./alby-hub.md).
 
 Alby is a browser extension that can be connected to your lightning node a number of ways. This guide will go over direct connections between Alby and your **LND** node.
 
 If you'd like to connect via [LNbits](https://marketplace.start9.com/marketplace/lnbits) which allows allocation of funds, please see [this guide](../lnbits.md).
 
-```admonish note
-
-We are going to connect using Tor so that Alby will be able to connect from anywhere.
-
-```
+> [!NOTE]
+> We are going to connect using Tor so that Alby will be able to connect from anywhere.
 
 1. Make sure you are already [running Tor](/user-manual/connecting-remotely/tor.md) on your system and we suggest using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md)
 
@@ -44,11 +38,8 @@ We are going to connect using Tor so that Alby will be able to connect from anyw
 
 1. Alby will pick up that you are connecting over Tor and suggest using their Companion App (only needed if your browser isn’t setup to use Tor) or using Tor natively which you will be able to do. Select **TOR (native)** and click **Continue**:
 
-```admonish note
-
-If this does not work, please ensure that Tor is running on your system and that Firefox is configured to use it. If you can’t get this to work it’s OK to use the Companion App - but you will have a better experience with your Start9 server elsewhere if you take the time to get Tor running on your devices.
-
-```
+> [!NOTE]
+> If this does not work, please ensure that Tor is running on your system and that Firefox is configured to use it. If you can’t get this to work it’s OK to use the Companion App - but you will have a better experience with your Start9 server elsewhere if you take the time to get Tor running on your devices.
 
 1. Once connection is completed you will see a success page that displays the balance of your LND node in Sats..
 

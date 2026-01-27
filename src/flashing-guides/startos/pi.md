@@ -15,7 +15,6 @@ This guide is for flashing StartOS to a microSD card for use on a Raspberry Pi.
 1.  At the bottom of the page, under "Assets", download the `startos-..._raspberrypi.img.gz` file.
 
 1.  Verify the SHA256 checksum against the one listed on GitHub (optional but recommended).
-
     - **Mac**. Open a terminal window and run the following, replacing `startos-0..._raspberrypi.img.gz` with the path/name of the file:
 
           openssl dgst -sha256 startos-0..._raspberrypi.img.gz
@@ -41,10 +40,8 @@ This guide is for flashing StartOS to a microSD card for use on a Raspberry Pi.
 
 1. Click "Select Target" and select your microSD card.
 
-   ```admonish warning
-
-   BE ABSOLUTELY CERTAIN you have selected the correct target microSD card. Whatever drive you select will be **COMPLETELY ERASED**!
-   ```
+   > [!WARNING]
+   > BE ABSOLUTELY CERTAIN you have selected the correct target microSD card. Whatever drive you select will be **COMPLETELY ERASED**!
 
 1. Click "Flash!". You may be asked to approve the unusually large disk target and/or enter your password. Both are normal.
 

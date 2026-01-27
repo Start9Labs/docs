@@ -11,10 +11,8 @@ This guide should only be used if you have lost or forgotten your StartOS master
 
 1. Simply re-flash the microSD card.
 
-   ```admonish danger
-
-   When performing initial setup, be certain to select `Recover > Use Existing Drive`.
-   ```
+   > [!DANGER]
+   > When performing initial setup, be certain to select `Recover > Use Existing Drive`.
 
 1. Create a new password and complete setup. All your previous addresses and data will be preserved.
 
@@ -22,11 +20,9 @@ This guide should only be used if you have lost or forgotten your StartOS master
 
 1. Download and flash the latest version of StartOS, using the appropriate [flashing guide](../flashing-guides/startos/) for your hardware.
 
-   ```admonish danger
-
-   - When installing StartOS, be sure to select "Re-install OS, preserving data".
-
-   - When performing initial setup (after installing StartOS), be certain to select `Recover > Use Existing Drive`.
-   ```
+   > [!DANGER]
+   >
+   > - When installing StartOS, be sure to select "Re-install OS, preserving data".
+   > - When performing initial setup (after installing StartOS), be certain to select `Recover > Use Existing Drive`.
 
 1. Create a new password and complete setup. All your previous addresses and data will be preserved.

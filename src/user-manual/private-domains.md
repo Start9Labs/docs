@@ -40,9 +40,8 @@ When you add a private domain to StartOS, a corresponding DNS record is _automat
 
 - **Router**: Set StartOS as your router's primary DNS server. All routers support this feature. Refer to your router's user manual for detailed instructions.
 
-  ```admonish warning
-  It is possible that StartOS is already using your router for DNS. Therefore you cannot instruct your router to use StartOS for DNS. This is circular. If StartOS detects a potential circular DNS situation, it will warn you. To resolve this issue, override [the DNS servers used by StartOS](./dns#setting-static-dns-servers) to no longer use your router.
-  ```
+  > [!WARNING]
+  > It is possible that StartOS is already using your router for DNS. Therefore you cannot instruct your router to use StartOS for DNS. This is circular. If StartOS detects a potential circular DNS situation, it will warn you. To resolve this issue, override [the DNS servers used by StartOS](./dns#setting-static-dns-servers) to no longer use your router.
 
 - **StartTunnel**: SSH into your StartTunnel VPS and run the following command
 

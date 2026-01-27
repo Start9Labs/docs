@@ -3,6 +3,7 @@
 Bitcoin's Lightning Network is a second-layer scaling solution designed to enable faster and cheaper transactions on the Bitcoin blockchain. It allows users to create off-chain payment channels, which can facilitate multiple transactions without needing to record each one on the main blockchain.
 
 **Contents**
+
 - [Getting Started and Tips](#gettingstarted)
 - [Implementations](#implementations)
   - [LND (Lightning Network Daemon)](#lnd-lightning-network-daemon)
@@ -16,7 +17,6 @@ Bitcoin's Lightning Network is a second-layer scaling solution designed to enabl
 
 - [Getting Inbound Liquidity](./getting-inbound-liquidity.md) - We look at the common ways to receive payments having only just opened a channel with all the liquidity on your side.
 
-
 ## Implementations
 
 StartOS currently supports two independent Lightning Network implementations available as services in the marketplace: LND and CLN.
@@ -25,24 +25,20 @@ StartOS currently supports two independent Lightning Network implementations ava
 
 Developed by Lightning Labs, LND is the most widely used implementation for creating and managing Lightning Network nodes. It the implementation that is most widely supported and is required by other services like Alby Hub. (More on [LND](https://github.com/lightningnetwork/lnd))
 
-  - [LND guides](https://github.com/Start9Labs/lnd-startos/blob/update/040/docs/instructions.md) - Setting up, using and connecting to LND.
-  - [Alby Hub](https://github.com/Start9Labs/albyhub-startos/blob/update/040/docs/instructions.md) – Learn how to set up Alby Hub on StartOS.
-
+- [LND guides](https://github.com/Start9Labs/lnd-startos/blob/update/040/docs/instructions.md) - Setting up, using and connecting to LND.
+- [Alby Hub](https://github.com/Start9Labs/albyhub-startos/blob/update/040/docs/instructions.md) – Learn how to set up Alby Hub on StartOS.
 
 ### CLN (Core Lightning)
 
 Formerly known as c-lightning, CLN is developed by Blockstream. It focuses on modularity and performance. CLN is designed to be efficient and stable. (More on [Blockstream](https://blockstream.com/)).
 
-  - [Core Lightning guides](https://github.com/Start9Labs/cln-startos/blob/update/040/docs/instructions.md) - Setting up, using and connecting to Core Lightning.
-
-
+- [Core Lightning guides](https://github.com/Start9Labs/cln-startos/blob/update/040/docs/instructions.md) - Setting up, using and connecting to Core Lightning.
 
 ## Alby Hub
 
 Alby Hub lets you manage your own lightning node, make payments, receive tips, and connect to apps with one click. Set up Alby Hub to work with your locally installed LND service or alternatively use the embedded LDK light node inside Alby Hub. (More on [Alby Hub](https://albyhub.com))
 
 - [Alby Hub](./lnd/alby-hub.md) – Learn how to set up Alby Hub on StartOS.
-
 
 ## LNbits
 

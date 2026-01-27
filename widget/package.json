@@ -1,0 +1,18 @@
+{
+  "name": "@start9/docs-agent-widget",
+  "version": "1.0.0",
+  "description": "Lightweight support agent chat widget for Start9 docs",
+  "scripts": {
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "esbuild src/index.ts --bundle --minify --sourcemap --outfile=../theme/docs-agent.js --format=iife --global-name=DocsAgent",
+    "build:css": "esbuild src/styles.css --bundle --minify --outfile=../theme/docs-agent.css",
+    "watch": "esbuild src/index.ts --bundle --sourcemap --outfile=../theme/docs-agent.js --format=iife --global-name=DocsAgent --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "marked": "^12.0.0"
+  }
+}

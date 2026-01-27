@@ -14,7 +14,6 @@ Follow this guide to privately access your server from your Mac device using a V
 ## WireGuard
 
 1. Obtain a WireGuard config file for your device.
-
    - **StartTunnel**: Follow instructions [here](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
    - **Router**: Follow your router's instructions.
 
@@ -26,9 +25,8 @@ Follow this guide to privately access your server from your Mac device using a V
 
 1. Your VPN tunnel will have been created and visible in both you Mac's system settings and conveniently in the WireGuard app where you can click to activate it.
 
-   ```admonish tip
-   You may need to edit your newly created tunnel and enable 'On-demand' for either ethernet, wifi or both.
-   ```
+   > [!TIP]
+   > You may need to edit your newly created tunnel and enable 'On-demand' for either ethernet, wifi or both.
 
 ## OpenVPN
 
@@ -56,8 +54,7 @@ Follow this guide to privately access your server from your Mac device using a V
 
    ![Connected](./assets/vpn-openvpn-connected.png)
 
-   ```admonish note
-   You can avoid using the OpenVPN Connect client and create the OpenVPN connection directly in MacOS in the VPN section of System Settings. You would select IKEv2 and add your configuration manually.
-
-   ![Set up IKEv2 manually](./assets/vpn-openvpn-ikev2.png)
-   ```
+   > [!NOTE]
+   > You can avoid using the OpenVPN Connect client and create the OpenVPN connection directly in MacOS in the VPN section of System Settings. You would select IKEv2 and add your configuration manually.
+   >
+   > ![Set up IKEv2 manually](./assets/vpn-openvpn-ikev2.png)

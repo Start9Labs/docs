@@ -14,7 +14,6 @@ Follow this guide to privately access your server from your Windows device using
 ## WireGuard
 
 1. Obtain a WireGuard config file for your device.
-
    - **StartTunnel**: Follow instructions [here](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
    - **Router**: Follow your router's instructions.
 

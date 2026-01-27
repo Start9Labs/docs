@@ -5,41 +5,37 @@ on:
     branches: ["master"]
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build docs agent widget
+        run: |
+          cd widget
+          npm ci
+          npm run build
+
       - name: Install mdBook
         run: |
-          # MDBOOK_VERSION=$(curl -s https://api.github.com/repos/rust-lang/mdBook/releases/latest | jq -r '.tag_name')
-          MDBOOK_VERSION='v0.4.52'
+          MDBOOK_VERSION='v0.5.2'
           curl -sSL https://github.com/rust-lang/mdBook/releases/download/${MDBOOK_VERSION}/mdbook-${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz | tar -xz
           sudo mv mdbook /usr/local/bin/mdbook
-
-      - name: Install mdBook Admonish
-        run: |
-          # ADMONISH_VERSION=$(curl -s https://api.github.com/repos/tommilligan/mdbook-admonish/releases/latest | jq -r '.tag_name')
-          ADMONISH_VERSION='v1.20.0'
-          curl -sSL https://github.com/tommilligan/mdbook-admonish/releases/download/${ADMONISH_VERSION}/mdbook-admonish-${ADMONISH_VERSION}-x86_64-unknown-linux-gnu.tar.gz | tar -xz
-          sudo mv mdbook-admonish /usr/local/bin/mdbook-admonish
-
-      - name: Configure mdBook Admonish
-        run: mdbook-admonish install .
 
       - name: Setup Pages
         id: pages
@@ -48,12 +44,21 @@ jobs:
       - name: Build with mdBook
         run: mdbook build
 
+      - name: Index documentation for RAG
+        env:
+          VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+          DOCS_INDEX_API_KEY: ${{ secrets.DOCS_INDEX_API_KEY }}
+          DOCS_API_URL: https://start9.me/_api/docs
+        run: |
+          cd scripts
+          npm ci
+          npm run index
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages

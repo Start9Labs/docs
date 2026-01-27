@@ -5,7 +5,6 @@
 ---
 
 - [📘 User Manual](user-manual/README.md)
-
   - [Initial Setup](user-manual/initial-setup.md)
   - [Trusting Your Root CA](user-manual/trust-ca.md)
   - [Connecting Locally](user-manual/connecting-locally.md)
@@ -24,7 +23,6 @@
   - [SSH](user-manual/ssh.md)
 
 - [💾 Flashing Guides](flashing-guides/README.md)
-
   - [Firmware](flashing-guides/firmware/README.md)
     - [Server Pure](flashing-guides/firmware/pure.md)
     - [Server One (2023)](flashing-guides/firmware/one-2023.md)
@@ -33,7 +31,6 @@
     - [Raspberry Pi](flashing-guides/startos/pi.md)
 
 - [💻 Device Guides](device-guides/README.md)
-
   - [Linux](device-guides/linux/README.md)
     - [Trusting Your Root CA](device-guides/linux/ca.md)
     - [Connecting via VPN](device-guides/linux/vpn.md)
@@ -58,7 +55,6 @@
     - [Creating Backups](device-guides/truenas/backups.md)
 
 - [📱 Service Guides](service-guides/README.md)
-
   - [Bitcoin](service-guides/bitcoin/README.md)
     - [Blockchain Migration](service-guides/bitcoin/blockchain-migration.md)
   - [Lightning](service-guides/lightning/README.md)
@@ -70,7 +66,6 @@
   - [Vaultwarden](service-guides/vaultwarden/README.md)
 
 - [📚 Misc Guides](misc-guides/README.md)
-
   - [Setting up Dynamic DNS](misc-guides/dynamic-dns.md)
   - [Using StartTunnel](misc-guides/start-tunnel.md)
   - [Getting SMTP Credentials](misc-guides/smtp-credentials.md)
@@ -83,7 +78,6 @@
   - [Thunderbird Guides](misc-guides/thunderbird-guides.md)
 
 - [📦 Packaging Guide](packaging-guide/README.md)
-
   - [Introduction](packaging-guide/intro.md)
   - [Environment Setup](packaging-guide/environment-setup.md)
   - [Quick Start](packaging-guide/quick-start.md)
@@ -92,13 +86,10 @@
   - [Important Info](packaging-guide/important-info.md)
 
 - [🎥 Community Content Program](community-content/README.md)
-
   - [Video Guidelines](community-content/video-guidelines.md)
   - [Video Wishlist](community-content/wishlist.md)
   - [Submission & Bounties](community-content/submissions.md)
 
 - [❓ Help](help/README.md)
-
   - [Common Issues](help/common-issues.md)
   - [Contact](help/contact.md)
-

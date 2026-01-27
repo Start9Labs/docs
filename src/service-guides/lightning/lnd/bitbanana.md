@@ -1,14 +1,11 @@
 # LND - BitBanana
 
-```admonish note
-
-Compatible with LND only
-
-```
+> [!NOTE]
+> Compatible with LND only
 
 1. Install [BitBanana](https://bitbanana.app/) on your phone.
 
-1. In BitBanana go to **Connect Node**. 
+1. In BitBanana go to **Connect Node**.
 
 1. Locate the **LND Connect gRPC URL** from your LND service page's **Properties** section.
 

@@ -14,12 +14,10 @@ Follow this guide to privately access your server from your Linux device using a
 ## WireGuard
 
 1.  Obtain a WireGuard config file for your device.
-
     - **StartTunnel**: Follow instructions [here](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
     - **Router**: Follow your router's instructions.
 
 1.  Install `wireguard` and `wireguard-tools`.
-
     - Debian / Ubuntu
 
       ```
@@ -73,15 +71,13 @@ Follow this guide to privately access your server from your Linux device using a
     sudo systemctl enable wg-quick@wg0
     ```
 
-```admonish tip
-Each time you want to close the VPN connection:
-   `sudo wg-quick down wg0`
-```
+> [!TIP]
+> Each time you want to close the VPN connection:
+> `sudo wg-quick down wg0`
 
 ## OpenVPN
 
 1.  Install `openvpn`.
-
     - Debian / Ubuntu
 
       ```
@@ -135,7 +131,6 @@ Each time you want to close the VPN connection:
     sudo systemctl enable openvpn@client
     ```
 
-```admonish tip
-Each time you want to close the VPN connection:
-    `sudo systemctl stop openvpn@client`
-```
+> [!TIP]
+> Each time you want to close the VPN connection:
+> `sudo systemctl stop openvpn@client`

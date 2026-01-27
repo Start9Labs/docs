@@ -21,12 +21,10 @@ With few exceptions, you should add a domain to your service interface so that y
 
 1. Select a gateway to use for this domain. For help selecting a gateway, see [Gateways](./gateways.md)
 
-   ```admonish warning title="Starlink and CGNAT"
-   CGNAT gateways, such as Starlink, cannot be used for clearnet hosting. You must create a new gateway with StartTunnel. Refer to [Using StartTunnel](../../misc-guides/start-tunnel.md).
-   ```
+   > [!WARNING] Starlink and CGNAT
+   > CGNAT gateways, such as Starlink, cannot be used for clearnet hosting. You must create a new gateway with StartTunnel. Refer to [Using StartTunnel](../../misc-guides/start-tunnel.md).
 
 1. Select a Certificate Authority to use for this domain.
-
    - **Local Root Ca**: Good for personal access. Only devices that have downloaded and trusted your server's Root CA will be able to access the domain without issue.
    - **Let's Encrypt**: Good for public access. All devices trust Let's Encrypt certificates by default.
 
@@ -44,26 +42,23 @@ With few exceptions, you should add a domain to your service interface so that y
 
 1. Click "Test" to ensure the record was successfully detected by StartOS.
 
-   ```admonish warning
-   It might take a few minutes for your domain changes to take effect. You can test it using [https://dnschecker.org](https://dnschecker.org).
-   ```
+   > [!WARNING]
+   > It might take a few minutes for your domain changes to take effect. You can test it using [https://dnschecker.org](https://dnschecker.org).
 
 ## Port Forwarding
 
-```admonish note
-Port forwarding is only necessary for private gateways, such as your router or StartTunnel. If you are running StartOS on a VPS, no port forwarding is needed.
-```
+> [!NOTE]
+> Port forwarding is only necessary for private gateways, such as your router or StartTunnel. If you are running StartOS on a VPS, no port forwarding is needed.
 
 To expose your `PUBLIC_IP:port` or `domain` address to the Internet, you must create a port forwarding rule in its corresponding gateway. The rule that needs to be created is conveniently displayed in the tooltip for each address.
 
-```admonish warning title="Caution"
-1. ACME providers will not sign certificates for IP addresses. Therefore, the `PUBLIC_IP:port` address is signed by your server's Root CA. This means only devices that have downloaded and trusted your server's Root CA will be able to access the IP address without issue.
-1. Because of the need to trust your Root CA, and also because it is accepted practice to host websites and APIs on domains (`.com`, `.net`, etc) and not IP addresses, most people will _NOT_ use this `PUBLIC_IP:port` address and therefore _DO NOT_ need to create a port forwarding rule for it.
-```
+> [!WARNING] Caution
+>
+> 1. ACME providers will not sign certificates for IP addresses. Therefore, the `PUBLIC_IP:port` address is signed by your server's Root CA. This means only devices that have downloaded and trusted your server's Root CA will be able to access the IP address without issue.
+> 1. Because of the need to trust your Root CA, and also because it is accepted practice to host websites and APIs on domains (`.com`, `.net`, etc) and not IP addresses, most people will _NOT_ use this `PUBLIC_IP:port` address and therefore _DO NOT_ need to create a port forwarding rule for it.
 
-```admonish tip
-Most websites and APIs on the Internet are hosted on port `443`. Port `443` is so common, in fact, that apps and browsers _infer_ its presence. The _absence_ of a port _means_ the port is `443`. With rare exceptions, domains on StartOS also use port `443`, and that is why your domains usually do not display a port. The port forwarding rule needed for these standard domains is always the same, which means you only have to do it once!
-```
+> [!TIP]
+> Most websites and APIs on the Internet are hosted on port `443`. Port `443` is so common, in fact, that apps and browsers _infer_ its presence. The _absence_ of a port _means_ the port is `443`. With rare exceptions, domains on StartOS also use port `443`, and that is why your domains usually do not display a port. The port forwarding rule needed for these standard domains is always the same, which means you only have to do it once!
 
 How you create a port forwarding rule depends on the type of gateway.
 

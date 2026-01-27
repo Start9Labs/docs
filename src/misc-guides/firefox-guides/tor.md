@@ -11,7 +11,6 @@
 ## All Platforms
 
 1. Ensure you have already followed instruction for running Tor on your platform.
-
    - [Mac](../../device-guides/mac/tor.md)
    - [Linux](../../device-guides/linux/tor.md)
    - [Windows](../../device-guides/windows/tor.md)
@@ -39,10 +38,8 @@
 
 ## Linux
 
-```admonish warning
-
-If you cannot connect after following this guide, your Firefox may be installed in a jailed environment, such as an AppImage, Flatpak, or SNAP. Ubuntu uses a SNAP for Firefox, so you may experience issues on Ubuntu-based systems. Please install Firefox via an alternate method that does not isolate Firefox from the wider filesystem.
-```
+> [!WARNING]
+> If you cannot connect after following this guide, your Firefox may be installed in a jailed environment, such as an AppImage, Flatpak, or SNAP. Ubuntu uses a SNAP for Firefox, so you may experience issues on Ubuntu-based systems. Please install Firefox via an alternate method that does not isolate Firefox from the wider filesystem.
 
 1.  Ensure you have completed the steps under [All Platforms](#all-platforms).
 

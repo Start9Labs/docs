@@ -4,11 +4,8 @@ Alby is a browser extension that can be connected to your lightning node a numbe
 
 If you'd like to connect to LND or CLN directly with Alby, [start here](../README.md).
 
-```admonish note
-
-This guide assumes you have already setup LNbits as per [this guide](../lnbits.md).
-
-```
+> [!NOTE]
+> This guide assumes you have already setup LNbits as per [this guide](../lnbits.md).
 
 1. Make sure you are already [running Tor](/user-manual/connecting-remotely/tor.md) on your system and we suggest using Firefox which must be [configured to use Tor](/misc-guides/firefox-guides/tor.md)
 
@@ -52,11 +49,8 @@ This guide assumes you have already setup LNbits as per [this guide](../lnbits.m
 
 1. Click **Continue**. Once the connection is completed you will see a success page that displays the balance of your CLN node in Sats.
 
-```admonish tip
-
-Make sure to include the http:// at the start of the address. If it is not working make sure that you are properly [configured Tor](/user-manual/connecting-remotely/tor.md) on your system.
-
-```
+> [!TIP]
+> Make sure to include the http:// at the start of the address. If it is not working make sure that you are properly [configured Tor](/user-manual/connecting-remotely/tor.md) on your system.
 
 1. Once connected you should see the following success page:
 
@@ -66,10 +60,7 @@ Make sure to include the http:// at the start of the address. If it is not worki
 
 1. In addition to allocating sats to this wallet via the LNbits Superuser Account (see “Funding LNbits section” [here](../lnbits.md#funding-lnbits)), you can also receive funds the normal way by hitting Receive within Alby.
 
-```admonish note
-
-Funds received this way must be sent from another lightning node, not the node underneath LNbits. A lightning payment that originates and terminates at the same node is technically a rebalance, not a normal payment.
-
-```
+> [!NOTE]
+> Funds received this way must be sent from another lightning node, not the node underneath LNbits. A lightning payment that originates and terminates at the same node is technically a rebalance, not a normal payment.
 
 You’re now setup with Alby and LNbits!

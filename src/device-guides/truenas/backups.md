@@ -41,7 +41,6 @@
 1.  Click "Open New".
 
 1.  Complete the form:
-
     1.  **Hostname**: The name of your TrueNAS device on the LAN. (e.g truenas.local)
 
     1.  **Path** - The _name_ of your shared folder, _not_ the full directory path (e.g. "nasshare" from the example).
@@ -52,7 +51,5 @@
 
 1.  Click "Connect".
 
-    ```admonish warning title="Troubleshooting"
-
-    - If you receive `Filesystem I/O Error mount error(13): Permission denied`, ensure you have entered all the correct values in the form. The hostname can be particularly tricky.
-    ```
+    > [!WARNING]
+    > If you receive `Filesystem I/O Error mount error(13): Permission denied`, ensure you have entered all the correct values in the form. The hostname can be particularly tricky.

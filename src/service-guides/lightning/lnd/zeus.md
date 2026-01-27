@@ -7,11 +7,8 @@ Available For:
 - Android
 - iOS
 
-```admonish note
-
-This guide will go over how to connect Zeus to **LND**. If you'd like to connect Zeus to CLN instead - please use [this guide](../cln/zeus.md).
-
-```
+> [!NOTE]
+> This guide will go over how to connect Zeus to **LND**. If you'd like to connect Zeus to CLN instead - please use [this guide](../cln/zeus.md).
 
 1. Download [Zeus](https://zeusln.app/) for your device.
 
@@ -23,11 +20,7 @@ This guide will go over how to connect Zeus to **LND**. If you'd like to connect
 
 1. Click **SAVE NODE CONFIG**
 
-
-```admonish tip
-
-If you already have other nodes configured in Zeus, go to Settings.-> Connect a node -> + . Then scan the QR code, and tap "Save node config".
-
-```
+> [!TIP]
+> If you already have other nodes configured in Zeus, go to Settings.-> Connect a node -> + . Then scan the QR code, and tap "Save node config".
 
 That's it. You can now use your LND Node via Zeus.

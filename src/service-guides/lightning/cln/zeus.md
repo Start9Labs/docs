@@ -1,6 +1,5 @@
 # Core Lightning - Zeus
 
-
 Zeus is a powerful mobile wallet that can be connected directly to both LND and Core Lightning. If you'd like to connect via LNbits, which allows allocation of funds, please see [this guide](../lnbits.md).
 
 Available For:
@@ -8,11 +7,8 @@ Available For:
 - Android
 - iOS
 
-```admonish note
-
-This guide will go over how to connect Zeus to **CLN**. If you'd like to connect Zeus to LND instead - please use [this guide](../lnd/zeus.md).
-
-```
+> [!NOTE]
+> This guide will go over how to connect Zeus to **CLN**. If you'd like to connect Zeus to LND instead - please use [this guide](../lnd/zeus.md).
 
 1. Download [Zeus](https://zeusln.app/) for your device.
 
@@ -20,23 +16,19 @@ This guide will go over how to connect Zeus to **CLN**. If you'd like to connect
 
 1. Now open Services -> Core Lightning -> Properties.
 
-    ![LND Actions](../assets/connect-zeus-cln-qr.png)
+   ![LND Actions](../assets/connect-zeus-cln-qr.png)
 
 1. Tap the QR code icon for **CLNRest Quick Connect** to display the QR code.
 
-    ![LND Actions](../assets/connect-zeus-cln-connect.png)
+   ![LND Actions](../assets/connect-zeus-cln-connect.png)
 
 1. In Zeus, tap "ADVANCED SET-UP", followed by "Connect a node", and finally click the 'scan' icon in the top right to scan the qr code from the previous step.
 
-
 1. Click **SAVE NODE CONFIG**
 
-```admonish tip
-
-If you already have other nodes configured in Zeus, Click the 'Node' icon in the top right -> 'plus' icon -> 'scan' icon . Then scan the QR code, and tap "SAVE NODE CONFIG".
-
-![LND Actions](../assets/connect-zeus-cln-addnode.png)
-
-```
+> [!TIP]
+> If you already have other nodes configured in Zeus, Click the 'Node' icon in the top right -> 'plus' icon -> 'scan' icon . Then scan the QR code, and tap "SAVE NODE CONFIG".
+>
+> ![LND Actions](../assets/connect-zeus-cln-addnode.png)
 
 That's it. You can now use your CLN Node via Zeus.

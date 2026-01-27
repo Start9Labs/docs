@@ -16,13 +16,11 @@ Generally, you do not need to manually flash your device using this guide, as th
 1. Connect a monitor and keyboard to your server using two of the USB3 (blue) ports.
 
 1. Download the right firmware:
-
    - Models without WiFi - [Download Standard](https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip)
    - Models with WiFi - [Download Standard](https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot-Release-29.zip) | [Download Jailed WiFi](https://source.puri.sm/firmware/releases/-/blob/75631ad6dcf7e6ee73e06a517ac7dc4e017518b7/librem_mini_v2/custom/pureboot-librem_mini_v2-basic_usb_autoboot_blob_jail-Release-29.zip)
 
-   ```admonish note
-   The Jailed WiFi variation deactivates WiFi at the firmware level so it can never be turned on
-   ```
+   > [!NOTE]
+   > The Jailed WiFi variation deactivates WiFi at the firmware level so it can never be turned on
 
 1. Copy or move the zip file to the USB stick.
 

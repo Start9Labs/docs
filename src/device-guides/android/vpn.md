@@ -14,7 +14,6 @@ Follow this guide to privately access your server from your Android/Graphene dev
 ## WireGuard
 
 1. Obtain a WireGuard config file for your device.
-
    - **StartTunnel**: Follow instructions [here](../../misc-guides/start-tunnel.md#adding-a-client-device-for-private-access)
    - **Router**: Follow your router's instructions.
 
@@ -54,9 +53,8 @@ Follow this guide to privately access your server from your Android/Graphene dev
 
    ![Username and Password authentication](./assets/vpn-android-openvpn-add-auth.png)
 
-   ```admonish note
-   In this guide we are using Password-only, but passwords can be accompanied by certificates for added security.
-   ```
+   > [!NOTE]
+   > In this guide we are using Password-only, but passwords can be accompanied by certificates for added security.
 
 1. Once set up, click on the name of the profile allows you to connect and disconnect. You can edit the profile from the icon to its right.
 

@@ -4,10 +4,8 @@
 
 1. In the Synology UI, go to `Control Panel > Shared Folder` and choose the folder you want to use as the destination for the backup.
 
-```admonish note
-
-Do not select an encrypted folder. Encrypted folders on Synology enforce a character limit of 143 characters. At this time, StartOS backups use folder/file names that are longer than 143 characters. The backup process will fail if you try to backup to an encrypted folder.
-```
+> [!NOTE]
+> Do not select an encrypted folder. Encrypted folders on Synology enforce a character limit of 143 characters. At this time, StartOS backups use folder/file names that are longer than 143 characters. The backup process will fail if you try to backup to an encrypted folder.
 
 1. Still in the Synology UI, go to `Control Panel > File Services > SMB` and click the SMB tab if it isn't already selected. Ensure that "Enable SMB service" is checked.
 
@@ -26,7 +24,6 @@ Do not select an encrypted folder. Encrypted folders on Synology enforce a chara
 1.  Click "Open New".
 
 1.  Complete the form:
-
     1.  **Hostname**: The name of your Synology device on the LAN.
 
     1.  **Path** - The _name_ of your shared folder, _not_ the full directory path (e.g. `Backups` from the example above).
@@ -37,7 +34,5 @@ Do not select an encrypted folder. Encrypted folders on Synology enforce a chara
 
 1.  Click "Connect".
 
-    ```admonish warning title="Troubleshooting"
-
-    - If you receive `Filesystem I/O Error mount error(13): Permission denied`, ensure you have entered all the correct values in the form. The hostname can be particularly tricky.
-    ```
+    > [!WARNING]
+    > If you receive `Filesystem I/O Error mount error(13): Permission denied`, ensure you have entered all the correct values in the form. The hostname can be particularly tricky.

@@ -25,10 +25,8 @@ These guides apply to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla 
 
 1.  Give the Module Name a title, such as "System CA Trust Module". For the Module filename, paste in `/usr/lib/x86_64-linux-gnu/pkcs11/p11-kit-trust.so` and hit "OK".
 
-    ```admonish tip
-
-    The path to p11-kit-trust.so will be slightly different if your processor's architecture is not x86_64.
-    ```
+    > [!TIP]
+    > The path to p11-kit-trust.so will be slightly different if your processor's architecture is not x86_64.
 
 1.  Verify that the new module shows up on the left hand side and click "OK" in the bottom right:
 
@@ -36,10 +34,8 @@ These guides apply to Firefox, Firefox ESR, Librewolf, and Thunderbird. Mozilla 
 
 ## Android / Graphene
 
-```admonish warning
-
-The regular Firefox app will not work. You must use `Firefox Beta [Firefox Beta](https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta).
-```
+> [!WARNING]
+> The regular Firefox app will not work. You must use `Firefox Beta [Firefox Beta](https://play.google.com/store/apps/details?id=org.mozilla.firefox_beta).
 
 1. Go to `Menu > Settings > About Firefox` and tap the Firefox icon 5 times to enable "developer mode".
 

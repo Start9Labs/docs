@@ -24,10 +24,8 @@
 
 1.  Identify or create a folder to store your server backups.
 
-    ```admonish tip
-
-    This folder can be located on an external drive connected to your Linux machine.
-    ```
+    > [!TIP]
+    > This folder can be located on an external drive connected to your Linux machine.
 
 1.  Right click the folder and click "Properties".
 
@@ -54,10 +52,8 @@
 
 1.  Identify or create a folder to store your server backups.
 
-    ```admonish tip
-
-    This folder can be located on an external drive connected to your Linux machine.
-    ```
+    > [!TIP]
+    > This folder can be located on an external drive connected to your Linux machine.
 
 1.  Right click the folder and click "Sharing Options".
 
@@ -70,41 +66,47 @@
 ### Other Linux
 
 1.  Install Samba if it is not already installed.
-
     - Arch:
 
-           sudo pacman -S samba
+      ```
+      sudo pacman -S samba
+      ```
 
     - Debian and Debian-based:
 
-            sudo apt install samba
+      ```
+      sudo apt install samba
+      ```
 
     - CentOS/Redhat
 
-            sudo yum install samba
+      ```
+      sudo yum install samba
+      ```
 
     - Fedora
-
-            sudo dnf install samba
+      ```
+      sudo dnf install samba
+      ```
 
 1.  Identify or create a folder to store your server backups. Make a note of the directory path. For example:
 
-        mkdir -p /home/$USER/start9-backup
+    ```
+    mkdir -p /home/$USER/start9-backup
+    ```
 
     replacing `$USER` with your Linux username and "start9-backup" with whatever you want the folder to be named.
 
-    ```admonish tip
+    > [!TIP]
+    > This folder can be located on an external drive connected to your Linux machine.
 
-    This folder can be located on an external drive connected to your Linux machine.
-    ```
-
-    ```admonish warning
-
-    If you are on Fedora 38+, you need to do an extra step to allow the Samba share in SELinux:
-
-        sudo semanage fcontext --add --type "samba_share_t" "/home/$USER/start9-backup(/.*)?"
-        sudo restorecon -R /home/$USER/start9-backup
-    ```
+    > [!WARNING]
+    > If you are on Fedora 38+, you need to do an extra step to allow the Samba share in SELinux:
+    >
+    > ```
+    > sudo semanage fcontext --add --type "samba_share_t" "/home/$USER/start9-backup(/.*)?"
+    > sudo restorecon -R /home/$USER/start9-backup
+    > ```
 
 1.  Configure Samba by adding the following to the end of your `/etc/samba/smb.conf` file:
 
@@ -116,7 +118,6 @@
             guest ok = no
 
     Where:
-
     - `[backup-share]` can be replaced with whatever you want (must remain inside brackets). This is your `Share Name`. _Remember the name_, you will need it later.
     - `path` is the directory path to the share folder from above.
 
@@ -127,7 +128,6 @@
     This creates a password for the Local Network Share. Keep it somewhere safe, such as Vaultwarden.
 
 1.  If your Linux system has a firewall enabled by default or due to custom configuration, you may need to allow connections to Samba. The command varies depending on the firewall in use:
-
     - For systems using UFW (commonly found on Debian-based distros):
 
           sudo ufw allow Samba
@@ -137,7 +137,6 @@
           sudo firewall-cmd --permanent --add-service=samba
           sudo firewall-cmd --reload
 
-
 ## Create a Backup
 
 1.  In StartOS, go to `System > Create Backup`.
@@ -145,7 +144,6 @@
 1.  Click "Open New".
 
 1.  Complete the form:
-
     1.  **Hostname**: The name of your Linux machine on the LAN.
 
     1.  **Path** - The "Share Name" (name of the share in your samba config), _not_ the full directory path. (e.g. "backup-share" in the example).
@@ -156,7 +154,5 @@
 
 1.  Click "Connect".
 
-    ```admonish warning title="Troubleshooting"
-
-    - If you receive `Filesystem I/O Error mount error(13): Permission denied`, ensure you have entered all the correct values in the form. The hostname can be particularly tricky.
-    ```
+    > [!WARNING]
+    > If you receive `Filesystem I/O Error mount error(13): Permission denied`, ensure you have entered all the correct values in the form. The hostname can be particularly tricky.

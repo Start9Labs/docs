@@ -35,10 +35,8 @@ Use this section if your current StartOS Raspberry Pi uses an external drive ove
 
 1. If you intend to re-purpose the Raspberry Pi as another StartOS server, _be sure to first re-flash the microSD, then perform a fresh setup_, which will wipe the SSD in the process. It is a good idea to wipe the SSD separately beforehand, just in case.
 
-   ```admonish warning
-
-   _Do not_ power on the Raspberry Pi until you have successfully re-flashed the microSD. If you power it on as-is, it can cause serious problems, including loss of funds if you are running a lightning node.
-   ```
+   > [!WARNING]
+   > _Do not_ power on the Raspberry Pi until you have successfully re-flashed the microSD. If you power it on as-is, it can cause serious problems, including loss of funds if you are running a lightning node.
 
 ## From 2022 Embassy One (NASPi case)
 
@@ -80,7 +78,5 @@ Use this section if your current StartOS Raspberry Pi uses an external drive ove
 
 1. If you intend to re-purpose the NASPi as another StartOS server, _be sure to first [reflash](../flashing-guides/startos/) the microSD, then perform a fresh setup_, which will wipe the SSD in the process.
 
-   ```admonish warning
-
-   _Do not_ re-insert and power on the Raspberry Pi until you have successfully [re-flashed](../flashing-guides/startos/) the microSD. If you power it on with an unflashed microSD inserted, it can cause serious problems, including loss of funds if you are running a lightning node.
-   ```
+   > [!WARNING]
+   > _Do not_ re-insert and power on the Raspberry Pi until you have successfully [re-flashed](../flashing-guides/startos/) the microSD. If you power it on with an unflashed microSD inserted, it can cause serious problems, including loss of funds if you are running a lightning node.

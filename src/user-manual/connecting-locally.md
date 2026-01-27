@@ -8,9 +8,8 @@ Local connections are the fastest possible, as they do not reach out to the Inte
 
 During initial setup, your server receives a random local (`[adjective-noun].local`) domain. This domain uses [Multicast DNS (mDNS)](https://en.wikipedia.org/wiki/Multicast_DNS) to serve as an alias for your server's LAN IP address.
 
-```admonish tip
-The local domain is useful because, by default, your router will sometimes change your server's IP address on the LAN. If your server's LAN IP address changes, the local domain will continue to work, even if you move or get a new router!
-```
+> [!TIP]
+> The local domain is useful because, by default, your router will sometimes change your server's IP address on the LAN. If your server's LAN IP address changes, the local domain will continue to work, even if you move or get a new router!
 
 ## IP Address
 
