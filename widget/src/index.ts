@@ -511,10 +511,12 @@ class DocsAgentWidget {
   }
 
   private scrollToBottom(): void {
-    const messagesEl = this.container?.querySelector(".da-messages");
-    if (messagesEl) {
-      messagesEl.scrollTop = messagesEl.scrollHeight;
-    }
+    requestAnimationFrame(() => {
+      const messagesEl = this.container?.querySelector(".da-messages");
+      if (messagesEl) {
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+      }
+    });
   }
 
   private async handleAccessCodeSubmit(): Promise<void> {
@@ -602,8 +604,20 @@ class DocsAgentWidget {
         () => {
           this.isStreaming = false;
           this.saveSession();
+
+          // Save scroll position before render
+          const messagesEl = this.container?.querySelector(".da-messages");
+          const scrollPos = messagesEl?.scrollTop || 0;
+
           this.render();
-          // Don't scroll when done - stay where user is
+
+          // Restore scroll position after render
+          requestAnimationFrame(() => {
+            const newMessagesEl = this.container?.querySelector(".da-messages");
+            if (newMessagesEl) {
+              newMessagesEl.scrollTop = scrollPos;
+            }
+          });
         },
         (err) => {
           if (err === "Unauthorized") {
