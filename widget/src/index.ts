@@ -663,10 +663,7 @@ class DocsAgentWidget {
   }
 
   private endChat(): void {
-    if (
-      this.messages.length > 0 &&
-      !confirm("End this chat and start a new one?")
-    ) {
+    if (this.messages.length > 0 && !confirm("End this chat?")) {
       return;
     }
     this.chatId = null;
