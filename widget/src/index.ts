@@ -159,6 +159,7 @@ class DocsAgentWidget {
   private isOpen = false;
   private isLoading = false;
   private isStreaming = false;
+  private shouldAutoScroll = true;
   private messages: Message[] = [];
   private session: Session | null = null;
   private chatId: string | null = null;
@@ -466,17 +467,20 @@ class DocsAgentWidget {
     const endChatBtn = this.container.querySelector(".da-end-chat-btn");
     endChatBtn?.addEventListener("click", () => this.endChat());
 
-    // Scroll to bottom only if near bottom
+    // Track scroll to detect user scroll-up during streaming
     const messagesEl = this.container.querySelector(".da-messages");
     if (messagesEl) {
-      const isNearBottom =
-        messagesEl.scrollHeight -
-          messagesEl.scrollTop -
-          messagesEl.clientHeight <
-        100;
-      if (isNearBottom) {
-        messagesEl.scrollTop = messagesEl.scrollHeight;
-      }
+      messagesEl.addEventListener("scroll", () => {
+        if (!this.isStreaming) return;
+
+        const { scrollTop, scrollHeight, clientHeight } = messagesEl;
+        const isAtBottom = scrollHeight - scrollTop - clientHeight < 10;
+
+        // If user scrolls up during streaming, stop auto-scroll
+        if (!isAtBottom) {
+          this.shouldAutoScroll = false;
+        }
+      });
     }
   }
 
@@ -503,6 +507,13 @@ class DocsAgentWidget {
     ) as HTMLButtonElement;
     if (btn) {
       btn.disabled = this.isLoading || this.isStreaming;
+    }
+  }
+
+  private scrollToBottom(): void {
+    const messagesEl = this.container?.querySelector(".da-messages");
+    if (messagesEl) {
+      messagesEl.scrollTop = messagesEl.scrollHeight;
     }
   }
 
@@ -568,10 +579,12 @@ class DocsAgentWidget {
     this.messages.push({ role: "user", content });
     this.saveSession();
     this.render();
+    this.scrollToBottom(); // Always scroll when user sends a message
 
     // Add placeholder for assistant
     this.messages.push({ role: "assistant", content: "" });
     this.isStreaming = true;
+    this.shouldAutoScroll = true; // Reset auto-scroll for new response
     this.render();
 
     try {
@@ -590,6 +603,7 @@ class DocsAgentWidget {
           this.isStreaming = false;
           this.saveSession();
           this.render();
+          // Don't scroll when done - stay where user is
         },
         (err) => {
           if (err === "Unauthorized") {
@@ -627,16 +641,9 @@ class DocsAgentWidget {
         this.renderMarkdown(lastMsg.content) +
         '<span class="da-cursor"></span>';
 
-      // Only scroll if user is near the bottom
-      if (messagesEl) {
-        const isNearBottom =
-          messagesEl.scrollHeight -
-            messagesEl.scrollTop -
-            messagesEl.clientHeight <
-          100;
-        if (isNearBottom) {
-          messagesEl.scrollTop = messagesEl.scrollHeight;
-        }
+      // Only scroll if user hasn't scrolled up
+      if (this.shouldAutoScroll && messagesEl) {
+        messagesEl.scrollTop = messagesEl.scrollHeight;
       }
     }
   }
