@@ -24,13 +24,13 @@ Welcome to the Start9 Docs! Here you will find the StartOS user manual, as well 
    git clone https://github.com/Start9Labs/docs.git && cd docs
    ```
 
-3. Serve and view a live, local version of the docs while editing
+3. Run the serve script
 
    ```
-   mdbook serve --open
+   ./serve
    ```
 
-   This will automatically open your default web browser and navigate to http://localhost:3000
+   This will automatically build the project and open your default web browser at http://localhost:3000
 
 ## Contributing
 

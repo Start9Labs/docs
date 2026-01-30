@@ -4,19 +4,9 @@
 
 Local connections are the fastest possible, as they do not reach out to the Internet. You must be connected to the same Local Area Network (LAN) as your server.
 
-## Watch the Video: 
+## Watch the Video:
 
-<div style="position: relative; width: 100%; max-width: 900px; margin: 2em auto; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube.com/embed/lAMI43MC7fQ"
-    title="Connecting Locally"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    loading="lazy">
-  </iframe>
-</div>
+<div class="yt-video" data-id="lAMI43MC7fQ" data-title="Connecting Locally"></div>
 
 ## Local domain
 

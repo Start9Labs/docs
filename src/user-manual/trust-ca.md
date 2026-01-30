@@ -6,19 +6,9 @@ In order to establish a secure (HTTPS) connection with your server on the local 
 You must repeat this guide for every device that will connect to your server locally or using a VPN. This guide is _not_ necessary for devices that will connect using Tor or clearnet.
 ```
 
-## Watch the video: 
+## Watch the video:
 
-<div style="position: relative; width: 100%; max-width: 900px; margin: 2em auto; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube.com/embed/BShfqimixEY"
-    title="Trusting Your Root CA"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    loading="lazy">
-  </iframe>
-</div>
+<div class="yt-video" data-id="BShfqimixEY" data-title="Trusting Your Root CA"></div>
 
 ## Obtaining your Server's Root CA
 

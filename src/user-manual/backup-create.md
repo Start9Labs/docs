@@ -3,19 +3,9 @@
 ```admonish tip title="Important"
 Creating backups is an essential responsibility of self-hosting. If you do not make backups, you _will_ eventually lose your data.
 ```
-## Watch The Video: 
+## Watch The Video:
 
-<div style="position: relative; width: 100%; max-width: 900px; margin: 2em auto; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-  <iframe 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube.com/embed/omHymkqroRk"
-    title="Creating Backups"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    loading="lazy">
-  </iframe>
-</div>
+<div class="yt-video" data-id="omHymkqroRk" data-title="Creating Backups"></div>
 
 #### Contents
 
