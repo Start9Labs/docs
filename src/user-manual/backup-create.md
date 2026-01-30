@@ -43,11 +43,10 @@ Creating backups is an essential responsibility of self-hosting. If you do not m
 
 `EXT4` is the recommended format of your backup drive. `fat32` and `exFAT` are _not_ recommended and may not work.
 
-```admonish danger
-Backing up to USB thumb drive or SD card media is highly discouraged, as low-quality flash memory is easily corruptible.
-
-If you are using a Raspberry Pi, backup drive _must_ be self-powered, or be connected via a powered USB hub, to prevent possible data corruption.
-```
+> [!DANGER]
+> Backing up to USB thumb drive or SD card media is highly discouraged, as low-quality flash memory is easily corruptible.
+>
+> If you are using a Raspberry Pi, backup drive _must_ be self-powered, or be connected via a powered USB hub, to prevent possible data corruption.
 
 ## Network Folder
 
