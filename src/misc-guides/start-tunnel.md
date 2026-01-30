@@ -1,5 +1,19 @@
 # Using StartTunnel
 
+## Watch The Video: Intro To StartTunnel
+
+<div style="position: relative; width: 100%; max-width: 900px; margin: 2em auto; aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube.com/embed/KZ2_jwayAgg"
+    title="Inro To StartTunnel"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</div>
+
 ## Installation
 
 Follow the official [StartTunnel installation instructions](https://github.com/Start9Labs/start-tunnel/blob/master/README.md#install) to install StartTunnel on a VPS.

@@ -22,7 +22,7 @@ There are three options for setting up StartOS while also keeping existing data.
 
 Select this option if:
 
-1. You have re-flashed StartOS and want to resumt normal operation on the same drive and server.
+1. You have re-flashed StartOS and want to resume normal operation on the same drive and server.
 
 1. You are physically transplanting your data drive to a new server.
 
