@@ -271,7 +271,7 @@ class DocsAgentWidget {
     return `
       <div class="da-panel">
         <div class="da-header">
-          <span class="da-title">AIDEN</span>
+          <span class="da-title">AIDN</span>
           <div class="da-header-actions">
             ${
               this.session
@@ -314,7 +314,7 @@ class DocsAgentWidget {
           <path d="M19 17v4"/>
           <path d="M17 19h4"/>
         </svg>
-        <h3>Meet AIDEN</h3>
+        <h3>Meet AIDN</h3>
         <p>Your AI assistant for all things StartOS. Enter your support access code to start chatting.</p>
       </div>
       <form class="da-code-form">
@@ -337,7 +337,7 @@ class DocsAgentWidget {
     const messagesHtml =
       this.messages.length === 0
         ? `<div class="da-welcome">
-        <p>Hi, I'm AIDEN. Ask me anything about StartOS.</p>
+        <p>Hi, I'm AIDN. Ask me anything about StartOS.</p>
       </div>`
         : this.messages.map((m) => this.renderMessage(m)).join("");
 
