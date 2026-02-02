@@ -2,29 +2,33 @@
 
 Welcome to the Start9 Docs! Here you will find the StartOS user manual, as well as integration guides, FAQ, support, knowledge base, and developer docs.
 
-## Building
+## Dependencies
 
-1. Install dependencies
+1. [node](https://nodejs.org/en/)
 
-   [Rust](https://rustup.rs)
+2. [npm](https://www.npmjs.com/get-npm)
+ 
+3. Rust
 
    ```
    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
    ```
 
-   [mdBook](https://rust-lang.github.io/mdBook/) - Documentation framework
-
+4. [mdBook](https://rust-lang.github.io/mdBook/) - Documentation framework
+   
    ```
    cargo install mdbook
    ```
 
-2. Clone the repo and change into its directory
+## Building
+
+1. Clone the repo and change into its directory
 
    ```
    git clone https://github.com/Start9Labs/docs.git && cd docs
    ```
 
-3. Run the serve script
+2. Run the serve script
 
    ```
    ./serve
