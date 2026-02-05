@@ -22,14 +22,15 @@ This should work for most Debian-based systems, such as Debian, Ubuntu, Mint, Po
 
         cd ~/Downloads
 
-1.  Add your Root CA to your OS trust store. Be certain to replace `adjective-noun` with your server's unique hostname in the 3rd and 4th commands:
+1.  Add your Root CA to your OS trust store. Be certain to replace `adjective-noun` with your server's unique hostname in the first command:
 
+        adjnoun=adjective-noun
         sudo mkdir -p /usr/share/ca-certificates/start9
-        sudo cp "adjective-noun.crt" /usr/share/ca-certificates/start9/
-        sudo bash -c "echo 'start9/adjective-noun.crt' >> /etc/ca-certificates.conf"
+        sudo cp "${adjnoun}.crt" /usr/share/ca-certificates/start9/
+        sudo bash -c "echo 'start9/${adjnoun}.crt' >> /etc/ca-certificates.conf"
         sudo update-ca-certificates
 
-    If successful, you will receive `1 added`.
+    If successful, you will see the output `1 added`.
 
 1.  If using Firefox or Tor Browser, complete this [final step](../../misc-guides/firefox-guides/ca.md#debian--ubuntu).
 
@@ -43,7 +44,7 @@ This should work for most Debian-based systems, such as Debian, Ubuntu, Mint, Po
 
         cd ~/Downloads
 
-1.  Add your Root CA to your OS trust store. Be certain to replace `adjective-noun` with your server's unique hostname in the 3rd and 4th commands:
+1.  Add your Root CA to your OS trust store. Be certain to replace `adjective-noun` with your server's unique hostname in the second command:
 
         sudo pacman -S ca-certificates
         sudo cp "adjective-noun.crt" /etc/ca-certificates/trust-source/anchors/
@@ -65,7 +66,7 @@ This should work for most Debian-based systems, such as Debian, Ubuntu, Mint, Po
 
         cd ~/Downloads
 
-1.  Add your Root CA to your OS trust store. Be certain to replace `adjective-noun` with your server's unique hostname in the 3rd and 4th commands:
+1.  Add your Root CA to your OS trust store. Be certain to replace `adjective-noun` with your server's unique hostname in the second command:
 
         sudo yum install ca-certificates
         sudo cp "adjective-noun.crt" /etc/pki/ca-trust/source/anchors/
