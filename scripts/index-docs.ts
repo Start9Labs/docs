@@ -1,7 +1,7 @@
 export {};
 
 /**
- * Index StartOS documentation for AIDN
+ * Index StartOS documentation for Start Bot
  *
  * This script goes in the docs repo at scripts/index-docs.ts
  *
