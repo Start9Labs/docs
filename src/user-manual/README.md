@@ -15,3 +15,4 @@
 - [Updating StartOS](updating-startos.md)
 - [Sending Emails](smtp.md)
 - [SSH](ssh.md)
+- [WiFi](wifi.md)

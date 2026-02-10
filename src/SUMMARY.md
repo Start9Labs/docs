@@ -21,6 +21,7 @@
   - [Updating StartOS](user-manual/updating-startos.md)
   - [Sending Emails](user-manual/smtp.md)
   - [SSH](user-manual/ssh.md)
+  - [WiFi](user-manual/wifi.md)
 
 - [💾 Flashing Guides](flashing-guides/README.md)
   - [Firmware](flashing-guides/firmware/README.md)
