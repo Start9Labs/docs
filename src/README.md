@@ -19,10 +19,10 @@ Here you will find everything you need to set up and use your Start9 server. For
 - [Private Domains](user-manual/private-domains.md)
 - [Creating Backups](user-manual/backup-create.md)
 - [Restoring Backups](user-manual/backup-restore.md)
-- [Updating StartOS](user-manual/updating-startos.md)
-- [Sending Emails](user-manual/smtp.md)
+- [SMTP](user-manual/smtp.md)
 - [SSH](user-manual/ssh.md)
 - [WiFi](user-manual/wifi.md)
+- [Updating StartOS](user-manual/updating-startos.md)
 
 ### [💾 Flashing Guides](flashing-guides/)
 

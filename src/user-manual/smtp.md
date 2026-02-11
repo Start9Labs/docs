@@ -1,4 +1,4 @@
-# Sending Emails
+# SMTP
 
 > [!WARNING]
 > This guide is _not_ for using StartOS as an email server. It is for granting StartOS the simple ability to _send_ emails through a 3rd party email server.
